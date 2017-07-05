@@ -1,0 +1,574 @@
+<div class="button_wrapper">
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="button_container">
+        <h5>Rectangle Button</h5>
+        <div class="crestron_button_container">
+          <btn name="buttonRectangle"
+               label="Button"
+               customClass="common_btn_style"
+               shape="rectangular">
+          </btn>
+          <btn-controller name="buttonRectangle"
+                          onPress="80002">
+          </btn-controller>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="input-group">
+            <pre>
+              <span>{{rectangleButton}}</span>
+            </pre>
+        <span class="input-group-btn">
+            <button class="btn btn-default" [class.btn-success]="isCopied1" type="button" ngxClipboard
+                    [cbContent]=[rectangleButton] (cbOnSuccess)="isCopied1 = true">copy</button>
+          </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="button_container">
+        <h5>Rounded Rectangle Button</h5>
+        <div class="crestron_button_container">
+          <btn name="buttonRoundedRectangle"
+               label="Button"
+               customClass="common_btn_style"
+               shape="rounded-rectangle">
+          </btn>
+          <btn-controller name="buttonRoundedRectangle"
+                          runEnabled="false">
+          </btn-controller>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="input-group">
+            <pre>
+              <span>{{roundedRectangleButton}}</span>
+            </pre>
+        <span class="input-group-btn">
+            <button class="btn btn-default" [class.btn-success]="isCopied2" type="button" ngxClipboard
+                    [cbContent]=[roundedRectangleButton] (cbOnSuccess)="isCopied2 = true">copy</button>
+          </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="button_container">
+        <h5>Tab Button</h5>
+        <div class="crestron_button_container">
+          <btn name="buttonTab"
+               label="Button"
+               customClass="common_btn_style"
+               shape="tab">
+          </btn>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="input-group">
+            <pre>
+              <span>{{tabButton}}</span>
+            </pre>
+        <span class="input-group-btn">
+            <button class="btn btn-default" [class.btn-success]="isCopied3" type="button" ngxClipboard
+                    [cbContent]=[tabButton] (cbOnSuccess)="isCopied3 = true">copy</button>
+          </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="button_container">
+        <h5>Circle Button</h5>
+        <div class="crestron_button_container">
+          <btn name="buttonCircle"
+               label="Button"
+               customClass="common_btn_style"
+               shape="circle">
+          </btn>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="input-group">
+            <pre>
+              <span>{{circleButton}}</span>
+            </pre>
+        <span class="input-group-btn">
+            <button class="btn btn-default" [class.btn-success]="isCopied4" type="button" ngxClipboard
+                    [cbContent]=[circleButton] (cbOnSuccess)="isCopied4 = true">copy</button>
+          </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="button_container">
+        <h5>Oval Button</h5>
+        <div class="crestron_button_container">
+          <btn name="buttonOval"
+               label="Button"
+               customClass="common_btn_style"
+               shape="oval">
+          </btn>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="input-group">
+            <pre>
+              <span>{{ovalButton}}</span>
+            </pre>
+        <span class="input-group-btn">
+            <button class="btn btn-default" [class.btn-success]="isCopied5" type="button" ngxClipboard
+                    [cbContent]=[ovalButton] (cbOnSuccess)="isCopied5 = true">copy</button>
+          </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="button_container">
+        <h5>Button with Icon</h5>
+        <div class="crestron_button_container">
+          <btn name="buttonIconRight"
+               label="Button"
+               customClass="common_btn_style"
+               icon="fa fa-plus"
+               icon_align="right">
+          </btn>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="input-group">
+            <pre>
+              <span>{{iconRightButton}}</span>
+            </pre>
+        <span class="input-group-btn">
+            <button class="btn btn-default" [class.btn-success]="isCopied6" type="button" ngxClipboard
+                    [cbContent]=[iconRightButton] (cbOnSuccess)="isCopied6 = true">copy</button>
+          </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="button_container">
+        <h5>Button with Icon</h5>
+        <div class="crestron_button_container">
+          <btn name="buttonIconLeft"
+               label="Button"
+               customClass="common_btn_style"
+               icon="fa fa-plus"
+               icon_align="left">
+          </btn>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="input-group">
+            <pre>
+              <span>{{iconLeftButton}}</span>
+            </pre>
+        <span class="input-group-btn">
+            <button class="btn btn-default" [class.btn-success]="isCopied7" type="button" ngxClipboard
+                    [cbContent]=[iconLeftButton] (cbOnSuccess)="isCopied7 = true">copy</button>
+          </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="button_container">
+        <h5>Primary Button Type</h5>
+        <div class="crestron_button_container">
+          <btn name="buttonPrimary"
+               label="Button"
+               customClass="common_btn_style"
+               shape="rounded-rectangle"
+               type="primary">
+          </btn>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="input-group">
+            <pre>
+              <span>{{primaryButton}}</span>
+            </pre>
+        <span class="input-group-btn">
+            <button class="btn btn-default" [class.btn-success]="isCopied8" type="button" ngxClipboard
+                    [cbContent]=[primaryButton] (cbOnSuccess)="isCopied8 = true">copy</button>
+          </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="button_container">
+        <h5>Secondary Button Type</h5>
+        <div class="crestron_button_container">
+          <btn name="buttonSecondary"
+               label="Button"
+               customClass="common_btn_style"
+               shape="rounded-rectangle"
+               type="secondary">
+          </btn>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="input-group">
+            <pre>
+              <span>{{secondaryButton}}</span>
+            </pre>
+        <span class="input-group-btn">
+            <button class="btn btn-default" [class.btn-success]="isCopied9" type="button" ngxClipboard
+                    [cbContent]=[secondaryButton] (cbOnSuccess)="isCopied9 = true">copy</button>
+          </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="button_container">
+        <h5>Info Button Type</h5>
+        <div class="crestron_button_container">
+          <btn name="buttonInfo"
+               label="Button"
+               customClass="common_btn_style"
+               shape="rounded-rectangle"
+               type="info">
+          </btn>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="input-group">
+            <pre>
+              <span>{{infoButton}}</span>
+            </pre>
+        <span class="input-group-btn">
+            <button class="btn btn-default" [class.btn-success]="isCopied10" type="button" ngxClipboard
+                    [cbContent]=[infoButton] (cbOnSuccess)="isCopied10 = true">copy</button>
+          </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="button_container">
+        <h5>Warning Button Type</h5>
+        <div class="crestron_button_container">
+          <btn name="buttonWarning"
+               label="Button"
+               customClass="common_btn_style"
+               shape="rounded-rectangle"
+               type="warning">
+          </btn>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="input-group">
+            <pre>
+              <span>{{warningButton}}</span>
+            </pre>
+        <span class="input-group-btn">
+            <button class="btn btn-default" [class.btn-success]="isCopied11" type="button" ngxClipboard
+                    [cbContent]=[warningButton] (cbOnSuccess)="isCopied11 = true">copy</button>
+          </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="button_container">
+        <h5>Danger Button Type</h5>
+        <div class="crestron_button_container">
+          <btn name="buttonDanger"
+               label="Button"
+               customClass="common_btn_style"
+               shape="rounded-rectangle"
+               type="danger">
+          </btn>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="input-group">
+            <pre>
+              <span>{{dangerButton}}</span>
+            </pre>
+        <span class="input-group-btn">
+            <button class="btn btn-default" [class.btn-success]="isCopied12" type="button" ngxClipboard
+                    [cbContent]=[dangerButton] (cbOnSuccess)="isCopied12 = true">copy</button>
+          </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="button_container">
+        <h5>Success Button Type</h5>
+        <div class="crestron_button_container">
+          <btn name="buttonSuccess"
+               label="Button"
+               customClass="common_btn_style"
+               shape="rounded-rectangle"
+               type="success">
+          </btn>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="input-group">
+            <pre>
+              <span>{{successButton}}</span>
+            </pre>
+        <span class="input-group-btn">
+            <button class="btn btn-default" [class.btn-success]="isCopied13" type="button" ngxClipboard
+                    [cbContent]=[successButton] (cbOnSuccess)="isCopied13 = true">copy</button>
+          </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="button_container">
+        <h5>Text Button Type</h5>
+        <div class="crestron_button_container">
+          <btn name="buttonText"
+               label="Button"
+               customClass="common_btn_style"
+               shape="rounded-rectangle"
+               type="text">
+          </btn>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="input-group">
+            <pre>
+              <span>{{textButton}}</span>
+            </pre>
+        <span class="input-group-btn">
+            <button class="btn btn-default" [class.btn-success]="isCopied14" type="button" ngxClipboard
+                    [cbContent]=[textButton] (cbOnSuccess)="isCopied14 = true">copy</button>
+          </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="button_container">
+        <h5>Vertical Button</h5>
+        <div class="crestron_button_container">
+          <btn name="buttonVertical"
+               label="Button"
+               customClass="common_btn_style"
+               icon="fa fa-minus"
+               orientation="vertical">
+          </btn>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="input-group">
+            <pre>
+              <span>{{verticalButton}}</span>
+            </pre>
+        <span class="input-group-btn">
+            <button class="btn btn-default" [class.btn-success]="isCopied15" type="button" ngxClipboard
+                    [cbContent]=[verticalButton] (cbOnSuccess)="isCopied15 = true">copy</button>
+          </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="button_container">
+        <h5>X-Small Button</h5>
+        <div class="crestron_button_container">
+          <btn name="buttonXSmall"
+               label="Button"
+               customClass="common_btn_style"
+               icon="fa fa-plus"
+               size="x-small">
+          </btn>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="input-group">
+            <pre>
+              <span>{{xSmallButton}}</span>
+            </pre>
+        <span class="input-group-btn">
+            <button class="btn btn-default" [class.btn-success]="isCopied16" type="button" ngxClipboard
+                    [cbContent]=[xSmallButton] (cbOnSuccess)="isCopied16 = true">copy</button>
+          </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="button_container">
+        <h5>Small Button</h5>
+        <div class="crestron_button_container">
+          <btn name="buttonSmall"
+               label="Button"
+               customClass="common_btn_style"
+               icon="fa fa-plus"
+               size="small">
+          </btn>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="input-group">
+            <pre>
+              <span>{{smallButton}}</span>
+            </pre>
+        <span class="input-group-btn">
+            <button class="btn btn-default" [class.btn-success]="isCopied17" type="button" ngxClipboard
+                    [cbContent]=[smallButton] (cbOnSuccess)="isCopied17 = true">copy</button>
+          </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="button_container">
+        <h5>Large Button</h5>
+        <div class="crestron_button_container">
+          <btn name="buttonLarge"
+               label="Button"
+               customClass="common_btn_style"
+               icon="fa fa-plus"
+               size="large">
+          </btn>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="input-group">
+            <pre>
+              <span>{{largeButton}}</span>
+            </pre>
+        <span class="input-group-btn">
+            <button class="btn btn-default" [class.btn-success]="isCopied18" type="button" ngxClipboard
+                    [cbContent]=[largeButton] (cbOnSuccess)="isCopied18 = true">copy</button>
+          </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="button_container">
+        <h5>Stretch Button Width</h5>
+        <div class="crestron_button_container">
+          <btn name="buttonStretchWidth"
+               label="Button"
+               customClass="common_btn_style"
+               icon="fa fa-plus"
+               stretch="width">
+          </btn>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="input-group">
+            <pre>
+              <span>{{stretchWidthButton}}</span>
+            </pre>
+        <span class="input-group-btn">
+            <button class="btn btn-default" [class.btn-success]="isCopied19" type="button" ngxClipboard
+                    [cbContent]=[stretchWidthButton] (cbOnSuccess)="isCopied19 = true">copy</button>
+          </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="button_container">
+        <h5>Stretch Button Height</h5>
+        <div class="crestron_button_container">
+          <btn name="buttonStretchHeight"
+               label="Button"
+               customClass="common_btn_style"
+               icon="fa fa-plus"
+               stretch="height">
+          </btn>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="input-group">
+            <pre>
+              <span>{{stretchHeightButton}}</span>
+            </pre>
+        <span class="input-group-btn">
+            <button class="btn btn-default" [class.btn-success]="isCopied20" type="button" ngxClipboard
+                    [cbContent]=[stretchHeightButton] (cbOnSuccess)="isCopied20 = true">copy</button>
+          </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="button_container">
+        <h5>Stretch Button Width and Height</h5>
+        <div class="crestron_button_container">
+          <btn name="buttonStretchBoth"
+               label="Button"
+               customClass="common_btn_style"
+               icon="fa fa-plus"
+               stretch="both">
+          </btn>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="input-group">
+            <pre>
+              <span>{{stretchWidthHeightButton}}</span>
+            </pre>
+        <span class="input-group-btn">
+            <button class="btn btn-default" [class.btn-success]="isCopied21" type="button" ngxClipboard
+                    [cbContent]=[stretchWidthHeightButton] (cbOnSuccess)="isCopied21 = true">copy</button>
+          </span>
+      </div>
+    </div>
+  </div>
+
+</div>
