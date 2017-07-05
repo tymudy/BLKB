@@ -223,23 +223,20 @@
  .focus label {
     color: green;
  }
- 
- .blur label {
-     color: red;
- }
 
  .release label {
     color: yellow;
  }
 
- .show {
+ .showButton {
     display: block;
  }
 
- .hide {
+.hideButton {
     display: none;
  }
 
- .none label {
-     color: #f0fff0;
- }
+.disabled div {
+  pointer-events: none;
+  opacity: 0.4;
+}

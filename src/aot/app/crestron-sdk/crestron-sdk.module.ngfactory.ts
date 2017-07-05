@@ -10,27 +10,34 @@ import * as i0 from '@angular/core';
 import * as i1 from '../../../app/crestron-sdk/crestron-sdk.module';
 import * as i2 from './components/button/button.component.ngfactory';
 import * as i3 from './components/slider/slider.component.ngfactory';
-import * as i4 from './controllers/list-controller.ngfactory';
-import * as i5 from '@angular/common';
-import * as i6 from '../../../app/crestron-sdk/components/video/WindowRefService';
-import * as i7 from '../../../app/crestron-sdk/services/share/shareService';
-import * as i8 from '@angular/http';
-import * as i9 from '../../../app/crestron-sdk/services/log.service';
-import * as i10 from '../../../app/crestron-sdk/services/communication.service';
-import * as i11 from '../../../app/crestron-sdk/services/joins.service';
-import * as i12 from '../../../app/crestron-sdk/components/virtual-scroll';
+import * as i4 from '@angular/common';
+import * as i5 from 'ngx-window-token/src/index';
+import * as i6 from 'ngx-clipboard/src/clipboard.service';
+import * as i7 from '@angular/platform-browser';
+import * as i8 from '../../../app/crestron-sdk/components/video/WindowRefService';
+import * as i9 from '../../../app/crestron-sdk/services/share/shareService';
+import * as i10 from '@angular/http';
+import * as i11 from '../../../app/crestron-sdk/services/log.service';
+import * as i12 from '../../../app/crestron-sdk/services/communication.service';
+import * as i13 from '../../../app/crestron-sdk/services/joins.service';
+import * as i14 from '../../../app/crestron-sdk/components/virtual-scroll';
+import * as i15 from 'ngx-clipboard/src/index';
 export const CrestronSdkModuleNgFactory:i0.NgModuleFactory<i1.CrestronSdkModule> = i0.ɵcmf(i1.CrestronSdkModule,
     ([] as any[]),(_l:any) => {
       return i0.ɵmod([i0.ɵmpd(512,i0.ComponentFactoryResolver,i0.ɵCodegenComponentFactoryResolver,
-          [[8,[i2.ButtonComponentNgFactory,i3.SliderComponentNgFactory,i4.ListControllerNgFactory]],
-              [3,i0.ComponentFactoryResolver],i0.NgModuleRef]),i0.ɵmpd(4608,i5.NgLocalization,
-          i5.NgLocaleLocalization,[i0.LOCALE_ID]),i0.ɵmpd(4608,i6.WindowRefService,
-          i6.WindowRefService,([] as any[])),i0.ɵmpd(4608,i7.ShareService,i7.ShareService,
-          [i8.Http]),i0.ɵmpd(4608,i9.LoggerService,i9.LoggerService,([] as any[])),
-          i0.ɵmpd(4608,i10.CommunicationService,i10.CommunicationService,[i9.LoggerService]),
-          i0.ɵmpd(4608,i11.JoinsService,i11.JoinsService,[i10.CommunicationService,
-              i9.LoggerService]),i0.ɵmpd(512,i5.CommonModule,i5.CommonModule,([] as any[])),
-          i0.ɵmpd(512,i12.VirtualScrollModule,i12.VirtualScrollModule,([] as any[])),
-          i0.ɵmpd(512,i1.CrestronSdkModule,i1.CrestronSdkModule,([] as any[]))]);
+          [[8,[i2.ButtonComponentNgFactory,i3.SliderComponentNgFactory]],[3,i0.ComponentFactoryResolver],
+              i0.NgModuleRef]),i0.ɵmpd(4608,i4.NgLocalization,i4.NgLocaleLocalization,
+          [i0.LOCALE_ID]),i0.ɵmpd(5120,i5.WINDOW,i5._window,([] as any[])),i0.ɵmpd(5120,
+          i6.ClipboardService,i6.CLIPBOARD_SERVICE_PROVIDER_FACTORY,[i7.DOCUMENT,i5.WINDOW,
+              [3,i6.ClipboardService]]),i0.ɵmpd(4608,i8.WindowRefService,i8.WindowRefService,
+          ([] as any[])),i0.ɵmpd(4608,i9.ShareService,i9.ShareService,[i10.Http]),
+          i0.ɵmpd(4608,i11.LoggerService,i11.LoggerService,([] as any[])),i0.ɵmpd(4608,
+              i12.CommunicationService,i12.CommunicationService,[i11.LoggerService]),
+          i0.ɵmpd(4608,i13.JoinsService,i13.JoinsService,[i12.CommunicationService,
+              i11.LoggerService]),i0.ɵmpd(512,i4.CommonModule,i4.CommonModule,([] as any[])),
+          i0.ɵmpd(512,i14.VirtualScrollModule,i14.VirtualScrollModule,([] as any[])),
+          i0.ɵmpd(512,i5.WindowTokenModule,i5.WindowTokenModule,([] as any[])),i0.ɵmpd(512,
+              i15.ClipboardModule,i15.ClipboardModule,([] as any[])),i0.ɵmpd(512,i1.CrestronSdkModule,
+              i1.CrestronSdkModule,([] as any[]))]);
     });
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiRDovQmxhY2tiaXJkQ2xvbmUvQmxhY2tiaXJkUHJvamVjdFVJL3NyYy9hcHAvY3Jlc3Ryb24tc2RrL2NyZXN0cm9uLXNkay5tb2R1bGUubmdmYWN0b3J5LnRzIiwidmVyc2lvbiI6Mywic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibmc6Ly8vRDovQmxhY2tiaXJkQ2xvbmUvQmxhY2tiaXJkUHJvamVjdFVJL3NyYy9hcHAvY3Jlc3Ryb24tc2RrL2NyZXN0cm9uLXNkay5tb2R1bGUudHMiXSwic291cmNlc0NvbnRlbnQiOlsiICJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7In0=
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiQzovVXNlcnMvdHltdWQvQmxhY2tiaXJkL0JsYWNrYmlyZFByb2plY3RVSS1tYXN0ZXIvQmxhY2tiaXJkUHJvamVjdFVJLW1hc3Rlci9zcmMvYXBwL2NyZXN0cm9uLXNkay9jcmVzdHJvbi1zZGsubW9kdWxlLm5nZmFjdG9yeS50cyIsInZlcnNpb24iOjMsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIm5nOi8vL0M6L1VzZXJzL3R5bXVkL0JsYWNrYmlyZC9CbGFja2JpcmRQcm9qZWN0VUktbWFzdGVyL0JsYWNrYmlyZFByb2plY3RVSS1tYXN0ZXIvc3JjL2FwcC9jcmVzdHJvbi1zZGsvY3Jlc3Ryb24tc2RrLm1vZHVsZS50cyJdLCJzb3VyY2VzQ29udGVudCI6WyIgIl0sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7In0=

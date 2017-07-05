@@ -8,14 +8,14 @@ import { Component } from '@angular/core';
 var GallerySpecComponent = (function () {
     function GallerySpecComponent() {
     }
+    GallerySpecComponent = __decorate([
+        Component({
+            selector: 'gallery-spec',
+            templateUrl: './spec-list.component.html',
+            styleUrls: ['./spec-list.component.css']
+        })
+    ], GallerySpecComponent);
     return GallerySpecComponent;
 }());
-GallerySpecComponent = __decorate([
-    Component({
-        selector: 'gallery-spec',
-        templateUrl: './spec-list.component.html',
-        styleUrls: ['./spec-list.component.css']
-    })
-], GallerySpecComponent);
 export { GallerySpecComponent };
 //# sourceMappingURL=spec-list.component.js.map

@@ -8,17 +8,17 @@ import * as i0 from '@angular/core';
 import * as i1 from '../../../../app/crestron-sdk/controllers/list-controller';
 import * as i2 from '../../../../app/crestron-sdk/services/joins.service';
 import * as i3 from '../../../../app/crestron-sdk/services/communication.service';
+import * as i4 from '../../../../app/crestron-sdk/services/components.communication.service';
 var styles_ListController = [];
 export var RenderType_ListController = i0.ɵcrt({ encapsulation: 2,
     styles: styles_ListController, data: {} });
 export function View_ListController_0(_l) {
-    return i0.ɵvid(0, [(_l()(), i0.ɵeld(0, null, null, 1, 'span', [], null, null, null, null, null)), (_l()(),
-            i0.ɵted(null, ['list']))], null, null);
+    return i0.ɵvid(0, [], null, null);
 }
 export function View_ListController_Host_0(_l) {
-    return i0.ɵvid(0, [(_l()(), i0.ɵeld(0, null, null, 1, 'list-controller-component', [], null, null, null, View_ListController_0, RenderType_ListController)), i0.ɵdid(245760, null, 0, i1.ListController, [i2.JoinsService, i3.CommunicationService], null, null)], function (_ck, _v) {
+    return i0.ɵvid(0, [(_l()(), i0.ɵeld(0, null, null, 1, 'list-controller-component', [], null, null, null, View_ListController_0, RenderType_ListController)), i0.ɵdid(245760, null, 0, i1.ListController, [i2.JoinsService, i3.CommunicationService, i4.ComponentsCommunicationService], null, null)], function (_ck, _v) {
         _ck(_v, 1, 0);
     }, null);
 }
-export var ListControllerNgFactory = i0.ɵccf('list-controller-component', i1.ListController, View_ListController_Host_0, {}, {}, []);
+export var ListControllerNgFactory = i0.ɵccf('list-controller-component', i1.ListController, View_ListController_Host_0, { name: 'name', onLoad: 'onLoad', onLazyload: 'onLazyload' }, {}, []);
 //# sourceMappingURL=list-controller.ngfactory.js.map

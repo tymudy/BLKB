@@ -366,8 +366,22 @@ window.webkit = window.webkit || (function() {
             handleSerialJoinChanged(170, "press");
             handleSerialJoinChanged(181, "tap");
             handleSerialJoinChanged(183, "focus");
-            handleSerialJoinChanged(0, "hide");
-            handleSerialJoinChanged(1, "show");
+            handleSerialJoinChanged(0, "hideButton");
+            handleSerialJoinChanged(1, "showButton");
+            handleSerialJoinChanged(4, "hideSlider");
+            handleSerialJoinChanged(5, "showSlider");
+          },
+          //enabled and disabled
+          80002: function ( ) {
+            handleSerialJoinChanged(3, true); // disable
+            handleSerialJoinChanged(2, false); // enable
+          },
+          //slider handle on slide custom classes
+          90000: function ( ) {
+            handleSerialJoinChanged(180, "onslideend");
+          },
+          90001: function ( ) {
+            handleSerialJoinChanged(180, "onslide");
           }
         },
         analog: {},
@@ -393,7 +407,6 @@ window.webkit = window.webkit || (function() {
     var counter = 0;
 
     function loadChunk( json, page_size ) {
-      console.log('myJson', json, counter);
       json.attributes = json.attributes.slice(counter, counter + page_size);
       counter += page_size;
       return json;

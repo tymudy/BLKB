@@ -15,11 +15,11 @@ var WindowRefService = (function () {
         enumerable: true,
         configurable: true
     });
+    WindowRefService = __decorate([
+        Injectable()
+    ], WindowRefService);
     return WindowRefService;
 }());
-WindowRefService = __decorate([
-    Injectable()
-], WindowRefService);
 export { WindowRefService };
 function getWindow() {
     return window;

@@ -14,6 +14,7 @@ import * as i6 from '@angular/common';
 import * as i7 from '../../../../../app/crestron-sdk/components/list/list.component';
 import * as i8 from '@angular/http';
 import * as i9 from '../../../../../app/crestron-sdk/services/share/shareService';
+import * as i10 from '../../../../../app/crestron-sdk/services/components.communication.service';
 var styles_ListComponent = [i0.styles];
 export var RenderType_ListComponent = i1.ɵcrt({ encapsulation: 0,
     styles: styles_ListComponent, data: {} });
@@ -24,12 +25,12 @@ function View_ListComponent_2(_l) {
         i1.ɵdid(114688, null, 0, i3.ListItemComponent, [i1.ComponentFactoryResolver], { item: [0, 'item'], type: [1, 'type'] }, null), (_l()(), i1.ɵted(null, ['\n      ']))], function (_ck, _v) {
         var _co = _v.component;
         var currVal_0 = _v.context.$implicit;
-        var currVal_1 = _co.firstListType;
+        var currVal_1 = _co.listType;
         _ck(_v, 3, 0, currVal_0, currVal_1);
     }, null);
 }
 function View_ListComponent_1(_l) {
-    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 5, 'virtual-scroll', [['id', 'slider_list']], null, [[null, 'end'], [null, 'update'],
+    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 5, 'virtual-scroll', [], null, [[null, 'end'], [null, 'update'],
             [null, 'scroll']], function (_v, en, $event) {
             var ad = true;
             var _co = _v.component;
@@ -52,7 +53,7 @@ function View_ListComponent_1(_l) {
         i1.ɵdid(802816, null, 0, i6.NgForOf, [i1.ViewContainerRef, i1.TemplateRef,
             i1.IterableDiffers], { ngForOf: [0, 'ngForOf'] }, null), (_l()(), i1.ɵted(0, ['\n    ']))], function (_ck, _v) {
         var _co = _v.component;
-        var currVal_0 = _co.firstListAttributes;
+        var currVal_0 = _co.listAttributes;
         _ck(_v, 1, 0, currVal_0);
         var currVal_1 = _co.scrollItems;
         _ck(_v, 4, 0, currVal_1);
@@ -93,7 +94,7 @@ function View_ListComponent_3(_l) {
                 'items'] }, { update: 'update' }), (_l()(), i1.ɵted(0, ['\n      '])), (_l()(), i1.ɵand(16777216, null, 0, 1, null, View_ListComponent_4)), i1.ɵdid(802816, null, 0, i6.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0,
                 'ngForOf'] }, null), (_l()(), i1.ɵted(0, ['\n    ']))], function (_ck, _v) {
         var _co = _v.component;
-        var currVal_0 = _co.secondListAttributes;
+        var currVal_0 = _co.listAttributes;
         _ck(_v, 1, 0, currVal_0);
         var currVal_1 = _co.scrollItems;
         _ck(_v, 4, 0, currVal_1);
@@ -106,7 +107,7 @@ export function View_ListComponent_0(_l) {
         (_l()(), i1.ɵted(null, ['', ''])), (_l()(), i1.ɵted(null, ['\n\n  '])),
         (_l()(), i1.ɵeld(0, null, null, 7, 'div', [['class', 'list-content']], null, null, null, null, null)),
         (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_ListComponent_1)), i1.ɵdid(16384, null, 0, i6.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, 'ngIf'] }, null),
-        (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_ListComponent_3)), i1.ɵdid(16384, null, 0, i6.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, 'ngIf'] }, null),
+        (_l()(), i1.ɵted(null, ['\n   '])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_ListComponent_3)), i1.ɵdid(16384, null, 0, i6.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, 'ngIf'] }, null),
         (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵted(null, ['\n\n  '])),
         (_l()(), i1.ɵeld(0, null, null, 1, 'span', [['id', 'list-footer']], null, null, null, null, null)),
         (_l()(), i1.ɵted(null, ['', ''])), (_l()(), i1.ɵted(null, ['\n\n'])),
@@ -114,7 +115,7 @@ export function View_ListComponent_0(_l) {
         var _co = _v.component;
         var currVal_3 = (_co.load_type === 'scroll');
         _ck(_v, 8, 0, currVal_3);
-        var currVal_4 = (_co.load_type === 'pagination');
+        var currVal_4 = (_co.load_type === 'none');
         _ck(_v, 11, 0, currVal_4);
     }, function (_ck, _v) {
         var _co = _v.component;
@@ -128,8 +129,8 @@ export function View_ListComponent_0(_l) {
     });
 }
 export function View_ListComponent_Host_0(_l) {
-    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 1, 'list-component', [], null, null, null, View_ListComponent_0, RenderType_ListComponent)), i1.ɵdid(638976, null, 0, i7.ListComponent, [i8.Http,
-            i9.ShareService], null, null)], function (_ck, _v) {
+    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 1, 'list-component', [], null, null, null, View_ListComponent_0, RenderType_ListComponent)), i1.ɵdid(770048, null, 0, i7.ListComponent, [i8.Http,
+            i9.ShareService, i10.ComponentsCommunicationService], null, null)], function (_ck, _v) {
         _ck(_v, 1, 0);
     }, null);
 }

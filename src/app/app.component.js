@@ -8,13 +8,13 @@ import { Component } from '@angular/core';
 var AppComponent = (function () {
     function AppComponent() {
     }
+    AppComponent = __decorate([
+        Component({
+            selector: 'app-root',
+            templateUrl: './app.component.html'
+        })
+    ], AppComponent);
     return AppComponent;
 }());
-AppComponent = __decorate([
-    Component({
-        selector: 'app-root',
-        templateUrl: './app.component.html'
-    })
-], AppComponent);
 export { AppComponent };
 //# sourceMappingURL=app.component.js.map

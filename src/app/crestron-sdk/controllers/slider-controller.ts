@@ -30,6 +30,7 @@ export class SliderController implements OnInit, OnDestroy {
     private subscription: Subscription = new Subscription();
 
     private  lastRunClass: string = '';
+    private  lastClass: string = '';
 
     constructor(private joinsService: JoinsService, private communicationService: CommunicationService ){ 
     }
@@ -56,19 +57,25 @@ export class SliderController implements OnInit, OnDestroy {
       if (this.runClass){
         this.subscription = this.joinsService.getSerialSubscribe(this.runClass, false).subscribe(this.onReceived.bind(this)); 
       }
+
       if (this.runEnabled){
-        this.subscription = this.joinsService.getSerialSubscribe(3, false).subscribe(this.onEnabled.bind(this));
-      }else{
-        this.subscription = this.joinsService.getSerialSubscribe(2, false).subscribe(this.onEnabled.bind(this));
+        if (this.runEnabled == "true"){
+            this.subscription = this.joinsService.getSerialSubscribe(3, false).subscribe(this.onReceiveEnableDisable.bind(this));
+        }else{
+            this.subscription = this.joinsService.getSerialSubscribe(2, true).subscribe(this.onReceiveEnableDisable.bind(this));
+        }
       }
-      if (this.runShow){
-        this.subscription = this.joinsService.getSerialSubscribe(1, false).subscribe(this.onReceived.bind(this));
+
+      if (this.runShow == "true"){
+        this.subscription = this.joinsService.getSerialSubscribe(5, false).subscribe(this.onReceiveHide.bind(this));
       }else{
-        this.subscription = this.joinsService.getSerialSubscribe(0, false).subscribe(this.onReceived.bind(this));
+        this.subscription = this.joinsService.getSerialSubscribe(4, true).subscribe(this.onReceiveHide.bind(this));
       }
+
       if (this.runValue){
         this.subscription = this.joinsService.getSerialSubscribe(this.runValue, false).subscribe(this.onReceived.bind(this))
       }
+      
       if (this.runValuePair){
         this.subscription = this.joinsService.getSerialSubscribe(this.runValuePair, false).subscribe(this.onReceived.bind(this))
       }
@@ -83,13 +90,23 @@ export class SliderController implements OnInit, OnDestroy {
        this.lastRunClass = data.value;
     };
 
-    onEnabled(data:any): void {
-      if(this.lastRunClass){
-        this.el.classList.remove(this.lastRunClass);
+    onReceiveHide(data: any){
+      if(this.lastClass){
+        this.el.parentElement.parentElement.parentElement.classList.remove(this.lastRunClass);
       }
-       this.el.classList.add(data.value);
-       this.lastRunClass = data.value;
-    };
+       this.el.parentElement.parentElement.parentElement.classList.add(data.value);
+       this.lastClass = data.value;
+    }
+
+    onReceiveEnableDisable(data:any): void {
+       console.log("data", data);
+      if(data.value){
+        this.el.classList.remove("disabled");
+      }else{
+        this.el.classList.add("disabled");
+      }   
+    }
+
 
     sendOnSlide(): void {
         console.log('onSlide');

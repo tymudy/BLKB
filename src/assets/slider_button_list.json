@@ -1,5 +1,5 @@
 {
-    "items":[
+    "attributes":[
       [
         {
             "type": "button",
@@ -13,7 +13,7 @@
                     "value": "x-small"
                 },
                 {
-                    "key": "class",
+                    "key": "customClass",
                     "value": "common_btn_style"
                 },
                 {
@@ -38,6 +38,10 @@
                     "value": "30"
                 },
                 {
+                    "key":"customClass",
+                    "value": "common_slider_style"
+                },
+                {
                     "key": "isRange",
                     "value": "false"
                 },
@@ -59,7 +63,7 @@
                     "value": "x-small"
                 },
                 {
-                    "key": "class",
+                    "key": "customClass",
                     "value": "common_btn_style"
                 },
                 {
@@ -82,7 +86,7 @@
                     "value": "x-small"
                 },
                 {
-                    "key": "class",
+                    "key": "customClass",
                     "value": "common_btn_style"
                 },
                 {
@@ -111,6 +115,10 @@
                     "value": "false"
                 },
                 {
+                    "key":"customClass",
+                    "value": "common_slider_style"
+                },
+                {
                     "key": "size",
                     "value": "size-x-small"
                 }
@@ -128,7 +136,7 @@
                     "value": "x-small"
                 },
                 {
-                    "key": "class",
+                    "key": "customClass",
                     "value": "common_btn_style"
                 },
                 {
@@ -151,7 +159,7 @@
                     "value": "x-small"
                 },
                 {
-                    "key": "class",
+                    "key": "customClass",
                     "value": "common_btn_style"
                 },
                 {
@@ -180,6 +188,10 @@
                     "value": "false"
                 },
                 {
+                    "key":"customClass",
+                    "value": "common_slider_style"
+                },
+                {
                     "key": "size",
                     "value": "size-x-small"
                 }
@@ -197,7 +209,7 @@
                     "value": "x-small"
                 },
                 {
-                    "key": "class",
+                    "key": "customClass",
                     "value": "common_btn_style"
                 },
                 {

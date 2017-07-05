@@ -8,67 +8,85 @@
 
 import * as i0 from './gallery-list.component.css.shim.ngstyle';
 import * as i1 from '@angular/core';
-import * as i2 from '../../crestron-sdk/components/list/list.component.ngfactory';
-import * as i3 from '../../../../app/crestron-sdk/components/list/list.component';
-import * as i4 from '@angular/http';
-import * as i5 from '../../../../app/crestron-sdk/services/share/shareService';
-import * as i6 from '../../../../app/gallery/gallery-list/gallery-list.component';
+import * as i2 from '../../crestron-sdk/controllers/list-controller.ngfactory';
+import * as i3 from '../../../../app/crestron-sdk/controllers/list-controller';
+import * as i4 from '../../../../app/crestron-sdk/services/joins.service';
+import * as i5 from '../../../../app/crestron-sdk/services/communication.service';
+import * as i6 from '../../../../app/crestron-sdk/services/components.communication.service';
+import * as i7 from '../../crestron-sdk/components/list/list.component.ngfactory';
+import * as i8 from '../../../../app/crestron-sdk/components/list/list.component';
+import * as i9 from '@angular/http';
+import * as i10 from '../../../../app/crestron-sdk/services/share/shareService';
+import * as i11 from '../../../../app/gallery/gallery-list/gallery-list.component';
 const styles_GalleryListComponent:any[] = [i0.styles];
 export const RenderType_GalleryListComponent:i1.RendererType2 = i1.ɵcrt({encapsulation:0,
     styles:styles_GalleryListComponent,data:{}});
 export function View_GalleryListComponent_0(_l:any):i1.ɵViewDefinition {
-  return i1.ɵvid(0,[(_l()(),i1.ɵeld(0,(null as any),(null as any),2,'list-component',
-      [['header','Slider List'],['load_type','scroll'],['loading_indicator','true'],
-          ['max_height','1000'],['max_width','400'],['min_height','800'],['min_width',
-              '300'],['name','myList'],['page_size','30']],(null as any),(null as any),
-      (null as any),i2.View_ListComponent_0,i2.RenderType_ListComponent)),i1.ɵdid(638976,
-      (null as any),0,i3.ListComponent,[i4.Http,i5.ShareService],{name:[0,'name'],
-          load_type:[1,'load_type'],page_size:[2,'page_size'],loading_indicator:[3,
-              'loading_indicator'],min_width:[4,'min_width'],min_height:[5,'min_height'],
+  return i1.ɵvid(0,[(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'list-controller-component',
+      [['name','lazyLoadList'],['onLazyload','104']],(null as any),(null as any),(null as any),
+      i2.View_ListController_0,i2.RenderType_ListController)),i1.ɵdid(245760,(null as any),
+      0,i3.ListController,[i4.JoinsService,i5.CommunicationService,i6.ComponentsCommunicationService],
+      {name:[0,'name'],onLazyload:[1,'onLazyload']},(null as any)),(_l()(),i1.ɵted((null as any),
+      ['\n'])),(_l()(),i1.ɵeld(0,(null as any),(null as any),2,'list-component',[['header',
+      'Slider List'],['load_type','scroll'],['loading_indicator','true'],['max_height',
+      '1000'],['max_width','400'],['min_height','800'],['min_width','300'],['name',
+      'lazyLoadList'],['page_size','30']],(null as any),(null as any),(null as any),
+      i7.View_ListComponent_0,i7.RenderType_ListComponent)),i1.ɵdid(770048,(null as any),
+      0,i8.ListComponent,[i9.Http,i10.ShareService,i6.ComponentsCommunicationService],
+      {name:[0,'name'],load_type:[1,'load_type'],page_size:[2,'page_size'],loading_indicator:[3,
+          'loading_indicator'],min_width:[4,'min_width'],min_height:[5,'min_height'],
           max_height:[6,'max_height'],max_width:[7,'max_width'],header:[8,'header']},
       (null as any)),(_l()(),i1.ɵted((null as any),['\n'])),(_l()(),i1.ɵted((null as any),
+      ['\n'])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'list-controller-component',
+      [['name','loadList'],['onLoad','101']],(null as any),(null as any),(null as any),
+      i2.View_ListController_0,i2.RenderType_ListController)),i1.ɵdid(245760,(null as any),
+      0,i3.ListController,[i4.JoinsService,i5.CommunicationService,i6.ComponentsCommunicationService],
+      {name:[0,'name'],onLoad:[1,'onLoad']},(null as any)),(_l()(),i1.ɵted((null as any),
       ['\n'])),(_l()(),i1.ɵeld(0,(null as any),(null as any),2,'list-component',[['header',
-      'Mixed List'],['load_type','pagination'],['loading_indicator','true'],['max_height',
-      '1000'],['max_width','400'],['min_height','800'],['min_width','300'],['name',
-      'myList2'],['page_size','30']],(null as any),(null as any),(null as any),i2.View_ListComponent_0,
-      i2.RenderType_ListComponent)),i1.ɵdid(638976,(null as any),0,i3.ListComponent,
-      [i4.Http,i5.ShareService],{name:[0,'name'],load_type:[1,'load_type'],page_size:[2,
-          'page_size'],loading_indicator:[3,'loading_indicator'],min_width:[4,'min_width'],
-          min_height:[5,'min_height'],max_height:[6,'max_height'],max_width:[7,'max_width'],
-          header:[8,'header']},(null as any)),(_l()(),i1.ɵted((null as any),['\n'])),
-      (_l()(),i1.ɵted((null as any),['\n']))],(_ck,_v) => {
-    const currVal_0:any = 'myList';
-    const currVal_1:any = 'scroll';
-    const currVal_2:any = '30';
-    const currVal_3:any = 'true';
-    const currVal_4:any = '300';
-    const currVal_5:any = '800';
-    const currVal_6:any = '1000';
-    const currVal_7:any = '400';
-    const currVal_8:any = 'Slider List';
-    _ck(_v,1,0,currVal_0,currVal_1,currVal_2,currVal_3,currVal_4,currVal_5,currVal_6,
-        currVal_7,currVal_8);
-    const currVal_9:any = 'myList2';
-    const currVal_10:any = 'pagination';
-    const currVal_11:any = '30';
-    const currVal_12:any = 'true';
-    const currVal_13:any = '300';
-    const currVal_14:any = '800';
-    const currVal_15:any = '1000';
-    const currVal_16:any = '400';
-    const currVal_17:any = 'Mixed List';
-    _ck(_v,5,0,currVal_9,currVal_10,currVal_11,currVal_12,currVal_13,currVal_14,currVal_15,
-        currVal_16,currVal_17);
-  },(null as any));
+      'Mixed List'],['loading_indicator','true'],['max_height','1000'],['max_width',
+      '400'],['min_height','800'],['min_width','300'],['name','loadList'],['page_size',
+      '30']],(null as any),(null as any),(null as any),i7.View_ListComponent_0,i7.RenderType_ListComponent)),
+      i1.ɵdid(770048,(null as any),0,i8.ListComponent,[i9.Http,i10.ShareService,i6.ComponentsCommunicationService],
+          {name:[0,'name'],page_size:[1,'page_size'],loading_indicator:[2,'loading_indicator'],
+              min_width:[3,'min_width'],min_height:[4,'min_height'],max_height:[5,
+                  'max_height'],max_width:[6,'max_width'],header:[7,'header']},(null as any)),
+      (_l()(),i1.ɵted((null as any),['\n'])),(_l()(),i1.ɵted((null as any),['\n']))],
+      (_ck,_v) => {
+        const currVal_0:any = 'lazyLoadList';
+        const currVal_1:any = '104';
+        _ck(_v,1,0,currVal_0,currVal_1);
+        const currVal_2:any = 'lazyLoadList';
+        const currVal_3:any = 'scroll';
+        const currVal_4:any = '30';
+        const currVal_5:any = 'true';
+        const currVal_6:any = '300';
+        const currVal_7:any = '800';
+        const currVal_8:any = '1000';
+        const currVal_9:any = '400';
+        const currVal_10:any = 'Slider List';
+        _ck(_v,4,0,currVal_2,currVal_3,currVal_4,currVal_5,currVal_6,currVal_7,currVal_8,
+            currVal_9,currVal_10);
+        const currVal_11:any = 'loadList';
+        const currVal_12:any = '101';
+        _ck(_v,8,0,currVal_11,currVal_12);
+        const currVal_13:any = 'loadList';
+        const currVal_14:any = '30';
+        const currVal_15:any = 'true';
+        const currVal_16:any = '300';
+        const currVal_17:any = '800';
+        const currVal_18:any = '1000';
+        const currVal_19:any = '400';
+        const currVal_20:any = 'Mixed List';
+        _ck(_v,11,0,currVal_13,currVal_14,currVal_15,currVal_16,currVal_17,currVal_18,
+            currVal_19,currVal_20);
+      },(null as any));
 }
 export function View_GalleryListComponent_Host_0(_l:any):i1.ɵViewDefinition {
   return i1.ɵvid(0,[(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'gallery-list',
       ([] as any[]),(null as any),(null as any),(null as any),View_GalleryListComponent_0,
-      RenderType_GalleryListComponent)),i1.ɵdid(114688,(null as any),0,i6.GalleryListComponent,
-      ([] as any[]),(null as any),(null as any))],(_ck,_v) => {
-    _ck(_v,1,0);
-  },(null as any));
+      RenderType_GalleryListComponent)),i1.ɵdid(49152,(null as any),0,i11.GalleryListComponent,
+      ([] as any[]),(null as any),(null as any))],(null as any),(null as any));
 }
-export const GalleryListComponentNgFactory:i1.ComponentFactory<i6.GalleryListComponent> = i1.ɵccf('gallery-list',
-    i6.GalleryListComponent,View_GalleryListComponent_Host_0,{},{},([] as any[]));
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiRDovQmxhY2tiaXJkQ2xvbmUvQmxhY2tiaXJkUHJvamVjdFVJL3NyYy9hcHAvZ2FsbGVyeS9nYWxsZXJ5LWxpc3QvZ2FsbGVyeS1saXN0LmNvbXBvbmVudC5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9EOi9CbGFja2JpcmRDbG9uZS9CbGFja2JpcmRQcm9qZWN0VUkvc3JjL2FwcC9nYWxsZXJ5L2dhbGxlcnktbGlzdC9nYWxsZXJ5LWxpc3QuY29tcG9uZW50LnRzIiwibmc6Ly8vRDovQmxhY2tiaXJkQ2xvbmUvQmxhY2tiaXJkUHJvamVjdFVJL3NyYy9hcHAvZ2FsbGVyeS9nYWxsZXJ5LWxpc3QvZ2FsbGVyeS1saXN0LmNvbXBvbmVudC5odG1sIiwibmc6Ly8vRDovQmxhY2tiaXJkQ2xvbmUvQmxhY2tiaXJkUHJvamVjdFVJL3NyYy9hcHAvZ2FsbGVyeS9nYWxsZXJ5LWxpc3QvZ2FsbGVyeS1saXN0LmNvbXBvbmVudC50cy5HYWxsZXJ5TGlzdENvbXBvbmVudF9Ib3N0Lmh0bWwiXSwic291cmNlc0NvbnRlbnQiOlsiICIsIjxsaXN0LWNvbXBvbmVudCBuYW1lPVwibXlMaXN0XCJcclxuICAgICAgICAgICAgICAgIGxvYWRfdHlwZT1cInNjcm9sbFwiXHJcbiAgICAgICAgICAgICAgICBwYWdlX3NpemU9XCIzMFwiXHJcbiAgICAgICAgICAgICAgICBsb2FkaW5nX2luZGljYXRvcj1cInRydWVcIlxyXG4gICAgICAgICAgICAgICAgaGVhZGVyPVwiU2xpZGVyIExpc3RcIlxyXG4gICAgICAgICAgICAgICAgbWluX3dpZHRoPVwiMzAwXCJcclxuICAgICAgICAgICAgICAgIG1heF93aWR0aD1cIjQwMFwiXHJcbiAgICAgICAgICAgICAgICBtaW5faGVpZ2h0PVwiODAwXCJcclxuICAgICAgICAgICAgICAgIG1heF9oZWlnaHQ9XCIxMDAwXCI+XHJcbjwvbGlzdC1jb21wb25lbnQ+XHJcbjxsaXN0LWNvbXBvbmVudCBuYW1lPVwibXlMaXN0MlwiXHJcbiAgICAgICAgICAgICAgICBsb2FkX3R5cGU9XCJwYWdpbmF0aW9uXCJcclxuICAgICAgICAgICAgICAgIHBhZ2Vfc2l6ZT1cIjMwXCJcclxuICAgICAgICAgICAgICAgIGxvYWRpbmdfaW5kaWNhdG9yPVwidHJ1ZVwiXHJcbiAgICAgICAgICAgICAgICBoZWFkZXI9XCJNaXhlZCBMaXN0XCJcclxuICAgICAgICAgICAgICAgIG1pbl93aWR0aD1cIjMwMFwiXHJcbiAgICAgICAgICAgICAgICBtYXhfd2lkdGg9XCI0MDBcIlxyXG4gICAgICAgICAgICAgICAgbWluX2hlaWdodD1cIjgwMFwiXHJcbiAgICAgICAgICAgICAgICBtYXhfaGVpZ2h0PVwiMTAwMFwiPlxyXG48L2xpc3QtY29tcG9uZW50PlxyXG4iLCI8Z2FsbGVyeS1saXN0PjwvZ2FsbGVyeS1saXN0PiJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7b0JDQUE7TUFBQTtVQUFBO2NBQUE7TUFBQSwyRUFBQTtNQUFBO1VBQUE7Y0FBQTtVQUFBO01BQUEsZUFRa0MsdUNBQ2pCO01BQUEsU0FDakI7TUFBQTtNQUFBO01BQUE7aUNBQUEsVUFBQTtNQUFBO1VBQUE7VUFBQTtVQUFBLG9DQVFrQztNQUNqQjtJQW5CRDtJQUNBO0lBQ0E7SUFDQTtJQUVBO0lBRUE7SUFDQTtJQUZBO0lBRkE7SUFKaEIsV0FBZ0IsVUFDQSxVQUNBLFVBQ0EsVUFFQSxVQUVBLFVBQ0E7UUFGQSxVQUZBLFNBSmhCO0lBVWdCO0lBQ0E7SUFDQTtJQUNBO0lBRUE7SUFFQTtJQUNBO0lBRkE7SUFGQTtJQUpoQixXQUFnQixVQUNBLFdBQ0EsV0FDQSxXQUVBLFdBRUEsV0FDQTtRQUZBLFdBRkEsVUFKaEI7Ozs7b0JDVkE7TUFBQTtxQ0FBQSxVQUFBO01BQUE7SUFBQTs7OzsifQ==
+export const GalleryListComponentNgFactory:i1.ComponentFactory<i11.GalleryListComponent> = i1.ɵccf('gallery-list',
+    i11.GalleryListComponent,View_GalleryListComponent_Host_0,{},{},([] as any[]));
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiQzovVXNlcnMvdHltdWQvQmxhY2tiaXJkL0JsYWNrYmlyZFByb2plY3RVSS1tYXN0ZXIvQmxhY2tiaXJkUHJvamVjdFVJLW1hc3Rlci9zcmMvYXBwL2dhbGxlcnkvZ2FsbGVyeS1saXN0L2dhbGxlcnktbGlzdC5jb21wb25lbnQubmdmYWN0b3J5LnRzIiwidmVyc2lvbiI6Mywic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibmc6Ly8vQzovVXNlcnMvdHltdWQvQmxhY2tiaXJkL0JsYWNrYmlyZFByb2plY3RVSS1tYXN0ZXIvQmxhY2tiaXJkUHJvamVjdFVJLW1hc3Rlci9zcmMvYXBwL2dhbGxlcnkvZ2FsbGVyeS1saXN0L2dhbGxlcnktbGlzdC5jb21wb25lbnQudHMiLCJuZzovLy9DOi9Vc2Vycy90eW11ZC9CbGFja2JpcmQvQmxhY2tiaXJkUHJvamVjdFVJLW1hc3Rlci9CbGFja2JpcmRQcm9qZWN0VUktbWFzdGVyL3NyYy9hcHAvZ2FsbGVyeS9nYWxsZXJ5LWxpc3QvZ2FsbGVyeS1saXN0LmNvbXBvbmVudC5odG1sIiwibmc6Ly8vQzovVXNlcnMvdHltdWQvQmxhY2tiaXJkL0JsYWNrYmlyZFByb2plY3RVSS1tYXN0ZXIvQmxhY2tiaXJkUHJvamVjdFVJLW1hc3Rlci9zcmMvYXBwL2dhbGxlcnkvZ2FsbGVyeS1saXN0L2dhbGxlcnktbGlzdC5jb21wb25lbnQudHMuR2FsbGVyeUxpc3RDb21wb25lbnRfSG9zdC5odG1sIl0sInNvdXJjZXNDb250ZW50IjpbIiAiLCI8bGlzdC1jb250cm9sbGVyLWNvbXBvbmVudCBuYW1lPVwibGF6eUxvYWRMaXN0XCIgb25MYXp5bG9hZD1cIjEwNFwiPjwvbGlzdC1jb250cm9sbGVyLWNvbXBvbmVudD5cbjxsaXN0LWNvbXBvbmVudCBuYW1lPVwibGF6eUxvYWRMaXN0XCJcbiAgICAgICAgICAgICAgICBsb2FkX3R5cGU9XCJzY3JvbGxcIlxuICAgICAgICAgICAgICAgIHBhZ2Vfc2l6ZT1cIjMwXCJcbiAgICAgICAgICAgICAgICBsb2FkaW5nX2luZGljYXRvcj1cInRydWVcIlxuICAgICAgICAgICAgICAgIGhlYWRlcj1cIlNsaWRlciBMaXN0XCJcbiAgICAgICAgICAgICAgICBtaW5fd2lkdGg9XCIzMDBcIlxuICAgICAgICAgICAgICAgIG1heF93aWR0aD1cIjQwMFwiXG4gICAgICAgICAgICAgICAgbWluX2hlaWdodD1cIjgwMFwiXG4gICAgICAgICAgICAgICAgbWF4X2hlaWdodD1cIjEwMDBcIj5cbjwvbGlzdC1jb21wb25lbnQ+XG48bGlzdC1jb250cm9sbGVyLWNvbXBvbmVudCBuYW1lPVwibG9hZExpc3RcIiBvbkxvYWQ9XCIxMDFcIj48L2xpc3QtY29udHJvbGxlci1jb21wb25lbnQ+XG48bGlzdC1jb21wb25lbnQgbmFtZT1cImxvYWRMaXN0XCJcbiAgICAgICAgICAgICAgICBwYWdlX3NpemU9XCIzMFwiXG4gICAgICAgICAgICAgICAgbG9hZGluZ19pbmRpY2F0b3I9XCJ0cnVlXCJcbiAgICAgICAgICAgICAgICBoZWFkZXI9XCJNaXhlZCBMaXN0XCJcbiAgICAgICAgICAgICAgICBtaW5fd2lkdGg9XCIzMDBcIlxuICAgICAgICAgICAgICAgIG1heF93aWR0aD1cIjQwMFwiXG4gICAgICAgICAgICAgICAgbWluX2hlaWdodD1cIjgwMFwiXG4gICAgICAgICAgICAgICAgbWF4X2hlaWdodD1cIjEwMDBcIj5cbjwvbGlzdC1jb21wb25lbnQ+XG4iLCI8Z2FsbGVyeS1saXN0PjwvZ2FsbGVyeS1saXN0PiJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztvQkNBQTtNQUFBOzJEQUFBLFVBQUE7TUFBQTtNQUFBLDZEQUE0RjtNQUFBLFNBQzVGO01BQUE7TUFBQTtNQUFBO3lEQUFBLFVBQUE7TUFBQTtNQUFBO1VBQUE7VUFBQTtNQUFBLGVBUWtDLHVDQUNqQjtNQUFBLFNBQ2pCO01BQUE7MkRBQUEsVUFBQTtNQUFBO01BQUEscURBQW9GO01BQUEsU0FDcEY7TUFBQTtNQUFBO01BQUE7YUFBQTtVQUFBO2NBQUE7a0JBQUE7TUFPa0MsdUNBQ2pCOztRQXBCVTtRQUFvQjtRQUEvQyxXQUEyQixVQUFvQixTQUEvQztRQUNnQjtRQUNBO1FBQ0E7UUFDQTtRQUVBO1FBRUE7UUFDQTtRQUZBO1FBRkE7UUFKaEIsV0FBZ0IsVUFDQSxVQUNBLFVBQ0EsVUFFQSxVQUVBLFVBQ0E7WUFGQSxVQUZBLFVBSmhCO1FBVTJCO1FBQWdCO1FBQTNDLFdBQTJCLFdBQWdCLFVBQTNDO1FBQ2dCO1FBQ0E7UUFDQTtRQUVBO1FBRUE7UUFDQTtRQUZBO1FBRkE7UUFIaEIsWUFBZ0IsV0FDQSxXQUNBLFdBRUEsV0FFQSxXQUNBO1lBRkEsV0FGQSxVQUhoQjs7OztvQkNaQTtNQUFBO3FDQUFBLFVBQUE7TUFBQTs7OyJ9

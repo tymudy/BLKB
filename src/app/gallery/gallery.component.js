@@ -7,7 +7,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-import { Component, ViewChild, ElementRef } from '@angular/core';
+import { Component } from '@angular/core';
 import { Http } from '@angular/http';
 import { LoggerService } from '../crestron-sdk/services/log.service';
 import { Subscription } from 'rxjs';
@@ -50,31 +50,15 @@ var GalleryComponent = (function () {
     GalleryComponent.prototype.trackByFn = function (index) {
         return index;
     };
-    GalleryComponent.prototype.hideDebuggerDiv = function (event) {
-        if (!this.debugger.nativeElement.contains(event.target) && !this.hideDebugger) {
-            this.toggleDebugger();
-        }
-        else if (this.logsImg.nativeElement.contains(event.target)) {
-            this.toggleDebugger();
-        }
-    };
+    GalleryComponent = __decorate([
+        Component({
+            selector: 'gallery-component',
+            templateUrl: './gallery.component.html',
+            styleUrls: ['./gallery.component.css']
+        }),
+        __metadata("design:paramtypes", [Http, LoggerService])
+    ], GalleryComponent);
     return GalleryComponent;
 }());
-__decorate([
-    ViewChild('debugger'),
-    __metadata("design:type", ElementRef)
-], GalleryComponent.prototype, "debugger", void 0);
-__decorate([
-    ViewChild('logsImg'),
-    __metadata("design:type", ElementRef)
-], GalleryComponent.prototype, "logsImg", void 0);
-GalleryComponent = __decorate([
-    Component({
-        selector: 'gallery-component',
-        templateUrl: './gallery.component.html',
-        styleUrls: ['./gallery.component.css']
-    }),
-    __metadata("design:paramtypes", [Http, LoggerService])
-], GalleryComponent);
 export { GalleryComponent };
 //# sourceMappingURL=gallery.component.js.map

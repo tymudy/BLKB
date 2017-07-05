@@ -6,5 +6,5 @@
  /* tslint:disable */
 
 
-export const styles:any[] = ['span[_ngcontent-%COMP%] {\r\n  font-size: 30px;\r\n  padding-left: 5%;\r\n  padding-top: 5%;\r\n  display: block;\r\n}'];
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiRDovQmxhY2tiaXJkQ2xvbmUvQmxhY2tiaXJkUHJvamVjdFVJL3NyYy9hcHAvZ2FsbGVyeS9nYWxsZXJ5LXNwZWMvc3BlYy1saXN0LmNvbXBvbmVudC5jc3Muc2hpbS5uZ3N0eWxlLnRzIiwidmVyc2lvbiI6Mywic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibmc6Ly8vRDovQmxhY2tiaXJkQ2xvbmUvQmxhY2tiaXJkUHJvamVjdFVJL3NyYy9hcHAvZ2FsbGVyeS9nYWxsZXJ5LXNwZWMvc3BlYy1saXN0LmNvbXBvbmVudC5jc3MiXSwic291cmNlc0NvbnRlbnQiOlsiICJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7OyJ9
+export const styles:any[] = ['span[_ngcontent-%COMP%] {\n  font-size: 30px;\n  padding-left: 5%;\n  padding-top: 5%;\n  display: block;\n}'];
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiQzovVXNlcnMvdHltdWQvQmxhY2tiaXJkL0JsYWNrYmlyZFByb2plY3RVSS1tYXN0ZXIvQmxhY2tiaXJkUHJvamVjdFVJLW1hc3Rlci9zcmMvYXBwL2dhbGxlcnkvZ2FsbGVyeS1zcGVjL3NwZWMtbGlzdC5jb21wb25lbnQuY3NzLnNoaW0ubmdzdHlsZS50cyIsInZlcnNpb24iOjMsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIm5nOi8vL0M6L1VzZXJzL3R5bXVkL0JsYWNrYmlyZC9CbGFja2JpcmRQcm9qZWN0VUktbWFzdGVyL0JsYWNrYmlyZFByb2plY3RVSS1tYXN0ZXIvc3JjL2FwcC9nYWxsZXJ5L2dhbGxlcnktc3BlYy9zcGVjLWxpc3QuY29tcG9uZW50LmNzcyJdLCJzb3VyY2VzQ29udGVudCI6WyIgIl0sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7In0=

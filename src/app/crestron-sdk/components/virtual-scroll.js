@@ -159,75 +159,75 @@ var VirtualScrollComponent = (function () {
             this.refresh();
         }
     };
+    __decorate([
+        Input(),
+        __metadata("design:type", Array)
+    ], VirtualScrollComponent.prototype, "items", void 0);
+    __decorate([
+        Input(),
+        __metadata("design:type", Number)
+    ], VirtualScrollComponent.prototype, "scrollbarWidth", void 0);
+    __decorate([
+        Input(),
+        __metadata("design:type", Number)
+    ], VirtualScrollComponent.prototype, "scrollbarHeight", void 0);
+    __decorate([
+        Input(),
+        __metadata("design:type", Number)
+    ], VirtualScrollComponent.prototype, "childWidth", void 0);
+    __decorate([
+        Input(),
+        __metadata("design:type", Number)
+    ], VirtualScrollComponent.prototype, "childHeight", void 0);
+    __decorate([
+        Output(),
+        __metadata("design:type", EventEmitter)
+    ], VirtualScrollComponent.prototype, "update", void 0);
+    __decorate([
+        Output(),
+        __metadata("design:type", EventEmitter)
+    ], VirtualScrollComponent.prototype, "change", void 0);
+    __decorate([
+        Output(),
+        __metadata("design:type", EventEmitter)
+    ], VirtualScrollComponent.prototype, "start", void 0);
+    __decorate([
+        Output(),
+        __metadata("design:type", EventEmitter)
+    ], VirtualScrollComponent.prototype, "end", void 0);
+    __decorate([
+        ViewChild('content', { read: ElementRef }),
+        __metadata("design:type", ElementRef)
+    ], VirtualScrollComponent.prototype, "contentElementRef", void 0);
+    __decorate([
+        HostListener('scroll'),
+        __metadata("design:type", Function),
+        __metadata("design:paramtypes", [Event]),
+        __metadata("design:returntype", void 0)
+    ], VirtualScrollComponent.prototype, "onScroll", null);
+    VirtualScrollComponent = __decorate([
+        Component({
+            selector: 'virtual-scroll,[virtualScroll]',
+            exportAs: 'virtualScroll',
+            template: "\n    <div class=\"total-padding\" [style.height]=\"scrollHeight + 'px'\"></div>\n    <div class=\"scrollable-content\" #content [style.transform]=\"'translateY(' + topPadding + 'px)'\">\n      <ng-content></ng-content>\n    </div>\n  ",
+            styles: ["\n    :host {\n      overflow: hidden;\n      overflow-y: auto;\n      position: relative;\n      -webkit-overflow-scrolling: touch;\n    }\n    .scrollable-content {\n      top: 0;\n      left: 0;\n      width: 100%;\n      height: 100%;\n      position: absolute;\n    }\n    .total-padding {\n      width: 1px;\n      opacity: 0;\n    }\n  "]
+        }),
+        __metadata("design:paramtypes", [ElementRef, Renderer])
+    ], VirtualScrollComponent);
     return VirtualScrollComponent;
 }());
-__decorate([
-    Input(),
-    __metadata("design:type", Array)
-], VirtualScrollComponent.prototype, "items", void 0);
-__decorate([
-    Input(),
-    __metadata("design:type", Number)
-], VirtualScrollComponent.prototype, "scrollbarWidth", void 0);
-__decorate([
-    Input(),
-    __metadata("design:type", Number)
-], VirtualScrollComponent.prototype, "scrollbarHeight", void 0);
-__decorate([
-    Input(),
-    __metadata("design:type", Number)
-], VirtualScrollComponent.prototype, "childWidth", void 0);
-__decorate([
-    Input(),
-    __metadata("design:type", Number)
-], VirtualScrollComponent.prototype, "childHeight", void 0);
-__decorate([
-    Output(),
-    __metadata("design:type", EventEmitter)
-], VirtualScrollComponent.prototype, "update", void 0);
-__decorate([
-    Output(),
-    __metadata("design:type", EventEmitter)
-], VirtualScrollComponent.prototype, "change", void 0);
-__decorate([
-    Output(),
-    __metadata("design:type", EventEmitter)
-], VirtualScrollComponent.prototype, "start", void 0);
-__decorate([
-    Output(),
-    __metadata("design:type", EventEmitter)
-], VirtualScrollComponent.prototype, "end", void 0);
-__decorate([
-    ViewChild('content', { read: ElementRef }),
-    __metadata("design:type", ElementRef)
-], VirtualScrollComponent.prototype, "contentElementRef", void 0);
-__decorate([
-    HostListener('scroll'),
-    __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Event]),
-    __metadata("design:returntype", void 0)
-], VirtualScrollComponent.prototype, "onScroll", null);
-VirtualScrollComponent = __decorate([
-    Component({
-        selector: 'virtual-scroll,[virtualScroll]',
-        exportAs: 'virtualScroll',
-        template: "\n    <div class=\"total-padding\" [style.height]=\"scrollHeight + 'px'\"></div>\n    <div class=\"scrollable-content\" #content [style.transform]=\"'translateY(' + topPadding + 'px)'\">\n      <ng-content></ng-content>\n    </div>\n  ",
-        styles: ["\n    :host {\n      overflow: hidden;\n      overflow-y: auto;\n      position: relative;\n      -webkit-overflow-scrolling: touch;\n    }\n    .scrollable-content {\n      top: 0;\n      left: 0;\n      width: 100%;\n      height: 100%;\n      position: absolute;\n    }\n    .total-padding {\n      width: 1px;\n      opacity: 0;\n    }\n  "]
-    }),
-    __metadata("design:paramtypes", [ElementRef, Renderer])
-], VirtualScrollComponent);
 export { VirtualScrollComponent };
 var VirtualScrollModule = (function () {
     function VirtualScrollModule() {
     }
+    VirtualScrollModule = __decorate([
+        NgModule({
+            imports: [CommonModule],
+            exports: [VirtualScrollComponent],
+            declarations: [VirtualScrollComponent]
+        })
+    ], VirtualScrollModule);
     return VirtualScrollModule;
 }());
-VirtualScrollModule = __decorate([
-    NgModule({
-        imports: [CommonModule],
-        exports: [VirtualScrollComponent],
-        declarations: [VirtualScrollComponent]
-    })
-], VirtualScrollModule);
 export { VirtualScrollModule };
 //# sourceMappingURL=virtual-scroll.js.map

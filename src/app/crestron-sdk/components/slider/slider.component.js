@@ -200,90 +200,90 @@ var SliderComponent = (function () {
     SliderComponent.prototype.printActionId = function (id) {
         console.log(id);
     };
+    __decorate([
+        Input('name'),
+        __metadata("design:type", String)
+    ], SliderComponent.prototype, "name", void 0);
+    __decorate([
+        Input('customClass'),
+        __metadata("design:type", String)
+    ], SliderComponent.prototype, "customClass", void 0);
+    __decorate([
+        Input('min'),
+        __metadata("design:type", Number)
+    ], SliderComponent.prototype, "min", void 0);
+    __decorate([
+        Input('max'),
+        __metadata("design:type", Number)
+    ], SliderComponent.prototype, "max", void 0);
+    __decorate([
+        Input('isRange'),
+        __metadata("design:type", Boolean)
+    ], SliderComponent.prototype, "isRange", void 0);
+    __decorate([
+        Input('orientation'),
+        __metadata("design:type", String)
+    ], SliderComponent.prototype, "orientation", void 0);
+    __decorate([
+        Input('minIcon'),
+        __metadata("design:type", String)
+    ], SliderComponent.prototype, "minIcon", void 0);
+    __decorate([
+        Input('maxIcon'),
+        __metadata("design:type", String)
+    ], SliderComponent.prototype, "maxIcon", void 0);
+    __decorate([
+        Input('step'),
+        __metadata("design:type", Number)
+    ], SliderComponent.prototype, "step", void 0);
+    __decorate([
+        Input('tick'),
+        __metadata("design:type", Number)
+    ], SliderComponent.prototype, "tick", void 0);
+    __decorate([
+        Input('handleShape'),
+        __metadata("design:type", String)
+    ], SliderComponent.prototype, "handleShape", void 0);
+    __decorate([
+        Input('default_state'),
+        __metadata("design:type", String)
+    ], SliderComponent.prototype, "default_state", void 0);
+    __decorate([
+        Input('size'),
+        __metadata("design:type", String)
+    ], SliderComponent.prototype, "size", void 0);
+    __decorate([
+        Input('stretch'),
+        __metadata("design:type", String)
+    ], SliderComponent.prototype, "stretch", void 0);
+    __decorate([
+        Input('initValue'),
+        __metadata("design:type", Number)
+    ], SliderComponent.prototype, "initValue", void 0);
+    __decorate([
+        Input('initValuePair'),
+        __metadata("design:type", String)
+    ], SliderComponent.prototype, "initValuePair", void 0);
+    __decorate([
+        Input('onSlide'),
+        __metadata("design:type", Number)
+    ], SliderComponent.prototype, "onSlide", void 0);
+    __decorate([
+        Input('onSlideEnd'),
+        __metadata("design:type", Number)
+    ], SliderComponent.prototype, "onSlideEnd", void 0);
+    SliderComponent = __decorate([
+        Component({
+            selector: 'slider',
+            templateUrl: './slider.component.html',
+            styleUrls: [
+                './slider.component.css',
+                './slider-range.component.css'
+            ]
+        }),
+        __metadata("design:paramtypes", [])
+    ], SliderComponent);
     return SliderComponent;
 }());
-__decorate([
-    Input('name'),
-    __metadata("design:type", String)
-], SliderComponent.prototype, "name", void 0);
-__decorate([
-    Input('customClass'),
-    __metadata("design:type", String)
-], SliderComponent.prototype, "customClass", void 0);
-__decorate([
-    Input('min'),
-    __metadata("design:type", Number)
-], SliderComponent.prototype, "min", void 0);
-__decorate([
-    Input('max'),
-    __metadata("design:type", Number)
-], SliderComponent.prototype, "max", void 0);
-__decorate([
-    Input('isRange'),
-    __metadata("design:type", Boolean)
-], SliderComponent.prototype, "isRange", void 0);
-__decorate([
-    Input('orientation'),
-    __metadata("design:type", String)
-], SliderComponent.prototype, "orientation", void 0);
-__decorate([
-    Input('minIcon'),
-    __metadata("design:type", String)
-], SliderComponent.prototype, "minIcon", void 0);
-__decorate([
-    Input('maxIcon'),
-    __metadata("design:type", String)
-], SliderComponent.prototype, "maxIcon", void 0);
-__decorate([
-    Input('step'),
-    __metadata("design:type", Number)
-], SliderComponent.prototype, "step", void 0);
-__decorate([
-    Input('tick'),
-    __metadata("design:type", Number)
-], SliderComponent.prototype, "tick", void 0);
-__decorate([
-    Input('handleShape'),
-    __metadata("design:type", String)
-], SliderComponent.prototype, "handleShape", void 0);
-__decorate([
-    Input('default_state'),
-    __metadata("design:type", String)
-], SliderComponent.prototype, "default_state", void 0);
-__decorate([
-    Input('size'),
-    __metadata("design:type", String)
-], SliderComponent.prototype, "size", void 0);
-__decorate([
-    Input('stretch'),
-    __metadata("design:type", String)
-], SliderComponent.prototype, "stretch", void 0);
-__decorate([
-    Input('initValue'),
-    __metadata("design:type", Number)
-], SliderComponent.prototype, "initValue", void 0);
-__decorate([
-    Input('initValuePair'),
-    __metadata("design:type", String)
-], SliderComponent.prototype, "initValuePair", void 0);
-__decorate([
-    Input('onSlide'),
-    __metadata("design:type", Number)
-], SliderComponent.prototype, "onSlide", void 0);
-__decorate([
-    Input('onSlideEnd'),
-    __metadata("design:type", Number)
-], SliderComponent.prototype, "onSlideEnd", void 0);
-SliderComponent = __decorate([
-    Component({
-        selector: 'slider',
-        templateUrl: './slider.component.html',
-        styleUrls: [
-            './slider.component.css',
-            './slider-range.component.css'
-        ]
-    }),
-    __metadata("design:paramtypes", [])
-], SliderComponent);
 export { SliderComponent };
 //# sourceMappingURL=slider.component.js.map

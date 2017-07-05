@@ -10,23 +10,23 @@ import * as i0 from '@angular/core';
 import * as i1 from '../../../../app/crestron-sdk/controllers/list-controller';
 import * as i2 from '../../../../app/crestron-sdk/services/joins.service';
 import * as i3 from '../../../../app/crestron-sdk/services/communication.service';
+import * as i4 from '../../../../app/crestron-sdk/services/components.communication.service';
 const styles_ListController:any[] = ([] as any[]);
 export const RenderType_ListController:i0.RendererType2 = i0.ɵcrt({encapsulation:2,
     styles:styles_ListController,data:{}});
 export function View_ListController_0(_l:any):i0.ɵViewDefinition {
-  return i0.ɵvid(0,[(_l()(),i0.ɵeld(0,(null as any),(null as any),1,'span',([] as any[]),
-      (null as any),(null as any),(null as any),(null as any),(null as any))),(_l()(),
-      i0.ɵted((null as any),['list']))],(null as any),(null as any));
+  return i0.ɵvid(0,([] as any[]),(null as any),(null as any));
 }
 export function View_ListController_Host_0(_l:any):i0.ɵViewDefinition {
   return i0.ɵvid(0,[(_l()(),i0.ɵeld(0,(null as any),(null as any),1,'list-controller-component',
       ([] as any[]),(null as any),(null as any),(null as any),View_ListController_0,
       RenderType_ListController)),i0.ɵdid(245760,(null as any),0,i1.ListController,
-      [i2.JoinsService,i3.CommunicationService],(null as any),(null as any))],(_ck,
-      _v) => {
+      [i2.JoinsService,i3.CommunicationService,i4.ComponentsCommunicationService],
+      (null as any),(null as any))],(_ck,_v) => {
     _ck(_v,1,0);
   },(null as any));
 }
 export const ListControllerNgFactory:i0.ComponentFactory<i1.ListController> = i0.ɵccf('list-controller-component',
-    i1.ListController,View_ListController_Host_0,{},{},([] as any[]));
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiRDovQmxhY2tiaXJkQ2xvbmUvQmxhY2tiaXJkUHJvamVjdFVJL3NyYy9hcHAvY3Jlc3Ryb24tc2RrL2NvbnRyb2xsZXJzL2xpc3QtY29udHJvbGxlci5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9EOi9CbGFja2JpcmRDbG9uZS9CbGFja2JpcmRQcm9qZWN0VUkvc3JjL2FwcC9jcmVzdHJvbi1zZGsvY29udHJvbGxlcnMvbGlzdC1jb250cm9sbGVyLnRzIiwibmc6Ly8vRDovQmxhY2tiaXJkQ2xvbmUvQmxhY2tiaXJkUHJvamVjdFVJL3NyYy9hcHAvY3Jlc3Ryb24tc2RrL2NvbnRyb2xsZXJzL2xpc3QtY29udHJvbGxlci50cy5MaXN0Q29udHJvbGxlci5odG1sIiwibmc6Ly8vRDovQmxhY2tiaXJkQ2xvbmUvQmxhY2tiaXJkUHJvamVjdFVJL3NyYy9hcHAvY3Jlc3Ryb24tc2RrL2NvbnRyb2xsZXJzL2xpc3QtY29udHJvbGxlci50cy5MaXN0Q29udHJvbGxlcl9Ib3N0Lmh0bWwiXSwic291cmNlc0NvbnRlbnQiOlsiICIsIjxzcGFuPmxpc3Q8L3NwYW4+IiwiPGxpc3QtY29udHJvbGxlci1jb21wb25lbnQ+PC9saXN0LWNvbnRyb2xsZXItY29tcG9uZW50PiJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7b0JDQUE7TUFBQSx3RUFBTTthQUFBOzs7b0JDQU47TUFBQTsrQkFBQSxVQUFBO01BQUE7O0lBQUE7Ozs7In0=
+    i1.ListController,View_ListController_Host_0,{name:'name',onLoad:'onLoad',onLazyload:'onLazyload'},
+    {},([] as any[]));
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiQzovVXNlcnMvdHltdWQvQmxhY2tiaXJkL0JsYWNrYmlyZFByb2plY3RVSS1tYXN0ZXIvQmxhY2tiaXJkUHJvamVjdFVJLW1hc3Rlci9zcmMvYXBwL2NyZXN0cm9uLXNkay9jb250cm9sbGVycy9saXN0LWNvbnRyb2xsZXIubmdmYWN0b3J5LnRzIiwidmVyc2lvbiI6Mywic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibmc6Ly8vQzovVXNlcnMvdHltdWQvQmxhY2tiaXJkL0JsYWNrYmlyZFByb2plY3RVSS1tYXN0ZXIvQmxhY2tiaXJkUHJvamVjdFVJLW1hc3Rlci9zcmMvYXBwL2NyZXN0cm9uLXNkay9jb250cm9sbGVycy9saXN0LWNvbnRyb2xsZXIudHMiLCJuZzovLy9DOi9Vc2Vycy90eW11ZC9CbGFja2JpcmQvQmxhY2tiaXJkUHJvamVjdFVJLW1hc3Rlci9CbGFja2JpcmRQcm9qZWN0VUktbWFzdGVyL3NyYy9hcHAvY3Jlc3Ryb24tc2RrL2NvbnRyb2xsZXJzL2xpc3QtY29udHJvbGxlci50cy5MaXN0Q29udHJvbGxlcl9Ib3N0Lmh0bWwiXSwic291cmNlc0NvbnRlbnQiOlsiICIsIjxsaXN0LWNvbnRyb2xsZXItY29tcG9uZW50PjwvbGlzdC1jb250cm9sbGVyLWNvbXBvbmVudD4iXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7OztvQkNBQTtNQUFBOytCQUFBLFVBQUE7TUFBQTtNQUFBO0lBQUE7Ozs7OyJ9

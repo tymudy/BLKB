@@ -23,26 +23,26 @@ var ListItemComponent = (function () {
             componentRef.instance[element['key']] = element['value'];
         });
     };
+    __decorate([
+        Input(),
+        __metadata("design:type", Array)
+    ], ListItemComponent.prototype, "item", void 0);
+    __decorate([
+        Input(),
+        __metadata("design:type", Object)
+    ], ListItemComponent.prototype, "type", void 0);
+    __decorate([
+        ViewChild('itemContainer', { read: ViewContainerRef }),
+        __metadata("design:type", ViewContainerRef)
+    ], ListItemComponent.prototype, "itemContainer", void 0);
+    ListItemComponent = __decorate([
+        Component({
+            selector: 'list-item-component',
+            template: "\n    <div #itemContainer></div>\n  "
+        }),
+        __metadata("design:paramtypes", [ComponentFactoryResolver])
+    ], ListItemComponent);
     return ListItemComponent;
 }());
-__decorate([
-    Input(),
-    __metadata("design:type", Array)
-], ListItemComponent.prototype, "item", void 0);
-__decorate([
-    Input(),
-    __metadata("design:type", Object)
-], ListItemComponent.prototype, "type", void 0);
-__decorate([
-    ViewChild('itemContainer', { read: ViewContainerRef }),
-    __metadata("design:type", ViewContainerRef)
-], ListItemComponent.prototype, "itemContainer", void 0);
-ListItemComponent = __decorate([
-    Component({
-        selector: 'list-item-component',
-        template: "\n    <div #itemContainer></div>\n  "
-    }),
-    __metadata("design:paramtypes", [ComponentFactoryResolver])
-], ListItemComponent);
 export { ListItemComponent };
 //# sourceMappingURL=list-item.component.js.map

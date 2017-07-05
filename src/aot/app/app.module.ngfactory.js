@@ -9,30 +9,30 @@ import * as i1 from '../../app/app.module';
 import * as i2 from '../../app/app.component';
 import * as i3 from './crestron-sdk/components/button/button.component.ngfactory';
 import * as i4 from './crestron-sdk/components/slider/slider.component.ngfactory';
-import * as i5 from './crestron-sdk/controllers/list-controller.ngfactory';
-import * as i6 from './gallery/gallery.component.ngfactory';
-import * as i7 from './gallery/gallery-button/gallery-button.component.ngfactory';
-import * as i8 from './gallery/gallery-list/gallery-list.component.ngfactory';
-import * as i9 from './gallery/gallery-slider/gallery-slider.component.ngfactory';
-import * as i10 from './gallery/gallery-spec/spec-list.component.ngfactory';
-import * as i11 from './crestron-sdk/components/video/video.component.ngfactory';
+import * as i5 from './gallery/gallery.component.ngfactory';
+import * as i6 from './gallery/gallery-button/gallery-button.component.ngfactory';
+import * as i7 from './gallery/gallery-list/gallery-list.component.ngfactory';
+import * as i8 from './gallery/gallery-slider/gallery-slider.component.ngfactory';
+import * as i9 from './gallery/gallery-spec/spec-list.component.ngfactory';
+import * as i10 from './crestron-sdk/components/video/video.component.ngfactory';
+import * as i11 from './crestron-sdk/controllers/list-controller.ngfactory';
 import * as i12 from './crestron-sdk/controllers/button-controller.ngfactory';
 import * as i13 from './app.component.ngfactory';
 import * as i14 from '@angular/common';
-import * as i15 from '../../app/crestron-sdk/components/video/WindowRefService';
-import * as i16 from '@angular/http';
-import * as i17 from '../../app/crestron-sdk/services/share/shareService';
-import * as i18 from '../../app/crestron-sdk/services/log.service';
-import * as i19 from '../../app/crestron-sdk/services/communication.service';
-import * as i20 from '../../app/crestron-sdk/services/joins.service';
-import * as i21 from 'ngx-window-token/src/index';
-import * as i22 from 'ngx-clipboard/src/clipboard.service';
-import * as i23 from '@angular/platform-browser';
+import * as i15 from 'ngx-window-token/src/index';
+import * as i16 from 'ngx-clipboard/src/clipboard.service';
+import * as i17 from '@angular/platform-browser';
+import * as i18 from '../../app/crestron-sdk/components/video/WindowRefService';
+import * as i19 from '@angular/http';
+import * as i20 from '../../app/crestron-sdk/services/share/shareService';
+import * as i21 from '../../app/crestron-sdk/services/log.service';
+import * as i22 from '../../app/crestron-sdk/services/communication.service';
+import * as i23 from '../../app/crestron-sdk/services/joins.service';
 import * as i24 from '@angular/forms';
 import * as i25 from '@angular/router';
 import * as i26 from '../../app/crestron-sdk/components/virtual-scroll';
-import * as i27 from '../../app/crestron-sdk/crestron-sdk.module';
-import * as i28 from 'ngx-clipboard/src/index';
+import * as i27 from 'ngx-clipboard/src/index';
+import * as i28 from '../../app/crestron-sdk/crestron-sdk.module';
 import * as i29 from '../../app/gallery/gallery.component';
 import * as i30 from '../../app/gallery/gallery-button/gallery-button.component';
 import * as i31 from '../../app/gallery/gallery-list/gallery-list.component';
@@ -42,39 +42,34 @@ import * as i34 from '../../app/crestron-sdk/components/video/video.component';
 import * as i35 from '../../app/crestron-sdk/controllers/list-controller';
 import * as i36 from '../../app/crestron-sdk/controllers/button-controller';
 export var AppModuleNgFactory = i0.ɵcmf(i1.AppModule, [i2.AppComponent], function (_l) {
-    return i0.ɵmod([i0.ɵmpd(512, i0.ComponentFactoryResolver, i0.ɵCodegenComponentFactoryResolver, [[8, [i3.ButtonComponentNgFactory, i4.SliderComponentNgFactory, i5.ListControllerNgFactory,
-                    i6.GalleryComponentNgFactory, i7.GalleryButtonComponentNgFactory, i8.GalleryListComponentNgFactory,
-                    i9.GallerySliderComponentNgFactory, i10.GallerySpecComponentNgFactory,
-                    i11.VideoComponentNgFactory, i12.ButtonControllerNgFactory, i13.AppComponentNgFactory]],
-            [3, i0.ComponentFactoryResolver], i0.NgModuleRef]), i0.ɵmpd(5120, i0.LOCALE_ID, i0.ɵm, [[3, i0.LOCALE_ID]]), i0.ɵmpd(4608, i14.NgLocalization, i14.NgLocaleLocalization, [i0.LOCALE_ID]), i0.ɵmpd(4608, i15.WindowRefService, i15.WindowRefService, []),
-        i0.ɵmpd(4608, i16.BrowserXhr, i16.BrowserXhr, []), i0.ɵmpd(4608, i16.ResponseOptions, i16.BaseResponseOptions, []), i0.ɵmpd(5120, i16.XSRFStrategy, i16.ɵb, []), i0.ɵmpd(4608, i16.XHRBackend, i16.XHRBackend, [i16.BrowserXhr,
-            i16.ResponseOptions, i16.XSRFStrategy]), i0.ɵmpd(4608, i16.RequestOptions, i16.BaseRequestOptions, []), i0.ɵmpd(5120, i16.Http, i16.ɵc, [i16.XHRBackend,
-            i16.RequestOptions]), i0.ɵmpd(4608, i17.ShareService, i17.ShareService, [i16.Http]), i0.ɵmpd(4608, i18.LoggerService, i18.LoggerService, []),
-        i0.ɵmpd(4608, i19.CommunicationService, i19.CommunicationService, [i18.LoggerService]),
-        i0.ɵmpd(4608, i20.JoinsService, i20.JoinsService, [i19.CommunicationService,
-            i18.LoggerService]), i0.ɵmpd(5120, i21.WINDOW, i21._window, []),
-        i0.ɵmpd(5120, i22.ClipboardService, i22.CLIPBOARD_SERVICE_PROVIDER_FACTORY, [i23.DOCUMENT, i21.WINDOW, [3, i22.ClipboardService]]), i0.ɵmpd(5120, i0.APP_ID, i0.ɵf, []), i0.ɵmpd(5120, i0.IterableDiffers, i0.ɵk, []),
-        i0.ɵmpd(5120, i0.KeyValueDiffers, i0.ɵl, []), i0.ɵmpd(4608, i23.DomSanitizer, i23.ɵe, [i23.DOCUMENT]), i0.ɵmpd(6144, i0.Sanitizer, null, [i23.DomSanitizer]),
-        i0.ɵmpd(4608, i23.HAMMER_GESTURE_CONFIG, i23.HammerGestureConfig, []),
-        i0.ɵmpd(5120, i23.EVENT_MANAGER_PLUGINS, function (p0_0, p1_0, p2_0, p2_1) {
-            return [new i23.ɵDomEventsPlugin(p0_0), new i23.ɵKeyEventsPlugin(p1_0),
-                new i23.ɵHammerGesturesPlugin(p2_0, p2_1)];
-        }, [i23.DOCUMENT, i23.DOCUMENT, i23.DOCUMENT, i23.HAMMER_GESTURE_CONFIG]), i0.ɵmpd(4608, i23.EventManager, i23.EventManager, [i23.EVENT_MANAGER_PLUGINS, i0.NgZone]),
-        i0.ɵmpd(135680, i23.ɵDomSharedStylesHost, i23.ɵDomSharedStylesHost, [i23.DOCUMENT]),
-        i0.ɵmpd(4608, i23.ɵDomRendererFactory2, i23.ɵDomRendererFactory2, [i23.EventManager,
-            i23.ɵDomSharedStylesHost]), i0.ɵmpd(6144, i0.RendererFactory2, null, [i23.ɵDomRendererFactory2]), i0.ɵmpd(6144, i23.ɵSharedStylesHost, null, [i23.ɵDomSharedStylesHost]), i0.ɵmpd(4608, i0.Testability, i0.Testability, [i0.NgZone]), i0.ɵmpd(4608, i23.Meta, i23.Meta, [i23.DOCUMENT]), i0.ɵmpd(4608, i23.Title, i23.Title, [i23.DOCUMENT]), i0.ɵmpd(4608, i24.ɵi, i24.ɵi, []),
+    return i0.ɵmod([i0.ɵmpd(512, i0.ComponentFactoryResolver, i0.ɵCodegenComponentFactoryResolver, [[8, [i3.ButtonComponentNgFactory, i4.SliderComponentNgFactory, i5.GalleryComponentNgFactory,
+                    i6.GalleryButtonComponentNgFactory, i7.GalleryListComponentNgFactory,
+                    i8.GallerySliderComponentNgFactory, i9.GallerySpecComponentNgFactory,
+                    i10.VideoComponentNgFactory, i11.ListControllerNgFactory, i12.ButtonControllerNgFactory,
+                    i13.AppComponentNgFactory]], [3, i0.ComponentFactoryResolver], i0.NgModuleRef]),
+        i0.ɵmpd(5120, i0.LOCALE_ID, i0.ɵm, [[3, i0.LOCALE_ID]]), i0.ɵmpd(4608, i14.NgLocalization, i14.NgLocaleLocalization, [i0.LOCALE_ID]), i0.ɵmpd(5120, i15.WINDOW, i15._window, []), i0.ɵmpd(5120, i16.ClipboardService, i16.CLIPBOARD_SERVICE_PROVIDER_FACTORY, [i17.DOCUMENT, i15.WINDOW, [3, i16.ClipboardService]]), i0.ɵmpd(4608, i18.WindowRefService, i18.WindowRefService, []), i0.ɵmpd(4608, i19.BrowserXhr, i19.BrowserXhr, []), i0.ɵmpd(4608, i19.ResponseOptions, i19.BaseResponseOptions, []), i0.ɵmpd(5120, i19.XSRFStrategy, i19.ɵb, []), i0.ɵmpd(4608, i19.XHRBackend, i19.XHRBackend, [i19.BrowserXhr, i19.ResponseOptions, i19.XSRFStrategy]),
+        i0.ɵmpd(4608, i19.RequestOptions, i19.BaseRequestOptions, []), i0.ɵmpd(5120, i19.Http, i19.ɵc, [i19.XHRBackend, i19.RequestOptions]), i0.ɵmpd(4608, i20.ShareService, i20.ShareService, [i19.Http]), i0.ɵmpd(4608, i21.LoggerService, i21.LoggerService, []), i0.ɵmpd(4608, i22.CommunicationService, i22.CommunicationService, [i21.LoggerService]), i0.ɵmpd(4608, i23.JoinsService, i23.JoinsService, [i22.CommunicationService, i21.LoggerService]), i0.ɵmpd(5120, i0.APP_ID, i0.ɵf, []), i0.ɵmpd(5120, i0.IterableDiffers, i0.ɵk, []),
+        i0.ɵmpd(5120, i0.KeyValueDiffers, i0.ɵl, []), i0.ɵmpd(4608, i17.DomSanitizer, i17.ɵe, [i17.DOCUMENT]), i0.ɵmpd(6144, i0.Sanitizer, null, [i17.DomSanitizer]),
+        i0.ɵmpd(4608, i17.HAMMER_GESTURE_CONFIG, i17.HammerGestureConfig, []),
+        i0.ɵmpd(5120, i17.EVENT_MANAGER_PLUGINS, function (p0_0, p1_0, p2_0, p2_1) {
+            return [new i17.ɵDomEventsPlugin(p0_0), new i17.ɵKeyEventsPlugin(p1_0),
+                new i17.ɵHammerGesturesPlugin(p2_0, p2_1)];
+        }, [i17.DOCUMENT, i17.DOCUMENT, i17.DOCUMENT, i17.HAMMER_GESTURE_CONFIG]), i0.ɵmpd(4608, i17.EventManager, i17.EventManager, [i17.EVENT_MANAGER_PLUGINS, i0.NgZone]),
+        i0.ɵmpd(135680, i17.ɵDomSharedStylesHost, i17.ɵDomSharedStylesHost, [i17.DOCUMENT]),
+        i0.ɵmpd(4608, i17.ɵDomRendererFactory2, i17.ɵDomRendererFactory2, [i17.EventManager,
+            i17.ɵDomSharedStylesHost]), i0.ɵmpd(6144, i0.RendererFactory2, null, [i17.ɵDomRendererFactory2]), i0.ɵmpd(6144, i17.ɵSharedStylesHost, null, [i17.ɵDomSharedStylesHost]), i0.ɵmpd(4608, i0.Testability, i0.Testability, [i0.NgZone]), i0.ɵmpd(4608, i17.Meta, i17.Meta, [i17.DOCUMENT]), i0.ɵmpd(4608, i17.Title, i17.Title, [i17.DOCUMENT]), i0.ɵmpd(4608, i24.ɵi, i24.ɵi, []),
         i0.ɵmpd(5120, i25.ActivatedRoute, i25.ɵf, [i25.Router]), i0.ɵmpd(4608, i25.NoPreloading, i25.NoPreloading, []), i0.ɵmpd(6144, i25.PreloadingStrategy, null, [i25.NoPreloading]), i0.ɵmpd(135680, i25.RouterPreloader, i25.RouterPreloader, [i25.Router, i0.NgModuleFactoryLoader, i0.Compiler,
             i0.Injector, i25.PreloadingStrategy]), i0.ɵmpd(4608, i25.PreloadAllModules, i25.PreloadAllModules, []), i0.ɵmpd(5120, i25.ROUTER_INITIALIZER, i25.ɵi, [i25.ɵg]), i0.ɵmpd(5120, i0.APP_BOOTSTRAP_LISTENER, function (p0_0) {
             return [p0_0];
-        }, [i25.ROUTER_INITIALIZER]), i0.ɵmpd(512, i14.CommonModule, i14.CommonModule, []), i0.ɵmpd(512, i26.VirtualScrollModule, i26.VirtualScrollModule, []), i0.ɵmpd(512, i27.CrestronSdkModule, i27.CrestronSdkModule, []), i0.ɵmpd(512, i21.WindowTokenModule, i21.WindowTokenModule, []), i0.ɵmpd(512, i28.ClipboardModule, i28.ClipboardModule, []),
-        i0.ɵmpd(1024, i0.ErrorHandler, i23.ɵa, []), i0.ɵmpd(1024, i0.NgProbeToken, function () {
+        }, [i25.ROUTER_INITIALIZER]), i0.ɵmpd(512, i14.CommonModule, i14.CommonModule, []), i0.ɵmpd(512, i26.VirtualScrollModule, i26.VirtualScrollModule, []), i0.ɵmpd(512, i15.WindowTokenModule, i15.WindowTokenModule, []), i0.ɵmpd(512, i27.ClipboardModule, i27.ClipboardModule, []),
+        i0.ɵmpd(512, i28.CrestronSdkModule, i28.CrestronSdkModule, []), i0.ɵmpd(1024, i0.ErrorHandler, i17.ɵa, []), i0.ɵmpd(1024, i0.NgProbeToken, function () {
             return [i25.ɵb()];
         }, []), i0.ɵmpd(512, i25.ɵg, i25.ɵg, [i0.Injector]), i0.ɵmpd(1024, i0.APP_INITIALIZER, function (p0_0, p0_1, p1_0) {
-            return [i23.ɵc(p0_0, p0_1), i25.ɵh(p1_0)];
-        }, [[2, i23.NgProbeToken], [2, i0.NgProbeToken], i25.ɵg]), i0.ɵmpd(512, i0.ApplicationInitStatus, i0.ApplicationInitStatus, [[2, i0.APP_INITIALIZER]]), i0.ɵmpd(131584, i0.ɵe, i0.ɵe, [i0.NgZone, i0.ɵConsole, i0.Injector, i0.ErrorHandler, i0.ComponentFactoryResolver,
+            return [i17.ɵc(p0_0, p0_1), i25.ɵh(p1_0)];
+        }, [[2, i17.NgProbeToken], [2, i0.NgProbeToken], i25.ɵg]), i0.ɵmpd(512, i0.ApplicationInitStatus, i0.ApplicationInitStatus, [[2, i0.APP_INITIALIZER]]), i0.ɵmpd(131584, i0.ɵe, i0.ɵe, [i0.NgZone, i0.ɵConsole, i0.Injector, i0.ErrorHandler, i0.ComponentFactoryResolver,
             i0.ApplicationInitStatus]), i0.ɵmpd(2048, i0.ApplicationRef, null, [i0.ɵe]), i0.ɵmpd(512, i0.ApplicationModule, i0.ApplicationModule, [i0.ApplicationRef]),
-        i0.ɵmpd(512, i23.BrowserModule, i23.BrowserModule, [[3, i23.BrowserModule]]),
-        i0.ɵmpd(512, i24.ɵba, i24.ɵba, []), i0.ɵmpd(512, i24.FormsModule, i24.FormsModule, []), i0.ɵmpd(512, i16.HttpModule, i16.HttpModule, []),
+        i0.ɵmpd(512, i17.BrowserModule, i17.BrowserModule, [[3, i17.BrowserModule]]),
+        i0.ɵmpd(512, i24.ɵba, i24.ɵba, []), i0.ɵmpd(512, i24.FormsModule, i24.FormsModule, []), i0.ɵmpd(512, i19.HttpModule, i19.HttpModule, []),
         i0.ɵmpd(1024, i25.ɵa, i25.ɵd, [[3, i25.Router]]), i0.ɵmpd(512, i25.UrlSerializer, i25.DefaultUrlSerializer, []), i0.ɵmpd(512, i25.ChildrenOutletContexts, i25.ChildrenOutletContexts, []), i0.ɵmpd(256, i25.ROUTER_CONFIGURATION, { useHash: true }, []), i0.ɵmpd(1024, i14.LocationStrategy, i25.ɵc, [i14.PlatformLocation, [2, i14.APP_BASE_HREF], i25.ROUTER_CONFIGURATION]),
         i0.ɵmpd(512, i14.Location, i14.Location, [i14.LocationStrategy]), i0.ɵmpd(512, i0.Compiler, i0.Compiler, []), i0.ɵmpd(512, i0.NgModuleFactoryLoader, i0.SystemJsNgModuleLoader, [i0.Compiler, [2, i0.SystemJsNgModuleLoaderConfig]]),
         i0.ɵmpd(1024, i25.ROUTES, function () {

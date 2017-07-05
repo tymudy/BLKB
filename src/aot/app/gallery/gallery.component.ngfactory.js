@@ -46,8 +46,8 @@ function View_GalleryComponent_4(_l) {
                 ad = (pd_0 && ad);
             }
             return ad;
-        }, null, null)), i1.ɵdid(671744, [[4, 4]], 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, 'routerLink'] }, null), i1.ɵdid(1720320, null, 2, i2.RouterLinkActive, [i2.Router,
-            i1.ElementRef, i1.Renderer, i1.ChangeDetectorRef], { routerLinkActive: [0, 'routerLinkActive'] }, null), i1.ɵqud(603979776, 3, { links: 1 }), i1.ɵqud(603979776, 4, { linksWithHrefs: 1 }),
+        }, null, null)), i1.ɵdid(671744, [[2, 4]], 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, 'routerLink'] }, null), i1.ɵdid(1720320, null, 2, i2.RouterLinkActive, [i2.Router,
+            i1.ElementRef, i1.Renderer, i1.ChangeDetectorRef], { routerLinkActive: [0, 'routerLinkActive'] }, null), i1.ɵqud(603979776, 1, { links: 1 }), i1.ɵqud(603979776, 2, { linksWithHrefs: 1 }),
         i1.ɵpad(1), (_l()(), i1.ɵted(null, ['', '']))], function (_ck, _v) {
         var currVal_2 = i1.ɵinlineInterpolate(1, '../gallery/', _v.context.$implicit.url, '');
         _ck(_v, 1, 0, currVal_2);
@@ -104,32 +104,31 @@ function View_GalleryComponent_5(_l) {
     });
 }
 export function View_GalleryComponent_0(_l) {
-    return i1.ɵvid(0, [i1.ɵqud(402653184, 1, { debugger: 0 }), i1.ɵqud(402653184, 2, { logsImg: 0 }),
-        (_l()(), i1.ɵeld(0, null, null, 49, 'div', [['class', 'layout-wrapper']], null, [[null, 'click']], function (_v, en, $event) {
-            var ad = true;
-            var _co = _v.component;
-            if (('click' === en)) {
-                var pd_0 = (_co.hideDebuggerDiv($event) !== false);
-                ad = (pd_0 && ad);
-            }
-            return ad;
-        }, null, null)), (_l()(), i1.ɵted(null, ['\n  '])),
-        (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['id', 'layout-sidebar']], null, null, null, null, null)),
-        i1.ɵdid(278528, null, 0, i3.NgClass, [i1.IterableDiffers, i1.KeyValueDiffers,
-            i1.ElementRef, i1.Renderer], { ngClass: [0, 'ngClass'] }, null), i1.ɵpod(['slide']),
-        (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 6, 'span', [['class', 'layout-logo']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])),
-        (_l()(), i1.ɵeld(0, null, null, 0, 'img', [], [[8, 'src',
-                4]], null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_GalleryComponent_1)), i1.ɵdid(16384, null, 0, i3.NgIf, [i1.ViewContainerRef,
+    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 49, 'div', [['class',
+                'layout-wrapper']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['id', 'layout-sidebar']], null, null, null, null, null)), i1.ɵdid(278528, null, 0, i3.NgClass, [i1.IterableDiffers, i1.KeyValueDiffers, i1.ElementRef, i1.Renderer], { ngClass: [0,
+                'ngClass'] }, null), i1.ɵpod(['slide']), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 6, 'span', [['class',
+                'layout-logo']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 0, 'img', [], [[8, 'src', 4]], null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_GalleryComponent_1)), i1.ɵdid(16384, null, 0, i3.NgIf, [i1.ViewContainerRef,
             i1.TemplateRef], { ngIf: [0, 'ngIf'] }, null), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_GalleryComponent_2)), i1.ɵdid(802816, null, 0, i3.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, 'ngForOf'] }, null), (_l()(), i1.ɵted(null, ['\n  '])),
         (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['id', 'layout-content']], null, null, null, null, null)), i1.ɵdid(278528, null, 0, i3.NgClass, [i1.IterableDiffers, i1.KeyValueDiffers, i1.ElementRef, i1.Renderer], { ngClass: [0,
                 'ngClass'] }, null), i1.ɵpod(['slide']), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 6, 'div', [['id',
-                'header-content']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 1, 'span', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['', ''])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, [[2, 0], ['logsImg', 1]], null, 0, 'img', [['src', '../../assets/images/crestron_debugger_no_state.png']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n    '])),
-        (_l()(), i1.ɵeld(16777216, null, null, 1, 'router-outlet', [], null, null, null, null, null)),
-        i1.ɵdid(212992, null, 0, i2.RouterOutlet, [i2.ChildrenOutletContexts, i1.ViewContainerRef,
-            i1.ComponentFactoryResolver, [8, null], i1.ChangeDetectorRef], null, null), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵeld(0, [[1, 0], ['debugger', 1]], null, 14, 'div', [['id', 'layout-debugger']], null, null, null, null, null)), i1.ɵdid(278528, null, 0, i3.NgClass, [i1.IterableDiffers,
-            i1.KeyValueDiffers, i1.ElementRef, i1.Renderer], { ngClass: [0, 'ngClass'] }, null),
-        i1.ɵpod(['slide']), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 0, 'img', [['src', '../../assets/images/crestron_debugger_state.png']], null, [[null, 'click']], function (_v, en, $event) {
+                'header-content']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 1, 'span', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['', ''])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 0, 'img', [], [[8, 'src', 4]], [[null,
+                'click']], function (_v, en, $event) {
+            var ad = true;
+            var _co = _v.component;
+            if (('click' === en)) {
+                var pd_0 = (_co.toggleDebugger() !== false);
+                ad = (pd_0 && ad);
+            }
+            return ad;
+        }, null, null)), (_l()(), i1.ɵted(null, ['\n    '])),
+        (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(16777216, null, null, 1, 'router-outlet', [], null, null, null, null, null)), i1.ɵdid(212992, null, 0, i2.RouterOutlet, [i2.ChildrenOutletContexts, i1.ViewContainerRef, i1.ComponentFactoryResolver,
+            [8, null], i1.ChangeDetectorRef], null, null),
+        (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵted(null, ['\n  '])),
+        (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['id', 'layout-debugger']], null, null, null, null, null)),
+        i1.ɵdid(278528, null, 0, i3.NgClass, [i1.IterableDiffers, i1.KeyValueDiffers,
+            i1.ElementRef, i1.Renderer], { ngClass: [0, 'ngClass'] }, null), i1.ɵpod(['slide']),
+        (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 0, 'img', [], [[8, 'src', 4]], [[null, 'click']], function (_v, en, $event) {
             var ad = true;
             var _co = _v.component;
             if (('click' === en)) {
@@ -144,26 +143,30 @@ export function View_GalleryComponent_0(_l) {
         (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵted(null, ['\n'])),
         (_l()(), i1.ɵted(null, ['\n']))], function (_ck, _v) {
         var _co = _v.component;
-        var currVal_0 = _ck(_v, 6, 0, !_co.menuClosed);
-        _ck(_v, 5, 0, currVal_0);
+        var currVal_0 = _ck(_v, 4, 0, !_co.menuClosed);
+        _ck(_v, 3, 0, currVal_0);
         var currVal_2 = (_co.selectedMenuItemIndex === (0 - 1));
-        _ck(_v, 13, 0, currVal_2);
+        _ck(_v, 11, 0, currVal_2);
         var currVal_3 = _co.menuItems;
-        _ck(_v, 17, 0, currVal_3);
-        var currVal_4 = _ck(_v, 22, 0, !_co.menuClosed);
-        _ck(_v, 21, 0, currVal_4);
-        _ck(_v, 33, 0);
-        var currVal_6 = _ck(_v, 38, 0, !_co.hideDebugger);
-        _ck(_v, 37, 0, currVal_6);
-        var currVal_7 = _co.logs;
-        var currVal_8 = _co.trackByFn;
-        _ck(_v, 48, 0, currVal_7, currVal_8);
+        _ck(_v, 15, 0, currVal_3);
+        var currVal_4 = _ck(_v, 20, 0, !_co.menuClosed);
+        _ck(_v, 19, 0, currVal_4);
+        _ck(_v, 31, 0);
+        var currVal_7 = _ck(_v, 36, 0, !_co.hideDebugger);
+        _ck(_v, 35, 0, currVal_7);
+        var currVal_9 = _co.logs;
+        var currVal_10 = _co.trackByFn;
+        _ck(_v, 46, 0, currVal_9, currVal_10);
     }, function (_ck, _v) {
         var _co = _v.component;
         var currVal_1 = (_co.menuClosed ? 'assets/images/crestron_crestron_small.png' : 'assets/images/crestron-07.png');
-        _ck(_v, 10, 0, currVal_1);
+        _ck(_v, 8, 0, currVal_1);
         var currVal_5 = _co.selectedMenuItemIndex.name;
-        _ck(_v, 27, 0, currVal_5);
+        _ck(_v, 25, 0, currVal_5);
+        var currVal_6 = 'assets/images/crestron_debugger_no_state.png';
+        _ck(_v, 27, 0, currVal_6);
+        var currVal_8 = 'assets/images/crestron_debugger_state.png';
+        _ck(_v, 38, 0, currVal_8);
     });
 }
 export function View_GalleryComponent_Host_0(_l) {

@@ -103,19 +103,19 @@ var VideoComponent = (function () {
             callback(null, 'done');
         }
     };
+    __decorate([
+        ViewChild('video'),
+        __metadata("design:type", Object)
+    ], VideoComponent.prototype, "video", void 0);
+    VideoComponent = __decorate([
+        Component({
+            selector: 'app-video',
+            templateUrl: './video.component.html',
+            styleUrls: ['./video.component.css']
+        }),
+        __metadata("design:paramtypes", [DomSanitizer])
+    ], VideoComponent);
     return VideoComponent;
 }());
-__decorate([
-    ViewChild('video'),
-    __metadata("design:type", Object)
-], VideoComponent.prototype, "video", void 0);
-VideoComponent = __decorate([
-    Component({
-        selector: 'app-video',
-        templateUrl: './video.component.html',
-        styleUrls: ['./video.component.css']
-    }),
-    __metadata("design:paramtypes", [DomSanitizer])
-], VideoComponent);
 export { VideoComponent };
 //# sourceMappingURL=video.component.js.map

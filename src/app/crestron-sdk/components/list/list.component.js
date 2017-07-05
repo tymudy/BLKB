@@ -10,34 +10,57 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 import { Component, Input } from '@angular/core';
 import { Http } from '@angular/http';
 import { ShareService } from '../../services/share/shareService';
+import { ComponentsCommunicationService } from '../../services/components.communication.service';
+import { Subscription } from 'rxjs';
 var ListComponent = (function () {
-    function ListComponent(http, shareService) {
+    function ListComponent(http, shareService, componentsCommunicationService) {
         this.http = http;
         this.shareService = shareService;
-        this.firstListAttributes = [];
-        this.secondListAttributes = [];
-        this.firstListItems = [];
-        this.bufferSize = 12;
+        this.componentsCommunicationService = componentsCommunicationService;
+        this.listAttributes = [];
+        this.listItems = [];
+        this.subscription = new Subscription();
     }
-    ListComponent.prototype.getItemsForTheFirstScrollableList = function () {
-        var _this = this;
-        this.shareService.getData('assets/slider_list.json').subscribe(function (data) {
-            _this.firstListItems = data.attributes;
-            _this.firstListType = data.type;
-            _this.firstListAttributes = _this.firstListItems.slice(0, _this.bufferSize);
-        });
+    ListComponent.prototype.ngOnInit = function () {
+        this.setBufferSize();
+        this.getListData();
     };
-    ListComponent.prototype.getItemsForTheSecondScrollableList = function () {
+    ListComponent.prototype.getListData = function () {
         var _this = this;
-        this.shareService.getData('assets/slider_button_list.json').subscribe(function (data) {
-            _this.secondListAttributes = data.items;
-        });
+        this.subscription.add(this.componentsCommunicationService.getComponentSubscribe(this.name).subscribe(function (data) {
+            if (data.attributes.length > 0) {
+                _this.listItems = _this.listItems.concat(data.attributes);
+                _this.listType = data.type;
+                _this.listAttributes = _this.getAttributesData();
+            }
+        }));
+    };
+    ListComponent.prototype.getAttributesData = function () {
+        if (this.load_type === 'none') {
+            return this.listItems;
+        }
+        return this.listItems.slice(this.listAttributes.length, this.listAttributes.length + this.bufferSize);
+    };
+    ListComponent.prototype.setBufferSize = function () {
+        if (!this.load_type) {
+            this.load_type = 'none';
+            this.bufferSize = this.listItems.length;
+        }
+        else if (this.load_type.match(/^paged$/) != null) {
+            this.bufferSize = this.page_size;
+        }
+        else if (this.load_type.match(/^scroll$/) != null) {
+            this.bufferSize = 12;
+        }
     };
     ListComponent.prototype.fetchMore = function (event) {
         this.indices = event;
-        if (event.end === this.firstListAttributes.length) {
-            if (this.firstListAttributes.length < this.firstListItems.length) {
-                this.firstListAttributes = this.firstListAttributes.concat(this.firstListItems.slice(this.firstListAttributes.length, this.firstListAttributes.length + this.bufferSize));
+        if (event.end === this.listAttributes.length) {
+            if (this.listAttributes.length < this.listItems.length) {
+                this.listAttributes = this.listAttributes.concat(this.getAttributesData());
+            }
+            else {
+                this.componentsCommunicationService.createDataRequest(this.name);
             }
         }
     };
@@ -45,61 +68,60 @@ var ListComponent = (function () {
         this.reset();
     };
     ListComponent.prototype.reset = function () {
-        this.firstListAttributes = this.firstListItems.slice(0, this.bufferSize);
+        this.listAttributes = this.listItems.slice(0, this.bufferSize);
     };
-    ListComponent.prototype.ngOnInit = function () {
-        this.getItemsForTheFirstScrollableList();
-        this.getItemsForTheSecondScrollableList();
+    ListComponent.prototype.ngOnDestroy = function () {
+        this.subscription.unsubscribe();
     };
+    __decorate([
+        Input('name'),
+        __metadata("design:type", String)
+    ], ListComponent.prototype, "name", void 0);
+    __decorate([
+        Input('load_type'),
+        __metadata("design:type", String)
+    ], ListComponent.prototype, "load_type", void 0);
+    __decorate([
+        Input('page_size'),
+        __metadata("design:type", Number)
+    ], ListComponent.prototype, "page_size", void 0);
+    __decorate([
+        Input('loading_indicator'),
+        __metadata("design:type", Boolean)
+    ], ListComponent.prototype, "loading_indicator", void 0);
+    __decorate([
+        Input('min_width'),
+        __metadata("design:type", Number)
+    ], ListComponent.prototype, "min_width", void 0);
+    __decorate([
+        Input('min_height'),
+        __metadata("design:type", Number)
+    ], ListComponent.prototype, "min_height", void 0);
+    __decorate([
+        Input('max_height'),
+        __metadata("design:type", Number)
+    ], ListComponent.prototype, "max_height", void 0);
+    __decorate([
+        Input('max_width'),
+        __metadata("design:type", Number)
+    ], ListComponent.prototype, "max_width", void 0);
+    __decorate([
+        Input('header'),
+        __metadata("design:type", String)
+    ], ListComponent.prototype, "header", void 0);
+    __decorate([
+        Input('footer'),
+        __metadata("design:type", String)
+    ], ListComponent.prototype, "footer", void 0);
+    ListComponent = __decorate([
+        Component({
+            selector: 'list-component',
+            templateUrl: './list.component.html',
+            styleUrls: ['list.component.css']
+        }),
+        __metadata("design:paramtypes", [Http, ShareService, ComponentsCommunicationService])
+    ], ListComponent);
     return ListComponent;
 }());
-__decorate([
-    Input('name'),
-    __metadata("design:type", String)
-], ListComponent.prototype, "name", void 0);
-__decorate([
-    Input('load_type'),
-    __metadata("design:type", String)
-], ListComponent.prototype, "load_type", void 0);
-__decorate([
-    Input('page_size'),
-    __metadata("design:type", Number)
-], ListComponent.prototype, "page_size", void 0);
-__decorate([
-    Input('loading_indicator'),
-    __metadata("design:type", Boolean)
-], ListComponent.prototype, "loading_indicator", void 0);
-__decorate([
-    Input('min_width'),
-    __metadata("design:type", Number)
-], ListComponent.prototype, "min_width", void 0);
-__decorate([
-    Input('min_height'),
-    __metadata("design:type", Number)
-], ListComponent.prototype, "min_height", void 0);
-__decorate([
-    Input('max_height'),
-    __metadata("design:type", Number)
-], ListComponent.prototype, "max_height", void 0);
-__decorate([
-    Input('max_width'),
-    __metadata("design:type", Number)
-], ListComponent.prototype, "max_width", void 0);
-__decorate([
-    Input('header'),
-    __metadata("design:type", String)
-], ListComponent.prototype, "header", void 0);
-__decorate([
-    Input('footer'),
-    __metadata("design:type", String)
-], ListComponent.prototype, "footer", void 0);
-ListComponent = __decorate([
-    Component({
-        selector: 'list-component',
-        templateUrl: './list.component.html',
-        styleUrls: ['list.component.css']
-    }),
-    __metadata("design:paramtypes", [Http, ShareService])
-], ListComponent);
 export { ListComponent };
 //# sourceMappingURL=list.component.js.map

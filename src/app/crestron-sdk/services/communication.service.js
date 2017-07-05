@@ -41,11 +41,11 @@ var CommunicationService = (function () {
     CommunicationService.prototype.subscribeCodeSerial = function (code, cb) {
         this.CJS[this.sygnalType.serial].subscribe(code, cb);
     };
+    CommunicationService = __decorate([
+        Injectable(),
+        __metadata("design:paramtypes", [LoggerService])
+    ], CommunicationService);
     return CommunicationService;
 }());
-CommunicationService = __decorate([
-    Injectable(),
-    __metadata("design:paramtypes", [LoggerService])
-], CommunicationService);
 export { CommunicationService };
 //# sourceMappingURL=communication.service.js.map

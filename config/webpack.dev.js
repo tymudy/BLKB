@@ -12,10 +12,11 @@ module.exports = webpackMerge(commonConfig, {
   devtool: 'inline-source-map',
 
   output: {
-    path: helpers.root('dev/assets'),
+    path: helpers.root('dev'),
     publicPath: '',
     filename: '[name].js'
   },
+
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({

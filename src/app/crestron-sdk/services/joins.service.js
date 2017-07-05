@@ -71,11 +71,11 @@ var JoinsService = (function () {
         }
         return me.joinSubject.serial[id];
     };
+    JoinsService = __decorate([
+        Injectable(),
+        __metadata("design:paramtypes", [CommunicationService, LoggerService])
+    ], JoinsService);
     return JoinsService;
 }());
-JoinsService = __decorate([
-    Injectable(),
-    __metadata("design:paramtypes", [CommunicationService, LoggerService])
-], JoinsService);
 export { JoinsService };
 //# sourceMappingURL=joins.service.js.map

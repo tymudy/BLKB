@@ -6,54 +6,62 @@
 /* tslint:disable */
 import * as i0 from './gallery-list.component.css.shim.ngstyle';
 import * as i1 from '@angular/core';
-import * as i2 from '../../crestron-sdk/components/list/list.component.ngfactory';
-import * as i3 from '../../../../app/crestron-sdk/components/list/list.component';
-import * as i4 from '@angular/http';
-import * as i5 from '../../../../app/crestron-sdk/services/share/shareService';
-import * as i6 from '../../../../app/gallery/gallery-list/gallery-list.component';
+import * as i2 from '../../crestron-sdk/controllers/list-controller.ngfactory';
+import * as i3 from '../../../../app/crestron-sdk/controllers/list-controller';
+import * as i4 from '../../../../app/crestron-sdk/services/joins.service';
+import * as i5 from '../../../../app/crestron-sdk/services/communication.service';
+import * as i6 from '../../../../app/crestron-sdk/services/components.communication.service';
+import * as i7 from '../../crestron-sdk/components/list/list.component.ngfactory';
+import * as i8 from '../../../../app/crestron-sdk/components/list/list.component';
+import * as i9 from '@angular/http';
+import * as i10 from '../../../../app/crestron-sdk/services/share/shareService';
+import * as i11 from '../../../../app/gallery/gallery-list/gallery-list.component';
 var styles_GalleryListComponent = [i0.styles];
 export var RenderType_GalleryListComponent = i1.ɵcrt({ encapsulation: 0,
     styles: styles_GalleryListComponent, data: {} });
 export function View_GalleryListComponent_0(_l) {
-    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 2, 'list-component', [['header', 'Slider List'], ['load_type', 'scroll'], ['loading_indicator', 'true'],
-            ['max_height', '1000'], ['max_width', '400'], ['min_height', '800'], ['min_width',
-                '300'], ['name', 'myList'], ['page_size', '30']], null, null, null, i2.View_ListComponent_0, i2.RenderType_ListComponent)), i1.ɵdid(638976, null, 0, i3.ListComponent, [i4.Http, i5.ShareService], { name: [0, 'name'],
-            load_type: [1, 'load_type'], page_size: [2, 'page_size'], loading_indicator: [3,
-                'loading_indicator'], min_width: [4, 'min_width'], min_height: [5, 'min_height'],
-            max_height: [6, 'max_height'], max_width: [7, 'max_width'], header: [8, 'header'] }, null), (_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵeld(0, null, null, 2, 'list-component', [['header',
-                'Mixed List'], ['load_type', 'pagination'], ['loading_indicator', 'true'], ['max_height',
+    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 1, 'list-controller-component', [['name', 'lazyLoadList'], ['onLazyload', '104']], null, null, null, i2.View_ListController_0, i2.RenderType_ListController)), i1.ɵdid(245760, null, 0, i3.ListController, [i4.JoinsService, i5.CommunicationService, i6.ComponentsCommunicationService], { name: [0, 'name'], onLazyload: [1, 'onLazyload'] }, null), (_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵeld(0, null, null, 2, 'list-component', [['header',
+                'Slider List'], ['load_type', 'scroll'], ['loading_indicator', 'true'], ['max_height',
                 '1000'], ['max_width', '400'], ['min_height', '800'], ['min_width', '300'], ['name',
-                'myList2'], ['page_size', '30']], null, null, null, i2.View_ListComponent_0, i2.RenderType_ListComponent)), i1.ɵdid(638976, null, 0, i3.ListComponent, [i4.Http, i5.ShareService], { name: [0, 'name'], load_type: [1, 'load_type'], page_size: [2,
-                'page_size'], loading_indicator: [3, 'loading_indicator'], min_width: [4, 'min_width'],
-            min_height: [5, 'min_height'], max_height: [6, 'max_height'], max_width: [7, 'max_width'],
-            header: [8, 'header'] }, null), (_l()(), i1.ɵted(null, ['\n'])),
-        (_l()(), i1.ɵted(null, ['\n']))], function (_ck, _v) {
-        var currVal_0 = 'myList';
-        var currVal_1 = 'scroll';
-        var currVal_2 = '30';
-        var currVal_3 = 'true';
-        var currVal_4 = '300';
-        var currVal_5 = '800';
-        var currVal_6 = '1000';
-        var currVal_7 = '400';
-        var currVal_8 = 'Slider List';
-        _ck(_v, 1, 0, currVal_0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7, currVal_8);
-        var currVal_9 = 'myList2';
-        var currVal_10 = 'pagination';
-        var currVal_11 = '30';
-        var currVal_12 = 'true';
-        var currVal_13 = '300';
-        var currVal_14 = '800';
-        var currVal_15 = '1000';
-        var currVal_16 = '400';
-        var currVal_17 = 'Mixed List';
-        _ck(_v, 5, 0, currVal_9, currVal_10, currVal_11, currVal_12, currVal_13, currVal_14, currVal_15, currVal_16, currVal_17);
+                'lazyLoadList'], ['page_size', '30']], null, null, null, i7.View_ListComponent_0, i7.RenderType_ListComponent)), i1.ɵdid(770048, null, 0, i8.ListComponent, [i9.Http, i10.ShareService, i6.ComponentsCommunicationService], { name: [0, 'name'], load_type: [1, 'load_type'], page_size: [2, 'page_size'], loading_indicator: [3,
+                'loading_indicator'], min_width: [4, 'min_width'], min_height: [5, 'min_height'],
+            max_height: [6, 'max_height'], max_width: [7, 'max_width'], header: [8, 'header'] }, null), (_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵeld(0, null, null, 1, 'list-controller-component', [['name', 'loadList'], ['onLoad', '101']], null, null, null, i2.View_ListController_0, i2.RenderType_ListController)), i1.ɵdid(245760, null, 0, i3.ListController, [i4.JoinsService, i5.CommunicationService, i6.ComponentsCommunicationService], { name: [0, 'name'], onLoad: [1, 'onLoad'] }, null), (_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵeld(0, null, null, 2, 'list-component', [['header',
+                'Mixed List'], ['loading_indicator', 'true'], ['max_height', '1000'], ['max_width',
+                '400'], ['min_height', '800'], ['min_width', '300'], ['name', 'loadList'], ['page_size',
+                '30']], null, null, null, i7.View_ListComponent_0, i7.RenderType_ListComponent)),
+        i1.ɵdid(770048, null, 0, i8.ListComponent, [i9.Http, i10.ShareService, i6.ComponentsCommunicationService], { name: [0, 'name'], page_size: [1, 'page_size'], loading_indicator: [2, 'loading_indicator'],
+            min_width: [3, 'min_width'], min_height: [4, 'min_height'], max_height: [5,
+                'max_height'], max_width: [6, 'max_width'], header: [7, 'header'] }, null),
+        (_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵted(null, ['\n']))], function (_ck, _v) {
+        var currVal_0 = 'lazyLoadList';
+        var currVal_1 = '104';
+        _ck(_v, 1, 0, currVal_0, currVal_1);
+        var currVal_2 = 'lazyLoadList';
+        var currVal_3 = 'scroll';
+        var currVal_4 = '30';
+        var currVal_5 = 'true';
+        var currVal_6 = '300';
+        var currVal_7 = '800';
+        var currVal_8 = '1000';
+        var currVal_9 = '400';
+        var currVal_10 = 'Slider List';
+        _ck(_v, 4, 0, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7, currVal_8, currVal_9, currVal_10);
+        var currVal_11 = 'loadList';
+        var currVal_12 = '101';
+        _ck(_v, 8, 0, currVal_11, currVal_12);
+        var currVal_13 = 'loadList';
+        var currVal_14 = '30';
+        var currVal_15 = 'true';
+        var currVal_16 = '300';
+        var currVal_17 = '800';
+        var currVal_18 = '1000';
+        var currVal_19 = '400';
+        var currVal_20 = 'Mixed List';
+        _ck(_v, 11, 0, currVal_13, currVal_14, currVal_15, currVal_16, currVal_17, currVal_18, currVal_19, currVal_20);
     }, null);
 }
 export function View_GalleryListComponent_Host_0(_l) {
-    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 1, 'gallery-list', [], null, null, null, View_GalleryListComponent_0, RenderType_GalleryListComponent)), i1.ɵdid(114688, null, 0, i6.GalleryListComponent, [], null, null)], function (_ck, _v) {
-        _ck(_v, 1, 0);
-    }, null);
+    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 1, 'gallery-list', [], null, null, null, View_GalleryListComponent_0, RenderType_GalleryListComponent)), i1.ɵdid(49152, null, 0, i11.GalleryListComponent, [], null, null)], null, null);
 }
-export var GalleryListComponentNgFactory = i1.ɵccf('gallery-list', i6.GalleryListComponent, View_GalleryListComponent_Host_0, {}, {}, []);
+export var GalleryListComponentNgFactory = i1.ɵccf('gallery-list', i11.GalleryListComponent, View_GalleryListComponent_Host_0, {}, {}, []);
 //# sourceMappingURL=gallery-list.component.ngfactory.js.map

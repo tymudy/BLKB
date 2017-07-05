@@ -100,55 +100,55 @@ var ButtonComponent = (function () {
             this.stretch = '';
         }
     };
+    __decorate([
+        Input('name'),
+        __metadata("design:type", String)
+    ], ButtonComponent.prototype, "name", void 0);
+    __decorate([
+        Input('customClass'),
+        __metadata("design:type", String)
+    ], ButtonComponent.prototype, "customClass", void 0);
+    __decorate([
+        Input('label'),
+        __metadata("design:type", String)
+    ], ButtonComponent.prototype, "label", void 0);
+    __decorate([
+        Input('icon'),
+        __metadata("design:type", String)
+    ], ButtonComponent.prototype, "icon", void 0);
+    __decorate([
+        Input('icon_align'),
+        __metadata("design:type", String)
+    ], ButtonComponent.prototype, "icon_align", void 0);
+    __decorate([
+        Input('shape'),
+        __metadata("design:type", String)
+    ], ButtonComponent.prototype, "shape", void 0);
+    __decorate([
+        Input('type'),
+        __metadata("design:type", String)
+    ], ButtonComponent.prototype, "type", void 0);
+    __decorate([
+        Input('size'),
+        __metadata("design:type", String)
+    ], ButtonComponent.prototype, "size", void 0);
+    __decorate([
+        Input('stretch'),
+        __metadata("design:type", String)
+    ], ButtonComponent.prototype, "stretch", void 0);
+    __decorate([
+        Input('orientation'),
+        __metadata("design:type", String)
+    ], ButtonComponent.prototype, "orientation", void 0);
+    ButtonComponent = __decorate([
+        Component({
+            selector: 'btn',
+            templateUrl: './button.component.html',
+            styleUrls: ['./button.component.css'],
+            encapsulation: ViewEncapsulation.None
+        })
+    ], ButtonComponent);
     return ButtonComponent;
 }());
-__decorate([
-    Input('name'),
-    __metadata("design:type", String)
-], ButtonComponent.prototype, "name", void 0);
-__decorate([
-    Input('customClass'),
-    __metadata("design:type", String)
-], ButtonComponent.prototype, "customClass", void 0);
-__decorate([
-    Input('label'),
-    __metadata("design:type", String)
-], ButtonComponent.prototype, "label", void 0);
-__decorate([
-    Input('icon'),
-    __metadata("design:type", String)
-], ButtonComponent.prototype, "icon", void 0);
-__decorate([
-    Input('icon_align'),
-    __metadata("design:type", String)
-], ButtonComponent.prototype, "icon_align", void 0);
-__decorate([
-    Input('shape'),
-    __metadata("design:type", String)
-], ButtonComponent.prototype, "shape", void 0);
-__decorate([
-    Input('type'),
-    __metadata("design:type", String)
-], ButtonComponent.prototype, "type", void 0);
-__decorate([
-    Input('size'),
-    __metadata("design:type", String)
-], ButtonComponent.prototype, "size", void 0);
-__decorate([
-    Input('stretch'),
-    __metadata("design:type", String)
-], ButtonComponent.prototype, "stretch", void 0);
-__decorate([
-    Input('orientation'),
-    __metadata("design:type", String)
-], ButtonComponent.prototype, "orientation", void 0);
-ButtonComponent = __decorate([
-    Component({
-        selector: 'btn',
-        templateUrl: './button.component.html',
-        styleUrls: ['./button.component.css'],
-        encapsulation: ViewEncapsulation.None
-    })
-], ButtonComponent);
 export { ButtonComponent };
 //# sourceMappingURL=button.component.js.map

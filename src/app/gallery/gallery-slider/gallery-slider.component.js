@@ -8,15 +8,15 @@ import { Component, ViewEncapsulation } from '@angular/core';
 var GallerySliderComponent = (function () {
     function GallerySliderComponent() {
     }
+    GallerySliderComponent = __decorate([
+        Component({
+            selector: 'gallery-slider',
+            templateUrl: './gallery-slider.component.html',
+            styleUrls: ['./gallery-slider.component.css'],
+            encapsulation: ViewEncapsulation.None
+        })
+    ], GallerySliderComponent);
     return GallerySliderComponent;
 }());
-GallerySliderComponent = __decorate([
-    Component({
-        selector: 'gallery-slider',
-        templateUrl: './gallery-slider.component.html',
-        styleUrls: ['./gallery-slider.component.css'],
-        encapsulation: ViewEncapsulation.None
-    })
-], GallerySliderComponent);
 export { GallerySliderComponent };
 //# sourceMappingURL=gallery-slider.component.js.map

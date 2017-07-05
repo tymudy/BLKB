@@ -27,3 +27,7 @@ list-component:hover,
     background-color: #588ed3;
     color: #f0fff0;
 }
+.common_slider_style {
+    border: .5px solid #588ed3;
+    background-color: #588ed3; 
+}

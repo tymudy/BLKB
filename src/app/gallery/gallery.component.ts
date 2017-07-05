@@ -17,8 +17,6 @@ export class GalleryComponent implements OnInit{
   logs: any[] = [];
 
   private subscription: Subscription = new Subscription();
-  @ViewChild('debugger') debugger: ElementRef;
-  @ViewChild('logsImg') logsImg: ElementRef;
 
   constructor( private http: Http, private loggerService: LoggerService ){}
 
@@ -31,7 +29,7 @@ export class GalleryComponent implements OnInit{
   }
 
   loadItemsForGalleryMenu( ): void {
-    this.http.get( '../../assets/gallery_items.json' )
+    this.http.get( 'assets/gallery_items.json' )
       .map(response => response.json())
       .subscribe( (data: any ) => {
         this.menuItems = data;
@@ -54,11 +52,4 @@ export class GalleryComponent implements OnInit{
     return index;
   }
 
-  hideDebuggerDiv( event: any ) {
-    if(!this.debugger.nativeElement.contains(event.target) && !this.hideDebugger) {
-      this.toggleDebugger();
-    } else if(this.logsImg.nativeElement.contains(event.target)){
-      this.toggleDebugger();
-    }
-  }
 }

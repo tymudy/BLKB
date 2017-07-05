@@ -19,11 +19,11 @@ var ShareService = (function () {
             .map(function (res) { return res.json(); })
             .catch(function (error) { return Observable.throw(error.json().error || 'Server error'); });
     };
+    ShareService = __decorate([
+        Injectable(),
+        __metadata("design:paramtypes", [Http])
+    ], ShareService);
     return ShareService;
 }());
-ShareService = __decorate([
-    Injectable(),
-    __metadata("design:paramtypes", [Http])
-], ShareService);
 export { ShareService };
 //# sourceMappingURL=shareService.js.map

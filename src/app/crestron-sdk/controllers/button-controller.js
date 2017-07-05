@@ -104,63 +104,63 @@ var ButtonController = (function () {
         this.communicationService.sendCodeDigital(this.onBlur, 0);
     };
     ButtonController.prototype.ngOnDestroy = function () {
-        this.el[0].removeEventListener("click");
-        this.el[0].removeEventListener("touchstart");
-        this.el[0].removeEventListener("mousedown");
-        this.el[0].removeEventListener("touchend");
-        this.el[0].removeEventListener("mouseup");
-        this.el[0].removeEventListener("mouseenter");
-        this.el[0].removeEventListener("mouseleave");
+        /* this.el[0].removeEventListener ("click");
+         this.el[0].removeEventListener ("touchstart");
+         this.el[0].removeEventListener ("mousedown");
+         this.el[0].removeEventListener ("touchend");
+         this.el[0].removeEventListener ("mouseup");
+         this.el[0].removeEventListener ("mouseenter");
+         this.el[0].removeEventListener ("mouseleave");*/
         this.subscription.unsubscribe();
     };
+    __decorate([
+        Input('name'),
+        __metadata("design:type", String)
+    ], ButtonController.prototype, "name", void 0);
+    __decorate([
+        Input('onPress'),
+        __metadata("design:type", Number)
+    ], ButtonController.prototype, "onPress", void 0);
+    __decorate([
+        Input('onTap'),
+        __metadata("design:type", Number)
+    ], ButtonController.prototype, "onTap", void 0);
+    __decorate([
+        Input('onRelease'),
+        __metadata("design:type", Number)
+    ], ButtonController.prototype, "onRelease", void 0);
+    __decorate([
+        Input('onFocus'),
+        __metadata("design:type", Number)
+    ], ButtonController.prototype, "onFocus", void 0);
+    __decorate([
+        Input('onBlur'),
+        __metadata("design:type", Number)
+    ], ButtonController.prototype, "onBlur", void 0);
+    __decorate([
+        Input('runClass'),
+        __metadata("design:type", Number)
+    ], ButtonController.prototype, "runClass", void 0);
+    __decorate([
+        Input('runFocused'),
+        __metadata("design:type", Number)
+    ], ButtonController.prototype, "runFocused", void 0);
+    __decorate([
+        Input('runPressed'),
+        __metadata("design:type", Number)
+    ], ButtonController.prototype, "runPressed", void 0);
+    __decorate([
+        Input('runShow'),
+        __metadata("design:type", String)
+    ], ButtonController.prototype, "runShow", void 0);
+    ButtonController = __decorate([
+        Component({
+            selector: 'btn-controller',
+            template: ''
+        }),
+        __metadata("design:paramtypes", [JoinsService, CommunicationService])
+    ], ButtonController);
     return ButtonController;
 }());
-__decorate([
-    Input('name'),
-    __metadata("design:type", String)
-], ButtonController.prototype, "name", void 0);
-__decorate([
-    Input('onPress'),
-    __metadata("design:type", Number)
-], ButtonController.prototype, "onPress", void 0);
-__decorate([
-    Input('onTap'),
-    __metadata("design:type", Number)
-], ButtonController.prototype, "onTap", void 0);
-__decorate([
-    Input('onRelease'),
-    __metadata("design:type", Number)
-], ButtonController.prototype, "onRelease", void 0);
-__decorate([
-    Input('onFocus'),
-    __metadata("design:type", Number)
-], ButtonController.prototype, "onFocus", void 0);
-__decorate([
-    Input('onBlur'),
-    __metadata("design:type", Number)
-], ButtonController.prototype, "onBlur", void 0);
-__decorate([
-    Input('runClass'),
-    __metadata("design:type", Number)
-], ButtonController.prototype, "runClass", void 0);
-__decorate([
-    Input('runFocused'),
-    __metadata("design:type", Number)
-], ButtonController.prototype, "runFocused", void 0);
-__decorate([
-    Input('runPressed'),
-    __metadata("design:type", Number)
-], ButtonController.prototype, "runPressed", void 0);
-__decorate([
-    Input('runShow'),
-    __metadata("design:type", String)
-], ButtonController.prototype, "runShow", void 0);
-ButtonController = __decorate([
-    Component({
-        selector: 'btn-controller',
-        template: ''
-    }),
-    __metadata("design:paramtypes", [JoinsService, CommunicationService])
-], ButtonController);
 export { ButtonController };
 //# sourceMappingURL=button-controller.js.map

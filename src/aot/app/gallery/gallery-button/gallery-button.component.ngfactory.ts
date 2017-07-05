@@ -14,17 +14,17 @@ import * as i4 from '../../crestron-sdk/controllers/button-controller.ngfactory'
 import * as i5 from '../../../../app/crestron-sdk/controllers/button-controller';
 import * as i6 from '../../../../app/crestron-sdk/services/joins.service';
 import * as i7 from '../../../../app/crestron-sdk/services/communication.service';
-import * as i8 from '../../../../app/gallery/gallery-button/gallery-button.component';
-import * as i9 from 'ngx-clipboard/src/clipboard.directive';
-import * as i10 from 'ngx-clipboard/src/clipboard.service';
+import * as i8 from '../../crestron-sdk/components/snippet/snippet.component.ngfactory';
+import * as i9 from '../../../../app/crestron-sdk/components/snippet/snippet.component';
+import * as i10 from '../../../../app/gallery/gallery-button/gallery-button.component';
 const styles_GalleryButtonComponent:any[] = [i0.styles];
 export const RenderType_GalleryButtonComponent:i1.RendererType2 = i1.ɵcrt({encapsulation:2,
     styles:styles_GalleryButtonComponent,data:{}});
 export function View_GalleryButtonComponent_0(_l:any):i1.ɵViewDefinition {
-  return i1.ɵvid(0,[(_l()(),i1.ɵeld(0,(null as any),(null as any),824,'div',[['class',
+  return i1.ɵvid(0,[(_l()(),i1.ɵeld(0,(null as any),(null as any),471,'div',[['class',
       'button_wrapper']],(null as any),(null as any),(null as any),(null as any),(null as any))),
       (_l()(),i1.ɵted((null as any),['\n\n  '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
-          41,'div',[['class','row']],(null as any),(null as any),(null as any),(null as any),
+          28,'div',[['class','row']],(null as any),(null as any),(null as any),(null as any),
           (null as any))),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵeld(0,
           (null as any),(null as any),18,'div',[['class','col-md-6']],(null as any),
           (null as any),(null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
@@ -52,1428 +52,652 @@ export function View_GalleryButtonComponent_0(_l:any):i1.ɵViewDefinition {
           i1.ɵted((null as any),['\n          '])),(_l()(),i1.ɵted((null as any),['\n        '])),
       (_l()(),i1.ɵted((null as any),['\n      '])),(_l()(),i1.ɵted((null as any),['\n    '])),
       (_l()(),i1.ɵted((null as any),['\n\n    '])),(_l()(),i1.ɵeld(0,(null as any),
-          (null as any),18,'div',[['class','col-md-4']],(null as any),(null as any),
+          (null as any),5,'div',[['class','col-md-4']],(null as any),(null as any),
           (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n      '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),15,'div',[['class',
-          'input-group']],(null as any),(null as any),(null as any),(null as any),
-          (null as any))),(_l()(),i1.ɵted((null as any),['\n            '])),(_l()(),
-          i1.ɵeld(0,(null as any),(null as any),4,'pre',([] as any[]),(null as any),
-              (null as any),(null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['              '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'span',
-          ([] as any[]),(null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['',''])),(_l()(),i1.ɵted((null as any),['\n            '])),
-      (_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵeld(0,(null as any),
-          (null as any),6,'span',[['class','input-group-btn']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n            '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),3,'button',
-          [['class','btn btn-default'],['ngxClipboard',''],['type','button']],[[2,
-              'btn-success',(null as any)]],[[(null as any),'cbOnSuccess'],[(null as any),
-              'click']],(_v,en,$event) => {
-            var ad:boolean = true;
-            var _co:i8.GalleryButtonComponent = _v.component;
-            if (('click' === en)) {
-              const pd_0:any = ((<any>i1.ɵnov(_v,37).onClick($event.target)) !== false);
-              ad = (pd_0 && ad);
-            }
-            if (('cbOnSuccess' === en)) {
-              const pd_1:any = ((<any>(_co.isCopied1 = true)) !== false);
-              ad = (pd_1 && ad);
-            }
-            return ad;
-          },(null as any),(null as any))),i1.ɵdid(212992,(null as any),0,i9.ClipboardDirective,
-          [i10.ClipboardService,i1.Renderer],{targetElm:[0,'targetElm'],cbContent:[1,
-              'cbContent']},{cbOnSuccess:'cbOnSuccess'}),i1.ɵpad(1),(_l()(),i1.ɵted((null as any),
-          ['copy'])),(_l()(),i1.ɵted((null as any),['\n          '])),(_l()(),i1.ɵted((null as any),
-          ['\n      '])),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵted((null as any),
-          ['\n  '])),(_l()(),i1.ɵted((null as any),['\n\n  '])),(_l()(),i1.ɵeld(0,
-          (null as any),(null as any),37,'div',[['class','row']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),14,'div',[['class',
-          'col-md-6']],(null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['\n      '])),(_l()(),i1.ɵeld(0,(null as any),
-          (null as any),11,'div',[['class','button_container']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'h5',([] as any[]),
+          ['\n      '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),2,'snippet-component',
+          [['code','<btn name="buttonRectangle"\n               label="Button"\n               customClass="common_btn_style"\n               shape="rectangular">\n          </btn>']],
+          (null as any),(null as any),(null as any),i8.View_SnippetComponent_0,i8.RenderType_SnippetComponent)),
+      i1.ɵdid(114688,(null as any),0,i9.SnippetComponent,([] as any[]),{code:[0,'code']},
+          (null as any)),(_l()(),i1.ɵted((null as any),['\n      '])),(_l()(),i1.ɵted((null as any),
+          ['\n    '])),(_l()(),i1.ɵted((null as any),['\n  '])),(_l()(),i1.ɵted((null as any),
+          ['\n\n  '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),20,'div',[['class',
+          'row']],(null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
+          14,'div',[['class','col-md-6']],(null as any),(null as any),(null as any),
+          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n      '])),
+      (_l()(),i1.ɵeld(0,(null as any),(null as any),11,'div',[['class','button_container']],
           (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['Rounded Rectangle Button'])),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),5,'div',[['class',
-          'crestron_button_container']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n          '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),2,'btn',[['customClass','common_btn_style'],
-          ['label','Button'],['name','buttonRoundedRectangle'],['shape','rounded-rectangle']],
-          (null as any),(null as any),(null as any),i2.View_ButtonComponent_0,i2.RenderType_ButtonComponent)),
-      i1.ɵdid(114688,(null as any),0,i3.ButtonComponent,([] as any[]),{name:[0,'name'],
-          customClass:[1,'customClass'],label:[2,'label'],shape:[3,'shape']},(null as any)),
-      (_l()(),i1.ɵted((null as any),['\n          '])),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵted((null as any),['\n      '])),(_l()(),i1.ɵted((null as any),
-          ['\n    '])),(_l()(),i1.ɵted((null as any),['\n\n    '])),(_l()(),i1.ɵeld(0,
-          (null as any),(null as any),18,'div',[['class','col-md-4']],(null as any),
+      (_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵeld(0,(null as any),
+          (null as any),1,'h5',([] as any[]),(null as any),(null as any),(null as any),
+          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['Rounded Rectangle Button'])),
+      (_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵeld(0,(null as any),
+          (null as any),5,'div',[['class','crestron_button_container']],(null as any),
           (null as any),(null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n      '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),15,'div',[['class',
-          'input-group']],(null as any),(null as any),(null as any),(null as any),
-          (null as any))),(_l()(),i1.ɵted((null as any),['\n            '])),(_l()(),
-          i1.ɵeld(0,(null as any),(null as any),4,'pre',([] as any[]),(null as any),
-              (null as any),(null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['              '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'span',
-          ([] as any[]),(null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['',''])),(_l()(),i1.ɵted((null as any),['\n            '])),
-      (_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵeld(0,(null as any),
-          (null as any),6,'span',[['class','input-group-btn']],(null as any),(null as any),
+          ['\n          '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),2,'btn',
+          [['customClass','common_btn_style'],['label','Button'],['name','buttonRoundedRectangle'],
+              ['shape','rounded-rectangle']],(null as any),(null as any),(null as any),
+          i2.View_ButtonComponent_0,i2.RenderType_ButtonComponent)),i1.ɵdid(114688,
+          (null as any),0,i3.ButtonComponent,([] as any[]),{name:[0,'name'],customClass:[1,
+              'customClass'],label:[2,'label'],shape:[3,'shape']},(null as any)),(_l()(),
+          i1.ɵted((null as any),['\n          '])),(_l()(),i1.ɵted((null as any),['\n        '])),
+      (_l()(),i1.ɵted((null as any),['\n      '])),(_l()(),i1.ɵted((null as any),['\n    '])),
+      (_l()(),i1.ɵted((null as any),['\n\n    '])),(_l()(),i1.ɵeld(0,(null as any),
+          (null as any),1,'div',[['class','col-md-4']],(null as any),(null as any),
           (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n            '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),3,'button',
-          [['class','btn btn-default'],['ngxClipboard',''],['type','button']],[[2,
-              'btn-success',(null as any)]],[[(null as any),'cbOnSuccess'],[(null as any),
-              'click']],(_v,en,$event) => {
-            var ad:boolean = true;
-            var _co:i8.GalleryButtonComponent = _v.component;
-            if (('click' === en)) {
-              const pd_0:any = ((<any>i1.ɵnov(_v,76).onClick($event.target)) !== false);
-              ad = (pd_0 && ad);
-            }
-            if (('cbOnSuccess' === en)) {
-              const pd_1:any = ((<any>(_co.isCopied2 = true)) !== false);
-              ad = (pd_1 && ad);
-            }
-            return ad;
-          },(null as any),(null as any))),i1.ɵdid(212992,(null as any),0,i9.ClipboardDirective,
-          [i10.ClipboardService,i1.Renderer],{targetElm:[0,'targetElm'],cbContent:[1,
-              'cbContent']},{cbOnSuccess:'cbOnSuccess'}),i1.ɵpad(1),(_l()(),i1.ɵted((null as any),
-          ['copy'])),(_l()(),i1.ɵted((null as any),['\n          '])),(_l()(),i1.ɵted((null as any),
-          ['\n      '])),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵted((null as any),
-          ['\n  '])),(_l()(),i1.ɵted((null as any),['\n\n  '])),(_l()(),i1.ɵeld(0,
-          (null as any),(null as any),37,'div',[['class','row']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),14,'div',[['class',
-          'col-md-6']],(null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['\n      '])),(_l()(),i1.ɵeld(0,(null as any),
-          (null as any),11,'div',[['class','button_container']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'h5',([] as any[]),
+          ['\n\n    '])),(_l()(),i1.ɵted((null as any),['\n  '])),(_l()(),i1.ɵted((null as any),
+          ['\n\n  '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),20,'div',[['class',
+          'row']],(null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
+          14,'div',[['class','col-md-6']],(null as any),(null as any),(null as any),
+          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n      '])),
+      (_l()(),i1.ɵeld(0,(null as any),(null as any),11,'div',[['class','button_container']],
           (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['Tab Button'])),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),5,'div',[['class',
-          'crestron_button_container']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n          '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),2,'btn',[['customClass','common_btn_style'],
-          ['label','Button'],['name','buttonTab'],['shape','tab']],(null as any),(null as any),
+      (_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵeld(0,(null as any),
+          (null as any),1,'h5',([] as any[]),(null as any),(null as any),(null as any),
+          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['Tab Button'])),
+      (_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵeld(0,(null as any),
+          (null as any),5,'div',[['class','crestron_button_container']],(null as any),
+          (null as any),(null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
+          ['\n          '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),2,'btn',
+          [['customClass','common_btn_style'],['label','Button'],['name','buttonTab'],
+              ['shape','tab']],(null as any),(null as any),(null as any),i2.View_ButtonComponent_0,
+          i2.RenderType_ButtonComponent)),i1.ɵdid(114688,(null as any),0,i3.ButtonComponent,
+          ([] as any[]),{name:[0,'name'],customClass:[1,'customClass'],label:[2,'label'],
+              shape:[3,'shape']},(null as any)),(_l()(),i1.ɵted((null as any),['\n          '])),
+      (_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵted((null as any),
+          ['\n      '])),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵted((null as any),
+          ['\n\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'div',[['class',
+          'col-md-4']],(null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵted((null as any),['\n\n    '])),(_l()(),i1.ɵted((null as any),['\n  '])),
+      (_l()(),i1.ɵted((null as any),['\n\n  '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
+          20,'div',[['class','row']],(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵeld(0,
+          (null as any),(null as any),14,'div',[['class','col-md-6']],(null as any),
+          (null as any),(null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
+          ['\n      '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),11,'div',[['class',
+          'button_container']],(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵeld(0,
+          (null as any),(null as any),1,'h5',([] as any[]),(null as any),(null as any),
+          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
+          ['Circle Button'])),(_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),
+          i1.ɵeld(0,(null as any),(null as any),5,'div',[['class','crestron_button_container']],
+              (null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵted((null as any),['\n          '])),(_l()(),i1.ɵeld(0,(null as any),
+          (null as any),2,'btn',[['customClass','common_btn_style'],['label','Button'],
+              ['name','buttonCircle'],['shape','circle']],(null as any),(null as any),
           (null as any),i2.View_ButtonComponent_0,i2.RenderType_ButtonComponent)),
       i1.ɵdid(114688,(null as any),0,i3.ButtonComponent,([] as any[]),{name:[0,'name'],
           customClass:[1,'customClass'],label:[2,'label'],shape:[3,'shape']},(null as any)),
       (_l()(),i1.ɵted((null as any),['\n          '])),(_l()(),i1.ɵted((null as any),
           ['\n        '])),(_l()(),i1.ɵted((null as any),['\n      '])),(_l()(),i1.ɵted((null as any),
-          ['\n    '])),(_l()(),i1.ɵted((null as any),['\n\n    '])),(_l()(),i1.ɵeld(0,
-          (null as any),(null as any),18,'div',[['class','col-md-4']],(null as any),
-          (null as any),(null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n      '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),15,'div',[['class',
-          'input-group']],(null as any),(null as any),(null as any),(null as any),
-          (null as any))),(_l()(),i1.ɵted((null as any),['\n            '])),(_l()(),
-          i1.ɵeld(0,(null as any),(null as any),4,'pre',([] as any[]),(null as any),
-              (null as any),(null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['              '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'span',
-          ([] as any[]),(null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['',''])),(_l()(),i1.ɵted((null as any),['\n            '])),
-      (_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵeld(0,(null as any),
-          (null as any),6,'span',[['class','input-group-btn']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n            '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),3,'button',
-          [['class','btn btn-default'],['ngxClipboard',''],['type','button']],[[2,
-              'btn-success',(null as any)]],[[(null as any),'cbOnSuccess'],[(null as any),
-              'click']],(_v,en,$event) => {
-            var ad:boolean = true;
-            var _co:i8.GalleryButtonComponent = _v.component;
-            if (('click' === en)) {
-              const pd_0:any = ((<any>i1.ɵnov(_v,115).onClick($event.target)) !== false);
-              ad = (pd_0 && ad);
-            }
-            if (('cbOnSuccess' === en)) {
-              const pd_1:any = ((<any>(_co.isCopied3 = true)) !== false);
-              ad = (pd_1 && ad);
-            }
-            return ad;
-          },(null as any),(null as any))),i1.ɵdid(212992,(null as any),0,i9.ClipboardDirective,
-          [i10.ClipboardService,i1.Renderer],{targetElm:[0,'targetElm'],cbContent:[1,
-              'cbContent']},{cbOnSuccess:'cbOnSuccess'}),i1.ɵpad(1),(_l()(),i1.ɵted((null as any),
-          ['copy'])),(_l()(),i1.ɵted((null as any),['\n          '])),(_l()(),i1.ɵted((null as any),
-          ['\n      '])),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵted((null as any),
-          ['\n  '])),(_l()(),i1.ɵted((null as any),['\n\n  '])),(_l()(),i1.ɵeld(0,
-          (null as any),(null as any),37,'div',[['class','row']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),14,'div',[['class',
-          'col-md-6']],(null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['\n      '])),(_l()(),i1.ɵeld(0,(null as any),
-          (null as any),11,'div',[['class','button_container']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'h5',([] as any[]),
-          (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['Circle Button'])),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),5,'div',[['class',
-          'crestron_button_container']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n          '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),2,'btn',[['customClass','common_btn_style'],
-          ['label','Button'],['name','buttonCircle'],['shape','circle']],(null as any),
-          (null as any),(null as any),i2.View_ButtonComponent_0,i2.RenderType_ButtonComponent)),
-      i1.ɵdid(114688,(null as any),0,i3.ButtonComponent,([] as any[]),{name:[0,'name'],
-          customClass:[1,'customClass'],label:[2,'label'],shape:[3,'shape']},(null as any)),
-      (_l()(),i1.ɵted((null as any),['\n          '])),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵted((null as any),['\n      '])),(_l()(),i1.ɵted((null as any),
           ['\n    '])),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵeld(0,
-          (null as any),(null as any),18,'div',[['class','col-md-4']],(null as any),
+          (null as any),(null as any),1,'div',[['class','col-md-4']],(null as any),
           (null as any),(null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n      '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),15,'div',[['class',
-          'input-group']],(null as any),(null as any),(null as any),(null as any),
-          (null as any))),(_l()(),i1.ɵted((null as any),['\n            '])),(_l()(),
-          i1.ɵeld(0,(null as any),(null as any),4,'pre',([] as any[]),(null as any),
-              (null as any),(null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['              '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'span',
-          ([] as any[]),(null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['',''])),(_l()(),i1.ɵted((null as any),['\n            '])),
-      (_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵeld(0,(null as any),
-          (null as any),6,'span',[['class','input-group-btn']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n            '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),3,'button',
-          [['class','btn btn-default'],['ngxClipboard',''],['type','button']],[[2,
-              'btn-success',(null as any)]],[[(null as any),'cbOnSuccess'],[(null as any),
-              'click']],(_v,en,$event) => {
-            var ad:boolean = true;
-            var _co:i8.GalleryButtonComponent = _v.component;
-            if (('click' === en)) {
-              const pd_0:any = ((<any>i1.ɵnov(_v,154).onClick($event.target)) !== false);
-              ad = (pd_0 && ad);
-            }
-            if (('cbOnSuccess' === en)) {
-              const pd_1:any = ((<any>(_co.isCopied4 = true)) !== false);
-              ad = (pd_1 && ad);
-            }
-            return ad;
-          },(null as any),(null as any))),i1.ɵdid(212992,(null as any),0,i9.ClipboardDirective,
-          [i10.ClipboardService,i1.Renderer],{targetElm:[0,'targetElm'],cbContent:[1,
-              'cbContent']},{cbOnSuccess:'cbOnSuccess'}),i1.ɵpad(1),(_l()(),i1.ɵted((null as any),
-          ['copy'])),(_l()(),i1.ɵted((null as any),['\n          '])),(_l()(),i1.ɵted((null as any),
-          ['\n      '])),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵted((null as any),
-          ['\n  '])),(_l()(),i1.ɵted((null as any),['\n\n  '])),(_l()(),i1.ɵeld(0,
-          (null as any),(null as any),37,'div',[['class','row']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),14,'div',[['class',
-          'col-md-6']],(null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['\n      '])),(_l()(),i1.ɵeld(0,(null as any),
-          (null as any),11,'div',[['class','button_container']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'h5',([] as any[]),
+          ['\n\n    '])),(_l()(),i1.ɵted((null as any),['\n  '])),(_l()(),i1.ɵted((null as any),
+          ['\n\n  '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),20,'div',[['class',
+          'row']],(null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
+          14,'div',[['class','col-md-6']],(null as any),(null as any),(null as any),
+          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n      '])),
+      (_l()(),i1.ɵeld(0,(null as any),(null as any),11,'div',[['class','button_container']],
           (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['Oval Button'])),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),5,'div',[['class',
-          'crestron_button_container']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n          '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),2,'btn',[['customClass','common_btn_style'],
-          ['label','Button'],['name','buttonOval'],['shape','oval']],(null as any),
-          (null as any),(null as any),i2.View_ButtonComponent_0,i2.RenderType_ButtonComponent)),
-      i1.ɵdid(114688,(null as any),0,i3.ButtonComponent,([] as any[]),{name:[0,'name'],
-          customClass:[1,'customClass'],label:[2,'label'],shape:[3,'shape']},(null as any)),
-      (_l()(),i1.ɵted((null as any),['\n          '])),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵted((null as any),['\n      '])),(_l()(),i1.ɵted((null as any),
-          ['\n    '])),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵeld(0,
-          (null as any),(null as any),18,'div',[['class','col-md-4']],(null as any),
+      (_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵeld(0,(null as any),
+          (null as any),1,'h5',([] as any[]),(null as any),(null as any),(null as any),
+          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['Oval Button'])),
+      (_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵeld(0,(null as any),
+          (null as any),5,'div',[['class','crestron_button_container']],(null as any),
           (null as any),(null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n      '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),15,'div',[['class',
-          'input-group']],(null as any),(null as any),(null as any),(null as any),
-          (null as any))),(_l()(),i1.ɵted((null as any),['\n            '])),(_l()(),
-          i1.ɵeld(0,(null as any),(null as any),4,'pre',([] as any[]),(null as any),
-              (null as any),(null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['              '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'span',
-          ([] as any[]),(null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['',''])),(_l()(),i1.ɵted((null as any),['\n            '])),
-      (_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵeld(0,(null as any),
-          (null as any),6,'span',[['class','input-group-btn']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n            '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),3,'button',
-          [['class','btn btn-default'],['ngxClipboard',''],['type','button']],[[2,
-              'btn-success',(null as any)]],[[(null as any),'cbOnSuccess'],[(null as any),
-              'click']],(_v,en,$event) => {
-            var ad:boolean = true;
-            var _co:i8.GalleryButtonComponent = _v.component;
-            if (('click' === en)) {
-              const pd_0:any = ((<any>i1.ɵnov(_v,193).onClick($event.target)) !== false);
-              ad = (pd_0 && ad);
-            }
-            if (('cbOnSuccess' === en)) {
-              const pd_1:any = ((<any>(_co.isCopied5 = true)) !== false);
-              ad = (pd_1 && ad);
-            }
-            return ad;
-          },(null as any),(null as any))),i1.ɵdid(212992,(null as any),0,i9.ClipboardDirective,
-          [i10.ClipboardService,i1.Renderer],{targetElm:[0,'targetElm'],cbContent:[1,
-              'cbContent']},{cbOnSuccess:'cbOnSuccess'}),i1.ɵpad(1),(_l()(),i1.ɵted((null as any),
-          ['copy'])),(_l()(),i1.ɵted((null as any),['\n          '])),(_l()(),i1.ɵted((null as any),
-          ['\n      '])),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵted((null as any),
-          ['\n  '])),(_l()(),i1.ɵted((null as any),['\n\n  '])),(_l()(),i1.ɵeld(0,
-          (null as any),(null as any),37,'div',[['class','row']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),14,'div',[['class',
-          'col-md-6']],(null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['\n      '])),(_l()(),i1.ɵeld(0,(null as any),
-          (null as any),11,'div',[['class','button_container']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'h5',([] as any[]),
-          (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['Button with Icon'])),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),5,'div',[['class',
-          'crestron_button_container']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n          '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),2,'btn',[['customClass','common_btn_style'],
-          ['icon','fa fa-plus'],['icon_align','right'],['label','Button'],['name',
-              'buttonIconRight']],(null as any),(null as any),(null as any),i2.View_ButtonComponent_0,
+          ['\n          '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),2,'btn',
+          [['customClass','common_btn_style'],['label','Button'],['name','buttonOval'],
+              ['shape','oval']],(null as any),(null as any),(null as any),i2.View_ButtonComponent_0,
           i2.RenderType_ButtonComponent)),i1.ɵdid(114688,(null as any),0,i3.ButtonComponent,
           ([] as any[]),{name:[0,'name'],customClass:[1,'customClass'],label:[2,'label'],
-              icon:[3,'icon'],icon_align:[4,'icon_align']},(null as any)),(_l()(),
-          i1.ɵted((null as any),['\n          '])),(_l()(),i1.ɵted((null as any),['\n        '])),
-      (_l()(),i1.ɵted((null as any),['\n      '])),(_l()(),i1.ɵted((null as any),['\n    '])),
-      (_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
-          18,'div',[['class','col-md-4']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n      '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),15,'div',[['class','input-group']],
-          (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['\n            '])),(_l()(),i1.ɵeld(0,(null as any),
-          (null as any),4,'pre',([] as any[]),(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['              '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),1,'span',([] as any[]),(null as any),
-          (null as any),(null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['',''])),(_l()(),i1.ɵted((null as any),['\n            '])),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),6,'span',
-          [['class','input-group-btn']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n            '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),3,'button',[['class','btn btn-default'],
-          ['ngxClipboard',''],['type','button']],[[2,'btn-success',(null as any)]],
-          [[(null as any),'cbOnSuccess'],[(null as any),'click']],(_v,en,$event) => {
-            var ad:boolean = true;
-            var _co:i8.GalleryButtonComponent = _v.component;
-            if (('click' === en)) {
-              const pd_0:any = ((<any>i1.ɵnov(_v,232).onClick($event.target)) !== false);
-              ad = (pd_0 && ad);
-            }
-            if (('cbOnSuccess' === en)) {
-              const pd_1:any = ((<any>(_co.isCopied6 = true)) !== false);
-              ad = (pd_1 && ad);
-            }
-            return ad;
-          },(null as any),(null as any))),i1.ɵdid(212992,(null as any),0,i9.ClipboardDirective,
-          [i10.ClipboardService,i1.Renderer],{targetElm:[0,'targetElm'],cbContent:[1,
-              'cbContent']},{cbOnSuccess:'cbOnSuccess'}),i1.ɵpad(1),(_l()(),i1.ɵted((null as any),
-          ['copy'])),(_l()(),i1.ɵted((null as any),['\n          '])),(_l()(),i1.ɵted((null as any),
+              shape:[3,'shape']},(null as any)),(_l()(),i1.ɵted((null as any),['\n          '])),
+      (_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵted((null as any),
           ['\n      '])),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵted((null as any),
-          ['\n  '])),(_l()(),i1.ɵted((null as any),['\n\n  '])),(_l()(),i1.ɵeld(0,
-          (null as any),(null as any),37,'div',[['class','row']],(null as any),(null as any),
+          ['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'div',[['class',
+          'col-md-4']],(null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵted((null as any),['\n\n    '])),(_l()(),i1.ɵted((null as any),['\n  '])),
+      (_l()(),i1.ɵted((null as any),['\n\n  '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
+          20,'div',[['class','row']],(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵeld(0,
+          (null as any),(null as any),14,'div',[['class','col-md-6']],(null as any),
+          (null as any),(null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
+          ['\n      '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),11,'div',[['class',
+          'button_container']],(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵeld(0,
+          (null as any),(null as any),1,'h5',([] as any[]),(null as any),(null as any),
           (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),14,'div',[['class',
-          'col-md-6']],(null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['\n      '])),(_l()(),i1.ɵeld(0,(null as any),
-          (null as any),11,'div',[['class','button_container']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'h5',([] as any[]),
-          (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['Button with Icon'])),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),5,'div',[['class',
-          'crestron_button_container']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n          '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),2,'btn',[['customClass','common_btn_style'],
-          ['icon','fa fa-plus'],['icon_align','left'],['label','Button'],['name','buttonIconLeft']],
+          ['Button with Icon'])),(_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),
+          i1.ɵeld(0,(null as any),(null as any),5,'div',[['class','crestron_button_container']],
+              (null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵted((null as any),['\n          '])),(_l()(),i1.ɵeld(0,(null as any),
+          (null as any),2,'btn',[['customClass','common_btn_style'],['icon','fa fa-plus'],
+              ['icon_align','right'],['label','Button'],['name','buttonIconRight']],
           (null as any),(null as any),(null as any),i2.View_ButtonComponent_0,i2.RenderType_ButtonComponent)),
       i1.ɵdid(114688,(null as any),0,i3.ButtonComponent,([] as any[]),{name:[0,'name'],
           customClass:[1,'customClass'],label:[2,'label'],icon:[3,'icon'],icon_align:[4,
               'icon_align']},(null as any)),(_l()(),i1.ɵted((null as any),['\n          '])),
       (_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵted((null as any),
           ['\n      '])),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵted((null as any),
-          ['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),18,'div',[['class',
+          ['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'div',[['class',
           'col-md-4']],(null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['\n      '])),(_l()(),i1.ɵeld(0,(null as any),
-          (null as any),15,'div',[['class','input-group']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n            '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),4,'pre',
-          ([] as any[]),(null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['              '])),(_l()(),i1.ɵeld(0,(null as any),
-          (null as any),1,'span',([] as any[]),(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['',''])),(_l()(),
-          i1.ɵted((null as any),['\n            '])),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),6,'span',
-          [['class','input-group-btn']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n            '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),3,'button',[['class','btn btn-default'],
-          ['ngxClipboard',''],['type','button']],[[2,'btn-success',(null as any)]],
-          [[(null as any),'cbOnSuccess'],[(null as any),'click']],(_v,en,$event) => {
-            var ad:boolean = true;
-            var _co:i8.GalleryButtonComponent = _v.component;
-            if (('click' === en)) {
-              const pd_0:any = ((<any>i1.ɵnov(_v,271).onClick($event.target)) !== false);
-              ad = (pd_0 && ad);
-            }
-            if (('cbOnSuccess' === en)) {
-              const pd_1:any = ((<any>(_co.isCopied7 = true)) !== false);
-              ad = (pd_1 && ad);
-            }
-            return ad;
-          },(null as any),(null as any))),i1.ɵdid(212992,(null as any),0,i9.ClipboardDirective,
-          [i10.ClipboardService,i1.Renderer],{targetElm:[0,'targetElm'],cbContent:[1,
-              'cbContent']},{cbOnSuccess:'cbOnSuccess'}),i1.ɵpad(1),(_l()(),i1.ɵted((null as any),
-          ['copy'])),(_l()(),i1.ɵted((null as any),['\n          '])),(_l()(),i1.ɵted((null as any),
-          ['\n      '])),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵted((null as any),
-          ['\n  '])),(_l()(),i1.ɵted((null as any),['\n\n  '])),(_l()(),i1.ɵeld(0,
-          (null as any),(null as any),37,'div',[['class','row']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),14,'div',[['class',
-          'col-md-6']],(null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['\n      '])),(_l()(),i1.ɵeld(0,(null as any),
-          (null as any),11,'div',[['class','button_container']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'h5',([] as any[]),
-          (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['Primary Button Type'])),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),5,'div',[['class',
-          'crestron_button_container']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n          '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),2,'btn',[['customClass','common_btn_style'],
-          ['label','Button'],['name','buttonPrimary'],['shape','rounded-rectangle'],
-          ['type','primary']],(null as any),(null as any),(null as any),i2.View_ButtonComponent_0,
-          i2.RenderType_ButtonComponent)),i1.ɵdid(114688,(null as any),0,i3.ButtonComponent,
-          ([] as any[]),{name:[0,'name'],customClass:[1,'customClass'],label:[2,'label'],
-              shape:[3,'shape'],type:[4,'type']},(null as any)),(_l()(),i1.ɵted((null as any),
-          ['\n          '])),(_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),
-          i1.ɵted((null as any),['\n      '])),(_l()(),i1.ɵted((null as any),['\n    '])),
-      (_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
-          18,'div',[['class','col-md-4']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n      '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),15,'div',[['class','input-group']],
-          (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['\n            '])),(_l()(),i1.ɵeld(0,(null as any),
-          (null as any),4,'pre',([] as any[]),(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['              '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),1,'span',([] as any[]),(null as any),
+      (_l()(),i1.ɵted((null as any),['\n\n    '])),(_l()(),i1.ɵted((null as any),['\n  '])),
+      (_l()(),i1.ɵted((null as any),['\n\n  '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
+          20,'div',[['class','row']],(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵeld(0,
+          (null as any),(null as any),14,'div',[['class','col-md-6']],(null as any),
           (null as any),(null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['',''])),(_l()(),i1.ɵted((null as any),['\n            '])),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),6,'span',
-          [['class','input-group-btn']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n            '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),3,'button',[['class','btn btn-default'],
-          ['ngxClipboard',''],['type','button']],[[2,'btn-success',(null as any)]],
-          [[(null as any),'cbOnSuccess'],[(null as any),'click']],(_v,en,$event) => {
-            var ad:boolean = true;
-            var _co:i8.GalleryButtonComponent = _v.component;
-            if (('click' === en)) {
-              const pd_0:any = ((<any>i1.ɵnov(_v,310).onClick($event.target)) !== false);
-              ad = (pd_0 && ad);
-            }
-            if (('cbOnSuccess' === en)) {
-              const pd_1:any = ((<any>(_co.isCopied8 = true)) !== false);
-              ad = (pd_1 && ad);
-            }
-            return ad;
-          },(null as any),(null as any))),i1.ɵdid(212992,(null as any),0,i9.ClipboardDirective,
-          [i10.ClipboardService,i1.Renderer],{targetElm:[0,'targetElm'],cbContent:[1,
-              'cbContent']},{cbOnSuccess:'cbOnSuccess'}),i1.ɵpad(1),(_l()(),i1.ɵted((null as any),
-          ['copy'])),(_l()(),i1.ɵted((null as any),['\n          '])),(_l()(),i1.ɵted((null as any),
+          ['\n      '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),11,'div',[['class',
+          'button_container']],(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵeld(0,
+          (null as any),(null as any),1,'h5',([] as any[]),(null as any),(null as any),
+          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
+          ['Button with Icon'])),(_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),
+          i1.ɵeld(0,(null as any),(null as any),5,'div',[['class','crestron_button_container']],
+              (null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵted((null as any),['\n          '])),(_l()(),i1.ɵeld(0,(null as any),
+          (null as any),2,'btn',[['customClass','common_btn_style'],['icon','fa fa-plus'],
+              ['icon_align','left'],['label','Button'],['name','buttonIconLeft']],
+          (null as any),(null as any),(null as any),i2.View_ButtonComponent_0,i2.RenderType_ButtonComponent)),
+      i1.ɵdid(114688,(null as any),0,i3.ButtonComponent,([] as any[]),{name:[0,'name'],
+          customClass:[1,'customClass'],label:[2,'label'],icon:[3,'icon'],icon_align:[4,
+              'icon_align']},(null as any)),(_l()(),i1.ɵted((null as any),['\n          '])),
+      (_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵted((null as any),
           ['\n      '])),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵted((null as any),
-          ['\n  '])),(_l()(),i1.ɵted((null as any),['\n\n  '])),(_l()(),i1.ɵeld(0,
-          (null as any),(null as any),37,'div',[['class','row']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),14,'div',[['class',
-          'col-md-6']],(null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['\n      '])),(_l()(),i1.ɵeld(0,(null as any),
-          (null as any),11,'div',[['class','button_container']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'h5',([] as any[]),
-          (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['Secondary Button Type'])),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),5,'div',[['class',
-          'crestron_button_container']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n          '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),2,'btn',[['customClass','common_btn_style'],
-          ['label','Button'],['name','buttonSecondary'],['shape','rounded-rectangle'],
-          ['type','secondary']],(null as any),(null as any),(null as any),i2.View_ButtonComponent_0,
-          i2.RenderType_ButtonComponent)),i1.ɵdid(114688,(null as any),0,i3.ButtonComponent,
-          ([] as any[]),{name:[0,'name'],customClass:[1,'customClass'],label:[2,'label'],
-              shape:[3,'shape'],type:[4,'type']},(null as any)),(_l()(),i1.ɵted((null as any),
-          ['\n          '])),(_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),
-          i1.ɵted((null as any),['\n      '])),(_l()(),i1.ɵted((null as any),['\n    '])),
-      (_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
-          18,'div',[['class','col-md-4']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n      '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),15,'div',[['class','input-group']],
-          (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['\n            '])),(_l()(),i1.ɵeld(0,(null as any),
-          (null as any),4,'pre',([] as any[]),(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['              '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),1,'span',([] as any[]),(null as any),
+          ['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'div',[['class',
+          'col-md-4']],(null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵted((null as any),['\n\n    '])),(_l()(),i1.ɵted((null as any),['\n  '])),
+      (_l()(),i1.ɵted((null as any),['\n\n  '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
+          20,'div',[['class','row']],(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵeld(0,
+          (null as any),(null as any),14,'div',[['class','col-md-6']],(null as any),
           (null as any),(null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['',''])),(_l()(),i1.ɵted((null as any),['\n            '])),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),6,'span',
-          [['class','input-group-btn']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n            '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),3,'button',[['class','btn btn-default'],
-          ['ngxClipboard',''],['type','button']],[[2,'btn-success',(null as any)]],
-          [[(null as any),'cbOnSuccess'],[(null as any),'click']],(_v,en,$event) => {
-            var ad:boolean = true;
-            var _co:i8.GalleryButtonComponent = _v.component;
-            if (('click' === en)) {
-              const pd_0:any = ((<any>i1.ɵnov(_v,349).onClick($event.target)) !== false);
-              ad = (pd_0 && ad);
-            }
-            if (('cbOnSuccess' === en)) {
-              const pd_1:any = ((<any>(_co.isCopied9 = true)) !== false);
-              ad = (pd_1 && ad);
-            }
-            return ad;
-          },(null as any),(null as any))),i1.ɵdid(212992,(null as any),0,i9.ClipboardDirective,
-          [i10.ClipboardService,i1.Renderer],{targetElm:[0,'targetElm'],cbContent:[1,
-              'cbContent']},{cbOnSuccess:'cbOnSuccess'}),i1.ɵpad(1),(_l()(),i1.ɵted((null as any),
-          ['copy'])),(_l()(),i1.ɵted((null as any),['\n          '])),(_l()(),i1.ɵted((null as any),
+          ['\n      '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),11,'div',[['class',
+          'button_container']],(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵeld(0,
+          (null as any),(null as any),1,'h5',([] as any[]),(null as any),(null as any),
+          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
+          ['Primary Button Type'])),(_l()(),i1.ɵted((null as any),['\n        '])),
+      (_l()(),i1.ɵeld(0,(null as any),(null as any),5,'div',[['class','crestron_button_container']],
+          (null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵted((null as any),['\n          '])),(_l()(),i1.ɵeld(0,(null as any),
+          (null as any),2,'btn',[['customClass','common_btn_style'],['label','Button'],
+              ['name','buttonPrimary'],['shape','rounded-rectangle'],['type','primary']],
+          (null as any),(null as any),(null as any),i2.View_ButtonComponent_0,i2.RenderType_ButtonComponent)),
+      i1.ɵdid(114688,(null as any),0,i3.ButtonComponent,([] as any[]),{name:[0,'name'],
+          customClass:[1,'customClass'],label:[2,'label'],shape:[3,'shape'],type:[4,
+              'type']},(null as any)),(_l()(),i1.ɵted((null as any),['\n          '])),
+      (_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵted((null as any),
           ['\n      '])),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵted((null as any),
-          ['\n  '])),(_l()(),i1.ɵted((null as any),['\n\n  '])),(_l()(),i1.ɵeld(0,
-          (null as any),(null as any),37,'div',[['class','row']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),14,'div',[['class',
-          'col-md-6']],(null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['\n      '])),(_l()(),i1.ɵeld(0,(null as any),
-          (null as any),11,'div',[['class','button_container']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'h5',([] as any[]),
-          (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['Info Button Type'])),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),5,'div',[['class',
-          'crestron_button_container']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n          '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),2,'btn',[['customClass','common_btn_style'],
-          ['label','Button'],['name','buttonInfo'],['shape','rounded-rectangle'],['type',
-              'info']],(null as any),(null as any),(null as any),i2.View_ButtonComponent_0,
-          i2.RenderType_ButtonComponent)),i1.ɵdid(114688,(null as any),0,i3.ButtonComponent,
-          ([] as any[]),{name:[0,'name'],customClass:[1,'customClass'],label:[2,'label'],
-              shape:[3,'shape'],type:[4,'type']},(null as any)),(_l()(),i1.ɵted((null as any),
-          ['\n          '])),(_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),
-          i1.ɵted((null as any),['\n      '])),(_l()(),i1.ɵted((null as any),['\n    '])),
-      (_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
-          18,'div',[['class','col-md-4']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n      '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),15,'div',[['class','input-group']],
-          (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['\n            '])),(_l()(),i1.ɵeld(0,(null as any),
-          (null as any),4,'pre',([] as any[]),(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['              '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),1,'span',([] as any[]),(null as any),
+          ['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'div',[['class',
+          'col-md-4']],(null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵted((null as any),['\n\n    '])),(_l()(),i1.ɵted((null as any),['\n  '])),
+      (_l()(),i1.ɵted((null as any),['\n\n  '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
+          20,'div',[['class','row']],(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵeld(0,
+          (null as any),(null as any),14,'div',[['class','col-md-6']],(null as any),
           (null as any),(null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['',''])),(_l()(),i1.ɵted((null as any),['\n            '])),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),6,'span',
-          [['class','input-group-btn']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n            '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),3,'button',[['class','btn btn-default'],
-          ['ngxClipboard',''],['type','button']],[[2,'btn-success',(null as any)]],
-          [[(null as any),'cbOnSuccess'],[(null as any),'click']],(_v,en,$event) => {
-            var ad:boolean = true;
-            var _co:i8.GalleryButtonComponent = _v.component;
-            if (('click' === en)) {
-              const pd_0:any = ((<any>i1.ɵnov(_v,388).onClick($event.target)) !== false);
-              ad = (pd_0 && ad);
-            }
-            if (('cbOnSuccess' === en)) {
-              const pd_1:any = ((<any>(_co.isCopied10 = true)) !== false);
-              ad = (pd_1 && ad);
-            }
-            return ad;
-          },(null as any),(null as any))),i1.ɵdid(212992,(null as any),0,i9.ClipboardDirective,
-          [i10.ClipboardService,i1.Renderer],{targetElm:[0,'targetElm'],cbContent:[1,
-              'cbContent']},{cbOnSuccess:'cbOnSuccess'}),i1.ɵpad(1),(_l()(),i1.ɵted((null as any),
-          ['copy'])),(_l()(),i1.ɵted((null as any),['\n          '])),(_l()(),i1.ɵted((null as any),
+          ['\n      '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),11,'div',[['class',
+          'button_container']],(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵeld(0,
+          (null as any),(null as any),1,'h5',([] as any[]),(null as any),(null as any),
+          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
+          ['Secondary Button Type'])),(_l()(),i1.ɵted((null as any),['\n        '])),
+      (_l()(),i1.ɵeld(0,(null as any),(null as any),5,'div',[['class','crestron_button_container']],
+          (null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵted((null as any),['\n          '])),(_l()(),i1.ɵeld(0,(null as any),
+          (null as any),2,'btn',[['customClass','common_btn_style'],['label','Button'],
+              ['name','buttonSecondary'],['shape','rounded-rectangle'],['type','secondary']],
+          (null as any),(null as any),(null as any),i2.View_ButtonComponent_0,i2.RenderType_ButtonComponent)),
+      i1.ɵdid(114688,(null as any),0,i3.ButtonComponent,([] as any[]),{name:[0,'name'],
+          customClass:[1,'customClass'],label:[2,'label'],shape:[3,'shape'],type:[4,
+              'type']},(null as any)),(_l()(),i1.ɵted((null as any),['\n          '])),
+      (_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵted((null as any),
           ['\n      '])),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵted((null as any),
-          ['\n  '])),(_l()(),i1.ɵted((null as any),['\n\n  '])),(_l()(),i1.ɵeld(0,
-          (null as any),(null as any),37,'div',[['class','row']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),14,'div',[['class',
-          'col-md-6']],(null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['\n      '])),(_l()(),i1.ɵeld(0,(null as any),
-          (null as any),11,'div',[['class','button_container']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'h5',([] as any[]),
-          (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['Warning Button Type'])),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),5,'div',[['class',
-          'crestron_button_container']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n          '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),2,'btn',[['customClass','common_btn_style'],
-          ['label','Button'],['name','buttonWarning'],['shape','rounded-rectangle'],
-          ['type','warning']],(null as any),(null as any),(null as any),i2.View_ButtonComponent_0,
-          i2.RenderType_ButtonComponent)),i1.ɵdid(114688,(null as any),0,i3.ButtonComponent,
-          ([] as any[]),{name:[0,'name'],customClass:[1,'customClass'],label:[2,'label'],
-              shape:[3,'shape'],type:[4,'type']},(null as any)),(_l()(),i1.ɵted((null as any),
-          ['\n          '])),(_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),
-          i1.ɵted((null as any),['\n      '])),(_l()(),i1.ɵted((null as any),['\n    '])),
-      (_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
-          18,'div',[['class','col-md-4']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n      '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),15,'div',[['class','input-group']],
-          (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['\n            '])),(_l()(),i1.ɵeld(0,(null as any),
-          (null as any),4,'pre',([] as any[]),(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['              '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),1,'span',([] as any[]),(null as any),
+          ['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'div',[['class',
+          'col-md-4']],(null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵted((null as any),['\n\n    '])),(_l()(),i1.ɵted((null as any),['\n  '])),
+      (_l()(),i1.ɵted((null as any),['\n\n  '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
+          20,'div',[['class','row']],(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵeld(0,
+          (null as any),(null as any),14,'div',[['class','col-md-6']],(null as any),
           (null as any),(null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['',''])),(_l()(),i1.ɵted((null as any),['\n            '])),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),6,'span',
-          [['class','input-group-btn']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n            '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),3,'button',[['class','btn btn-default'],
-          ['ngxClipboard',''],['type','button']],[[2,'btn-success',(null as any)]],
-          [[(null as any),'cbOnSuccess'],[(null as any),'click']],(_v,en,$event) => {
-            var ad:boolean = true;
-            var _co:i8.GalleryButtonComponent = _v.component;
-            if (('click' === en)) {
-              const pd_0:any = ((<any>i1.ɵnov(_v,427).onClick($event.target)) !== false);
-              ad = (pd_0 && ad);
-            }
-            if (('cbOnSuccess' === en)) {
-              const pd_1:any = ((<any>(_co.isCopied11 = true)) !== false);
-              ad = (pd_1 && ad);
-            }
-            return ad;
-          },(null as any),(null as any))),i1.ɵdid(212992,(null as any),0,i9.ClipboardDirective,
-          [i10.ClipboardService,i1.Renderer],{targetElm:[0,'targetElm'],cbContent:[1,
-              'cbContent']},{cbOnSuccess:'cbOnSuccess'}),i1.ɵpad(1),(_l()(),i1.ɵted((null as any),
-          ['copy'])),(_l()(),i1.ɵted((null as any),['\n          '])),(_l()(),i1.ɵted((null as any),
+          ['\n      '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),11,'div',[['class',
+          'button_container']],(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵeld(0,
+          (null as any),(null as any),1,'h5',([] as any[]),(null as any),(null as any),
+          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
+          ['Info Button Type'])),(_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),
+          i1.ɵeld(0,(null as any),(null as any),5,'div',[['class','crestron_button_container']],
+              (null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵted((null as any),['\n          '])),(_l()(),i1.ɵeld(0,(null as any),
+          (null as any),2,'btn',[['customClass','common_btn_style'],['label','Button'],
+              ['name','buttonInfo'],['shape','rounded-rectangle'],['type','info']],
+          (null as any),(null as any),(null as any),i2.View_ButtonComponent_0,i2.RenderType_ButtonComponent)),
+      i1.ɵdid(114688,(null as any),0,i3.ButtonComponent,([] as any[]),{name:[0,'name'],
+          customClass:[1,'customClass'],label:[2,'label'],shape:[3,'shape'],type:[4,
+              'type']},(null as any)),(_l()(),i1.ɵted((null as any),['\n          '])),
+      (_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵted((null as any),
           ['\n      '])),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵted((null as any),
-          ['\n  '])),(_l()(),i1.ɵted((null as any),['\n\n  '])),(_l()(),i1.ɵeld(0,
-          (null as any),(null as any),37,'div',[['class','row']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),14,'div',[['class',
-          'col-md-6']],(null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['\n      '])),(_l()(),i1.ɵeld(0,(null as any),
-          (null as any),11,'div',[['class','button_container']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'h5',([] as any[]),
-          (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['Danger Button Type'])),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),5,'div',[['class',
-          'crestron_button_container']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n          '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),2,'btn',[['customClass','common_btn_style'],
-          ['label','Button'],['name','buttonDanger'],['shape','rounded-rectangle'],
-          ['type','danger']],(null as any),(null as any),(null as any),i2.View_ButtonComponent_0,
-          i2.RenderType_ButtonComponent)),i1.ɵdid(114688,(null as any),0,i3.ButtonComponent,
-          ([] as any[]),{name:[0,'name'],customClass:[1,'customClass'],label:[2,'label'],
-              shape:[3,'shape'],type:[4,'type']},(null as any)),(_l()(),i1.ɵted((null as any),
-          ['\n          '])),(_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),
-          i1.ɵted((null as any),['\n      '])),(_l()(),i1.ɵted((null as any),['\n    '])),
-      (_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
-          18,'div',[['class','col-md-4']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n      '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),15,'div',[['class','input-group']],
-          (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['\n            '])),(_l()(),i1.ɵeld(0,(null as any),
-          (null as any),4,'pre',([] as any[]),(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['              '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),1,'span',([] as any[]),(null as any),
+          ['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'div',[['class',
+          'col-md-4']],(null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵted((null as any),['\n\n    '])),(_l()(),i1.ɵted((null as any),['\n  '])),
+      (_l()(),i1.ɵted((null as any),['\n\n  '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
+          20,'div',[['class','row']],(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵeld(0,
+          (null as any),(null as any),14,'div',[['class','col-md-6']],(null as any),
           (null as any),(null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['',''])),(_l()(),i1.ɵted((null as any),['\n            '])),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),6,'span',
-          [['class','input-group-btn']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n            '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),3,'button',[['class','btn btn-default'],
-          ['ngxClipboard',''],['type','button']],[[2,'btn-success',(null as any)]],
-          [[(null as any),'cbOnSuccess'],[(null as any),'click']],(_v,en,$event) => {
-            var ad:boolean = true;
-            var _co:i8.GalleryButtonComponent = _v.component;
-            if (('click' === en)) {
-              const pd_0:any = ((<any>i1.ɵnov(_v,466).onClick($event.target)) !== false);
-              ad = (pd_0 && ad);
-            }
-            if (('cbOnSuccess' === en)) {
-              const pd_1:any = ((<any>(_co.isCopied12 = true)) !== false);
-              ad = (pd_1 && ad);
-            }
-            return ad;
-          },(null as any),(null as any))),i1.ɵdid(212992,(null as any),0,i9.ClipboardDirective,
-          [i10.ClipboardService,i1.Renderer],{targetElm:[0,'targetElm'],cbContent:[1,
-              'cbContent']},{cbOnSuccess:'cbOnSuccess'}),i1.ɵpad(1),(_l()(),i1.ɵted((null as any),
-          ['copy'])),(_l()(),i1.ɵted((null as any),['\n          '])),(_l()(),i1.ɵted((null as any),
+          ['\n      '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),11,'div',[['class',
+          'button_container']],(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵeld(0,
+          (null as any),(null as any),1,'h5',([] as any[]),(null as any),(null as any),
+          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
+          ['Warning Button Type'])),(_l()(),i1.ɵted((null as any),['\n        '])),
+      (_l()(),i1.ɵeld(0,(null as any),(null as any),5,'div',[['class','crestron_button_container']],
+          (null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵted((null as any),['\n          '])),(_l()(),i1.ɵeld(0,(null as any),
+          (null as any),2,'btn',[['customClass','common_btn_style'],['label','Button'],
+              ['name','buttonWarning'],['shape','rounded-rectangle'],['type','warning']],
+          (null as any),(null as any),(null as any),i2.View_ButtonComponent_0,i2.RenderType_ButtonComponent)),
+      i1.ɵdid(114688,(null as any),0,i3.ButtonComponent,([] as any[]),{name:[0,'name'],
+          customClass:[1,'customClass'],label:[2,'label'],shape:[3,'shape'],type:[4,
+              'type']},(null as any)),(_l()(),i1.ɵted((null as any),['\n          '])),
+      (_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵted((null as any),
           ['\n      '])),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵted((null as any),
-          ['\n  '])),(_l()(),i1.ɵted((null as any),['\n\n  '])),(_l()(),i1.ɵeld(0,
-          (null as any),(null as any),37,'div',[['class','row']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),14,'div',[['class',
-          'col-md-6']],(null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['\n      '])),(_l()(),i1.ɵeld(0,(null as any),
-          (null as any),11,'div',[['class','button_container']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'h5',([] as any[]),
-          (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['Success Button Type'])),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),5,'div',[['class',
-          'crestron_button_container']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n          '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),2,'btn',[['customClass','common_btn_style'],
-          ['label','Button'],['name','buttonSuccess'],['shape','rounded-rectangle'],
-          ['type','success']],(null as any),(null as any),(null as any),i2.View_ButtonComponent_0,
-          i2.RenderType_ButtonComponent)),i1.ɵdid(114688,(null as any),0,i3.ButtonComponent,
-          ([] as any[]),{name:[0,'name'],customClass:[1,'customClass'],label:[2,'label'],
-              shape:[3,'shape'],type:[4,'type']},(null as any)),(_l()(),i1.ɵted((null as any),
-          ['\n          '])),(_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),
-          i1.ɵted((null as any),['\n      '])),(_l()(),i1.ɵted((null as any),['\n    '])),
-      (_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
-          18,'div',[['class','col-md-4']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n      '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),15,'div',[['class','input-group']],
-          (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['\n            '])),(_l()(),i1.ɵeld(0,(null as any),
-          (null as any),4,'pre',([] as any[]),(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['              '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),1,'span',([] as any[]),(null as any),
+          ['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'div',[['class',
+          'col-md-4']],(null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵted((null as any),['\n\n    '])),(_l()(),i1.ɵted((null as any),['\n  '])),
+      (_l()(),i1.ɵted((null as any),['\n\n  '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
+          20,'div',[['class','row']],(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵeld(0,
+          (null as any),(null as any),14,'div',[['class','col-md-6']],(null as any),
           (null as any),(null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['',''])),(_l()(),i1.ɵted((null as any),['\n            '])),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),6,'span',
-          [['class','input-group-btn']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n            '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),3,'button',[['class','btn btn-default'],
-          ['ngxClipboard',''],['type','button']],[[2,'btn-success',(null as any)]],
-          [[(null as any),'cbOnSuccess'],[(null as any),'click']],(_v,en,$event) => {
-            var ad:boolean = true;
-            var _co:i8.GalleryButtonComponent = _v.component;
-            if (('click' === en)) {
-              const pd_0:any = ((<any>i1.ɵnov(_v,505).onClick($event.target)) !== false);
-              ad = (pd_0 && ad);
-            }
-            if (('cbOnSuccess' === en)) {
-              const pd_1:any = ((<any>(_co.isCopied13 = true)) !== false);
-              ad = (pd_1 && ad);
-            }
-            return ad;
-          },(null as any),(null as any))),i1.ɵdid(212992,(null as any),0,i9.ClipboardDirective,
-          [i10.ClipboardService,i1.Renderer],{targetElm:[0,'targetElm'],cbContent:[1,
-              'cbContent']},{cbOnSuccess:'cbOnSuccess'}),i1.ɵpad(1),(_l()(),i1.ɵted((null as any),
-          ['copy'])),(_l()(),i1.ɵted((null as any),['\n          '])),(_l()(),i1.ɵted((null as any),
+          ['\n      '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),11,'div',[['class',
+          'button_container']],(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵeld(0,
+          (null as any),(null as any),1,'h5',([] as any[]),(null as any),(null as any),
+          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
+          ['Danger Button Type'])),(_l()(),i1.ɵted((null as any),['\n        '])),
+      (_l()(),i1.ɵeld(0,(null as any),(null as any),5,'div',[['class','crestron_button_container']],
+          (null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵted((null as any),['\n          '])),(_l()(),i1.ɵeld(0,(null as any),
+          (null as any),2,'btn',[['customClass','common_btn_style'],['label','Button'],
+              ['name','buttonDanger'],['shape','rounded-rectangle'],['type','danger']],
+          (null as any),(null as any),(null as any),i2.View_ButtonComponent_0,i2.RenderType_ButtonComponent)),
+      i1.ɵdid(114688,(null as any),0,i3.ButtonComponent,([] as any[]),{name:[0,'name'],
+          customClass:[1,'customClass'],label:[2,'label'],shape:[3,'shape'],type:[4,
+              'type']},(null as any)),(_l()(),i1.ɵted((null as any),['\n          '])),
+      (_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵted((null as any),
           ['\n      '])),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵted((null as any),
-          ['\n  '])),(_l()(),i1.ɵted((null as any),['\n\n  '])),(_l()(),i1.ɵeld(0,
-          (null as any),(null as any),37,'div',[['class','row']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),14,'div',[['class',
-          'col-md-6']],(null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['\n      '])),(_l()(),i1.ɵeld(0,(null as any),
-          (null as any),11,'div',[['class','button_container']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'h5',([] as any[]),
-          (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['Text Button Type'])),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),5,'div',[['class',
-          'crestron_button_container']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n          '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),2,'btn',[['customClass','common_btn_style'],
-          ['label','Button'],['name','buttonText'],['shape','rounded-rectangle'],['type',
-              'text']],(null as any),(null as any),(null as any),i2.View_ButtonComponent_0,
-          i2.RenderType_ButtonComponent)),i1.ɵdid(114688,(null as any),0,i3.ButtonComponent,
-          ([] as any[]),{name:[0,'name'],customClass:[1,'customClass'],label:[2,'label'],
-              shape:[3,'shape'],type:[4,'type']},(null as any)),(_l()(),i1.ɵted((null as any),
-          ['\n          '])),(_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),
-          i1.ɵted((null as any),['\n      '])),(_l()(),i1.ɵted((null as any),['\n    '])),
-      (_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
-          18,'div',[['class','col-md-4']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n      '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),15,'div',[['class','input-group']],
-          (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['\n            '])),(_l()(),i1.ɵeld(0,(null as any),
-          (null as any),4,'pre',([] as any[]),(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['              '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),1,'span',([] as any[]),(null as any),
+          ['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'div',[['class',
+          'col-md-4']],(null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵted((null as any),['\n\n    '])),(_l()(),i1.ɵted((null as any),['\n  '])),
+      (_l()(),i1.ɵted((null as any),['\n\n  '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
+          20,'div',[['class','row']],(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵeld(0,
+          (null as any),(null as any),14,'div',[['class','col-md-6']],(null as any),
           (null as any),(null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['',''])),(_l()(),i1.ɵted((null as any),['\n            '])),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),6,'span',
-          [['class','input-group-btn']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n            '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),3,'button',[['class','btn btn-default'],
-          ['ngxClipboard',''],['type','button']],[[2,'btn-success',(null as any)]],
-          [[(null as any),'cbOnSuccess'],[(null as any),'click']],(_v,en,$event) => {
-            var ad:boolean = true;
-            var _co:i8.GalleryButtonComponent = _v.component;
-            if (('click' === en)) {
-              const pd_0:any = ((<any>i1.ɵnov(_v,544).onClick($event.target)) !== false);
-              ad = (pd_0 && ad);
-            }
-            if (('cbOnSuccess' === en)) {
-              const pd_1:any = ((<any>(_co.isCopied14 = true)) !== false);
-              ad = (pd_1 && ad);
-            }
-            return ad;
-          },(null as any),(null as any))),i1.ɵdid(212992,(null as any),0,i9.ClipboardDirective,
-          [i10.ClipboardService,i1.Renderer],{targetElm:[0,'targetElm'],cbContent:[1,
-              'cbContent']},{cbOnSuccess:'cbOnSuccess'}),i1.ɵpad(1),(_l()(),i1.ɵted((null as any),
-          ['copy'])),(_l()(),i1.ɵted((null as any),['\n          '])),(_l()(),i1.ɵted((null as any),
+          ['\n      '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),11,'div',[['class',
+          'button_container']],(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵeld(0,
+          (null as any),(null as any),1,'h5',([] as any[]),(null as any),(null as any),
+          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
+          ['Success Button Type'])),(_l()(),i1.ɵted((null as any),['\n        '])),
+      (_l()(),i1.ɵeld(0,(null as any),(null as any),5,'div',[['class','crestron_button_container']],
+          (null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵted((null as any),['\n          '])),(_l()(),i1.ɵeld(0,(null as any),
+          (null as any),2,'btn',[['customClass','common_btn_style'],['label','Button'],
+              ['name','buttonSuccess'],['shape','rounded-rectangle'],['type','success']],
+          (null as any),(null as any),(null as any),i2.View_ButtonComponent_0,i2.RenderType_ButtonComponent)),
+      i1.ɵdid(114688,(null as any),0,i3.ButtonComponent,([] as any[]),{name:[0,'name'],
+          customClass:[1,'customClass'],label:[2,'label'],shape:[3,'shape'],type:[4,
+              'type']},(null as any)),(_l()(),i1.ɵted((null as any),['\n          '])),
+      (_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵted((null as any),
           ['\n      '])),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵted((null as any),
-          ['\n  '])),(_l()(),i1.ɵted((null as any),['\n\n  '])),(_l()(),i1.ɵeld(0,
-          (null as any),(null as any),37,'div',[['class','row']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),14,'div',[['class',
-          'col-md-6']],(null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['\n      '])),(_l()(),i1.ɵeld(0,(null as any),
-          (null as any),11,'div',[['class','button_container']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'h5',([] as any[]),
-          (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['Vertical Button'])),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),5,'div',[['class',
-          'crestron_button_container']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n          '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),2,'btn',[['customClass','common_btn_style'],
-          ['icon','fa fa-minus'],['label','Button'],['name','buttonVertical'],['orientation',
-              'vertical']],(null as any),(null as any),(null as any),i2.View_ButtonComponent_0,
-          i2.RenderType_ButtonComponent)),i1.ɵdid(114688,(null as any),0,i3.ButtonComponent,
-          ([] as any[]),{name:[0,'name'],customClass:[1,'customClass'],label:[2,'label'],
-              icon:[3,'icon'],orientation:[4,'orientation']},(null as any)),(_l()(),
-          i1.ɵted((null as any),['\n          '])),(_l()(),i1.ɵted((null as any),['\n        '])),
-      (_l()(),i1.ɵted((null as any),['\n      '])),(_l()(),i1.ɵted((null as any),['\n    '])),
-      (_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
-          18,'div',[['class','col-md-4']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n      '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),15,'div',[['class','input-group']],
-          (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['\n            '])),(_l()(),i1.ɵeld(0,(null as any),
-          (null as any),4,'pre',([] as any[]),(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['              '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),1,'span',([] as any[]),(null as any),
+          ['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'div',[['class',
+          'col-md-4']],(null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵted((null as any),['\n\n    '])),(_l()(),i1.ɵted((null as any),['\n  '])),
+      (_l()(),i1.ɵted((null as any),['\n\n  '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
+          20,'div',[['class','row']],(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵeld(0,
+          (null as any),(null as any),14,'div',[['class','col-md-6']],(null as any),
           (null as any),(null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['',''])),(_l()(),i1.ɵted((null as any),['\n            '])),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),6,'span',
-          [['class','input-group-btn']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n            '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),3,'button',[['class','btn btn-default'],
-          ['ngxClipboard',''],['type','button']],[[2,'btn-success',(null as any)]],
-          [[(null as any),'cbOnSuccess'],[(null as any),'click']],(_v,en,$event) => {
-            var ad:boolean = true;
-            var _co:i8.GalleryButtonComponent = _v.component;
-            if (('click' === en)) {
-              const pd_0:any = ((<any>i1.ɵnov(_v,583).onClick($event.target)) !== false);
-              ad = (pd_0 && ad);
-            }
-            if (('cbOnSuccess' === en)) {
-              const pd_1:any = ((<any>(_co.isCopied15 = true)) !== false);
-              ad = (pd_1 && ad);
-            }
-            return ad;
-          },(null as any),(null as any))),i1.ɵdid(212992,(null as any),0,i9.ClipboardDirective,
-          [i10.ClipboardService,i1.Renderer],{targetElm:[0,'targetElm'],cbContent:[1,
-              'cbContent']},{cbOnSuccess:'cbOnSuccess'}),i1.ɵpad(1),(_l()(),i1.ɵted((null as any),
-          ['copy'])),(_l()(),i1.ɵted((null as any),['\n          '])),(_l()(),i1.ɵted((null as any),
+          ['\n      '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),11,'div',[['class',
+          'button_container']],(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵeld(0,
+          (null as any),(null as any),1,'h5',([] as any[]),(null as any),(null as any),
+          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
+          ['Text Button Type'])),(_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),
+          i1.ɵeld(0,(null as any),(null as any),5,'div',[['class','crestron_button_container']],
+              (null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵted((null as any),['\n          '])),(_l()(),i1.ɵeld(0,(null as any),
+          (null as any),2,'btn',[['customClass','common_btn_style'],['label','Button'],
+              ['name','buttonText'],['shape','rounded-rectangle'],['type','text']],
+          (null as any),(null as any),(null as any),i2.View_ButtonComponent_0,i2.RenderType_ButtonComponent)),
+      i1.ɵdid(114688,(null as any),0,i3.ButtonComponent,([] as any[]),{name:[0,'name'],
+          customClass:[1,'customClass'],label:[2,'label'],shape:[3,'shape'],type:[4,
+              'type']},(null as any)),(_l()(),i1.ɵted((null as any),['\n          '])),
+      (_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵted((null as any),
           ['\n      '])),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵted((null as any),
-          ['\n  '])),(_l()(),i1.ɵted((null as any),['\n\n  '])),(_l()(),i1.ɵeld(0,
-          (null as any),(null as any),37,'div',[['class','row']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),14,'div',[['class',
-          'col-md-6']],(null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['\n      '])),(_l()(),i1.ɵeld(0,(null as any),
-          (null as any),11,'div',[['class','button_container']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'h5',([] as any[]),
-          (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['X-Small Button'])),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),5,'div',[['class',
-          'crestron_button_container']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n          '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),2,'btn',[['customClass','common_btn_style'],
-          ['icon','fa fa-plus'],['label','Button'],['name','buttonXSmall'],['size',
-              'x-small']],(null as any),(null as any),(null as any),i2.View_ButtonComponent_0,
-          i2.RenderType_ButtonComponent)),i1.ɵdid(114688,(null as any),0,i3.ButtonComponent,
-          ([] as any[]),{name:[0,'name'],customClass:[1,'customClass'],label:[2,'label'],
-              icon:[3,'icon'],size:[4,'size']},(null as any)),(_l()(),i1.ɵted((null as any),
-          ['\n          '])),(_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),
-          i1.ɵted((null as any),['\n      '])),(_l()(),i1.ɵted((null as any),['\n    '])),
-      (_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
-          18,'div',[['class','col-md-4']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n      '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),15,'div',[['class','input-group']],
-          (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['\n            '])),(_l()(),i1.ɵeld(0,(null as any),
-          (null as any),4,'pre',([] as any[]),(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['              '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),1,'span',([] as any[]),(null as any),
+          ['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'div',[['class',
+          'col-md-4']],(null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵted((null as any),['\n\n    '])),(_l()(),i1.ɵted((null as any),['\n  '])),
+      (_l()(),i1.ɵted((null as any),['\n\n  '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
+          20,'div',[['class','row']],(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵeld(0,
+          (null as any),(null as any),14,'div',[['class','col-md-6']],(null as any),
           (null as any),(null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['',''])),(_l()(),i1.ɵted((null as any),['\n            '])),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),6,'span',
-          [['class','input-group-btn']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n            '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),3,'button',[['class','btn btn-default'],
-          ['ngxClipboard',''],['type','button']],[[2,'btn-success',(null as any)]],
-          [[(null as any),'cbOnSuccess'],[(null as any),'click']],(_v,en,$event) => {
-            var ad:boolean = true;
-            var _co:i8.GalleryButtonComponent = _v.component;
-            if (('click' === en)) {
-              const pd_0:any = ((<any>i1.ɵnov(_v,622).onClick($event.target)) !== false);
-              ad = (pd_0 && ad);
-            }
-            if (('cbOnSuccess' === en)) {
-              const pd_1:any = ((<any>(_co.isCopied16 = true)) !== false);
-              ad = (pd_1 && ad);
-            }
-            return ad;
-          },(null as any),(null as any))),i1.ɵdid(212992,(null as any),0,i9.ClipboardDirective,
-          [i10.ClipboardService,i1.Renderer],{targetElm:[0,'targetElm'],cbContent:[1,
-              'cbContent']},{cbOnSuccess:'cbOnSuccess'}),i1.ɵpad(1),(_l()(),i1.ɵted((null as any),
-          ['copy'])),(_l()(),i1.ɵted((null as any),['\n          '])),(_l()(),i1.ɵted((null as any),
+          ['\n      '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),11,'div',[['class',
+          'button_container']],(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵeld(0,
+          (null as any),(null as any),1,'h5',([] as any[]),(null as any),(null as any),
+          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
+          ['Vertical Button'])),(_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),
+          i1.ɵeld(0,(null as any),(null as any),5,'div',[['class','crestron_button_container']],
+              (null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵted((null as any),['\n          '])),(_l()(),i1.ɵeld(0,(null as any),
+          (null as any),2,'btn',[['customClass','common_btn_style'],['icon','fa fa-minus'],
+              ['label','Button'],['name','buttonVertical'],['orientation','vertical']],
+          (null as any),(null as any),(null as any),i2.View_ButtonComponent_0,i2.RenderType_ButtonComponent)),
+      i1.ɵdid(114688,(null as any),0,i3.ButtonComponent,([] as any[]),{name:[0,'name'],
+          customClass:[1,'customClass'],label:[2,'label'],icon:[3,'icon'],orientation:[4,
+              'orientation']},(null as any)),(_l()(),i1.ɵted((null as any),['\n          '])),
+      (_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵted((null as any),
           ['\n      '])),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵted((null as any),
-          ['\n  '])),(_l()(),i1.ɵted((null as any),['\n\n  '])),(_l()(),i1.ɵeld(0,
-          (null as any),(null as any),37,'div',[['class','row']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),14,'div',[['class',
-          'col-md-6']],(null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['\n      '])),(_l()(),i1.ɵeld(0,(null as any),
-          (null as any),11,'div',[['class','button_container']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'h5',([] as any[]),
-          (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['Small Button'])),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),5,'div',[['class',
-          'crestron_button_container']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n          '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),2,'btn',[['customClass','common_btn_style'],
-          ['icon','fa fa-plus'],['label','Button'],['name','buttonSmall'],['size',
-              'small']],(null as any),(null as any),(null as any),i2.View_ButtonComponent_0,
-          i2.RenderType_ButtonComponent)),i1.ɵdid(114688,(null as any),0,i3.ButtonComponent,
-          ([] as any[]),{name:[0,'name'],customClass:[1,'customClass'],label:[2,'label'],
-              icon:[3,'icon'],size:[4,'size']},(null as any)),(_l()(),i1.ɵted((null as any),
-          ['\n          '])),(_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),
-          i1.ɵted((null as any),['\n      '])),(_l()(),i1.ɵted((null as any),['\n    '])),
-      (_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
-          18,'div',[['class','col-md-4']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n      '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),15,'div',[['class','input-group']],
-          (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['\n            '])),(_l()(),i1.ɵeld(0,(null as any),
-          (null as any),4,'pre',([] as any[]),(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['              '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),1,'span',([] as any[]),(null as any),
+          ['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'div',[['class',
+          'col-md-4']],(null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵted((null as any),['\n\n    '])),(_l()(),i1.ɵted((null as any),['\n  '])),
+      (_l()(),i1.ɵted((null as any),['\n\n  '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
+          20,'div',[['class','row']],(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵeld(0,
+          (null as any),(null as any),14,'div',[['class','col-md-6']],(null as any),
           (null as any),(null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['',''])),(_l()(),i1.ɵted((null as any),['\n            '])),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),6,'span',
-          [['class','input-group-btn']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n            '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),3,'button',[['class','btn btn-default'],
-          ['ngxClipboard',''],['type','button']],[[2,'btn-success',(null as any)]],
-          [[(null as any),'cbOnSuccess'],[(null as any),'click']],(_v,en,$event) => {
-            var ad:boolean = true;
-            var _co:i8.GalleryButtonComponent = _v.component;
-            if (('click' === en)) {
-              const pd_0:any = ((<any>i1.ɵnov(_v,661).onClick($event.target)) !== false);
-              ad = (pd_0 && ad);
-            }
-            if (('cbOnSuccess' === en)) {
-              const pd_1:any = ((<any>(_co.isCopied17 = true)) !== false);
-              ad = (pd_1 && ad);
-            }
-            return ad;
-          },(null as any),(null as any))),i1.ɵdid(212992,(null as any),0,i9.ClipboardDirective,
-          [i10.ClipboardService,i1.Renderer],{targetElm:[0,'targetElm'],cbContent:[1,
-              'cbContent']},{cbOnSuccess:'cbOnSuccess'}),i1.ɵpad(1),(_l()(),i1.ɵted((null as any),
-          ['copy'])),(_l()(),i1.ɵted((null as any),['\n          '])),(_l()(),i1.ɵted((null as any),
+          ['\n      '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),11,'div',[['class',
+          'button_container']],(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵeld(0,
+          (null as any),(null as any),1,'h5',([] as any[]),(null as any),(null as any),
+          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
+          ['X-Small Button'])),(_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),
+          i1.ɵeld(0,(null as any),(null as any),5,'div',[['class','crestron_button_container']],
+              (null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵted((null as any),['\n          '])),(_l()(),i1.ɵeld(0,(null as any),
+          (null as any),2,'btn',[['customClass','common_btn_style'],['icon','fa fa-plus'],
+              ['label','Button'],['name','buttonXSmall'],['size','x-small']],(null as any),
+          (null as any),(null as any),i2.View_ButtonComponent_0,i2.RenderType_ButtonComponent)),
+      i1.ɵdid(114688,(null as any),0,i3.ButtonComponent,([] as any[]),{name:[0,'name'],
+          customClass:[1,'customClass'],label:[2,'label'],icon:[3,'icon'],size:[4,
+              'size']},(null as any)),(_l()(),i1.ɵted((null as any),['\n          '])),
+      (_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵted((null as any),
           ['\n      '])),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵted((null as any),
-          ['\n  '])),(_l()(),i1.ɵted((null as any),['\n\n  '])),(_l()(),i1.ɵeld(0,
-          (null as any),(null as any),37,'div',[['class','row']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),14,'div',[['class',
-          'col-md-6']],(null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['\n      '])),(_l()(),i1.ɵeld(0,(null as any),
-          (null as any),11,'div',[['class','button_container']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'h5',([] as any[]),
-          (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['Large Button'])),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),5,'div',[['class',
-          'crestron_button_container']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n          '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),2,'btn',[['customClass','common_btn_style'],
-          ['icon','fa fa-plus'],['label','Button'],['name','buttonLarge'],['size',
-              'large']],(null as any),(null as any),(null as any),i2.View_ButtonComponent_0,
-          i2.RenderType_ButtonComponent)),i1.ɵdid(114688,(null as any),0,i3.ButtonComponent,
-          ([] as any[]),{name:[0,'name'],customClass:[1,'customClass'],label:[2,'label'],
-              icon:[3,'icon'],size:[4,'size']},(null as any)),(_l()(),i1.ɵted((null as any),
-          ['\n          '])),(_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),
-          i1.ɵted((null as any),['\n      '])),(_l()(),i1.ɵted((null as any),['\n    '])),
-      (_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
-          18,'div',[['class','col-md-4']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n      '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),15,'div',[['class','input-group']],
-          (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['\n            '])),(_l()(),i1.ɵeld(0,(null as any),
-          (null as any),4,'pre',([] as any[]),(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['              '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),1,'span',([] as any[]),(null as any),
+          ['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'div',[['class',
+          'col-md-4']],(null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵted((null as any),['\n\n    '])),(_l()(),i1.ɵted((null as any),['\n  '])),
+      (_l()(),i1.ɵted((null as any),['\n\n  '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
+          20,'div',[['class','row']],(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵeld(0,
+          (null as any),(null as any),14,'div',[['class','col-md-6']],(null as any),
           (null as any),(null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['',''])),(_l()(),i1.ɵted((null as any),['\n            '])),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),6,'span',
-          [['class','input-group-btn']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n            '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),3,'button',[['class','btn btn-default'],
-          ['ngxClipboard',''],['type','button']],[[2,'btn-success',(null as any)]],
-          [[(null as any),'cbOnSuccess'],[(null as any),'click']],(_v,en,$event) => {
-            var ad:boolean = true;
-            var _co:i8.GalleryButtonComponent = _v.component;
-            if (('click' === en)) {
-              const pd_0:any = ((<any>i1.ɵnov(_v,700).onClick($event.target)) !== false);
-              ad = (pd_0 && ad);
-            }
-            if (('cbOnSuccess' === en)) {
-              const pd_1:any = ((<any>(_co.isCopied18 = true)) !== false);
-              ad = (pd_1 && ad);
-            }
-            return ad;
-          },(null as any),(null as any))),i1.ɵdid(212992,(null as any),0,i9.ClipboardDirective,
-          [i10.ClipboardService,i1.Renderer],{targetElm:[0,'targetElm'],cbContent:[1,
-              'cbContent']},{cbOnSuccess:'cbOnSuccess'}),i1.ɵpad(1),(_l()(),i1.ɵted((null as any),
-          ['copy'])),(_l()(),i1.ɵted((null as any),['\n          '])),(_l()(),i1.ɵted((null as any),
+          ['\n      '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),11,'div',[['class',
+          'button_container']],(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵeld(0,
+          (null as any),(null as any),1,'h5',([] as any[]),(null as any),(null as any),
+          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
+          ['Small Button'])),(_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),
+          i1.ɵeld(0,(null as any),(null as any),5,'div',[['class','crestron_button_container']],
+              (null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵted((null as any),['\n          '])),(_l()(),i1.ɵeld(0,(null as any),
+          (null as any),2,'btn',[['customClass','common_btn_style'],['icon','fa fa-plus'],
+              ['label','Button'],['name','buttonSmall'],['size','small']],(null as any),
+          (null as any),(null as any),i2.View_ButtonComponent_0,i2.RenderType_ButtonComponent)),
+      i1.ɵdid(114688,(null as any),0,i3.ButtonComponent,([] as any[]),{name:[0,'name'],
+          customClass:[1,'customClass'],label:[2,'label'],icon:[3,'icon'],size:[4,
+              'size']},(null as any)),(_l()(),i1.ɵted((null as any),['\n          '])),
+      (_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵted((null as any),
           ['\n      '])),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵted((null as any),
-          ['\n  '])),(_l()(),i1.ɵted((null as any),['\n\n  '])),(_l()(),i1.ɵeld(0,
-          (null as any),(null as any),37,'div',[['class','row']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),14,'div',[['class',
-          'col-md-6']],(null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['\n      '])),(_l()(),i1.ɵeld(0,(null as any),
-          (null as any),11,'div',[['class','button_container']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'h5',([] as any[]),
-          (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['Stretch Button Width'])),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),5,'div',[['class',
-          'crestron_button_container']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n          '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),2,'btn',[['customClass','common_btn_style'],
-          ['icon','fa fa-plus'],['label','Button'],['name','buttonStretchWidth'],['stretch',
-              'width']],(null as any),(null as any),(null as any),i2.View_ButtonComponent_0,
-          i2.RenderType_ButtonComponent)),i1.ɵdid(114688,(null as any),0,i3.ButtonComponent,
-          ([] as any[]),{name:[0,'name'],customClass:[1,'customClass'],label:[2,'label'],
-              icon:[3,'icon'],stretch:[4,'stretch']},(null as any)),(_l()(),i1.ɵted((null as any),
-          ['\n          '])),(_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),
-          i1.ɵted((null as any),['\n      '])),(_l()(),i1.ɵted((null as any),['\n    '])),
-      (_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
-          18,'div',[['class','col-md-4']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n      '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),15,'div',[['class','input-group']],
-          (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['\n            '])),(_l()(),i1.ɵeld(0,(null as any),
-          (null as any),4,'pre',([] as any[]),(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['              '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),1,'span',([] as any[]),(null as any),
+          ['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'div',[['class',
+          'col-md-4']],(null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵted((null as any),['\n\n    '])),(_l()(),i1.ɵted((null as any),['\n  '])),
+      (_l()(),i1.ɵted((null as any),['\n\n  '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
+          20,'div',[['class','row']],(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵeld(0,
+          (null as any),(null as any),14,'div',[['class','col-md-6']],(null as any),
           (null as any),(null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['',''])),(_l()(),i1.ɵted((null as any),['\n            '])),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),6,'span',
-          [['class','input-group-btn']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n            '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),3,'button',[['class','btn btn-default'],
-          ['ngxClipboard',''],['type','button']],[[2,'btn-success',(null as any)]],
-          [[(null as any),'cbOnSuccess'],[(null as any),'click']],(_v,en,$event) => {
-            var ad:boolean = true;
-            var _co:i8.GalleryButtonComponent = _v.component;
-            if (('click' === en)) {
-              const pd_0:any = ((<any>i1.ɵnov(_v,739).onClick($event.target)) !== false);
-              ad = (pd_0 && ad);
-            }
-            if (('cbOnSuccess' === en)) {
-              const pd_1:any = ((<any>(_co.isCopied19 = true)) !== false);
-              ad = (pd_1 && ad);
-            }
-            return ad;
-          },(null as any),(null as any))),i1.ɵdid(212992,(null as any),0,i9.ClipboardDirective,
-          [i10.ClipboardService,i1.Renderer],{targetElm:[0,'targetElm'],cbContent:[1,
-              'cbContent']},{cbOnSuccess:'cbOnSuccess'}),i1.ɵpad(1),(_l()(),i1.ɵted((null as any),
-          ['copy'])),(_l()(),i1.ɵted((null as any),['\n          '])),(_l()(),i1.ɵted((null as any),
+          ['\n      '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),11,'div',[['class',
+          'button_container']],(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵeld(0,
+          (null as any),(null as any),1,'h5',([] as any[]),(null as any),(null as any),
+          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
+          ['Large Button'])),(_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),
+          i1.ɵeld(0,(null as any),(null as any),5,'div',[['class','crestron_button_container']],
+              (null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵted((null as any),['\n          '])),(_l()(),i1.ɵeld(0,(null as any),
+          (null as any),2,'btn',[['customClass','common_btn_style'],['icon','fa fa-plus'],
+              ['label','Button'],['name','buttonLarge'],['size','large']],(null as any),
+          (null as any),(null as any),i2.View_ButtonComponent_0,i2.RenderType_ButtonComponent)),
+      i1.ɵdid(114688,(null as any),0,i3.ButtonComponent,([] as any[]),{name:[0,'name'],
+          customClass:[1,'customClass'],label:[2,'label'],icon:[3,'icon'],size:[4,
+              'size']},(null as any)),(_l()(),i1.ɵted((null as any),['\n          '])),
+      (_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵted((null as any),
           ['\n      '])),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵted((null as any),
-          ['\n  '])),(_l()(),i1.ɵted((null as any),['\n\n  '])),(_l()(),i1.ɵeld(0,
-          (null as any),(null as any),37,'div',[['class','row']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),14,'div',[['class',
-          'col-md-6']],(null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['\n      '])),(_l()(),i1.ɵeld(0,(null as any),
-          (null as any),11,'div',[['class','button_container']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'h5',([] as any[]),
-          (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['Stretch Button Height'])),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),5,'div',[['class',
-          'crestron_button_container']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n          '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),2,'btn',[['customClass','common_btn_style'],
-          ['icon','fa fa-plus'],['label','Button'],['name','buttonStretchHeight'],
-          ['stretch','height']],(null as any),(null as any),(null as any),i2.View_ButtonComponent_0,
-          i2.RenderType_ButtonComponent)),i1.ɵdid(114688,(null as any),0,i3.ButtonComponent,
-          ([] as any[]),{name:[0,'name'],customClass:[1,'customClass'],label:[2,'label'],
-              icon:[3,'icon'],stretch:[4,'stretch']},(null as any)),(_l()(),i1.ɵted((null as any),
-          ['\n          '])),(_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),
-          i1.ɵted((null as any),['\n      '])),(_l()(),i1.ɵted((null as any),['\n    '])),
-      (_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
-          18,'div',[['class','col-md-4']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n      '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),15,'div',[['class','input-group']],
-          (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['\n            '])),(_l()(),i1.ɵeld(0,(null as any),
-          (null as any),4,'pre',([] as any[]),(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['              '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),1,'span',([] as any[]),(null as any),
+          ['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'div',[['class',
+          'col-md-4']],(null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵted((null as any),['\n\n    '])),(_l()(),i1.ɵted((null as any),['\n  '])),
+      (_l()(),i1.ɵted((null as any),['\n\n  '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
+          20,'div',[['class','row']],(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵeld(0,
+          (null as any),(null as any),14,'div',[['class','col-md-6']],(null as any),
           (null as any),(null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['',''])),(_l()(),i1.ɵted((null as any),['\n            '])),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),6,'span',
-          [['class','input-group-btn']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n            '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),3,'button',[['class','btn btn-default'],
-          ['ngxClipboard',''],['type','button']],[[2,'btn-success',(null as any)]],
-          [[(null as any),'cbOnSuccess'],[(null as any),'click']],(_v,en,$event) => {
-            var ad:boolean = true;
-            var _co:i8.GalleryButtonComponent = _v.component;
-            if (('click' === en)) {
-              const pd_0:any = ((<any>i1.ɵnov(_v,778).onClick($event.target)) !== false);
-              ad = (pd_0 && ad);
-            }
-            if (('cbOnSuccess' === en)) {
-              const pd_1:any = ((<any>(_co.isCopied20 = true)) !== false);
-              ad = (pd_1 && ad);
-            }
-            return ad;
-          },(null as any),(null as any))),i1.ɵdid(212992,(null as any),0,i9.ClipboardDirective,
-          [i10.ClipboardService,i1.Renderer],{targetElm:[0,'targetElm'],cbContent:[1,
-              'cbContent']},{cbOnSuccess:'cbOnSuccess'}),i1.ɵpad(1),(_l()(),i1.ɵted((null as any),
-          ['copy'])),(_l()(),i1.ɵted((null as any),['\n          '])),(_l()(),i1.ɵted((null as any),
-          ['\n      '])),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵted((null as any),
-          ['\n  '])),(_l()(),i1.ɵted((null as any),['\n\n  '])),(_l()(),i1.ɵeld(0,
-          (null as any),(null as any),37,'div',[['class','row']],(null as any),(null as any),
+          ['\n      '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),11,'div',[['class',
+          'button_container']],(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵeld(0,
+          (null as any),(null as any),1,'h5',([] as any[]),(null as any),(null as any),
           (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),14,'div',[['class',
-          'col-md-6']],(null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['\n      '])),(_l()(),i1.ɵeld(0,(null as any),
-          (null as any),11,'div',[['class','button_container']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'h5',([] as any[]),
+          ['Stretch Button Width'])),(_l()(),i1.ɵted((null as any),['\n        '])),
+      (_l()(),i1.ɵeld(0,(null as any),(null as any),5,'div',[['class','crestron_button_container']],
           (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['Stretch Button Width and Height'])),(_l()(),
-          i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
-          5,'div',[['class','crestron_button_container']],(null as any),(null as any),
-          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n          '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),2,'btn',
-          [['customClass','common_btn_style'],['icon','fa fa-plus'],['label','Button'],
-              ['name','buttonStretchBoth'],['stretch','both']],(null as any),(null as any),
-          (null as any),i2.View_ButtonComponent_0,i2.RenderType_ButtonComponent)),
+      (_l()(),i1.ɵted((null as any),['\n          '])),(_l()(),i1.ɵeld(0,(null as any),
+          (null as any),2,'btn',[['customClass','common_btn_style'],['icon','fa fa-plus'],
+              ['label','Button'],['name','buttonStretchWidth'],['stretch','width']],
+          (null as any),(null as any),(null as any),i2.View_ButtonComponent_0,i2.RenderType_ButtonComponent)),
       i1.ɵdid(114688,(null as any),0,i3.ButtonComponent,([] as any[]),{name:[0,'name'],
           customClass:[1,'customClass'],label:[2,'label'],icon:[3,'icon'],stretch:[4,
               'stretch']},(null as any)),(_l()(),i1.ɵted((null as any),['\n          '])),
       (_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵted((null as any),
           ['\n      '])),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵted((null as any),
-          ['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),18,'div',[['class',
+          ['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'div',[['class',
           'col-md-4']],(null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['\n      '])),(_l()(),i1.ɵeld(0,(null as any),
-          (null as any),15,'div',[['class','input-group']],(null as any),(null as any),
+      (_l()(),i1.ɵted((null as any),['\n\n    '])),(_l()(),i1.ɵted((null as any),['\n  '])),
+      (_l()(),i1.ɵted((null as any),['\n\n  '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
+          20,'div',[['class','row']],(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵeld(0,
+          (null as any),(null as any),14,'div',[['class','col-md-6']],(null as any),
+          (null as any),(null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
+          ['\n      '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),11,'div',[['class',
+          'button_container']],(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵeld(0,
+          (null as any),(null as any),1,'h5',([] as any[]),(null as any),(null as any),
           (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n            '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),4,'pre',
-          ([] as any[]),(null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['              '])),(_l()(),i1.ɵeld(0,(null as any),
-          (null as any),1,'span',([] as any[]),(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['',''])),(_l()(),
-          i1.ɵted((null as any),['\n            '])),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),6,'span',
-          [['class','input-group-btn']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n            '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),3,'button',[['class','btn btn-default'],
-          ['ngxClipboard',''],['type','button']],[[2,'btn-success',(null as any)]],
-          [[(null as any),'cbOnSuccess'],[(null as any),'click']],(_v,en,$event) => {
-            var ad:boolean = true;
-            var _co:i8.GalleryButtonComponent = _v.component;
-            if (('click' === en)) {
-              const pd_0:any = ((<any>i1.ɵnov(_v,817).onClick($event.target)) !== false);
-              ad = (pd_0 && ad);
-            }
-            if (('cbOnSuccess' === en)) {
-              const pd_1:any = ((<any>(_co.isCopied21 = true)) !== false);
-              ad = (pd_1 && ad);
-            }
-            return ad;
-          },(null as any),(null as any))),i1.ɵdid(212992,(null as any),0,i9.ClipboardDirective,
-          [i10.ClipboardService,i1.Renderer],{targetElm:[0,'targetElm'],cbContent:[1,
-              'cbContent']},{cbOnSuccess:'cbOnSuccess'}),i1.ɵpad(1),(_l()(),i1.ɵted((null as any),
-          ['copy'])),(_l()(),i1.ɵted((null as any),['\n          '])),(_l()(),i1.ɵted((null as any),
+          ['Stretch Button Height'])),(_l()(),i1.ɵted((null as any),['\n        '])),
+      (_l()(),i1.ɵeld(0,(null as any),(null as any),5,'div',[['class','crestron_button_container']],
+          (null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵted((null as any),['\n          '])),(_l()(),i1.ɵeld(0,(null as any),
+          (null as any),2,'btn',[['customClass','common_btn_style'],['icon','fa fa-plus'],
+              ['label','Button'],['name','buttonStretchHeight'],['stretch','height']],
+          (null as any),(null as any),(null as any),i2.View_ButtonComponent_0,i2.RenderType_ButtonComponent)),
+      i1.ɵdid(114688,(null as any),0,i3.ButtonComponent,([] as any[]),{name:[0,'name'],
+          customClass:[1,'customClass'],label:[2,'label'],icon:[3,'icon'],stretch:[4,
+              'stretch']},(null as any)),(_l()(),i1.ɵted((null as any),['\n          '])),
+      (_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵted((null as any),
           ['\n      '])),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵted((null as any),
-          ['\n  '])),(_l()(),i1.ɵted((null as any),['\n\n'])),(_l()(),i1.ɵted((null as any),
-          ['\n']))],(_ck,_v) => {
-    var _co:i8.GalleryButtonComponent = _v.component;
-    const currVal_0:any = 'buttonRectangle';
-    const currVal_1:any = 'common_btn_style';
-    const currVal_2:any = 'Button';
-    const currVal_3:any = 'rectangular';
-    _ck(_v,14,0,currVal_0,currVal_1,currVal_2,currVal_3);
-    const currVal_4:any = 'buttonRectangle';
-    const currVal_5:any = '80001';
-    const currVal_6:any = '80000';
-    const currVal_7:any = '181';
-    _ck(_v,18,0,currVal_4,currVal_5,currVal_6,currVal_7);
-    const currVal_10:any = '';
-    const currVal_11:any = _ck(_v,38,0,_co.rectangleButton);
-    _ck(_v,37,0,currVal_10,currVal_11);
-    const currVal_12:any = 'buttonRoundedRectangle';
-    const currVal_13:any = 'common_btn_style';
-    const currVal_14:any = 'Button';
-    const currVal_15:any = 'rounded-rectangle';
-    _ck(_v,57,0,currVal_12,currVal_13,currVal_14,currVal_15);
-    const currVal_18:any = '';
-    const currVal_19:any = _ck(_v,77,0,_co.roundedRectangleButton);
-    _ck(_v,76,0,currVal_18,currVal_19);
-    const currVal_20:any = 'buttonTab';
-    const currVal_21:any = 'common_btn_style';
-    const currVal_22:any = 'Button';
-    const currVal_23:any = 'tab';
-    _ck(_v,96,0,currVal_20,currVal_21,currVal_22,currVal_23);
-    const currVal_26:any = '';
-    const currVal_27:any = _ck(_v,116,0,_co.tabButton);
-    _ck(_v,115,0,currVal_26,currVal_27);
-    const currVal_28:any = 'buttonCircle';
-    const currVal_29:any = 'common_btn_style';
-    const currVal_30:any = 'Button';
-    const currVal_31:any = 'circle';
-    _ck(_v,135,0,currVal_28,currVal_29,currVal_30,currVal_31);
-    const currVal_34:any = '';
-    const currVal_35:any = _ck(_v,155,0,_co.circleButton);
-    _ck(_v,154,0,currVal_34,currVal_35);
-    const currVal_36:any = 'buttonOval';
-    const currVal_37:any = 'common_btn_style';
-    const currVal_38:any = 'Button';
-    const currVal_39:any = 'oval';
-    _ck(_v,174,0,currVal_36,currVal_37,currVal_38,currVal_39);
-    const currVal_42:any = '';
-    const currVal_43:any = _ck(_v,194,0,_co.ovalButton);
-    _ck(_v,193,0,currVal_42,currVal_43);
-    const currVal_44:any = 'buttonIconRight';
-    const currVal_45:any = 'common_btn_style';
-    const currVal_46:any = 'Button';
-    const currVal_47:any = 'fa fa-plus';
-    const currVal_48:any = 'right';
-    _ck(_v,213,0,currVal_44,currVal_45,currVal_46,currVal_47,currVal_48);
-    const currVal_51:any = '';
-    const currVal_52:any = _ck(_v,233,0,_co.iconRightButton);
-    _ck(_v,232,0,currVal_51,currVal_52);
-    const currVal_53:any = 'buttonIconLeft';
-    const currVal_54:any = 'common_btn_style';
-    const currVal_55:any = 'Button';
-    const currVal_56:any = 'fa fa-plus';
-    const currVal_57:any = 'left';
-    _ck(_v,252,0,currVal_53,currVal_54,currVal_55,currVal_56,currVal_57);
-    const currVal_60:any = '';
-    const currVal_61:any = _ck(_v,272,0,_co.iconLeftButton);
-    _ck(_v,271,0,currVal_60,currVal_61);
-    const currVal_62:any = 'buttonPrimary';
-    const currVal_63:any = 'common_btn_style';
-    const currVal_64:any = 'Button';
-    const currVal_65:any = 'rounded-rectangle';
-    const currVal_66:any = 'primary';
-    _ck(_v,291,0,currVal_62,currVal_63,currVal_64,currVal_65,currVal_66);
-    const currVal_69:any = '';
-    const currVal_70:any = _ck(_v,311,0,_co.primaryButton);
-    _ck(_v,310,0,currVal_69,currVal_70);
-    const currVal_71:any = 'buttonSecondary';
-    const currVal_72:any = 'common_btn_style';
-    const currVal_73:any = 'Button';
-    const currVal_74:any = 'rounded-rectangle';
-    const currVal_75:any = 'secondary';
-    _ck(_v,330,0,currVal_71,currVal_72,currVal_73,currVal_74,currVal_75);
-    const currVal_78:any = '';
-    const currVal_79:any = _ck(_v,350,0,_co.secondaryButton);
-    _ck(_v,349,0,currVal_78,currVal_79);
-    const currVal_80:any = 'buttonInfo';
-    const currVal_81:any = 'common_btn_style';
-    const currVal_82:any = 'Button';
-    const currVal_83:any = 'rounded-rectangle';
-    const currVal_84:any = 'info';
-    _ck(_v,369,0,currVal_80,currVal_81,currVal_82,currVal_83,currVal_84);
-    const currVal_87:any = '';
-    const currVal_88:any = _ck(_v,389,0,_co.infoButton);
-    _ck(_v,388,0,currVal_87,currVal_88);
-    const currVal_89:any = 'buttonWarning';
-    const currVal_90:any = 'common_btn_style';
-    const currVal_91:any = 'Button';
-    const currVal_92:any = 'rounded-rectangle';
-    const currVal_93:any = 'warning';
-    _ck(_v,408,0,currVal_89,currVal_90,currVal_91,currVal_92,currVal_93);
-    const currVal_96:any = '';
-    const currVal_97:any = _ck(_v,428,0,_co.warningButton);
-    _ck(_v,427,0,currVal_96,currVal_97);
-    const currVal_98:any = 'buttonDanger';
-    const currVal_99:any = 'common_btn_style';
-    const currVal_100:any = 'Button';
-    const currVal_101:any = 'rounded-rectangle';
-    const currVal_102:any = 'danger';
-    _ck(_v,447,0,currVal_98,currVal_99,currVal_100,currVal_101,currVal_102);
-    const currVal_105:any = '';
-    const currVal_106:any = _ck(_v,467,0,_co.dangerButton);
-    _ck(_v,466,0,currVal_105,currVal_106);
-    const currVal_107:any = 'buttonSuccess';
-    const currVal_108:any = 'common_btn_style';
-    const currVal_109:any = 'Button';
-    const currVal_110:any = 'rounded-rectangle';
-    const currVal_111:any = 'success';
-    _ck(_v,486,0,currVal_107,currVal_108,currVal_109,currVal_110,currVal_111);
-    const currVal_114:any = '';
-    const currVal_115:any = _ck(_v,506,0,_co.successButton);
-    _ck(_v,505,0,currVal_114,currVal_115);
-    const currVal_116:any = 'buttonText';
-    const currVal_117:any = 'common_btn_style';
-    const currVal_118:any = 'Button';
-    const currVal_119:any = 'rounded-rectangle';
-    const currVal_120:any = 'text';
-    _ck(_v,525,0,currVal_116,currVal_117,currVal_118,currVal_119,currVal_120);
-    const currVal_123:any = '';
-    const currVal_124:any = _ck(_v,545,0,_co.textButton);
-    _ck(_v,544,0,currVal_123,currVal_124);
-    const currVal_125:any = 'buttonVertical';
-    const currVal_126:any = 'common_btn_style';
-    const currVal_127:any = 'Button';
-    const currVal_128:any = 'fa fa-minus';
-    const currVal_129:any = 'vertical';
-    _ck(_v,564,0,currVal_125,currVal_126,currVal_127,currVal_128,currVal_129);
-    const currVal_132:any = '';
-    const currVal_133:any = _ck(_v,584,0,_co.verticalButton);
-    _ck(_v,583,0,currVal_132,currVal_133);
-    const currVal_134:any = 'buttonXSmall';
-    const currVal_135:any = 'common_btn_style';
-    const currVal_136:any = 'Button';
-    const currVal_137:any = 'fa fa-plus';
-    const currVal_138:any = 'x-small';
-    _ck(_v,603,0,currVal_134,currVal_135,currVal_136,currVal_137,currVal_138);
-    const currVal_141:any = '';
-    const currVal_142:any = _ck(_v,623,0,_co.xSmallButton);
-    _ck(_v,622,0,currVal_141,currVal_142);
-    const currVal_143:any = 'buttonSmall';
-    const currVal_144:any = 'common_btn_style';
-    const currVal_145:any = 'Button';
-    const currVal_146:any = 'fa fa-plus';
-    const currVal_147:any = 'small';
-    _ck(_v,642,0,currVal_143,currVal_144,currVal_145,currVal_146,currVal_147);
-    const currVal_150:any = '';
-    const currVal_151:any = _ck(_v,662,0,_co.smallButton);
-    _ck(_v,661,0,currVal_150,currVal_151);
-    const currVal_152:any = 'buttonLarge';
-    const currVal_153:any = 'common_btn_style';
-    const currVal_154:any = 'Button';
-    const currVal_155:any = 'fa fa-plus';
-    const currVal_156:any = 'large';
-    _ck(_v,681,0,currVal_152,currVal_153,currVal_154,currVal_155,currVal_156);
-    const currVal_159:any = '';
-    const currVal_160:any = _ck(_v,701,0,_co.largeButton);
-    _ck(_v,700,0,currVal_159,currVal_160);
-    const currVal_161:any = 'buttonStretchWidth';
-    const currVal_162:any = 'common_btn_style';
-    const currVal_163:any = 'Button';
-    const currVal_164:any = 'fa fa-plus';
-    const currVal_165:any = 'width';
-    _ck(_v,720,0,currVal_161,currVal_162,currVal_163,currVal_164,currVal_165);
-    const currVal_168:any = '';
-    const currVal_169:any = _ck(_v,740,0,_co.stretchWidthButton);
-    _ck(_v,739,0,currVal_168,currVal_169);
-    const currVal_170:any = 'buttonStretchHeight';
-    const currVal_171:any = 'common_btn_style';
-    const currVal_172:any = 'Button';
-    const currVal_173:any = 'fa fa-plus';
-    const currVal_174:any = 'height';
-    _ck(_v,759,0,currVal_170,currVal_171,currVal_172,currVal_173,currVal_174);
-    const currVal_177:any = '';
-    const currVal_178:any = _ck(_v,779,0,_co.stretchHeightButton);
-    _ck(_v,778,0,currVal_177,currVal_178);
-    const currVal_179:any = 'buttonStretchBoth';
-    const currVal_180:any = 'common_btn_style';
-    const currVal_181:any = 'Button';
-    const currVal_182:any = 'fa fa-plus';
-    const currVal_183:any = 'both';
-    _ck(_v,798,0,currVal_179,currVal_180,currVal_181,currVal_182,currVal_183);
-    const currVal_186:any = '';
-    const currVal_187:any = _ck(_v,818,0,_co.stretchWidthHeightButton);
-    _ck(_v,817,0,currVal_186,currVal_187);
-  },(_ck,_v) => {
-    var _co:i8.GalleryButtonComponent = _v.component;
-    const currVal_8:any = _co.rectangleButton;
-    _ck(_v,31,0,currVal_8);
-    const currVal_9:any = _co.isCopied1;
-    _ck(_v,36,0,currVal_9);
-    const currVal_16:any = _co.roundedRectangleButton;
-    _ck(_v,70,0,currVal_16);
-    const currVal_17:any = _co.isCopied2;
-    _ck(_v,75,0,currVal_17);
-    const currVal_24:any = _co.tabButton;
-    _ck(_v,109,0,currVal_24);
-    const currVal_25:any = _co.isCopied3;
-    _ck(_v,114,0,currVal_25);
-    const currVal_32:any = _co.circleButton;
-    _ck(_v,148,0,currVal_32);
-    const currVal_33:any = _co.isCopied4;
-    _ck(_v,153,0,currVal_33);
-    const currVal_40:any = _co.ovalButton;
-    _ck(_v,187,0,currVal_40);
-    const currVal_41:any = _co.isCopied5;
-    _ck(_v,192,0,currVal_41);
-    const currVal_49:any = _co.iconRightButton;
-    _ck(_v,226,0,currVal_49);
-    const currVal_50:any = _co.isCopied6;
-    _ck(_v,231,0,currVal_50);
-    const currVal_58:any = _co.iconLeftButton;
-    _ck(_v,265,0,currVal_58);
-    const currVal_59:any = _co.isCopied7;
-    _ck(_v,270,0,currVal_59);
-    const currVal_67:any = _co.primaryButton;
-    _ck(_v,304,0,currVal_67);
-    const currVal_68:any = _co.isCopied8;
-    _ck(_v,309,0,currVal_68);
-    const currVal_76:any = _co.secondaryButton;
-    _ck(_v,343,0,currVal_76);
-    const currVal_77:any = _co.isCopied9;
-    _ck(_v,348,0,currVal_77);
-    const currVal_85:any = _co.infoButton;
-    _ck(_v,382,0,currVal_85);
-    const currVal_86:any = _co.isCopied10;
-    _ck(_v,387,0,currVal_86);
-    const currVal_94:any = _co.warningButton;
-    _ck(_v,421,0,currVal_94);
-    const currVal_95:any = _co.isCopied11;
-    _ck(_v,426,0,currVal_95);
-    const currVal_103:any = _co.dangerButton;
-    _ck(_v,460,0,currVal_103);
-    const currVal_104:any = _co.isCopied12;
-    _ck(_v,465,0,currVal_104);
-    const currVal_112:any = _co.successButton;
-    _ck(_v,499,0,currVal_112);
-    const currVal_113:any = _co.isCopied13;
-    _ck(_v,504,0,currVal_113);
-    const currVal_121:any = _co.textButton;
-    _ck(_v,538,0,currVal_121);
-    const currVal_122:any = _co.isCopied14;
-    _ck(_v,543,0,currVal_122);
-    const currVal_130:any = _co.verticalButton;
-    _ck(_v,577,0,currVal_130);
-    const currVal_131:any = _co.isCopied15;
-    _ck(_v,582,0,currVal_131);
-    const currVal_139:any = _co.xSmallButton;
-    _ck(_v,616,0,currVal_139);
-    const currVal_140:any = _co.isCopied16;
-    _ck(_v,621,0,currVal_140);
-    const currVal_148:any = _co.smallButton;
-    _ck(_v,655,0,currVal_148);
-    const currVal_149:any = _co.isCopied17;
-    _ck(_v,660,0,currVal_149);
-    const currVal_157:any = _co.largeButton;
-    _ck(_v,694,0,currVal_157);
-    const currVal_158:any = _co.isCopied18;
-    _ck(_v,699,0,currVal_158);
-    const currVal_166:any = _co.stretchWidthButton;
-    _ck(_v,733,0,currVal_166);
-    const currVal_167:any = _co.isCopied19;
-    _ck(_v,738,0,currVal_167);
-    const currVal_175:any = _co.stretchHeightButton;
-    _ck(_v,772,0,currVal_175);
-    const currVal_176:any = _co.isCopied20;
-    _ck(_v,777,0,currVal_176);
-    const currVal_184:any = _co.stretchWidthHeightButton;
-    _ck(_v,811,0,currVal_184);
-    const currVal_185:any = _co.isCopied21;
-    _ck(_v,816,0,currVal_185);
-  });
+          ['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'div',[['class',
+          'col-md-4']],(null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵted((null as any),['\n\n    '])),(_l()(),i1.ɵted((null as any),['\n  '])),
+      (_l()(),i1.ɵted((null as any),['\n\n  '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
+          20,'div',[['class','row']],(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵeld(0,
+          (null as any),(null as any),14,'div',[['class','col-md-6']],(null as any),
+          (null as any),(null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
+          ['\n      '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),11,'div',[['class',
+          'button_container']],(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵeld(0,
+          (null as any),(null as any),1,'h5',([] as any[]),(null as any),(null as any),
+          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
+          ['Stretch Button Width and Height'])),(_l()(),i1.ɵted((null as any),['\n        '])),
+      (_l()(),i1.ɵeld(0,(null as any),(null as any),5,'div',[['class','crestron_button_container']],
+          (null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵted((null as any),['\n          '])),(_l()(),i1.ɵeld(0,(null as any),
+          (null as any),2,'btn',[['customClass','common_btn_style'],['icon','fa fa-plus'],
+              ['label','Button'],['name','buttonStretchBoth'],['stretch','both']],
+          (null as any),(null as any),(null as any),i2.View_ButtonComponent_0,i2.RenderType_ButtonComponent)),
+      i1.ɵdid(114688,(null as any),0,i3.ButtonComponent,([] as any[]),{name:[0,'name'],
+          customClass:[1,'customClass'],label:[2,'label'],icon:[3,'icon'],stretch:[4,
+              'stretch']},(null as any)),(_l()(),i1.ɵted((null as any),['\n          '])),
+      (_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵted((null as any),
+          ['\n      '])),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵted((null as any),
+          ['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'div',[['class',
+          'col-md-4']],(null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵted((null as any),['\n\n    '])),(_l()(),i1.ɵted((null as any),['\n  '])),
+      (_l()(),i1.ɵted((null as any),['\n\n'])),(_l()(),i1.ɵted((null as any),['\n']))],
+      (_ck,_v) => {
+        const currVal_0:any = 'buttonRectangle';
+        const currVal_1:any = 'common_btn_style';
+        const currVal_2:any = 'Button';
+        const currVal_3:any = 'rectangular';
+        _ck(_v,14,0,currVal_0,currVal_1,currVal_2,currVal_3);
+        const currVal_4:any = 'buttonRectangle';
+        const currVal_5:any = '80001';
+        const currVal_6:any = '80000';
+        const currVal_7:any = '181';
+        _ck(_v,18,0,currVal_4,currVal_5,currVal_6,currVal_7);
+        const currVal_8:any = '<btn name="buttonRectangle"\n               label="Button"\n               customClass="common_btn_style"\n               shape="rectangular">\n          </btn>';
+        _ck(_v,27,0,currVal_8);
+        const currVal_9:any = 'buttonRoundedRectangle';
+        const currVal_10:any = 'common_btn_style';
+        const currVal_11:any = 'Button';
+        const currVal_12:any = 'rounded-rectangle';
+        _ck(_v,44,0,currVal_9,currVal_10,currVal_11,currVal_12);
+        const currVal_13:any = 'buttonTab';
+        const currVal_14:any = 'common_btn_style';
+        const currVal_15:any = 'Button';
+        const currVal_16:any = 'tab';
+        _ck(_v,66,0,currVal_13,currVal_14,currVal_15,currVal_16);
+        const currVal_17:any = 'buttonCircle';
+        const currVal_18:any = 'common_btn_style';
+        const currVal_19:any = 'Button';
+        const currVal_20:any = 'circle';
+        _ck(_v,88,0,currVal_17,currVal_18,currVal_19,currVal_20);
+        const currVal_21:any = 'buttonOval';
+        const currVal_22:any = 'common_btn_style';
+        const currVal_23:any = 'Button';
+        const currVal_24:any = 'oval';
+        _ck(_v,110,0,currVal_21,currVal_22,currVal_23,currVal_24);
+        const currVal_25:any = 'buttonIconRight';
+        const currVal_26:any = 'common_btn_style';
+        const currVal_27:any = 'Button';
+        const currVal_28:any = 'fa fa-plus';
+        const currVal_29:any = 'right';
+        _ck(_v,132,0,currVal_25,currVal_26,currVal_27,currVal_28,currVal_29);
+        const currVal_30:any = 'buttonIconLeft';
+        const currVal_31:any = 'common_btn_style';
+        const currVal_32:any = 'Button';
+        const currVal_33:any = 'fa fa-plus';
+        const currVal_34:any = 'left';
+        _ck(_v,154,0,currVal_30,currVal_31,currVal_32,currVal_33,currVal_34);
+        const currVal_35:any = 'buttonPrimary';
+        const currVal_36:any = 'common_btn_style';
+        const currVal_37:any = 'Button';
+        const currVal_38:any = 'rounded-rectangle';
+        const currVal_39:any = 'primary';
+        _ck(_v,176,0,currVal_35,currVal_36,currVal_37,currVal_38,currVal_39);
+        const currVal_40:any = 'buttonSecondary';
+        const currVal_41:any = 'common_btn_style';
+        const currVal_42:any = 'Button';
+        const currVal_43:any = 'rounded-rectangle';
+        const currVal_44:any = 'secondary';
+        _ck(_v,198,0,currVal_40,currVal_41,currVal_42,currVal_43,currVal_44);
+        const currVal_45:any = 'buttonInfo';
+        const currVal_46:any = 'common_btn_style';
+        const currVal_47:any = 'Button';
+        const currVal_48:any = 'rounded-rectangle';
+        const currVal_49:any = 'info';
+        _ck(_v,220,0,currVal_45,currVal_46,currVal_47,currVal_48,currVal_49);
+        const currVal_50:any = 'buttonWarning';
+        const currVal_51:any = 'common_btn_style';
+        const currVal_52:any = 'Button';
+        const currVal_53:any = 'rounded-rectangle';
+        const currVal_54:any = 'warning';
+        _ck(_v,242,0,currVal_50,currVal_51,currVal_52,currVal_53,currVal_54);
+        const currVal_55:any = 'buttonDanger';
+        const currVal_56:any = 'common_btn_style';
+        const currVal_57:any = 'Button';
+        const currVal_58:any = 'rounded-rectangle';
+        const currVal_59:any = 'danger';
+        _ck(_v,264,0,currVal_55,currVal_56,currVal_57,currVal_58,currVal_59);
+        const currVal_60:any = 'buttonSuccess';
+        const currVal_61:any = 'common_btn_style';
+        const currVal_62:any = 'Button';
+        const currVal_63:any = 'rounded-rectangle';
+        const currVal_64:any = 'success';
+        _ck(_v,286,0,currVal_60,currVal_61,currVal_62,currVal_63,currVal_64);
+        const currVal_65:any = 'buttonText';
+        const currVal_66:any = 'common_btn_style';
+        const currVal_67:any = 'Button';
+        const currVal_68:any = 'rounded-rectangle';
+        const currVal_69:any = 'text';
+        _ck(_v,308,0,currVal_65,currVal_66,currVal_67,currVal_68,currVal_69);
+        const currVal_70:any = 'buttonVertical';
+        const currVal_71:any = 'common_btn_style';
+        const currVal_72:any = 'Button';
+        const currVal_73:any = 'fa fa-minus';
+        const currVal_74:any = 'vertical';
+        _ck(_v,330,0,currVal_70,currVal_71,currVal_72,currVal_73,currVal_74);
+        const currVal_75:any = 'buttonXSmall';
+        const currVal_76:any = 'common_btn_style';
+        const currVal_77:any = 'Button';
+        const currVal_78:any = 'fa fa-plus';
+        const currVal_79:any = 'x-small';
+        _ck(_v,352,0,currVal_75,currVal_76,currVal_77,currVal_78,currVal_79);
+        const currVal_80:any = 'buttonSmall';
+        const currVal_81:any = 'common_btn_style';
+        const currVal_82:any = 'Button';
+        const currVal_83:any = 'fa fa-plus';
+        const currVal_84:any = 'small';
+        _ck(_v,374,0,currVal_80,currVal_81,currVal_82,currVal_83,currVal_84);
+        const currVal_85:any = 'buttonLarge';
+        const currVal_86:any = 'common_btn_style';
+        const currVal_87:any = 'Button';
+        const currVal_88:any = 'fa fa-plus';
+        const currVal_89:any = 'large';
+        _ck(_v,396,0,currVal_85,currVal_86,currVal_87,currVal_88,currVal_89);
+        const currVal_90:any = 'buttonStretchWidth';
+        const currVal_91:any = 'common_btn_style';
+        const currVal_92:any = 'Button';
+        const currVal_93:any = 'fa fa-plus';
+        const currVal_94:any = 'width';
+        _ck(_v,418,0,currVal_90,currVal_91,currVal_92,currVal_93,currVal_94);
+        const currVal_95:any = 'buttonStretchHeight';
+        const currVal_96:any = 'common_btn_style';
+        const currVal_97:any = 'Button';
+        const currVal_98:any = 'fa fa-plus';
+        const currVal_99:any = 'height';
+        _ck(_v,440,0,currVal_95,currVal_96,currVal_97,currVal_98,currVal_99);
+        const currVal_100:any = 'buttonStretchBoth';
+        const currVal_101:any = 'common_btn_style';
+        const currVal_102:any = 'Button';
+        const currVal_103:any = 'fa fa-plus';
+        const currVal_104:any = 'both';
+        _ck(_v,462,0,currVal_100,currVal_101,currVal_102,currVal_103,currVal_104);
+      },(null as any));
 }
 export function View_GalleryButtonComponent_Host_0(_l:any):i1.ɵViewDefinition {
   return i1.ɵvid(0,[(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'gallery-button',
       ([] as any[]),(null as any),(null as any),(null as any),View_GalleryButtonComponent_0,
-      RenderType_GalleryButtonComponent)),i1.ɵdid(114688,(null as any),0,i8.GalleryButtonComponent,
+      RenderType_GalleryButtonComponent)),i1.ɵdid(114688,(null as any),0,i10.GalleryButtonComponent,
       ([] as any[]),(null as any),(null as any))],(_ck,_v) => {
     _ck(_v,1,0);
   },(null as any));
 }
-export const GalleryButtonComponentNgFactory:i1.ComponentFactory<i8.GalleryButtonComponent> = i1.ɵccf('gallery-button',
-    i8.GalleryButtonComponent,View_GalleryButtonComponent_Host_0,{},{},([] as any[]));
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiRDovQmxhY2tiaXJkQ2xvbmUvQmxhY2tiaXJkUHJvamVjdFVJL3NyYy9hcHAvZ2FsbGVyeS9nYWxsZXJ5LWJ1dHRvbi9nYWxsZXJ5LWJ1dHRvbi5jb21wb25lbnQubmdmYWN0b3J5LnRzIiwidmVyc2lvbiI6Mywic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibmc6Ly8vRDovQmxhY2tiaXJkQ2xvbmUvQmxhY2tiaXJkUHJvamVjdFVJL3NyYy9hcHAvZ2FsbGVyeS9nYWxsZXJ5LWJ1dHRvbi9nYWxsZXJ5LWJ1dHRvbi5jb21wb25lbnQudHMiLCJuZzovLy9EOi9CbGFja2JpcmRDbG9uZS9CbGFja2JpcmRQcm9qZWN0VUkvc3JjL2FwcC9nYWxsZXJ5L2dhbGxlcnktYnV0dG9uL2dhbGxlcnktYnV0dG9uLmNvbXBvbmVudC5odG1sIiwibmc6Ly8vRDovQmxhY2tiaXJkQ2xvbmUvQmxhY2tiaXJkUHJvamVjdFVJL3NyYy9hcHAvZ2FsbGVyeS9nYWxsZXJ5LWJ1dHRvbi9nYWxsZXJ5LWJ1dHRvbi5jb21wb25lbnQudHMuR2FsbGVyeUJ1dHRvbkNvbXBvbmVudF9Ib3N0Lmh0bWwiXSwic291cmNlc0NvbnRlbnQiOlsiICIsIjxkaXYgY2xhc3M9XCJidXR0b25fd3JhcHBlclwiPlxyXG5cclxuICA8ZGl2IGNsYXNzPVwicm93XCI+XHJcbiAgICA8ZGl2IGNsYXNzPVwiY29sLW1kLTZcIj5cclxuICAgICAgPGRpdiBjbGFzcz1cImJ1dHRvbl9jb250YWluZXJcIj5cclxuICAgICAgICA8aDU+UmVjdGFuZ2xlIEJ1dHRvbjwvaDU+XHJcbiAgICAgICAgPGRpdiBjbGFzcz1cImNyZXN0cm9uX2J1dHRvbl9jb250YWluZXJcIj5cclxuICAgICAgICAgIDxidG4gbmFtZT1cImJ1dHRvblJlY3RhbmdsZVwiXHJcbiAgICAgICAgICAgICAgIGxhYmVsPVwiQnV0dG9uXCJcclxuICAgICAgICAgICAgICAgY3VzdG9tQ2xhc3M9XCJjb21tb25fYnRuX3N0eWxlXCJcclxuICAgICAgICAgICAgICAgc2hhcGU9XCJyZWN0YW5ndWxhclwiPlxyXG4gICAgICAgICAgPC9idG4+XHJcbiAgICAgICAgICA8YnRuLWNvbnRyb2xsZXIgbmFtZT1cImJ1dHRvblJlY3RhbmdsZVwiXHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgb25UYXA9XCI4MDAwMVwiXHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgb25SZWxlYXNlPVwiODAwMDBcIlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgIHJ1bkNsYXNzPVwiMTgxXCI+XHJcbiAgICAgICAgICA8L2J0bi1jb250cm9sbGVyPlxyXG4gICAgICAgIDwvZGl2PlxyXG4gICAgICA8L2Rpdj5cclxuICAgIDwvZGl2PlxyXG5cclxuICAgIDxkaXYgY2xhc3M9XCJjb2wtbWQtNFwiPlxyXG4gICAgICA8ZGl2IGNsYXNzPVwiaW5wdXQtZ3JvdXBcIj5cclxuICAgICAgICAgICAgPHByZT5cclxuICAgICAgICAgICAgICA8c3Bhbj57e3JlY3RhbmdsZUJ1dHRvbn19PC9zcGFuPlxyXG4gICAgICAgICAgICA8L3ByZT5cclxuICAgICAgICA8c3BhbiBjbGFzcz1cImlucHV0LWdyb3VwLWJ0blwiPlxyXG4gICAgICAgICAgICA8YnV0dG9uIGNsYXNzPVwiYnRuIGJ0bi1kZWZhdWx0XCIgW2NsYXNzLmJ0bi1zdWNjZXNzXT1cImlzQ29waWVkMVwiIHR5cGU9XCJidXR0b25cIiBuZ3hDbGlwYm9hcmRcclxuICAgICAgICAgICAgICAgICAgICBbY2JDb250ZW50XT1bcmVjdGFuZ2xlQnV0dG9uXSAoY2JPblN1Y2Nlc3MpPVwiaXNDb3BpZWQxID0gdHJ1ZVwiPmNvcHk8L2J1dHRvbj5cclxuICAgICAgICAgIDwvc3Bhbj5cclxuICAgICAgPC9kaXY+XHJcbiAgICA8L2Rpdj5cclxuICA8L2Rpdj5cclxuXHJcbiAgPGRpdiBjbGFzcz1cInJvd1wiPlxyXG4gICAgPGRpdiBjbGFzcz1cImNvbC1tZC02XCI+XHJcbiAgICAgIDxkaXYgY2xhc3M9XCJidXR0b25fY29udGFpbmVyXCI+XHJcbiAgICAgICAgPGg1PlJvdW5kZWQgUmVjdGFuZ2xlIEJ1dHRvbjwvaDU+XHJcbiAgICAgICAgPGRpdiBjbGFzcz1cImNyZXN0cm9uX2J1dHRvbl9jb250YWluZXJcIj5cclxuICAgICAgICAgIDxidG4gbmFtZT1cImJ1dHRvblJvdW5kZWRSZWN0YW5nbGVcIlxyXG4gICAgICAgICAgICAgICBsYWJlbD1cIkJ1dHRvblwiXHJcbiAgICAgICAgICAgICAgIGN1c3RvbUNsYXNzPVwiY29tbW9uX2J0bl9zdHlsZVwiXHJcbiAgICAgICAgICAgICAgIHNoYXBlPVwicm91bmRlZC1yZWN0YW5nbGVcIj5cclxuICAgICAgICAgIDwvYnRuPlxyXG4gICAgICAgIDwvZGl2PlxyXG4gICAgICA8L2Rpdj5cclxuICAgIDwvZGl2PlxyXG5cclxuICAgIDxkaXYgY2xhc3M9XCJjb2wtbWQtNFwiPlxyXG4gICAgICA8ZGl2IGNsYXNzPVwiaW5wdXQtZ3JvdXBcIj5cclxuICAgICAgICAgICAgPHByZT5cclxuICAgICAgICAgICAgICA8c3Bhbj57e3JvdW5kZWRSZWN0YW5nbGVCdXR0b259fTwvc3Bhbj5cclxuICAgICAgICAgICAgPC9wcmU+XHJcbiAgICAgICAgPHNwYW4gY2xhc3M9XCJpbnB1dC1ncm91cC1idG5cIj5cclxuICAgICAgICAgICAgPGJ1dHRvbiBjbGFzcz1cImJ0biBidG4tZGVmYXVsdFwiIFtjbGFzcy5idG4tc3VjY2Vzc109XCJpc0NvcGllZDJcIiB0eXBlPVwiYnV0dG9uXCIgbmd4Q2xpcGJvYXJkXHJcbiAgICAgICAgICAgICAgICAgICAgW2NiQ29udGVudF09W3JvdW5kZWRSZWN0YW5nbGVCdXR0b25dIChjYk9uU3VjY2Vzcyk9XCJpc0NvcGllZDIgPSB0cnVlXCI+Y29weTwvYnV0dG9uPlxyXG4gICAgICAgICAgPC9zcGFuPlxyXG4gICAgICA8L2Rpdj5cclxuICAgIDwvZGl2PlxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwicm93XCI+XHJcbiAgICA8ZGl2IGNsYXNzPVwiY29sLW1kLTZcIj5cclxuICAgICAgPGRpdiBjbGFzcz1cImJ1dHRvbl9jb250YWluZXJcIj5cclxuICAgICAgICA8aDU+VGFiIEJ1dHRvbjwvaDU+XHJcbiAgICAgICAgPGRpdiBjbGFzcz1cImNyZXN0cm9uX2J1dHRvbl9jb250YWluZXJcIj5cclxuICAgICAgICAgIDxidG4gbmFtZT1cImJ1dHRvblRhYlwiXHJcbiAgICAgICAgICAgICAgIGxhYmVsPVwiQnV0dG9uXCJcclxuICAgICAgICAgICAgICAgY3VzdG9tQ2xhc3M9XCJjb21tb25fYnRuX3N0eWxlXCJcclxuICAgICAgICAgICAgICAgc2hhcGU9XCJ0YWJcIj5cclxuICAgICAgICAgIDwvYnRuPlxyXG4gICAgICAgIDwvZGl2PlxyXG4gICAgICA8L2Rpdj5cclxuICAgIDwvZGl2PlxyXG5cclxuICAgIDxkaXYgY2xhc3M9XCJjb2wtbWQtNFwiPlxyXG4gICAgICA8ZGl2IGNsYXNzPVwiaW5wdXQtZ3JvdXBcIj5cclxuICAgICAgICAgICAgPHByZT5cclxuICAgICAgICAgICAgICA8c3Bhbj57e3RhYkJ1dHRvbn19PC9zcGFuPlxyXG4gICAgICAgICAgICA8L3ByZT5cclxuICAgICAgICA8c3BhbiBjbGFzcz1cImlucHV0LWdyb3VwLWJ0blwiPlxyXG4gICAgICAgICAgICA8YnV0dG9uIGNsYXNzPVwiYnRuIGJ0bi1kZWZhdWx0XCIgW2NsYXNzLmJ0bi1zdWNjZXNzXT1cImlzQ29waWVkM1wiIHR5cGU9XCJidXR0b25cIiBuZ3hDbGlwYm9hcmRcclxuICAgICAgICAgICAgICAgICAgICBbY2JDb250ZW50XT1bdGFiQnV0dG9uXSAoY2JPblN1Y2Nlc3MpPVwiaXNDb3BpZWQzID0gdHJ1ZVwiPmNvcHk8L2J1dHRvbj5cclxuICAgICAgICAgIDwvc3Bhbj5cclxuICAgICAgPC9kaXY+XHJcbiAgICA8L2Rpdj5cclxuICA8L2Rpdj5cclxuXHJcbiAgPGRpdiBjbGFzcz1cInJvd1wiPlxyXG4gICAgPGRpdiBjbGFzcz1cImNvbC1tZC02XCI+XHJcbiAgICAgIDxkaXYgY2xhc3M9XCJidXR0b25fY29udGFpbmVyXCI+XHJcbiAgICAgICAgPGg1PkNpcmNsZSBCdXR0b248L2g1PlxyXG4gICAgICAgIDxkaXYgY2xhc3M9XCJjcmVzdHJvbl9idXR0b25fY29udGFpbmVyXCI+XHJcbiAgICAgICAgICA8YnRuIG5hbWU9XCJidXR0b25DaXJjbGVcIlxyXG4gICAgICAgICAgICAgICBsYWJlbD1cIkJ1dHRvblwiXHJcbiAgICAgICAgICAgICAgIGN1c3RvbUNsYXNzPVwiY29tbW9uX2J0bl9zdHlsZVwiXHJcbiAgICAgICAgICAgICAgIHNoYXBlPVwiY2lyY2xlXCI+XHJcbiAgICAgICAgICA8L2J0bj5cclxuICAgICAgICA8L2Rpdj5cclxuICAgICAgPC9kaXY+XHJcbiAgICA8L2Rpdj5cclxuICAgIDxkaXYgY2xhc3M9XCJjb2wtbWQtNFwiPlxyXG4gICAgICA8ZGl2IGNsYXNzPVwiaW5wdXQtZ3JvdXBcIj5cclxuICAgICAgICAgICAgPHByZT5cclxuICAgICAgICAgICAgICA8c3Bhbj57e2NpcmNsZUJ1dHRvbn19PC9zcGFuPlxyXG4gICAgICAgICAgICA8L3ByZT5cclxuICAgICAgICA8c3BhbiBjbGFzcz1cImlucHV0LWdyb3VwLWJ0blwiPlxyXG4gICAgICAgICAgICA8YnV0dG9uIGNsYXNzPVwiYnRuIGJ0bi1kZWZhdWx0XCIgW2NsYXNzLmJ0bi1zdWNjZXNzXT1cImlzQ29waWVkNFwiIHR5cGU9XCJidXR0b25cIiBuZ3hDbGlwYm9hcmRcclxuICAgICAgICAgICAgICAgICAgICBbY2JDb250ZW50XT1bY2lyY2xlQnV0dG9uXSAoY2JPblN1Y2Nlc3MpPVwiaXNDb3BpZWQ0ID0gdHJ1ZVwiPmNvcHk8L2J1dHRvbj5cclxuICAgICAgICAgIDwvc3Bhbj5cclxuICAgICAgPC9kaXY+XHJcbiAgICA8L2Rpdj5cclxuICA8L2Rpdj5cclxuXHJcbiAgPGRpdiBjbGFzcz1cInJvd1wiPlxyXG4gICAgPGRpdiBjbGFzcz1cImNvbC1tZC02XCI+XHJcbiAgICAgIDxkaXYgY2xhc3M9XCJidXR0b25fY29udGFpbmVyXCI+XHJcbiAgICAgICAgPGg1Pk92YWwgQnV0dG9uPC9oNT5cclxuICAgICAgICA8ZGl2IGNsYXNzPVwiY3Jlc3Ryb25fYnV0dG9uX2NvbnRhaW5lclwiPlxyXG4gICAgICAgICAgPGJ0biBuYW1lPVwiYnV0dG9uT3ZhbFwiXHJcbiAgICAgICAgICAgICAgIGxhYmVsPVwiQnV0dG9uXCJcclxuICAgICAgICAgICAgICAgY3VzdG9tQ2xhc3M9XCJjb21tb25fYnRuX3N0eWxlXCJcclxuICAgICAgICAgICAgICAgc2hhcGU9XCJvdmFsXCI+XHJcbiAgICAgICAgICA8L2J0bj5cclxuICAgICAgICA8L2Rpdj5cclxuICAgICAgPC9kaXY+XHJcbiAgICA8L2Rpdj5cclxuICAgIDxkaXYgY2xhc3M9XCJjb2wtbWQtNFwiPlxyXG4gICAgICA8ZGl2IGNsYXNzPVwiaW5wdXQtZ3JvdXBcIj5cclxuICAgICAgICAgICAgPHByZT5cclxuICAgICAgICAgICAgICA8c3Bhbj57e292YWxCdXR0b259fTwvc3Bhbj5cclxuICAgICAgICAgICAgPC9wcmU+XHJcbiAgICAgICAgPHNwYW4gY2xhc3M9XCJpbnB1dC1ncm91cC1idG5cIj5cclxuICAgICAgICAgICAgPGJ1dHRvbiBjbGFzcz1cImJ0biBidG4tZGVmYXVsdFwiIFtjbGFzcy5idG4tc3VjY2Vzc109XCJpc0NvcGllZDVcIiB0eXBlPVwiYnV0dG9uXCIgbmd4Q2xpcGJvYXJkXHJcbiAgICAgICAgICAgICAgICAgICAgW2NiQ29udGVudF09W292YWxCdXR0b25dIChjYk9uU3VjY2Vzcyk9XCJpc0NvcGllZDUgPSB0cnVlXCI+Y29weTwvYnV0dG9uPlxyXG4gICAgICAgICAgPC9zcGFuPlxyXG4gICAgICA8L2Rpdj5cclxuICAgIDwvZGl2PlxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwicm93XCI+XHJcbiAgICA8ZGl2IGNsYXNzPVwiY29sLW1kLTZcIj5cclxuICAgICAgPGRpdiBjbGFzcz1cImJ1dHRvbl9jb250YWluZXJcIj5cclxuICAgICAgICA8aDU+QnV0dG9uIHdpdGggSWNvbjwvaDU+XHJcbiAgICAgICAgPGRpdiBjbGFzcz1cImNyZXN0cm9uX2J1dHRvbl9jb250YWluZXJcIj5cclxuICAgICAgICAgIDxidG4gbmFtZT1cImJ1dHRvbkljb25SaWdodFwiXHJcbiAgICAgICAgICAgICAgIGxhYmVsPVwiQnV0dG9uXCJcclxuICAgICAgICAgICAgICAgY3VzdG9tQ2xhc3M9XCJjb21tb25fYnRuX3N0eWxlXCJcclxuICAgICAgICAgICAgICAgaWNvbj1cImZhIGZhLXBsdXNcIlxyXG4gICAgICAgICAgICAgICBpY29uX2FsaWduPVwicmlnaHRcIj5cclxuICAgICAgICAgIDwvYnRuPlxyXG4gICAgICAgIDwvZGl2PlxyXG4gICAgICA8L2Rpdj5cclxuICAgIDwvZGl2PlxyXG4gICAgPGRpdiBjbGFzcz1cImNvbC1tZC00XCI+XHJcbiAgICAgIDxkaXYgY2xhc3M9XCJpbnB1dC1ncm91cFwiPlxyXG4gICAgICAgICAgICA8cHJlPlxyXG4gICAgICAgICAgICAgIDxzcGFuPnt7aWNvblJpZ2h0QnV0dG9ufX08L3NwYW4+XHJcbiAgICAgICAgICAgIDwvcHJlPlxyXG4gICAgICAgIDxzcGFuIGNsYXNzPVwiaW5wdXQtZ3JvdXAtYnRuXCI+XHJcbiAgICAgICAgICAgIDxidXR0b24gY2xhc3M9XCJidG4gYnRuLWRlZmF1bHRcIiBbY2xhc3MuYnRuLXN1Y2Nlc3NdPVwiaXNDb3BpZWQ2XCIgdHlwZT1cImJ1dHRvblwiIG5neENsaXBib2FyZFxyXG4gICAgICAgICAgICAgICAgICAgIFtjYkNvbnRlbnRdPVtpY29uUmlnaHRCdXR0b25dIChjYk9uU3VjY2Vzcyk9XCJpc0NvcGllZDYgPSB0cnVlXCI+Y29weTwvYnV0dG9uPlxyXG4gICAgICAgICAgPC9zcGFuPlxyXG4gICAgICA8L2Rpdj5cclxuICAgIDwvZGl2PlxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwicm93XCI+XHJcbiAgICA8ZGl2IGNsYXNzPVwiY29sLW1kLTZcIj5cclxuICAgICAgPGRpdiBjbGFzcz1cImJ1dHRvbl9jb250YWluZXJcIj5cclxuICAgICAgICA8aDU+QnV0dG9uIHdpdGggSWNvbjwvaDU+XHJcbiAgICAgICAgPGRpdiBjbGFzcz1cImNyZXN0cm9uX2J1dHRvbl9jb250YWluZXJcIj5cclxuICAgICAgICAgIDxidG4gbmFtZT1cImJ1dHRvbkljb25MZWZ0XCJcclxuICAgICAgICAgICAgICAgbGFiZWw9XCJCdXR0b25cIlxyXG4gICAgICAgICAgICAgICBjdXN0b21DbGFzcz1cImNvbW1vbl9idG5fc3R5bGVcIlxyXG4gICAgICAgICAgICAgICBpY29uPVwiZmEgZmEtcGx1c1wiXHJcbiAgICAgICAgICAgICAgIGljb25fYWxpZ249XCJsZWZ0XCI+XHJcbiAgICAgICAgICA8L2J0bj5cclxuICAgICAgICA8L2Rpdj5cclxuICAgICAgPC9kaXY+XHJcbiAgICA8L2Rpdj5cclxuICAgIDxkaXYgY2xhc3M9XCJjb2wtbWQtNFwiPlxyXG4gICAgICA8ZGl2IGNsYXNzPVwiaW5wdXQtZ3JvdXBcIj5cclxuICAgICAgICAgICAgPHByZT5cclxuICAgICAgICAgICAgICA8c3Bhbj57e2ljb25MZWZ0QnV0dG9ufX08L3NwYW4+XHJcbiAgICAgICAgICAgIDwvcHJlPlxyXG4gICAgICAgIDxzcGFuIGNsYXNzPVwiaW5wdXQtZ3JvdXAtYnRuXCI+XHJcbiAgICAgICAgICAgIDxidXR0b24gY2xhc3M9XCJidG4gYnRuLWRlZmF1bHRcIiBbY2xhc3MuYnRuLXN1Y2Nlc3NdPVwiaXNDb3BpZWQ3XCIgdHlwZT1cImJ1dHRvblwiIG5neENsaXBib2FyZFxyXG4gICAgICAgICAgICAgICAgICAgIFtjYkNvbnRlbnRdPVtpY29uTGVmdEJ1dHRvbl0gKGNiT25TdWNjZXNzKT1cImlzQ29waWVkNyA9IHRydWVcIj5jb3B5PC9idXR0b24+XHJcbiAgICAgICAgICA8L3NwYW4+XHJcbiAgICAgIDwvZGl2PlxyXG4gICAgPC9kaXY+XHJcbiAgPC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJyb3dcIj5cclxuICAgIDxkaXYgY2xhc3M9XCJjb2wtbWQtNlwiPlxyXG4gICAgICA8ZGl2IGNsYXNzPVwiYnV0dG9uX2NvbnRhaW5lclwiPlxyXG4gICAgICAgIDxoNT5QcmltYXJ5IEJ1dHRvbiBUeXBlPC9oNT5cclxuICAgICAgICA8ZGl2IGNsYXNzPVwiY3Jlc3Ryb25fYnV0dG9uX2NvbnRhaW5lclwiPlxyXG4gICAgICAgICAgPGJ0biBuYW1lPVwiYnV0dG9uUHJpbWFyeVwiXHJcbiAgICAgICAgICAgICAgIGxhYmVsPVwiQnV0dG9uXCJcclxuICAgICAgICAgICAgICAgY3VzdG9tQ2xhc3M9XCJjb21tb25fYnRuX3N0eWxlXCJcclxuICAgICAgICAgICAgICAgc2hhcGU9XCJyb3VuZGVkLXJlY3RhbmdsZVwiXHJcbiAgICAgICAgICAgICAgIHR5cGU9XCJwcmltYXJ5XCI+XHJcbiAgICAgICAgICA8L2J0bj5cclxuICAgICAgICA8L2Rpdj5cclxuICAgICAgPC9kaXY+XHJcbiAgICA8L2Rpdj5cclxuICAgIDxkaXYgY2xhc3M9XCJjb2wtbWQtNFwiPlxyXG4gICAgICA8ZGl2IGNsYXNzPVwiaW5wdXQtZ3JvdXBcIj5cclxuICAgICAgICAgICAgPHByZT5cclxuICAgICAgICAgICAgICA8c3Bhbj57e3ByaW1hcnlCdXR0b259fTwvc3Bhbj5cclxuICAgICAgICAgICAgPC9wcmU+XHJcbiAgICAgICAgPHNwYW4gY2xhc3M9XCJpbnB1dC1ncm91cC1idG5cIj5cclxuICAgICAgICAgICAgPGJ1dHRvbiBjbGFzcz1cImJ0biBidG4tZGVmYXVsdFwiIFtjbGFzcy5idG4tc3VjY2Vzc109XCJpc0NvcGllZDhcIiB0eXBlPVwiYnV0dG9uXCIgbmd4Q2xpcGJvYXJkXHJcbiAgICAgICAgICAgICAgICAgICAgW2NiQ29udGVudF09W3ByaW1hcnlCdXR0b25dIChjYk9uU3VjY2Vzcyk9XCJpc0NvcGllZDggPSB0cnVlXCI+Y29weTwvYnV0dG9uPlxyXG4gICAgICAgICAgPC9zcGFuPlxyXG4gICAgICA8L2Rpdj5cclxuICAgIDwvZGl2PlxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwicm93XCI+XHJcbiAgICA8ZGl2IGNsYXNzPVwiY29sLW1kLTZcIj5cclxuICAgICAgPGRpdiBjbGFzcz1cImJ1dHRvbl9jb250YWluZXJcIj5cclxuICAgICAgICA8aDU+U2Vjb25kYXJ5IEJ1dHRvbiBUeXBlPC9oNT5cclxuICAgICAgICA8ZGl2IGNsYXNzPVwiY3Jlc3Ryb25fYnV0dG9uX2NvbnRhaW5lclwiPlxyXG4gICAgICAgICAgPGJ0biBuYW1lPVwiYnV0dG9uU2Vjb25kYXJ5XCJcclxuICAgICAgICAgICAgICAgbGFiZWw9XCJCdXR0b25cIlxyXG4gICAgICAgICAgICAgICBjdXN0b21DbGFzcz1cImNvbW1vbl9idG5fc3R5bGVcIlxyXG4gICAgICAgICAgICAgICBzaGFwZT1cInJvdW5kZWQtcmVjdGFuZ2xlXCJcclxuICAgICAgICAgICAgICAgdHlwZT1cInNlY29uZGFyeVwiPlxyXG4gICAgICAgICAgPC9idG4+XHJcbiAgICAgICAgPC9kaXY+XHJcbiAgICAgIDwvZGl2PlxyXG4gICAgPC9kaXY+XHJcbiAgICA8ZGl2IGNsYXNzPVwiY29sLW1kLTRcIj5cclxuICAgICAgPGRpdiBjbGFzcz1cImlucHV0LWdyb3VwXCI+XHJcbiAgICAgICAgICAgIDxwcmU+XHJcbiAgICAgICAgICAgICAgPHNwYW4+e3tzZWNvbmRhcnlCdXR0b259fTwvc3Bhbj5cclxuICAgICAgICAgICAgPC9wcmU+XHJcbiAgICAgICAgPHNwYW4gY2xhc3M9XCJpbnB1dC1ncm91cC1idG5cIj5cclxuICAgICAgICAgICAgPGJ1dHRvbiBjbGFzcz1cImJ0biBidG4tZGVmYXVsdFwiIFtjbGFzcy5idG4tc3VjY2Vzc109XCJpc0NvcGllZDlcIiB0eXBlPVwiYnV0dG9uXCIgbmd4Q2xpcGJvYXJkXHJcbiAgICAgICAgICAgICAgICAgICAgW2NiQ29udGVudF09W3NlY29uZGFyeUJ1dHRvbl0gKGNiT25TdWNjZXNzKT1cImlzQ29waWVkOSA9IHRydWVcIj5jb3B5PC9idXR0b24+XHJcbiAgICAgICAgICA8L3NwYW4+XHJcbiAgICAgIDwvZGl2PlxyXG4gICAgPC9kaXY+XHJcbiAgPC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJyb3dcIj5cclxuICAgIDxkaXYgY2xhc3M9XCJjb2wtbWQtNlwiPlxyXG4gICAgICA8ZGl2IGNsYXNzPVwiYnV0dG9uX2NvbnRhaW5lclwiPlxyXG4gICAgICAgIDxoNT5JbmZvIEJ1dHRvbiBUeXBlPC9oNT5cclxuICAgICAgICA8ZGl2IGNsYXNzPVwiY3Jlc3Ryb25fYnV0dG9uX2NvbnRhaW5lclwiPlxyXG4gICAgICAgICAgPGJ0biBuYW1lPVwiYnV0dG9uSW5mb1wiXHJcbiAgICAgICAgICAgICAgIGxhYmVsPVwiQnV0dG9uXCJcclxuICAgICAgICAgICAgICAgY3VzdG9tQ2xhc3M9XCJjb21tb25fYnRuX3N0eWxlXCJcclxuICAgICAgICAgICAgICAgc2hhcGU9XCJyb3VuZGVkLXJlY3RhbmdsZVwiXHJcbiAgICAgICAgICAgICAgIHR5cGU9XCJpbmZvXCI+XHJcbiAgICAgICAgICA8L2J0bj5cclxuICAgICAgICA8L2Rpdj5cclxuICAgICAgPC9kaXY+XHJcbiAgICA8L2Rpdj5cclxuICAgIDxkaXYgY2xhc3M9XCJjb2wtbWQtNFwiPlxyXG4gICAgICA8ZGl2IGNsYXNzPVwiaW5wdXQtZ3JvdXBcIj5cclxuICAgICAgICAgICAgPHByZT5cclxuICAgICAgICAgICAgICA8c3Bhbj57e2luZm9CdXR0b259fTwvc3Bhbj5cclxuICAgICAgICAgICAgPC9wcmU+XHJcbiAgICAgICAgPHNwYW4gY2xhc3M9XCJpbnB1dC1ncm91cC1idG5cIj5cclxuICAgICAgICAgICAgPGJ1dHRvbiBjbGFzcz1cImJ0biBidG4tZGVmYXVsdFwiIFtjbGFzcy5idG4tc3VjY2Vzc109XCJpc0NvcGllZDEwXCIgdHlwZT1cImJ1dHRvblwiIG5neENsaXBib2FyZFxyXG4gICAgICAgICAgICAgICAgICAgIFtjYkNvbnRlbnRdPVtpbmZvQnV0dG9uXSAoY2JPblN1Y2Nlc3MpPVwiaXNDb3BpZWQxMCA9IHRydWVcIj5jb3B5PC9idXR0b24+XHJcbiAgICAgICAgICA8L3NwYW4+XHJcbiAgICAgIDwvZGl2PlxyXG4gICAgPC9kaXY+XHJcbiAgPC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJyb3dcIj5cclxuICAgIDxkaXYgY2xhc3M9XCJjb2wtbWQtNlwiPlxyXG4gICAgICA8ZGl2IGNsYXNzPVwiYnV0dG9uX2NvbnRhaW5lclwiPlxyXG4gICAgICAgIDxoNT5XYXJuaW5nIEJ1dHRvbiBUeXBlPC9oNT5cclxuICAgICAgICA8ZGl2IGNsYXNzPVwiY3Jlc3Ryb25fYnV0dG9uX2NvbnRhaW5lclwiPlxyXG4gICAgICAgICAgPGJ0biBuYW1lPVwiYnV0dG9uV2FybmluZ1wiXHJcbiAgICAgICAgICAgICAgIGxhYmVsPVwiQnV0dG9uXCJcclxuICAgICAgICAgICAgICAgY3VzdG9tQ2xhc3M9XCJjb21tb25fYnRuX3N0eWxlXCJcclxuICAgICAgICAgICAgICAgc2hhcGU9XCJyb3VuZGVkLXJlY3RhbmdsZVwiXHJcbiAgICAgICAgICAgICAgIHR5cGU9XCJ3YXJuaW5nXCI+XHJcbiAgICAgICAgICA8L2J0bj5cclxuICAgICAgICA8L2Rpdj5cclxuICAgICAgPC9kaXY+XHJcbiAgICA8L2Rpdj5cclxuICAgIDxkaXYgY2xhc3M9XCJjb2wtbWQtNFwiPlxyXG4gICAgICA8ZGl2IGNsYXNzPVwiaW5wdXQtZ3JvdXBcIj5cclxuICAgICAgICAgICAgPHByZT5cclxuICAgICAgICAgICAgICA8c3Bhbj57e3dhcm5pbmdCdXR0b259fTwvc3Bhbj5cclxuICAgICAgICAgICAgPC9wcmU+XHJcbiAgICAgICAgPHNwYW4gY2xhc3M9XCJpbnB1dC1ncm91cC1idG5cIj5cclxuICAgICAgICAgICAgPGJ1dHRvbiBjbGFzcz1cImJ0biBidG4tZGVmYXVsdFwiIFtjbGFzcy5idG4tc3VjY2Vzc109XCJpc0NvcGllZDExXCIgdHlwZT1cImJ1dHRvblwiIG5neENsaXBib2FyZFxyXG4gICAgICAgICAgICAgICAgICAgIFtjYkNvbnRlbnRdPVt3YXJuaW5nQnV0dG9uXSAoY2JPblN1Y2Nlc3MpPVwiaXNDb3BpZWQxMSA9IHRydWVcIj5jb3B5PC9idXR0b24+XHJcbiAgICAgICAgICA8L3NwYW4+XHJcbiAgICAgIDwvZGl2PlxyXG4gICAgPC9kaXY+XHJcbiAgPC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJyb3dcIj5cclxuICAgIDxkaXYgY2xhc3M9XCJjb2wtbWQtNlwiPlxyXG4gICAgICA8ZGl2IGNsYXNzPVwiYnV0dG9uX2NvbnRhaW5lclwiPlxyXG4gICAgICAgIDxoNT5EYW5nZXIgQnV0dG9uIFR5cGU8L2g1PlxyXG4gICAgICAgIDxkaXYgY2xhc3M9XCJjcmVzdHJvbl9idXR0b25fY29udGFpbmVyXCI+XHJcbiAgICAgICAgICA8YnRuIG5hbWU9XCJidXR0b25EYW5nZXJcIlxyXG4gICAgICAgICAgICAgICBsYWJlbD1cIkJ1dHRvblwiXHJcbiAgICAgICAgICAgICAgIGN1c3RvbUNsYXNzPVwiY29tbW9uX2J0bl9zdHlsZVwiXHJcbiAgICAgICAgICAgICAgIHNoYXBlPVwicm91bmRlZC1yZWN0YW5nbGVcIlxyXG4gICAgICAgICAgICAgICB0eXBlPVwiZGFuZ2VyXCI+XHJcbiAgICAgICAgICA8L2J0bj5cclxuICAgICAgICA8L2Rpdj5cclxuICAgICAgPC9kaXY+XHJcbiAgICA8L2Rpdj5cclxuICAgIDxkaXYgY2xhc3M9XCJjb2wtbWQtNFwiPlxyXG4gICAgICA8ZGl2IGNsYXNzPVwiaW5wdXQtZ3JvdXBcIj5cclxuICAgICAgICAgICAgPHByZT5cclxuICAgICAgICAgICAgICA8c3Bhbj57e2RhbmdlckJ1dHRvbn19PC9zcGFuPlxyXG4gICAgICAgICAgICA8L3ByZT5cclxuICAgICAgICA8c3BhbiBjbGFzcz1cImlucHV0LWdyb3VwLWJ0blwiPlxyXG4gICAgICAgICAgICA8YnV0dG9uIGNsYXNzPVwiYnRuIGJ0bi1kZWZhdWx0XCIgW2NsYXNzLmJ0bi1zdWNjZXNzXT1cImlzQ29waWVkMTJcIiB0eXBlPVwiYnV0dG9uXCIgbmd4Q2xpcGJvYXJkXHJcbiAgICAgICAgICAgICAgICAgICAgW2NiQ29udGVudF09W2RhbmdlckJ1dHRvbl0gKGNiT25TdWNjZXNzKT1cImlzQ29waWVkMTIgPSB0cnVlXCI+Y29weTwvYnV0dG9uPlxyXG4gICAgICAgICAgPC9zcGFuPlxyXG4gICAgICA8L2Rpdj5cclxuICAgIDwvZGl2PlxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwicm93XCI+XHJcbiAgICA8ZGl2IGNsYXNzPVwiY29sLW1kLTZcIj5cclxuICAgICAgPGRpdiBjbGFzcz1cImJ1dHRvbl9jb250YWluZXJcIj5cclxuICAgICAgICA8aDU+U3VjY2VzcyBCdXR0b24gVHlwZTwvaDU+XHJcbiAgICAgICAgPGRpdiBjbGFzcz1cImNyZXN0cm9uX2J1dHRvbl9jb250YWluZXJcIj5cclxuICAgICAgICAgIDxidG4gbmFtZT1cImJ1dHRvblN1Y2Nlc3NcIlxyXG4gICAgICAgICAgICAgICBsYWJlbD1cIkJ1dHRvblwiXHJcbiAgICAgICAgICAgICAgIGN1c3RvbUNsYXNzPVwiY29tbW9uX2J0bl9zdHlsZVwiXHJcbiAgICAgICAgICAgICAgIHNoYXBlPVwicm91bmRlZC1yZWN0YW5nbGVcIlxyXG4gICAgICAgICAgICAgICB0eXBlPVwic3VjY2Vzc1wiPlxyXG4gICAgICAgICAgPC9idG4+XHJcbiAgICAgICAgPC9kaXY+XHJcbiAgICAgIDwvZGl2PlxyXG4gICAgPC9kaXY+XHJcbiAgICA8ZGl2IGNsYXNzPVwiY29sLW1kLTRcIj5cclxuICAgICAgPGRpdiBjbGFzcz1cImlucHV0LWdyb3VwXCI+XHJcbiAgICAgICAgICAgIDxwcmU+XHJcbiAgICAgICAgICAgICAgPHNwYW4+e3tzdWNjZXNzQnV0dG9ufX08L3NwYW4+XHJcbiAgICAgICAgICAgIDwvcHJlPlxyXG4gICAgICAgIDxzcGFuIGNsYXNzPVwiaW5wdXQtZ3JvdXAtYnRuXCI+XHJcbiAgICAgICAgICAgIDxidXR0b24gY2xhc3M9XCJidG4gYnRuLWRlZmF1bHRcIiBbY2xhc3MuYnRuLXN1Y2Nlc3NdPVwiaXNDb3BpZWQxM1wiIHR5cGU9XCJidXR0b25cIiBuZ3hDbGlwYm9hcmRcclxuICAgICAgICAgICAgICAgICAgICBbY2JDb250ZW50XT1bc3VjY2Vzc0J1dHRvbl0gKGNiT25TdWNjZXNzKT1cImlzQ29waWVkMTMgPSB0cnVlXCI+Y29weTwvYnV0dG9uPlxyXG4gICAgICAgICAgPC9zcGFuPlxyXG4gICAgICA8L2Rpdj5cclxuICAgIDwvZGl2PlxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwicm93XCI+XHJcbiAgICA8ZGl2IGNsYXNzPVwiY29sLW1kLTZcIj5cclxuICAgICAgPGRpdiBjbGFzcz1cImJ1dHRvbl9jb250YWluZXJcIj5cclxuICAgICAgICA8aDU+VGV4dCBCdXR0b24gVHlwZTwvaDU+XHJcbiAgICAgICAgPGRpdiBjbGFzcz1cImNyZXN0cm9uX2J1dHRvbl9jb250YWluZXJcIj5cclxuICAgICAgICAgIDxidG4gbmFtZT1cImJ1dHRvblRleHRcIlxyXG4gICAgICAgICAgICAgICBsYWJlbD1cIkJ1dHRvblwiXHJcbiAgICAgICAgICAgICAgIGN1c3RvbUNsYXNzPVwiY29tbW9uX2J0bl9zdHlsZVwiXHJcbiAgICAgICAgICAgICAgIHNoYXBlPVwicm91bmRlZC1yZWN0YW5nbGVcIlxyXG4gICAgICAgICAgICAgICB0eXBlPVwidGV4dFwiPlxyXG4gICAgICAgICAgPC9idG4+XHJcbiAgICAgICAgPC9kaXY+XHJcbiAgICAgIDwvZGl2PlxyXG4gICAgPC9kaXY+XHJcbiAgICA8ZGl2IGNsYXNzPVwiY29sLW1kLTRcIj5cclxuICAgICAgPGRpdiBjbGFzcz1cImlucHV0LWdyb3VwXCI+XHJcbiAgICAgICAgICAgIDxwcmU+XHJcbiAgICAgICAgICAgICAgPHNwYW4+e3t0ZXh0QnV0dG9ufX08L3NwYW4+XHJcbiAgICAgICAgICAgIDwvcHJlPlxyXG4gICAgICAgIDxzcGFuIGNsYXNzPVwiaW5wdXQtZ3JvdXAtYnRuXCI+XHJcbiAgICAgICAgICAgIDxidXR0b24gY2xhc3M9XCJidG4gYnRuLWRlZmF1bHRcIiBbY2xhc3MuYnRuLXN1Y2Nlc3NdPVwiaXNDb3BpZWQxNFwiIHR5cGU9XCJidXR0b25cIiBuZ3hDbGlwYm9hcmRcclxuICAgICAgICAgICAgICAgICAgICBbY2JDb250ZW50XT1bdGV4dEJ1dHRvbl0gKGNiT25TdWNjZXNzKT1cImlzQ29waWVkMTQgPSB0cnVlXCI+Y29weTwvYnV0dG9uPlxyXG4gICAgICAgICAgPC9zcGFuPlxyXG4gICAgICA8L2Rpdj5cclxuICAgIDwvZGl2PlxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwicm93XCI+XHJcbiAgICA8ZGl2IGNsYXNzPVwiY29sLW1kLTZcIj5cclxuICAgICAgPGRpdiBjbGFzcz1cImJ1dHRvbl9jb250YWluZXJcIj5cclxuICAgICAgICA8aDU+VmVydGljYWwgQnV0dG9uPC9oNT5cclxuICAgICAgICA8ZGl2IGNsYXNzPVwiY3Jlc3Ryb25fYnV0dG9uX2NvbnRhaW5lclwiPlxyXG4gICAgICAgICAgPGJ0biBuYW1lPVwiYnV0dG9uVmVydGljYWxcIlxyXG4gICAgICAgICAgICAgICBsYWJlbD1cIkJ1dHRvblwiXHJcbiAgICAgICAgICAgICAgIGN1c3RvbUNsYXNzPVwiY29tbW9uX2J0bl9zdHlsZVwiXHJcbiAgICAgICAgICAgICAgIGljb249XCJmYSBmYS1taW51c1wiXHJcbiAgICAgICAgICAgICAgIG9yaWVudGF0aW9uPVwidmVydGljYWxcIj5cclxuICAgICAgICAgIDwvYnRuPlxyXG4gICAgICAgIDwvZGl2PlxyXG4gICAgICA8L2Rpdj5cclxuICAgIDwvZGl2PlxyXG4gICAgPGRpdiBjbGFzcz1cImNvbC1tZC00XCI+XHJcbiAgICAgIDxkaXYgY2xhc3M9XCJpbnB1dC1ncm91cFwiPlxyXG4gICAgICAgICAgICA8cHJlPlxyXG4gICAgICAgICAgICAgIDxzcGFuPnt7dmVydGljYWxCdXR0b259fTwvc3Bhbj5cclxuICAgICAgICAgICAgPC9wcmU+XHJcbiAgICAgICAgPHNwYW4gY2xhc3M9XCJpbnB1dC1ncm91cC1idG5cIj5cclxuICAgICAgICAgICAgPGJ1dHRvbiBjbGFzcz1cImJ0biBidG4tZGVmYXVsdFwiIFtjbGFzcy5idG4tc3VjY2Vzc109XCJpc0NvcGllZDE1XCIgdHlwZT1cImJ1dHRvblwiIG5neENsaXBib2FyZFxyXG4gICAgICAgICAgICAgICAgICAgIFtjYkNvbnRlbnRdPVt2ZXJ0aWNhbEJ1dHRvbl0gKGNiT25TdWNjZXNzKT1cImlzQ29waWVkMTUgPSB0cnVlXCI+Y29weTwvYnV0dG9uPlxyXG4gICAgICAgICAgPC9zcGFuPlxyXG4gICAgICA8L2Rpdj5cclxuICAgIDwvZGl2PlxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwicm93XCI+XHJcbiAgICA8ZGl2IGNsYXNzPVwiY29sLW1kLTZcIj5cclxuICAgICAgPGRpdiBjbGFzcz1cImJ1dHRvbl9jb250YWluZXJcIj5cclxuICAgICAgICA8aDU+WC1TbWFsbCBCdXR0b248L2g1PlxyXG4gICAgICAgIDxkaXYgY2xhc3M9XCJjcmVzdHJvbl9idXR0b25fY29udGFpbmVyXCI+XHJcbiAgICAgICAgICA8YnRuIG5hbWU9XCJidXR0b25YU21hbGxcIlxyXG4gICAgICAgICAgICAgICBsYWJlbD1cIkJ1dHRvblwiXHJcbiAgICAgICAgICAgICAgIGN1c3RvbUNsYXNzPVwiY29tbW9uX2J0bl9zdHlsZVwiXHJcbiAgICAgICAgICAgICAgIGljb249XCJmYSBmYS1wbHVzXCJcclxuICAgICAgICAgICAgICAgc2l6ZT1cIngtc21hbGxcIj5cclxuICAgICAgICAgIDwvYnRuPlxyXG4gICAgICAgIDwvZGl2PlxyXG4gICAgICA8L2Rpdj5cclxuICAgIDwvZGl2PlxyXG4gICAgPGRpdiBjbGFzcz1cImNvbC1tZC00XCI+XHJcbiAgICAgIDxkaXYgY2xhc3M9XCJpbnB1dC1ncm91cFwiPlxyXG4gICAgICAgICAgICA8cHJlPlxyXG4gICAgICAgICAgICAgIDxzcGFuPnt7eFNtYWxsQnV0dG9ufX08L3NwYW4+XHJcbiAgICAgICAgICAgIDwvcHJlPlxyXG4gICAgICAgIDxzcGFuIGNsYXNzPVwiaW5wdXQtZ3JvdXAtYnRuXCI+XHJcbiAgICAgICAgICAgIDxidXR0b24gY2xhc3M9XCJidG4gYnRuLWRlZmF1bHRcIiBbY2xhc3MuYnRuLXN1Y2Nlc3NdPVwiaXNDb3BpZWQxNlwiIHR5cGU9XCJidXR0b25cIiBuZ3hDbGlwYm9hcmRcclxuICAgICAgICAgICAgICAgICAgICBbY2JDb250ZW50XT1beFNtYWxsQnV0dG9uXSAoY2JPblN1Y2Nlc3MpPVwiaXNDb3BpZWQxNiA9IHRydWVcIj5jb3B5PC9idXR0b24+XHJcbiAgICAgICAgICA8L3NwYW4+XHJcbiAgICAgIDwvZGl2PlxyXG4gICAgPC9kaXY+XHJcbiAgPC9kaXY+XHJcblxyXG4gIDxkaXYgY2xhc3M9XCJyb3dcIj5cclxuICAgIDxkaXYgY2xhc3M9XCJjb2wtbWQtNlwiPlxyXG4gICAgICA8ZGl2IGNsYXNzPVwiYnV0dG9uX2NvbnRhaW5lclwiPlxyXG4gICAgICAgIDxoNT5TbWFsbCBCdXR0b248L2g1PlxyXG4gICAgICAgIDxkaXYgY2xhc3M9XCJjcmVzdHJvbl9idXR0b25fY29udGFpbmVyXCI+XHJcbiAgICAgICAgICA8YnRuIG5hbWU9XCJidXR0b25TbWFsbFwiXHJcbiAgICAgICAgICAgICAgIGxhYmVsPVwiQnV0dG9uXCJcclxuICAgICAgICAgICAgICAgY3VzdG9tQ2xhc3M9XCJjb21tb25fYnRuX3N0eWxlXCJcclxuICAgICAgICAgICAgICAgaWNvbj1cImZhIGZhLXBsdXNcIlxyXG4gICAgICAgICAgICAgICBzaXplPVwic21hbGxcIj5cclxuICAgICAgICAgIDwvYnRuPlxyXG4gICAgICAgIDwvZGl2PlxyXG4gICAgICA8L2Rpdj5cclxuICAgIDwvZGl2PlxyXG4gICAgPGRpdiBjbGFzcz1cImNvbC1tZC00XCI+XHJcbiAgICAgIDxkaXYgY2xhc3M9XCJpbnB1dC1ncm91cFwiPlxyXG4gICAgICAgICAgICA8cHJlPlxyXG4gICAgICAgICAgICAgIDxzcGFuPnt7c21hbGxCdXR0b259fTwvc3Bhbj5cclxuICAgICAgICAgICAgPC9wcmU+XHJcbiAgICAgICAgPHNwYW4gY2xhc3M9XCJpbnB1dC1ncm91cC1idG5cIj5cclxuICAgICAgICAgICAgPGJ1dHRvbiBjbGFzcz1cImJ0biBidG4tZGVmYXVsdFwiIFtjbGFzcy5idG4tc3VjY2Vzc109XCJpc0NvcGllZDE3XCIgdHlwZT1cImJ1dHRvblwiIG5neENsaXBib2FyZFxyXG4gICAgICAgICAgICAgICAgICAgIFtjYkNvbnRlbnRdPVtzbWFsbEJ1dHRvbl0gKGNiT25TdWNjZXNzKT1cImlzQ29waWVkMTcgPSB0cnVlXCI+Y29weTwvYnV0dG9uPlxyXG4gICAgICAgICAgPC9zcGFuPlxyXG4gICAgICA8L2Rpdj5cclxuICAgIDwvZGl2PlxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwicm93XCI+XHJcbiAgICA8ZGl2IGNsYXNzPVwiY29sLW1kLTZcIj5cclxuICAgICAgPGRpdiBjbGFzcz1cImJ1dHRvbl9jb250YWluZXJcIj5cclxuICAgICAgICA8aDU+TGFyZ2UgQnV0dG9uPC9oNT5cclxuICAgICAgICA8ZGl2IGNsYXNzPVwiY3Jlc3Ryb25fYnV0dG9uX2NvbnRhaW5lclwiPlxyXG4gICAgICAgICAgPGJ0biBuYW1lPVwiYnV0dG9uTGFyZ2VcIlxyXG4gICAgICAgICAgICAgICBsYWJlbD1cIkJ1dHRvblwiXHJcbiAgICAgICAgICAgICAgIGN1c3RvbUNsYXNzPVwiY29tbW9uX2J0bl9zdHlsZVwiXHJcbiAgICAgICAgICAgICAgIGljb249XCJmYSBmYS1wbHVzXCJcclxuICAgICAgICAgICAgICAgc2l6ZT1cImxhcmdlXCI+XHJcbiAgICAgICAgICA8L2J0bj5cclxuICAgICAgICA8L2Rpdj5cclxuICAgICAgPC9kaXY+XHJcbiAgICA8L2Rpdj5cclxuICAgIDxkaXYgY2xhc3M9XCJjb2wtbWQtNFwiPlxyXG4gICAgICA8ZGl2IGNsYXNzPVwiaW5wdXQtZ3JvdXBcIj5cclxuICAgICAgICAgICAgPHByZT5cclxuICAgICAgICAgICAgICA8c3Bhbj57e2xhcmdlQnV0dG9ufX08L3NwYW4+XHJcbiAgICAgICAgICAgIDwvcHJlPlxyXG4gICAgICAgIDxzcGFuIGNsYXNzPVwiaW5wdXQtZ3JvdXAtYnRuXCI+XHJcbiAgICAgICAgICAgIDxidXR0b24gY2xhc3M9XCJidG4gYnRuLWRlZmF1bHRcIiBbY2xhc3MuYnRuLXN1Y2Nlc3NdPVwiaXNDb3BpZWQxOFwiIHR5cGU9XCJidXR0b25cIiBuZ3hDbGlwYm9hcmRcclxuICAgICAgICAgICAgICAgICAgICBbY2JDb250ZW50XT1bbGFyZ2VCdXR0b25dIChjYk9uU3VjY2Vzcyk9XCJpc0NvcGllZDE4ID0gdHJ1ZVwiPmNvcHk8L2J1dHRvbj5cclxuICAgICAgICAgIDwvc3Bhbj5cclxuICAgICAgPC9kaXY+XHJcbiAgICA8L2Rpdj5cclxuICA8L2Rpdj5cclxuXHJcbiAgPGRpdiBjbGFzcz1cInJvd1wiPlxyXG4gICAgPGRpdiBjbGFzcz1cImNvbC1tZC02XCI+XHJcbiAgICAgIDxkaXYgY2xhc3M9XCJidXR0b25fY29udGFpbmVyXCI+XHJcbiAgICAgICAgPGg1PlN0cmV0Y2ggQnV0dG9uIFdpZHRoPC9oNT5cclxuICAgICAgICA8ZGl2IGNsYXNzPVwiY3Jlc3Ryb25fYnV0dG9uX2NvbnRhaW5lclwiPlxyXG4gICAgICAgICAgPGJ0biBuYW1lPVwiYnV0dG9uU3RyZXRjaFdpZHRoXCJcclxuICAgICAgICAgICAgICAgbGFiZWw9XCJCdXR0b25cIlxyXG4gICAgICAgICAgICAgICBjdXN0b21DbGFzcz1cImNvbW1vbl9idG5fc3R5bGVcIlxyXG4gICAgICAgICAgICAgICBpY29uPVwiZmEgZmEtcGx1c1wiXHJcbiAgICAgICAgICAgICAgIHN0cmV0Y2g9XCJ3aWR0aFwiPlxyXG4gICAgICAgICAgPC9idG4+XHJcbiAgICAgICAgPC9kaXY+XHJcbiAgICAgIDwvZGl2PlxyXG4gICAgPC9kaXY+XHJcbiAgICA8ZGl2IGNsYXNzPVwiY29sLW1kLTRcIj5cclxuICAgICAgPGRpdiBjbGFzcz1cImlucHV0LWdyb3VwXCI+XHJcbiAgICAgICAgICAgIDxwcmU+XHJcbiAgICAgICAgICAgICAgPHNwYW4+e3tzdHJldGNoV2lkdGhCdXR0b259fTwvc3Bhbj5cclxuICAgICAgICAgICAgPC9wcmU+XHJcbiAgICAgICAgPHNwYW4gY2xhc3M9XCJpbnB1dC1ncm91cC1idG5cIj5cclxuICAgICAgICAgICAgPGJ1dHRvbiBjbGFzcz1cImJ0biBidG4tZGVmYXVsdFwiIFtjbGFzcy5idG4tc3VjY2Vzc109XCJpc0NvcGllZDE5XCIgdHlwZT1cImJ1dHRvblwiIG5neENsaXBib2FyZFxyXG4gICAgICAgICAgICAgICAgICAgIFtjYkNvbnRlbnRdPVtzdHJldGNoV2lkdGhCdXR0b25dIChjYk9uU3VjY2Vzcyk9XCJpc0NvcGllZDE5ID0gdHJ1ZVwiPmNvcHk8L2J1dHRvbj5cclxuICAgICAgICAgIDwvc3Bhbj5cclxuICAgICAgPC9kaXY+XHJcbiAgICA8L2Rpdj5cclxuICA8L2Rpdj5cclxuXHJcbiAgPGRpdiBjbGFzcz1cInJvd1wiPlxyXG4gICAgPGRpdiBjbGFzcz1cImNvbC1tZC02XCI+XHJcbiAgICAgIDxkaXYgY2xhc3M9XCJidXR0b25fY29udGFpbmVyXCI+XHJcbiAgICAgICAgPGg1PlN0cmV0Y2ggQnV0dG9uIEhlaWdodDwvaDU+XHJcbiAgICAgICAgPGRpdiBjbGFzcz1cImNyZXN0cm9uX2J1dHRvbl9jb250YWluZXJcIj5cclxuICAgICAgICAgIDxidG4gbmFtZT1cImJ1dHRvblN0cmV0Y2hIZWlnaHRcIlxyXG4gICAgICAgICAgICAgICBsYWJlbD1cIkJ1dHRvblwiXHJcbiAgICAgICAgICAgICAgIGN1c3RvbUNsYXNzPVwiY29tbW9uX2J0bl9zdHlsZVwiXHJcbiAgICAgICAgICAgICAgIGljb249XCJmYSBmYS1wbHVzXCJcclxuICAgICAgICAgICAgICAgc3RyZXRjaD1cImhlaWdodFwiPlxyXG4gICAgICAgICAgPC9idG4+XHJcbiAgICAgICAgPC9kaXY+XHJcbiAgICAgIDwvZGl2PlxyXG4gICAgPC9kaXY+XHJcbiAgICA8ZGl2IGNsYXNzPVwiY29sLW1kLTRcIj5cclxuICAgICAgPGRpdiBjbGFzcz1cImlucHV0LWdyb3VwXCI+XHJcbiAgICAgICAgICAgIDxwcmU+XHJcbiAgICAgICAgICAgICAgPHNwYW4+e3tzdHJldGNoSGVpZ2h0QnV0dG9ufX08L3NwYW4+XHJcbiAgICAgICAgICAgIDwvcHJlPlxyXG4gICAgICAgIDxzcGFuIGNsYXNzPVwiaW5wdXQtZ3JvdXAtYnRuXCI+XHJcbiAgICAgICAgICAgIDxidXR0b24gY2xhc3M9XCJidG4gYnRuLWRlZmF1bHRcIiBbY2xhc3MuYnRuLXN1Y2Nlc3NdPVwiaXNDb3BpZWQyMFwiIHR5cGU9XCJidXR0b25cIiBuZ3hDbGlwYm9hcmRcclxuICAgICAgICAgICAgICAgICAgICBbY2JDb250ZW50XT1bc3RyZXRjaEhlaWdodEJ1dHRvbl0gKGNiT25TdWNjZXNzKT1cImlzQ29waWVkMjAgPSB0cnVlXCI+Y29weTwvYnV0dG9uPlxyXG4gICAgICAgICAgPC9zcGFuPlxyXG4gICAgICA8L2Rpdj5cclxuICAgIDwvZGl2PlxyXG4gIDwvZGl2PlxyXG5cclxuICA8ZGl2IGNsYXNzPVwicm93XCI+XHJcbiAgICA8ZGl2IGNsYXNzPVwiY29sLW1kLTZcIj5cclxuICAgICAgPGRpdiBjbGFzcz1cImJ1dHRvbl9jb250YWluZXJcIj5cclxuICAgICAgICA8aDU+U3RyZXRjaCBCdXR0b24gV2lkdGggYW5kIEhlaWdodDwvaDU+XHJcbiAgICAgICAgPGRpdiBjbGFzcz1cImNyZXN0cm9uX2J1dHRvbl9jb250YWluZXJcIj5cclxuICAgICAgICAgIDxidG4gbmFtZT1cImJ1dHRvblN0cmV0Y2hCb3RoXCJcclxuICAgICAgICAgICAgICAgbGFiZWw9XCJCdXR0b25cIlxyXG4gICAgICAgICAgICAgICBjdXN0b21DbGFzcz1cImNvbW1vbl9idG5fc3R5bGVcIlxyXG4gICAgICAgICAgICAgICBpY29uPVwiZmEgZmEtcGx1c1wiXHJcbiAgICAgICAgICAgICAgIHN0cmV0Y2g9XCJib3RoXCI+XHJcbiAgICAgICAgICA8L2J0bj5cclxuICAgICAgICA8L2Rpdj5cclxuICAgICAgPC9kaXY+XHJcbiAgICA8L2Rpdj5cclxuICAgIDxkaXYgY2xhc3M9XCJjb2wtbWQtNFwiPlxyXG4gICAgICA8ZGl2IGNsYXNzPVwiaW5wdXQtZ3JvdXBcIj5cclxuICAgICAgICAgICAgPHByZT5cclxuICAgICAgICAgICAgICA8c3Bhbj57e3N0cmV0Y2hXaWR0aEhlaWdodEJ1dHRvbn19PC9zcGFuPlxyXG4gICAgICAgICAgICA8L3ByZT5cclxuICAgICAgICA8c3BhbiBjbGFzcz1cImlucHV0LWdyb3VwLWJ0blwiPlxyXG4gICAgICAgICAgICA8YnV0dG9uIGNsYXNzPVwiYnRuIGJ0bi1kZWZhdWx0XCIgW2NsYXNzLmJ0bi1zdWNjZXNzXT1cImlzQ29waWVkMjFcIiB0eXBlPVwiYnV0dG9uXCIgbmd4Q2xpcGJvYXJkXHJcbiAgICAgICAgICAgICAgICAgICAgW2NiQ29udGVudF09W3N0cmV0Y2hXaWR0aEhlaWdodEJ1dHRvbl0gKGNiT25TdWNjZXNzKT1cImlzQ29waWVkMjEgPSB0cnVlXCI+Y29weTwvYnV0dG9uPlxyXG4gICAgICAgICAgPC9zcGFuPlxyXG4gICAgICA8L2Rpdj5cclxuICAgIDwvZGl2PlxyXG4gIDwvZGl2PlxyXG5cclxuPC9kaXY+XHJcbiIsIjxnYWxsZXJ5LWJ1dHRvbj48L2dhbGxlcnktYnV0dG9uPiJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O29CQ0FBO01BQUE7TUFBNEIsMkNBRTFCO1VBQUE7VUFBQSxnQkFBaUIsMkNBQ2Y7VUFBQTtVQUFBLDBEQUFzQjtV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QVlHO0lBRUE7SUFEQTtJQUVBO0lBQ0E7SUFKTCxhQUFLLFlBRUEsWUFEQSxZQUVBLFlBQ0EsV0FKTDtJQWVpRjtJQUN2RTtJQURSLGFBQStFLFlBQ3ZFLFdBRFI7SUFZRztJQUVBO0lBREE7SUFFQTtJQUNBO0lBSkwsYUFBSyxZQUVBLFlBREEsWUFFQSxZQUNBLFdBSkw7SUFlaUY7SUFDdkU7SUFEUixhQUErRSxZQUN2RSxXQURSO0lBWUc7SUFFQTtJQURBO0lBRUE7SUFDQTtJQUpMLGFBQUssWUFFQSxZQURBLFlBRUEsWUFDQSxXQUpMO0lBZWlGO0lBQ3ZFO0lBRFIsYUFBK0UsWUFDdkUsV0FEUjtJQVlHO0lBRUE7SUFEQTtJQUVBO0lBQ0E7SUFKTCxhQUFLLFlBRUEsWUFEQSxZQUVBLFlBQ0EsV0FKTDtJQWVpRjtJQUN2RTtJQURSLGFBQStFLFlBQ3ZFLFdBRFI7OztJQTdoQlE7SUFBQTtJQUd3QjtJQUFoQyxZQUFnQyxTQUFoQztJQXdCUTtJQUFBO0lBR3dCO0lBQWhDLFlBQWdDLFVBQWhDO0lBd0JRO0lBQUE7SUFHd0I7SUFBaEMsYUFBZ0MsVUFBaEM7SUF1QlE7SUFBQTtJQUd3QjtJQUFoQyxhQUFnQyxVQUFoQztJQXVCUTtJQUFBO0lBR3dCO0lBQWhDLGFBQWdDLFVBQWhDO0lBd0JRO0lBQUE7SUFHd0I7SUFBaEMsYUFBZ0MsVUFBaEM7SUF3QlE7SUFBQTtJQUd3QjtJQUFoQyxhQUFnQyxVQUFoQztJQXdCUTtJQUFBO0lBR3dCO0lBQWhDLGFBQWdDLFVBQWhDO0lBd0JRO0lBQUE7SUFHd0I7SUFBaEMsYUFBZ0MsVUFBaEM7SUF3QlE7SUFBQTtJQUd3QjtJQUFoQyxhQUFnQyxVQUFoQztJQXdCUTtJQUFBO0lBR3dCO0lBQWhDLGFBQWdDLFVBQWhDO0lBd0JRO0lBQUE7SUFHd0I7SUFBaEMsYUFBZ0MsV0FBaEM7SUF3QlE7SUFBQTtJQUd3QjtJQUFoQyxhQUFnQyxXQUFoQztJQXdCUTtJQUFBO0lBR3dCO0lBQWhDLGFBQWdDLFdBQWhDO0lBd0JRO0lBQUE7SUFHd0I7SUFBaEMsYUFBZ0MsV0FBaEM7SUF3QlE7SUFBQTtJQUd3QjtJQUFoQyxhQUFnQyxXQUFoQztJQXdCUTtJQUFBO0lBR3dCO0lBQWhDLGFBQWdDLFdBQWhDO0lBd0JRO0lBQUE7SUFHd0I7SUFBaEMsYUFBZ0MsV0FBaEM7SUF3QlE7SUFBQTtJQUd3QjtJQUFoQyxhQUFnQyxXQUFoQztJQXdCUTtJQUFBO0lBR3dCO0lBQWhDLGFBQWdDLFdBQWhDO0lBd0JRO0lBQUE7SUFHd0I7SUFBaEMsYUFBZ0MsV0FBaEM7Ozs7b0JDcmpCWjtNQUFBO3VDQUFBLFVBQUE7TUFBQTtJQUFBOzs7OyJ9
+export const GalleryButtonComponentNgFactory:i1.ComponentFactory<i10.GalleryButtonComponent> = i1.ɵccf('gallery-button',
+    i10.GalleryButtonComponent,View_GalleryButtonComponent_Host_0,{},{},([] as any[]));
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiQzovVXNlcnMvdHltdWQvQmxhY2tiaXJkL0JsYWNrYmlyZFByb2plY3RVSS1tYXN0ZXIvQmxhY2tiaXJkUHJvamVjdFVJLW1hc3Rlci9zcmMvYXBwL2dhbGxlcnkvZ2FsbGVyeS1idXR0b24vZ2FsbGVyeS1idXR0b24uY29tcG9uZW50Lm5nZmFjdG9yeS50cyIsInZlcnNpb24iOjMsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIm5nOi8vL0M6L1VzZXJzL3R5bXVkL0JsYWNrYmlyZC9CbGFja2JpcmRQcm9qZWN0VUktbWFzdGVyL0JsYWNrYmlyZFByb2plY3RVSS1tYXN0ZXIvc3JjL2FwcC9nYWxsZXJ5L2dhbGxlcnktYnV0dG9uL2dhbGxlcnktYnV0dG9uLmNvbXBvbmVudC50cyIsIm5nOi8vL0M6L1VzZXJzL3R5bXVkL0JsYWNrYmlyZC9CbGFja2JpcmRQcm9qZWN0VUktbWFzdGVyL0JsYWNrYmlyZFByb2plY3RVSS1tYXN0ZXIvc3JjL2FwcC9nYWxsZXJ5L2dhbGxlcnktYnV0dG9uL2dhbGxlcnktYnV0dG9uLmNvbXBvbmVudC5odG1sIiwibmc6Ly8vQzovVXNlcnMvdHltdWQvQmxhY2tiaXJkL0JsYWNrYmlyZFByb2plY3RVSS1tYXN0ZXIvQmxhY2tiaXJkUHJvamVjdFVJLW1hc3Rlci9zcmMvYXBwL2dhbGxlcnkvZ2FsbGVyeS1idXR0b24vZ2FsbGVyeS1idXR0b24uY29tcG9uZW50LnRzLkdhbGxlcnlCdXR0b25Db21wb25lbnRfSG9zdC5odG1sIl0sInNvdXJjZXNDb250ZW50IjpbIiAiLCI8ZGl2IGNsYXNzPVwiYnV0dG9uX3dyYXBwZXJcIj5cblxuICA8ZGl2IGNsYXNzPVwicm93XCI+XG4gICAgPGRpdiBjbGFzcz1cImNvbC1tZC02XCI+XG4gICAgICA8ZGl2IGNsYXNzPVwiYnV0dG9uX2NvbnRhaW5lclwiPlxuICAgICAgICA8aDU+UmVjdGFuZ2xlIEJ1dHRvbjwvaDU+XG4gICAgICAgIDxkaXYgY2xhc3M9XCJjcmVzdHJvbl9idXR0b25fY29udGFpbmVyXCI+XG4gICAgICAgICAgPGJ0biBuYW1lPVwiYnV0dG9uUmVjdGFuZ2xlXCJcbiAgICAgICAgICAgICAgIGxhYmVsPVwiQnV0dG9uXCJcbiAgICAgICAgICAgICAgIGN1c3RvbUNsYXNzPVwiY29tbW9uX2J0bl9zdHlsZVwiXG4gICAgICAgICAgICAgICBzaGFwZT1cInJlY3Rhbmd1bGFyXCI+XG4gICAgICAgICAgPC9idG4+XG4gICAgICAgICAgPGJ0bi1jb250cm9sbGVyIG5hbWU9XCJidXR0b25SZWN0YW5nbGVcIlxuICAgICAgICAgICAgICAgICAgICAgICAgICBvblRhcD1cIjgwMDAxXCJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgb25SZWxlYXNlPVwiODAwMDBcIlxuICAgICAgICAgICAgICAgICAgICAgICAgICBydW5DbGFzcz1cIjE4MVwiPlxuICAgICAgICAgIDwvYnRuLWNvbnRyb2xsZXI+XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9kaXY+XG4gICAgPC9kaXY+XG5cbiAgICA8ZGl2IGNsYXNzPVwiY29sLW1kLTRcIj5cbiAgICAgIDxzbmlwcGV0LWNvbXBvbmVudCBjb2RlPVwiJmx0O2J0biBuYW1lPSZxdW90O2J1dHRvblJlY3RhbmdsZSZxdW90O1xuICAgICAgICAgICAgICAgbGFiZWw9JnF1b3Q7QnV0dG9uJnF1b3Q7XG4gICAgICAgICAgICAgICBjdXN0b21DbGFzcz0mcXVvdDtjb21tb25fYnRuX3N0eWxlJnF1b3Q7XG4gICAgICAgICAgICAgICBzaGFwZT0mcXVvdDtyZWN0YW5ndWxhciZxdW90OyZndDtcbiAgICAgICAgICAmbHQ7L2J0biZndDtcIj5cbiAgICAgIDwvc25pcHBldC1jb21wb25lbnQ+XG4gICAgPC9kaXY+XG4gIDwvZGl2PlxuXG4gIDxkaXYgY2xhc3M9XCJyb3dcIj5cbiAgICA8ZGl2IGNsYXNzPVwiY29sLW1kLTZcIj5cbiAgICAgIDxkaXYgY2xhc3M9XCJidXR0b25fY29udGFpbmVyXCI+XG4gICAgICAgIDxoNT5Sb3VuZGVkIFJlY3RhbmdsZSBCdXR0b248L2g1PlxuICAgICAgICA8ZGl2IGNsYXNzPVwiY3Jlc3Ryb25fYnV0dG9uX2NvbnRhaW5lclwiPlxuICAgICAgICAgIDxidG4gbmFtZT1cImJ1dHRvblJvdW5kZWRSZWN0YW5nbGVcIlxuICAgICAgICAgICAgICAgbGFiZWw9XCJCdXR0b25cIlxuICAgICAgICAgICAgICAgY3VzdG9tQ2xhc3M9XCJjb21tb25fYnRuX3N0eWxlXCJcbiAgICAgICAgICAgICAgIHNoYXBlPVwicm91bmRlZC1yZWN0YW5nbGVcIj5cbiAgICAgICAgICA8L2J0bj5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L2Rpdj5cbiAgICA8L2Rpdj5cblxuICAgIDxkaXYgY2xhc3M9XCJjb2wtbWQtNFwiPlxuXG4gICAgPC9kaXY+XG4gIDwvZGl2PlxuXG4gIDxkaXYgY2xhc3M9XCJyb3dcIj5cbiAgICA8ZGl2IGNsYXNzPVwiY29sLW1kLTZcIj5cbiAgICAgIDxkaXYgY2xhc3M9XCJidXR0b25fY29udGFpbmVyXCI+XG4gICAgICAgIDxoNT5UYWIgQnV0dG9uPC9oNT5cbiAgICAgICAgPGRpdiBjbGFzcz1cImNyZXN0cm9uX2J1dHRvbl9jb250YWluZXJcIj5cbiAgICAgICAgICA8YnRuIG5hbWU9XCJidXR0b25UYWJcIlxuICAgICAgICAgICAgICAgbGFiZWw9XCJCdXR0b25cIlxuICAgICAgICAgICAgICAgY3VzdG9tQ2xhc3M9XCJjb21tb25fYnRuX3N0eWxlXCJcbiAgICAgICAgICAgICAgIHNoYXBlPVwidGFiXCI+XG4gICAgICAgICAgPC9idG4+XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9kaXY+XG4gICAgPC9kaXY+XG5cbiAgICA8ZGl2IGNsYXNzPVwiY29sLW1kLTRcIj5cblxuICAgIDwvZGl2PlxuICA8L2Rpdj5cblxuICA8ZGl2IGNsYXNzPVwicm93XCI+XG4gICAgPGRpdiBjbGFzcz1cImNvbC1tZC02XCI+XG4gICAgICA8ZGl2IGNsYXNzPVwiYnV0dG9uX2NvbnRhaW5lclwiPlxuICAgICAgICA8aDU+Q2lyY2xlIEJ1dHRvbjwvaDU+XG4gICAgICAgIDxkaXYgY2xhc3M9XCJjcmVzdHJvbl9idXR0b25fY29udGFpbmVyXCI+XG4gICAgICAgICAgPGJ0biBuYW1lPVwiYnV0dG9uQ2lyY2xlXCJcbiAgICAgICAgICAgICAgIGxhYmVsPVwiQnV0dG9uXCJcbiAgICAgICAgICAgICAgIGN1c3RvbUNsYXNzPVwiY29tbW9uX2J0bl9zdHlsZVwiXG4gICAgICAgICAgICAgICBzaGFwZT1cImNpcmNsZVwiPlxuICAgICAgICAgIDwvYnRuPlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvZGl2PlxuICAgIDwvZGl2PlxuICAgIDxkaXYgY2xhc3M9XCJjb2wtbWQtNFwiPlxuXG4gICAgPC9kaXY+XG4gIDwvZGl2PlxuXG4gIDxkaXYgY2xhc3M9XCJyb3dcIj5cbiAgICA8ZGl2IGNsYXNzPVwiY29sLW1kLTZcIj5cbiAgICAgIDxkaXYgY2xhc3M9XCJidXR0b25fY29udGFpbmVyXCI+XG4gICAgICAgIDxoNT5PdmFsIEJ1dHRvbjwvaDU+XG4gICAgICAgIDxkaXYgY2xhc3M9XCJjcmVzdHJvbl9idXR0b25fY29udGFpbmVyXCI+XG4gICAgICAgICAgPGJ0biBuYW1lPVwiYnV0dG9uT3ZhbFwiXG4gICAgICAgICAgICAgICBsYWJlbD1cIkJ1dHRvblwiXG4gICAgICAgICAgICAgICBjdXN0b21DbGFzcz1cImNvbW1vbl9idG5fc3R5bGVcIlxuICAgICAgICAgICAgICAgc2hhcGU9XCJvdmFsXCI+XG4gICAgICAgICAgPC9idG4+XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9kaXY+XG4gICAgPC9kaXY+XG4gICAgPGRpdiBjbGFzcz1cImNvbC1tZC00XCI+XG5cbiAgICA8L2Rpdj5cbiAgPC9kaXY+XG5cbiAgPGRpdiBjbGFzcz1cInJvd1wiPlxuICAgIDxkaXYgY2xhc3M9XCJjb2wtbWQtNlwiPlxuICAgICAgPGRpdiBjbGFzcz1cImJ1dHRvbl9jb250YWluZXJcIj5cbiAgICAgICAgPGg1PkJ1dHRvbiB3aXRoIEljb248L2g1PlxuICAgICAgICA8ZGl2IGNsYXNzPVwiY3Jlc3Ryb25fYnV0dG9uX2NvbnRhaW5lclwiPlxuICAgICAgICAgIDxidG4gbmFtZT1cImJ1dHRvbkljb25SaWdodFwiXG4gICAgICAgICAgICAgICBsYWJlbD1cIkJ1dHRvblwiXG4gICAgICAgICAgICAgICBjdXN0b21DbGFzcz1cImNvbW1vbl9idG5fc3R5bGVcIlxuICAgICAgICAgICAgICAgaWNvbj1cImZhIGZhLXBsdXNcIlxuICAgICAgICAgICAgICAgaWNvbl9hbGlnbj1cInJpZ2h0XCI+XG4gICAgICAgICAgPC9idG4+XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9kaXY+XG4gICAgPC9kaXY+XG4gICAgPGRpdiBjbGFzcz1cImNvbC1tZC00XCI+XG5cbiAgICA8L2Rpdj5cbiAgPC9kaXY+XG5cbiAgPGRpdiBjbGFzcz1cInJvd1wiPlxuICAgIDxkaXYgY2xhc3M9XCJjb2wtbWQtNlwiPlxuICAgICAgPGRpdiBjbGFzcz1cImJ1dHRvbl9jb250YWluZXJcIj5cbiAgICAgICAgPGg1PkJ1dHRvbiB3aXRoIEljb248L2g1PlxuICAgICAgICA8ZGl2IGNsYXNzPVwiY3Jlc3Ryb25fYnV0dG9uX2NvbnRhaW5lclwiPlxuICAgICAgICAgIDxidG4gbmFtZT1cImJ1dHRvbkljb25MZWZ0XCJcbiAgICAgICAgICAgICAgIGxhYmVsPVwiQnV0dG9uXCJcbiAgICAgICAgICAgICAgIGN1c3RvbUNsYXNzPVwiY29tbW9uX2J0bl9zdHlsZVwiXG4gICAgICAgICAgICAgICBpY29uPVwiZmEgZmEtcGx1c1wiXG4gICAgICAgICAgICAgICBpY29uX2FsaWduPVwibGVmdFwiPlxuICAgICAgICAgIDwvYnRuPlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvZGl2PlxuICAgIDwvZGl2PlxuICAgIDxkaXYgY2xhc3M9XCJjb2wtbWQtNFwiPlxuXG4gICAgPC9kaXY+XG4gIDwvZGl2PlxuXG4gIDxkaXYgY2xhc3M9XCJyb3dcIj5cbiAgICA8ZGl2IGNsYXNzPVwiY29sLW1kLTZcIj5cbiAgICAgIDxkaXYgY2xhc3M9XCJidXR0b25fY29udGFpbmVyXCI+XG4gICAgICAgIDxoNT5QcmltYXJ5IEJ1dHRvbiBUeXBlPC9oNT5cbiAgICAgICAgPGRpdiBjbGFzcz1cImNyZXN0cm9uX2J1dHRvbl9jb250YWluZXJcIj5cbiAgICAgICAgICA8YnRuIG5hbWU9XCJidXR0b25QcmltYXJ5XCJcbiAgICAgICAgICAgICAgIGxhYmVsPVwiQnV0dG9uXCJcbiAgICAgICAgICAgICAgIGN1c3RvbUNsYXNzPVwiY29tbW9uX2J0bl9zdHlsZVwiXG4gICAgICAgICAgICAgICBzaGFwZT1cInJvdW5kZWQtcmVjdGFuZ2xlXCJcbiAgICAgICAgICAgICAgIHR5cGU9XCJwcmltYXJ5XCI+XG4gICAgICAgICAgPC9idG4+XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9kaXY+XG4gICAgPC9kaXY+XG4gICAgPGRpdiBjbGFzcz1cImNvbC1tZC00XCI+XG5cbiAgICA8L2Rpdj5cbiAgPC9kaXY+XG5cbiAgPGRpdiBjbGFzcz1cInJvd1wiPlxuICAgIDxkaXYgY2xhc3M9XCJjb2wtbWQtNlwiPlxuICAgICAgPGRpdiBjbGFzcz1cImJ1dHRvbl9jb250YWluZXJcIj5cbiAgICAgICAgPGg1PlNlY29uZGFyeSBCdXR0b24gVHlwZTwvaDU+XG4gICAgICAgIDxkaXYgY2xhc3M9XCJjcmVzdHJvbl9idXR0b25fY29udGFpbmVyXCI+XG4gICAgICAgICAgPGJ0biBuYW1lPVwiYnV0dG9uU2Vjb25kYXJ5XCJcbiAgICAgICAgICAgICAgIGxhYmVsPVwiQnV0dG9uXCJcbiAgICAgICAgICAgICAgIGN1c3RvbUNsYXNzPVwiY29tbW9uX2J0bl9zdHlsZVwiXG4gICAgICAgICAgICAgICBzaGFwZT1cInJvdW5kZWQtcmVjdGFuZ2xlXCJcbiAgICAgICAgICAgICAgIHR5cGU9XCJzZWNvbmRhcnlcIj5cbiAgICAgICAgICA8L2J0bj5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L2Rpdj5cbiAgICA8L2Rpdj5cbiAgICA8ZGl2IGNsYXNzPVwiY29sLW1kLTRcIj5cblxuICAgIDwvZGl2PlxuICA8L2Rpdj5cblxuICA8ZGl2IGNsYXNzPVwicm93XCI+XG4gICAgPGRpdiBjbGFzcz1cImNvbC1tZC02XCI+XG4gICAgICA8ZGl2IGNsYXNzPVwiYnV0dG9uX2NvbnRhaW5lclwiPlxuICAgICAgICA8aDU+SW5mbyBCdXR0b24gVHlwZTwvaDU+XG4gICAgICAgIDxkaXYgY2xhc3M9XCJjcmVzdHJvbl9idXR0b25fY29udGFpbmVyXCI+XG4gICAgICAgICAgPGJ0biBuYW1lPVwiYnV0dG9uSW5mb1wiXG4gICAgICAgICAgICAgICBsYWJlbD1cIkJ1dHRvblwiXG4gICAgICAgICAgICAgICBjdXN0b21DbGFzcz1cImNvbW1vbl9idG5fc3R5bGVcIlxuICAgICAgICAgICAgICAgc2hhcGU9XCJyb3VuZGVkLXJlY3RhbmdsZVwiXG4gICAgICAgICAgICAgICB0eXBlPVwiaW5mb1wiPlxuICAgICAgICAgIDwvYnRuPlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvZGl2PlxuICAgIDwvZGl2PlxuICAgIDxkaXYgY2xhc3M9XCJjb2wtbWQtNFwiPlxuXG4gICAgPC9kaXY+XG4gIDwvZGl2PlxuXG4gIDxkaXYgY2xhc3M9XCJyb3dcIj5cbiAgICA8ZGl2IGNsYXNzPVwiY29sLW1kLTZcIj5cbiAgICAgIDxkaXYgY2xhc3M9XCJidXR0b25fY29udGFpbmVyXCI+XG4gICAgICAgIDxoNT5XYXJuaW5nIEJ1dHRvbiBUeXBlPC9oNT5cbiAgICAgICAgPGRpdiBjbGFzcz1cImNyZXN0cm9uX2J1dHRvbl9jb250YWluZXJcIj5cbiAgICAgICAgICA8YnRuIG5hbWU9XCJidXR0b25XYXJuaW5nXCJcbiAgICAgICAgICAgICAgIGxhYmVsPVwiQnV0dG9uXCJcbiAgICAgICAgICAgICAgIGN1c3RvbUNsYXNzPVwiY29tbW9uX2J0bl9zdHlsZVwiXG4gICAgICAgICAgICAgICBzaGFwZT1cInJvdW5kZWQtcmVjdGFuZ2xlXCJcbiAgICAgICAgICAgICAgIHR5cGU9XCJ3YXJuaW5nXCI+XG4gICAgICAgICAgPC9idG4+XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9kaXY+XG4gICAgPC9kaXY+XG4gICAgPGRpdiBjbGFzcz1cImNvbC1tZC00XCI+XG5cbiAgICA8L2Rpdj5cbiAgPC9kaXY+XG5cbiAgPGRpdiBjbGFzcz1cInJvd1wiPlxuICAgIDxkaXYgY2xhc3M9XCJjb2wtbWQtNlwiPlxuICAgICAgPGRpdiBjbGFzcz1cImJ1dHRvbl9jb250YWluZXJcIj5cbiAgICAgICAgPGg1PkRhbmdlciBCdXR0b24gVHlwZTwvaDU+XG4gICAgICAgIDxkaXYgY2xhc3M9XCJjcmVzdHJvbl9idXR0b25fY29udGFpbmVyXCI+XG4gICAgICAgICAgPGJ0biBuYW1lPVwiYnV0dG9uRGFuZ2VyXCJcbiAgICAgICAgICAgICAgIGxhYmVsPVwiQnV0dG9uXCJcbiAgICAgICAgICAgICAgIGN1c3RvbUNsYXNzPVwiY29tbW9uX2J0bl9zdHlsZVwiXG4gICAgICAgICAgICAgICBzaGFwZT1cInJvdW5kZWQtcmVjdGFuZ2xlXCJcbiAgICAgICAgICAgICAgIHR5cGU9XCJkYW5nZXJcIj5cbiAgICAgICAgICA8L2J0bj5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L2Rpdj5cbiAgICA8L2Rpdj5cbiAgICA8ZGl2IGNsYXNzPVwiY29sLW1kLTRcIj5cblxuICAgIDwvZGl2PlxuICA8L2Rpdj5cblxuICA8ZGl2IGNsYXNzPVwicm93XCI+XG4gICAgPGRpdiBjbGFzcz1cImNvbC1tZC02XCI+XG4gICAgICA8ZGl2IGNsYXNzPVwiYnV0dG9uX2NvbnRhaW5lclwiPlxuICAgICAgICA8aDU+U3VjY2VzcyBCdXR0b24gVHlwZTwvaDU+XG4gICAgICAgIDxkaXYgY2xhc3M9XCJjcmVzdHJvbl9idXR0b25fY29udGFpbmVyXCI+XG4gICAgICAgICAgPGJ0biBuYW1lPVwiYnV0dG9uU3VjY2Vzc1wiXG4gICAgICAgICAgICAgICBsYWJlbD1cIkJ1dHRvblwiXG4gICAgICAgICAgICAgICBjdXN0b21DbGFzcz1cImNvbW1vbl9idG5fc3R5bGVcIlxuICAgICAgICAgICAgICAgc2hhcGU9XCJyb3VuZGVkLXJlY3RhbmdsZVwiXG4gICAgICAgICAgICAgICB0eXBlPVwic3VjY2Vzc1wiPlxuICAgICAgICAgIDwvYnRuPlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvZGl2PlxuICAgIDwvZGl2PlxuICAgIDxkaXYgY2xhc3M9XCJjb2wtbWQtNFwiPlxuXG4gICAgPC9kaXY+XG4gIDwvZGl2PlxuXG4gIDxkaXYgY2xhc3M9XCJyb3dcIj5cbiAgICA8ZGl2IGNsYXNzPVwiY29sLW1kLTZcIj5cbiAgICAgIDxkaXYgY2xhc3M9XCJidXR0b25fY29udGFpbmVyXCI+XG4gICAgICAgIDxoNT5UZXh0IEJ1dHRvbiBUeXBlPC9oNT5cbiAgICAgICAgPGRpdiBjbGFzcz1cImNyZXN0cm9uX2J1dHRvbl9jb250YWluZXJcIj5cbiAgICAgICAgICA8YnRuIG5hbWU9XCJidXR0b25UZXh0XCJcbiAgICAgICAgICAgICAgIGxhYmVsPVwiQnV0dG9uXCJcbiAgICAgICAgICAgICAgIGN1c3RvbUNsYXNzPVwiY29tbW9uX2J0bl9zdHlsZVwiXG4gICAgICAgICAgICAgICBzaGFwZT1cInJvdW5kZWQtcmVjdGFuZ2xlXCJcbiAgICAgICAgICAgICAgIHR5cGU9XCJ0ZXh0XCI+XG4gICAgICAgICAgPC9idG4+XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9kaXY+XG4gICAgPC9kaXY+XG4gICAgPGRpdiBjbGFzcz1cImNvbC1tZC00XCI+XG5cbiAgICA8L2Rpdj5cbiAgPC9kaXY+XG5cbiAgPGRpdiBjbGFzcz1cInJvd1wiPlxuICAgIDxkaXYgY2xhc3M9XCJjb2wtbWQtNlwiPlxuICAgICAgPGRpdiBjbGFzcz1cImJ1dHRvbl9jb250YWluZXJcIj5cbiAgICAgICAgPGg1PlZlcnRpY2FsIEJ1dHRvbjwvaDU+XG4gICAgICAgIDxkaXYgY2xhc3M9XCJjcmVzdHJvbl9idXR0b25fY29udGFpbmVyXCI+XG4gICAgICAgICAgPGJ0biBuYW1lPVwiYnV0dG9uVmVydGljYWxcIlxuICAgICAgICAgICAgICAgbGFiZWw9XCJCdXR0b25cIlxuICAgICAgICAgICAgICAgY3VzdG9tQ2xhc3M9XCJjb21tb25fYnRuX3N0eWxlXCJcbiAgICAgICAgICAgICAgIGljb249XCJmYSBmYS1taW51c1wiXG4gICAgICAgICAgICAgICBvcmllbnRhdGlvbj1cInZlcnRpY2FsXCI+XG4gICAgICAgICAgPC9idG4+XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9kaXY+XG4gICAgPC9kaXY+XG4gICAgPGRpdiBjbGFzcz1cImNvbC1tZC00XCI+XG5cbiAgICA8L2Rpdj5cbiAgPC9kaXY+XG5cbiAgPGRpdiBjbGFzcz1cInJvd1wiPlxuICAgIDxkaXYgY2xhc3M9XCJjb2wtbWQtNlwiPlxuICAgICAgPGRpdiBjbGFzcz1cImJ1dHRvbl9jb250YWluZXJcIj5cbiAgICAgICAgPGg1PlgtU21hbGwgQnV0dG9uPC9oNT5cbiAgICAgICAgPGRpdiBjbGFzcz1cImNyZXN0cm9uX2J1dHRvbl9jb250YWluZXJcIj5cbiAgICAgICAgICA8YnRuIG5hbWU9XCJidXR0b25YU21hbGxcIlxuICAgICAgICAgICAgICAgbGFiZWw9XCJCdXR0b25cIlxuICAgICAgICAgICAgICAgY3VzdG9tQ2xhc3M9XCJjb21tb25fYnRuX3N0eWxlXCJcbiAgICAgICAgICAgICAgIGljb249XCJmYSBmYS1wbHVzXCJcbiAgICAgICAgICAgICAgIHNpemU9XCJ4LXNtYWxsXCI+XG4gICAgICAgICAgPC9idG4+XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9kaXY+XG4gICAgPC9kaXY+XG4gICAgPGRpdiBjbGFzcz1cImNvbC1tZC00XCI+XG5cbiAgICA8L2Rpdj5cbiAgPC9kaXY+XG5cbiAgPGRpdiBjbGFzcz1cInJvd1wiPlxuICAgIDxkaXYgY2xhc3M9XCJjb2wtbWQtNlwiPlxuICAgICAgPGRpdiBjbGFzcz1cImJ1dHRvbl9jb250YWluZXJcIj5cbiAgICAgICAgPGg1PlNtYWxsIEJ1dHRvbjwvaDU+XG4gICAgICAgIDxkaXYgY2xhc3M9XCJjcmVzdHJvbl9idXR0b25fY29udGFpbmVyXCI+XG4gICAgICAgICAgPGJ0biBuYW1lPVwiYnV0dG9uU21hbGxcIlxuICAgICAgICAgICAgICAgbGFiZWw9XCJCdXR0b25cIlxuICAgICAgICAgICAgICAgY3VzdG9tQ2xhc3M9XCJjb21tb25fYnRuX3N0eWxlXCJcbiAgICAgICAgICAgICAgIGljb249XCJmYSBmYS1wbHVzXCJcbiAgICAgICAgICAgICAgIHNpemU9XCJzbWFsbFwiPlxuICAgICAgICAgIDwvYnRuPlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvZGl2PlxuICAgIDwvZGl2PlxuICAgIDxkaXYgY2xhc3M9XCJjb2wtbWQtNFwiPlxuXG4gICAgPC9kaXY+XG4gIDwvZGl2PlxuXG4gIDxkaXYgY2xhc3M9XCJyb3dcIj5cbiAgICA8ZGl2IGNsYXNzPVwiY29sLW1kLTZcIj5cbiAgICAgIDxkaXYgY2xhc3M9XCJidXR0b25fY29udGFpbmVyXCI+XG4gICAgICAgIDxoNT5MYXJnZSBCdXR0b248L2g1PlxuICAgICAgICA8ZGl2IGNsYXNzPVwiY3Jlc3Ryb25fYnV0dG9uX2NvbnRhaW5lclwiPlxuICAgICAgICAgIDxidG4gbmFtZT1cImJ1dHRvbkxhcmdlXCJcbiAgICAgICAgICAgICAgIGxhYmVsPVwiQnV0dG9uXCJcbiAgICAgICAgICAgICAgIGN1c3RvbUNsYXNzPVwiY29tbW9uX2J0bl9zdHlsZVwiXG4gICAgICAgICAgICAgICBpY29uPVwiZmEgZmEtcGx1c1wiXG4gICAgICAgICAgICAgICBzaXplPVwibGFyZ2VcIj5cbiAgICAgICAgICA8L2J0bj5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L2Rpdj5cbiAgICA8L2Rpdj5cbiAgICA8ZGl2IGNsYXNzPVwiY29sLW1kLTRcIj5cblxuICAgIDwvZGl2PlxuICA8L2Rpdj5cblxuICA8ZGl2IGNsYXNzPVwicm93XCI+XG4gICAgPGRpdiBjbGFzcz1cImNvbC1tZC02XCI+XG4gICAgICA8ZGl2IGNsYXNzPVwiYnV0dG9uX2NvbnRhaW5lclwiPlxuICAgICAgICA8aDU+U3RyZXRjaCBCdXR0b24gV2lkdGg8L2g1PlxuICAgICAgICA8ZGl2IGNsYXNzPVwiY3Jlc3Ryb25fYnV0dG9uX2NvbnRhaW5lclwiPlxuICAgICAgICAgIDxidG4gbmFtZT1cImJ1dHRvblN0cmV0Y2hXaWR0aFwiXG4gICAgICAgICAgICAgICBsYWJlbD1cIkJ1dHRvblwiXG4gICAgICAgICAgICAgICBjdXN0b21DbGFzcz1cImNvbW1vbl9idG5fc3R5bGVcIlxuICAgICAgICAgICAgICAgaWNvbj1cImZhIGZhLXBsdXNcIlxuICAgICAgICAgICAgICAgc3RyZXRjaD1cIndpZHRoXCI+XG4gICAgICAgICAgPC9idG4+XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9kaXY+XG4gICAgPC9kaXY+XG4gICAgPGRpdiBjbGFzcz1cImNvbC1tZC00XCI+XG5cbiAgICA8L2Rpdj5cbiAgPC9kaXY+XG5cbiAgPGRpdiBjbGFzcz1cInJvd1wiPlxuICAgIDxkaXYgY2xhc3M9XCJjb2wtbWQtNlwiPlxuICAgICAgPGRpdiBjbGFzcz1cImJ1dHRvbl9jb250YWluZXJcIj5cbiAgICAgICAgPGg1PlN0cmV0Y2ggQnV0dG9uIEhlaWdodDwvaDU+XG4gICAgICAgIDxkaXYgY2xhc3M9XCJjcmVzdHJvbl9idXR0b25fY29udGFpbmVyXCI+XG4gICAgICAgICAgPGJ0biBuYW1lPVwiYnV0dG9uU3RyZXRjaEhlaWdodFwiXG4gICAgICAgICAgICAgICBsYWJlbD1cIkJ1dHRvblwiXG4gICAgICAgICAgICAgICBjdXN0b21DbGFzcz1cImNvbW1vbl9idG5fc3R5bGVcIlxuICAgICAgICAgICAgICAgaWNvbj1cImZhIGZhLXBsdXNcIlxuICAgICAgICAgICAgICAgc3RyZXRjaD1cImhlaWdodFwiPlxuICAgICAgICAgIDwvYnRuPlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvZGl2PlxuICAgIDwvZGl2PlxuICAgIDxkaXYgY2xhc3M9XCJjb2wtbWQtNFwiPlxuXG4gICAgPC9kaXY+XG4gIDwvZGl2PlxuXG4gIDxkaXYgY2xhc3M9XCJyb3dcIj5cbiAgICA8ZGl2IGNsYXNzPVwiY29sLW1kLTZcIj5cbiAgICAgIDxkaXYgY2xhc3M9XCJidXR0b25fY29udGFpbmVyXCI+XG4gICAgICAgIDxoNT5TdHJldGNoIEJ1dHRvbiBXaWR0aCBhbmQgSGVpZ2h0PC9oNT5cbiAgICAgICAgPGRpdiBjbGFzcz1cImNyZXN0cm9uX2J1dHRvbl9jb250YWluZXJcIj5cbiAgICAgICAgICA8YnRuIG5hbWU9XCJidXR0b25TdHJldGNoQm90aFwiXG4gICAgICAgICAgICAgICBsYWJlbD1cIkJ1dHRvblwiXG4gICAgICAgICAgICAgICBjdXN0b21DbGFzcz1cImNvbW1vbl9idG5fc3R5bGVcIlxuICAgICAgICAgICAgICAgaWNvbj1cImZhIGZhLXBsdXNcIlxuICAgICAgICAgICAgICAgc3RyZXRjaD1cImJvdGhcIj5cbiAgICAgICAgICA8L2J0bj5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L2Rpdj5cbiAgICA8L2Rpdj5cbiAgICA8ZGl2IGNsYXNzPVwiY29sLW1kLTRcIj5cblxuICAgIDwvZGl2PlxuICA8L2Rpdj5cblxuPC9kaXY+XG4iLCI8Z2FsbGVyeS1idXR0b24+PC9nYWxsZXJ5LWJ1dHRvbj4iXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztvQkNBQTtNQUFBO01BQTRCLDJDQUUxQjtVQUFBO1VBQUEsZ0JBQWlCLDJDQUNmO1VBQUE7VUFBQSwwREFBc0I7VUFBQSxlQUNwQjtVQUFBO1VBQUEsZ0JBQThCLCtDQUM1QjtVQUFBO1VBQUEsNENBQUk7VUFBQSx1QkFBcUIsK0NBQ3pCO2lCQUFBO2NBQUE7TUFBdUMsaURBQ3JDO1VBQUE7Y0FBQTtVQUFBO2FBQUE7VUFBQTtNQUd5QixpREFDbkI7VUFBQSxtQkFDTjtVQUFBO2NBQUE7d0NBQUEsVUFBQTtVQUFBO2NBQUEsa0VBRytCO2lCQUFBLGtDQUNkO01B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

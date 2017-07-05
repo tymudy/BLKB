@@ -11,30 +11,30 @@ import * as i1 from '../../app/app.module';
 import * as i2 from '../../app/app.component';
 import * as i3 from './crestron-sdk/components/button/button.component.ngfactory';
 import * as i4 from './crestron-sdk/components/slider/slider.component.ngfactory';
-import * as i5 from './crestron-sdk/controllers/list-controller.ngfactory';
-import * as i6 from './gallery/gallery.component.ngfactory';
-import * as i7 from './gallery/gallery-button/gallery-button.component.ngfactory';
-import * as i8 from './gallery/gallery-list/gallery-list.component.ngfactory';
-import * as i9 from './gallery/gallery-slider/gallery-slider.component.ngfactory';
-import * as i10 from './gallery/gallery-spec/spec-list.component.ngfactory';
-import * as i11 from './crestron-sdk/components/video/video.component.ngfactory';
+import * as i5 from './gallery/gallery.component.ngfactory';
+import * as i6 from './gallery/gallery-button/gallery-button.component.ngfactory';
+import * as i7 from './gallery/gallery-list/gallery-list.component.ngfactory';
+import * as i8 from './gallery/gallery-slider/gallery-slider.component.ngfactory';
+import * as i9 from './gallery/gallery-spec/spec-list.component.ngfactory';
+import * as i10 from './crestron-sdk/components/video/video.component.ngfactory';
+import * as i11 from './crestron-sdk/controllers/list-controller.ngfactory';
 import * as i12 from './crestron-sdk/controllers/button-controller.ngfactory';
 import * as i13 from './app.component.ngfactory';
 import * as i14 from '@angular/common';
-import * as i15 from '../../app/crestron-sdk/components/video/WindowRefService';
-import * as i16 from '@angular/http';
-import * as i17 from '../../app/crestron-sdk/services/share/shareService';
-import * as i18 from '../../app/crestron-sdk/services/log.service';
-import * as i19 from '../../app/crestron-sdk/services/communication.service';
-import * as i20 from '../../app/crestron-sdk/services/joins.service';
-import * as i21 from 'ngx-window-token/src/index';
-import * as i22 from 'ngx-clipboard/src/clipboard.service';
-import * as i23 from '@angular/platform-browser';
+import * as i15 from 'ngx-window-token/src/index';
+import * as i16 from 'ngx-clipboard/src/clipboard.service';
+import * as i17 from '@angular/platform-browser';
+import * as i18 from '../../app/crestron-sdk/components/video/WindowRefService';
+import * as i19 from '@angular/http';
+import * as i20 from '../../app/crestron-sdk/services/share/shareService';
+import * as i21 from '../../app/crestron-sdk/services/log.service';
+import * as i22 from '../../app/crestron-sdk/services/communication.service';
+import * as i23 from '../../app/crestron-sdk/services/joins.service';
 import * as i24 from '@angular/forms';
 import * as i25 from '@angular/router';
 import * as i26 from '../../app/crestron-sdk/components/virtual-scroll';
-import * as i27 from '../../app/crestron-sdk/crestron-sdk.module';
-import * as i28 from 'ngx-clipboard/src/index';
+import * as i27 from 'ngx-clipboard/src/index';
+import * as i28 from '../../app/crestron-sdk/crestron-sdk.module';
 import * as i29 from '../../app/gallery/gallery.component';
 import * as i30 from '../../app/gallery/gallery-button/gallery-button.component';
 import * as i31 from '../../app/gallery/gallery-list/gallery-list.component';
@@ -46,41 +46,41 @@ import * as i36 from '../../app/crestron-sdk/controllers/button-controller';
 export const AppModuleNgFactory:i0.NgModuleFactory<i1.AppModule> = i0.ɵcmf(i1.AppModule,
     [i2.AppComponent],(_l:any) => {
       return i0.ɵmod([i0.ɵmpd(512,i0.ComponentFactoryResolver,i0.ɵCodegenComponentFactoryResolver,
-          [[8,[i3.ButtonComponentNgFactory,i4.SliderComponentNgFactory,i5.ListControllerNgFactory,
-              i6.GalleryComponentNgFactory,i7.GalleryButtonComponentNgFactory,i8.GalleryListComponentNgFactory,
-              i9.GallerySliderComponentNgFactory,i10.GallerySpecComponentNgFactory,
-              i11.VideoComponentNgFactory,i12.ButtonControllerNgFactory,i13.AppComponentNgFactory]],
-              [3,i0.ComponentFactoryResolver],i0.NgModuleRef]),i0.ɵmpd(5120,i0.LOCALE_ID,
-          i0.ɵm,[[3,i0.LOCALE_ID]]),i0.ɵmpd(4608,i14.NgLocalization,i14.NgLocaleLocalization,
-          [i0.LOCALE_ID]),i0.ɵmpd(4608,i15.WindowRefService,i15.WindowRefService,([] as any[])),
-          i0.ɵmpd(4608,i16.BrowserXhr,i16.BrowserXhr,([] as any[])),i0.ɵmpd(4608,i16.ResponseOptions,
-              i16.BaseResponseOptions,([] as any[])),i0.ɵmpd(5120,i16.XSRFStrategy,
-              i16.ɵb,([] as any[])),i0.ɵmpd(4608,i16.XHRBackend,i16.XHRBackend,[i16.BrowserXhr,
-              i16.ResponseOptions,i16.XSRFStrategy]),i0.ɵmpd(4608,i16.RequestOptions,
-              i16.BaseRequestOptions,([] as any[])),i0.ɵmpd(5120,i16.Http,i16.ɵc,[i16.XHRBackend,
-              i16.RequestOptions]),i0.ɵmpd(4608,i17.ShareService,i17.ShareService,
-              [i16.Http]),i0.ɵmpd(4608,i18.LoggerService,i18.LoggerService,([] as any[])),
-          i0.ɵmpd(4608,i19.CommunicationService,i19.CommunicationService,[i18.LoggerService]),
-          i0.ɵmpd(4608,i20.JoinsService,i20.JoinsService,[i19.CommunicationService,
-              i18.LoggerService]),i0.ɵmpd(5120,i21.WINDOW,i21._window,([] as any[])),
-          i0.ɵmpd(5120,i22.ClipboardService,i22.CLIPBOARD_SERVICE_PROVIDER_FACTORY,
-              [i23.DOCUMENT,i21.WINDOW,[3,i22.ClipboardService]]),i0.ɵmpd(5120,i0.APP_ID,
+          [[8,[i3.ButtonComponentNgFactory,i4.SliderComponentNgFactory,i5.GalleryComponentNgFactory,
+              i6.GalleryButtonComponentNgFactory,i7.GalleryListComponentNgFactory,
+              i8.GallerySliderComponentNgFactory,i9.GallerySpecComponentNgFactory,
+              i10.VideoComponentNgFactory,i11.ListControllerNgFactory,i12.ButtonControllerNgFactory,
+              i13.AppComponentNgFactory]],[3,i0.ComponentFactoryResolver],i0.NgModuleRef]),
+          i0.ɵmpd(5120,i0.LOCALE_ID,i0.ɵm,[[3,i0.LOCALE_ID]]),i0.ɵmpd(4608,i14.NgLocalization,
+              i14.NgLocaleLocalization,[i0.LOCALE_ID]),i0.ɵmpd(5120,i15.WINDOW,i15._window,
+              ([] as any[])),i0.ɵmpd(5120,i16.ClipboardService,i16.CLIPBOARD_SERVICE_PROVIDER_FACTORY,
+              [i17.DOCUMENT,i15.WINDOW,[3,i16.ClipboardService]]),i0.ɵmpd(4608,i18.WindowRefService,
+              i18.WindowRefService,([] as any[])),i0.ɵmpd(4608,i19.BrowserXhr,i19.BrowserXhr,
+              ([] as any[])),i0.ɵmpd(4608,i19.ResponseOptions,i19.BaseResponseOptions,
+              ([] as any[])),i0.ɵmpd(5120,i19.XSRFStrategy,i19.ɵb,([] as any[])),i0.ɵmpd(4608,
+              i19.XHRBackend,i19.XHRBackend,[i19.BrowserXhr,i19.ResponseOptions,i19.XSRFStrategy]),
+          i0.ɵmpd(4608,i19.RequestOptions,i19.BaseRequestOptions,([] as any[])),i0.ɵmpd(5120,
+              i19.Http,i19.ɵc,[i19.XHRBackend,i19.RequestOptions]),i0.ɵmpd(4608,i20.ShareService,
+              i20.ShareService,[i19.Http]),i0.ɵmpd(4608,i21.LoggerService,i21.LoggerService,
+              ([] as any[])),i0.ɵmpd(4608,i22.CommunicationService,i22.CommunicationService,
+              [i21.LoggerService]),i0.ɵmpd(4608,i23.JoinsService,i23.JoinsService,
+              [i22.CommunicationService,i21.LoggerService]),i0.ɵmpd(5120,i0.APP_ID,
               i0.ɵf,([] as any[])),i0.ɵmpd(5120,i0.IterableDiffers,i0.ɵk,([] as any[])),
-          i0.ɵmpd(5120,i0.KeyValueDiffers,i0.ɵl,([] as any[])),i0.ɵmpd(4608,i23.DomSanitizer,
-              i23.ɵe,[i23.DOCUMENT]),i0.ɵmpd(6144,i0.Sanitizer,(null as any),[i23.DomSanitizer]),
-          i0.ɵmpd(4608,i23.HAMMER_GESTURE_CONFIG,i23.HammerGestureConfig,([] as any[])),
-          i0.ɵmpd(5120,i23.EVENT_MANAGER_PLUGINS,(p0_0:any,p1_0:any,p2_0:any,p2_1:any) => {
-            return [new i23.ɵDomEventsPlugin(p0_0),new i23.ɵKeyEventsPlugin(p1_0),
-                new i23.ɵHammerGesturesPlugin(p2_0,p2_1)];
-          },[i23.DOCUMENT,i23.DOCUMENT,i23.DOCUMENT,i23.HAMMER_GESTURE_CONFIG]),i0.ɵmpd(4608,
-              i23.EventManager,i23.EventManager,[i23.EVENT_MANAGER_PLUGINS,i0.NgZone]),
-          i0.ɵmpd(135680,i23.ɵDomSharedStylesHost,i23.ɵDomSharedStylesHost,[i23.DOCUMENT]),
-          i0.ɵmpd(4608,i23.ɵDomRendererFactory2,i23.ɵDomRendererFactory2,[i23.EventManager,
-              i23.ɵDomSharedStylesHost]),i0.ɵmpd(6144,i0.RendererFactory2,(null as any),
-              [i23.ɵDomRendererFactory2]),i0.ɵmpd(6144,i23.ɵSharedStylesHost,(null as any),
-              [i23.ɵDomSharedStylesHost]),i0.ɵmpd(4608,i0.Testability,i0.Testability,
-              [i0.NgZone]),i0.ɵmpd(4608,i23.Meta,i23.Meta,[i23.DOCUMENT]),i0.ɵmpd(4608,
-              i23.Title,i23.Title,[i23.DOCUMENT]),i0.ɵmpd(4608,i24.ɵi,i24.ɵi,([] as any[])),
+          i0.ɵmpd(5120,i0.KeyValueDiffers,i0.ɵl,([] as any[])),i0.ɵmpd(4608,i17.DomSanitizer,
+              i17.ɵe,[i17.DOCUMENT]),i0.ɵmpd(6144,i0.Sanitizer,(null as any),[i17.DomSanitizer]),
+          i0.ɵmpd(4608,i17.HAMMER_GESTURE_CONFIG,i17.HammerGestureConfig,([] as any[])),
+          i0.ɵmpd(5120,i17.EVENT_MANAGER_PLUGINS,(p0_0:any,p1_0:any,p2_0:any,p2_1:any) => {
+            return [new i17.ɵDomEventsPlugin(p0_0),new i17.ɵKeyEventsPlugin(p1_0),
+                new i17.ɵHammerGesturesPlugin(p2_0,p2_1)];
+          },[i17.DOCUMENT,i17.DOCUMENT,i17.DOCUMENT,i17.HAMMER_GESTURE_CONFIG]),i0.ɵmpd(4608,
+              i17.EventManager,i17.EventManager,[i17.EVENT_MANAGER_PLUGINS,i0.NgZone]),
+          i0.ɵmpd(135680,i17.ɵDomSharedStylesHost,i17.ɵDomSharedStylesHost,[i17.DOCUMENT]),
+          i0.ɵmpd(4608,i17.ɵDomRendererFactory2,i17.ɵDomRendererFactory2,[i17.EventManager,
+              i17.ɵDomSharedStylesHost]),i0.ɵmpd(6144,i0.RendererFactory2,(null as any),
+              [i17.ɵDomRendererFactory2]),i0.ɵmpd(6144,i17.ɵSharedStylesHost,(null as any),
+              [i17.ɵDomSharedStylesHost]),i0.ɵmpd(4608,i0.Testability,i0.Testability,
+              [i0.NgZone]),i0.ɵmpd(4608,i17.Meta,i17.Meta,[i17.DOCUMENT]),i0.ɵmpd(4608,
+              i17.Title,i17.Title,[i17.DOCUMENT]),i0.ɵmpd(4608,i24.ɵi,i24.ɵi,([] as any[])),
           i0.ɵmpd(5120,i25.ActivatedRoute,i25.ɵf,[i25.Router]),i0.ɵmpd(4608,i25.NoPreloading,
               i25.NoPreloading,([] as any[])),i0.ɵmpd(6144,i25.PreloadingStrategy,
               (null as any),[i25.NoPreloading]),i0.ɵmpd(135680,i25.RouterPreloader,
@@ -91,23 +91,22 @@ export const AppModuleNgFactory:i0.NgModuleFactory<i1.AppModule> = i0.ɵcmf(i1.A
             return [p0_0];
           },[i25.ROUTER_INITIALIZER]),i0.ɵmpd(512,i14.CommonModule,i14.CommonModule,
               ([] as any[])),i0.ɵmpd(512,i26.VirtualScrollModule,i26.VirtualScrollModule,
-              ([] as any[])),i0.ɵmpd(512,i27.CrestronSdkModule,i27.CrestronSdkModule,
-              ([] as any[])),i0.ɵmpd(512,i21.WindowTokenModule,i21.WindowTokenModule,
-              ([] as any[])),i0.ɵmpd(512,i28.ClipboardModule,i28.ClipboardModule,([] as any[])),
-          i0.ɵmpd(1024,i0.ErrorHandler,i23.ɵa,([] as any[])),i0.ɵmpd(1024,i0.NgProbeToken,
-              () => {
-                return [i25.ɵb()];
-              },([] as any[])),i0.ɵmpd(512,i25.ɵg,i25.ɵg,[i0.Injector]),i0.ɵmpd(1024,
-              i0.APP_INITIALIZER,(p0_0:any,p0_1:any,p1_0:any) => {
-                return [i23.ɵc(p0_0,p0_1),i25.ɵh(p1_0)];
-              },[[2,i23.NgProbeToken],[2,i0.NgProbeToken],i25.ɵg]),i0.ɵmpd(512,i0.ApplicationInitStatus,
+              ([] as any[])),i0.ɵmpd(512,i15.WindowTokenModule,i15.WindowTokenModule,
+              ([] as any[])),i0.ɵmpd(512,i27.ClipboardModule,i27.ClipboardModule,([] as any[])),
+          i0.ɵmpd(512,i28.CrestronSdkModule,i28.CrestronSdkModule,([] as any[])),i0.ɵmpd(1024,
+              i0.ErrorHandler,i17.ɵa,([] as any[])),i0.ɵmpd(1024,i0.NgProbeToken,() => {
+            return [i25.ɵb()];
+          },([] as any[])),i0.ɵmpd(512,i25.ɵg,i25.ɵg,[i0.Injector]),i0.ɵmpd(1024,i0.APP_INITIALIZER,
+              (p0_0:any,p0_1:any,p1_0:any) => {
+                return [i17.ɵc(p0_0,p0_1),i25.ɵh(p1_0)];
+              },[[2,i17.NgProbeToken],[2,i0.NgProbeToken],i25.ɵg]),i0.ɵmpd(512,i0.ApplicationInitStatus,
               i0.ApplicationInitStatus,[[2,i0.APP_INITIALIZER]]),i0.ɵmpd(131584,i0.ɵe,
               i0.ɵe,[i0.NgZone,i0.ɵConsole,i0.Injector,i0.ErrorHandler,i0.ComponentFactoryResolver,
                   i0.ApplicationInitStatus]),i0.ɵmpd(2048,i0.ApplicationRef,(null as any),
               [i0.ɵe]),i0.ɵmpd(512,i0.ApplicationModule,i0.ApplicationModule,[i0.ApplicationRef]),
-          i0.ɵmpd(512,i23.BrowserModule,i23.BrowserModule,[[3,i23.BrowserModule]]),
+          i0.ɵmpd(512,i17.BrowserModule,i17.BrowserModule,[[3,i17.BrowserModule]]),
           i0.ɵmpd(512,i24.ɵba,i24.ɵba,([] as any[])),i0.ɵmpd(512,i24.FormsModule,i24.FormsModule,
-              ([] as any[])),i0.ɵmpd(512,i16.HttpModule,i16.HttpModule,([] as any[])),
+              ([] as any[])),i0.ɵmpd(512,i19.HttpModule,i19.HttpModule,([] as any[])),
           i0.ɵmpd(1024,i25.ɵa,i25.ɵd,[[3,i25.Router]]),i0.ɵmpd(512,i25.UrlSerializer,
               i25.DefaultUrlSerializer,([] as any[])),i0.ɵmpd(512,i25.ChildrenOutletContexts,
               i25.ChildrenOutletContexts,([] as any[])),i0.ɵmpd(256,i25.ROUTER_CONFIGURATION,
@@ -130,4 +129,4 @@ export const AppModuleNgFactory:i0.NgModuleFactory<i1.AppModule> = i0.ɵcmf(i1.A
               [2,i25.RouteReuseStrategy]]),i0.ɵmpd(512,i25.RouterModule,i25.RouterModule,
               [[2,i25.ɵa],[2,i25.Router]]),i0.ɵmpd(512,i1.AppModule,i1.AppModule,([] as any[]))]);
     });
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiRDovQmxhY2tiaXJkQ2xvbmUvQmxhY2tiaXJkUHJvamVjdFVJL3NyYy9hcHAvYXBwLm1vZHVsZS5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9EOi9CbGFja2JpcmRDbG9uZS9CbGFja2JpcmRQcm9qZWN0VUkvc3JjL2FwcC9hcHAubW9kdWxlLnRzIl0sInNvdXJjZXNDb250ZW50IjpbIiAiXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OzsifQ==
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiQzovVXNlcnMvdHltdWQvQmxhY2tiaXJkL0JsYWNrYmlyZFByb2plY3RVSS1tYXN0ZXIvQmxhY2tiaXJkUHJvamVjdFVJLW1hc3Rlci9zcmMvYXBwL2FwcC5tb2R1bGUubmdmYWN0b3J5LnRzIiwidmVyc2lvbiI6Mywic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibmc6Ly8vQzovVXNlcnMvdHltdWQvQmxhY2tiaXJkL0JsYWNrYmlyZFByb2plY3RVSS1tYXN0ZXIvQmxhY2tiaXJkUHJvamVjdFVJLW1hc3Rlci9zcmMvYXBwL2FwcC5tb2R1bGUudHMiXSwic291cmNlc0NvbnRlbnQiOlsiICJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7In0=

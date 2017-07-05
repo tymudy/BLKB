@@ -18,34 +18,32 @@ import { GallerySliderComponent } from './gallery/gallery-slider/gallery-slider.
 import { GallerySpecComponent } from './gallery/gallery-spec/spec-list.component';
 import { enableProdMode } from '@angular/core';
 enableProdMode();
-import { ClipboardModule } from 'ngx-clipboard';
 import { CrestronSdkModule } from './crestron-sdk/crestron-sdk.module';
 var AppModule = (function () {
     function AppModule() {
     }
+    AppModule = __decorate([
+        NgModule({
+            declarations: [
+                AppComponent,
+                GalleryComponent,
+                GalleryButtonComponent,
+                GalleryListComponent,
+                GallerySliderComponent,
+                GallerySpecComponent,
+            ],
+            imports: [
+                CrestronSdkModule,
+                BrowserModule,
+                FormsModule,
+                HttpModule,
+                RouterModule.forRoot(ROUTES, { useHash: true })
+            ],
+            schemas: [NO_ERRORS_SCHEMA],
+            bootstrap: [AppComponent]
+        })
+    ], AppModule);
     return AppModule;
 }());
-AppModule = __decorate([
-    NgModule({
-        declarations: [
-            AppComponent,
-            GalleryComponent,
-            GalleryButtonComponent,
-            GalleryListComponent,
-            GallerySliderComponent,
-            GallerySpecComponent,
-        ],
-        imports: [
-            CrestronSdkModule,
-            ClipboardModule,
-            BrowserModule,
-            FormsModule,
-            HttpModule,
-            RouterModule.forRoot(ROUTES, { useHash: true })
-        ],
-        schemas: [NO_ERRORS_SCHEMA],
-        bootstrap: [AppComponent]
-    })
-], AppModule);
 export { AppModule };
 //# sourceMappingURL=app.module.js.map

@@ -16,8 +16,6 @@ import {GallerySpecComponent} from './gallery/gallery-spec/spec-list.component';
 import {enableProdMode} from '@angular/core';
 enableProdMode();
 
-import {ClipboardModule} from 'ngx-clipboard';
-
 import {CrestronSdkModule} from './crestron-sdk/crestron-sdk.module';
 
 @NgModule({
@@ -31,7 +29,6 @@ import {CrestronSdkModule} from './crestron-sdk/crestron-sdk.module';
   ],
   imports: [
     CrestronSdkModule,
-    ClipboardModule,
     BrowserModule,
     FormsModule,
     HttpModule,

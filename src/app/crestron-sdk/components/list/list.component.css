@@ -60,3 +60,9 @@ list-item-component,
 #slider_list [listItemComponent] {
   margin-left: calc(50% - 125px);
 }
+
+.common_btn_style {
+    border: .5px solid #588ed3;
+    background-color: #588ed3;
+    color: #f0fff0;
+}

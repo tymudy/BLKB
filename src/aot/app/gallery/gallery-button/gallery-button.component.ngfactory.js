@@ -12,16 +12,16 @@ import * as i4 from '../../crestron-sdk/controllers/button-controller.ngfactory'
 import * as i5 from '../../../../app/crestron-sdk/controllers/button-controller';
 import * as i6 from '../../../../app/crestron-sdk/services/joins.service';
 import * as i7 from '../../../../app/crestron-sdk/services/communication.service';
-import * as i8 from '../../../../app/gallery/gallery-button/gallery-button.component';
-import * as i9 from 'ngx-clipboard/src/clipboard.directive';
-import * as i10 from 'ngx-clipboard/src/clipboard.service';
+import * as i8 from '../../crestron-sdk/components/snippet/snippet.component.ngfactory';
+import * as i9 from '../../../../app/crestron-sdk/components/snippet/snippet.component';
+import * as i10 from '../../../../app/gallery/gallery-button/gallery-button.component';
 var styles_GalleryButtonComponent = [i0.styles];
 export var RenderType_GalleryButtonComponent = i1.ɵcrt({ encapsulation: 2,
     styles: styles_GalleryButtonComponent, data: {} });
 export function View_GalleryButtonComponent_0(_l) {
-    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 824, 'div', [['class',
+    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 471, 'div', [['class',
                 'button_wrapper']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n\n  '])), (_l()(), i1.ɵeld(0, null, null, 41, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 18, 'div', [['class', 'col-md-6']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 15, 'div', [['class',
+        (_l()(), i1.ɵted(null, ['\n\n  '])), (_l()(), i1.ɵeld(0, null, null, 28, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 18, 'div', [['class', 'col-md-6']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 15, 'div', [['class',
                 'button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 1, 'h5', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Rectangle Button'])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(),
             i1.ɵeld(0, null, null, 9, 'div', [['class', 'crestron_button_container']], null, null, null, null, null)),
         (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵeld(0, null, null, 2, 'btn', [['customClass', 'common_btn_style'], ['label', 'Button'],
@@ -33,590 +33,223 @@ export function View_GalleryButtonComponent_0(_l) {
             onRelease: [2, 'onRelease'], runClass: [3, 'runClass'] }, null), (_l()(),
             i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵted(null, ['\n        '])),
         (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])),
-        (_l()(), i1.ɵted(null, ['\n\n    '])), (_l()(), i1.ɵeld(0, null, null, 18, 'div', [['class', 'col-md-4']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 15, 'div', [['class',
-                'input-group']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n            '])), (_l()(),
-            i1.ɵeld(0, null, null, 4, 'pre', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['              '])), (_l()(), i1.ɵeld(0, null, null, 1, 'span', [], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['', ''])), (_l()(), i1.ɵted(null, ['\n            '])),
-        (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 6, 'span', [['class', 'input-group-btn']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n            '])), (_l()(), i1.ɵeld(0, null, null, 3, 'button', [['class', 'btn btn-default'], ['ngxClipboard', ''], ['type', 'button']], [[2,
-                'btn-success', null]], [[null, 'cbOnSuccess'], [null,
-                'click']], function (_v, en, $event) {
-            var ad = true;
-            var _co = _v.component;
-            if (('click' === en)) {
-                var pd_0 = (i1.ɵnov(_v, 37).onClick($event.target) !== false);
-                ad = (pd_0 && ad);
-            }
-            if (('cbOnSuccess' === en)) {
-                var pd_1 = ((_co.isCopied1 = true) !== false);
-                ad = (pd_1 && ad);
-            }
-            return ad;
-        }, null, null)), i1.ɵdid(212992, null, 0, i9.ClipboardDirective, [i10.ClipboardService, i1.Renderer], { targetElm: [0, 'targetElm'], cbContent: [1,
-                'cbContent'] }, { cbOnSuccess: 'cbOnSuccess' }), i1.ɵpad(1), (_l()(), i1.ɵted(null, ['copy'])), (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵted(null, ['\n\n  '])), (_l()(), i1.ɵeld(0, null, null, 37, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['class',
-                'col-md-6']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 11, 'div', [['class', 'button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 1, 'h5', [], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['Rounded Rectangle Button'])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 5, 'div', [['class',
-                'crestron_button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n          '])),
-        (_l()(), i1.ɵeld(0, null, null, 2, 'btn', [['customClass', 'common_btn_style'],
-            ['label', 'Button'], ['name', 'buttonRoundedRectangle'], ['shape', 'rounded-rectangle']], null, null, null, i2.View_ButtonComponent_0, i2.RenderType_ButtonComponent)),
-        i1.ɵdid(114688, null, 0, i3.ButtonComponent, [], { name: [0, 'name'],
-            customClass: [1, 'customClass'], label: [2, 'label'], shape: [3, 'shape'] }, null),
-        (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n\n    '])), (_l()(), i1.ɵeld(0, null, null, 18, 'div', [['class', 'col-md-4']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 15, 'div', [['class',
-                'input-group']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n            '])), (_l()(),
-            i1.ɵeld(0, null, null, 4, 'pre', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['              '])), (_l()(), i1.ɵeld(0, null, null, 1, 'span', [], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['', ''])), (_l()(), i1.ɵted(null, ['\n            '])),
-        (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 6, 'span', [['class', 'input-group-btn']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n            '])), (_l()(), i1.ɵeld(0, null, null, 3, 'button', [['class', 'btn btn-default'], ['ngxClipboard', ''], ['type', 'button']], [[2,
-                'btn-success', null]], [[null, 'cbOnSuccess'], [null,
-                'click']], function (_v, en, $event) {
-            var ad = true;
-            var _co = _v.component;
-            if (('click' === en)) {
-                var pd_0 = (i1.ɵnov(_v, 76).onClick($event.target) !== false);
-                ad = (pd_0 && ad);
-            }
-            if (('cbOnSuccess' === en)) {
-                var pd_1 = ((_co.isCopied2 = true) !== false);
-                ad = (pd_1 && ad);
-            }
-            return ad;
-        }, null, null)), i1.ɵdid(212992, null, 0, i9.ClipboardDirective, [i10.ClipboardService, i1.Renderer], { targetElm: [0, 'targetElm'], cbContent: [1,
-                'cbContent'] }, { cbOnSuccess: 'cbOnSuccess' }), i1.ɵpad(1), (_l()(), i1.ɵted(null, ['copy'])), (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵted(null, ['\n\n  '])), (_l()(), i1.ɵeld(0, null, null, 37, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['class',
-                'col-md-6']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 11, 'div', [['class', 'button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 1, 'h5', [], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['Tab Button'])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 5, 'div', [['class',
-                'crestron_button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n          '])),
-        (_l()(), i1.ɵeld(0, null, null, 2, 'btn', [['customClass', 'common_btn_style'],
-            ['label', 'Button'], ['name', 'buttonTab'], ['shape', 'tab']], null, null, null, i2.View_ButtonComponent_0, i2.RenderType_ButtonComponent)),
-        i1.ɵdid(114688, null, 0, i3.ButtonComponent, [], { name: [0, 'name'],
-            customClass: [1, 'customClass'], label: [2, 'label'], shape: [3, 'shape'] }, null),
-        (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n\n    '])), (_l()(), i1.ɵeld(0, null, null, 18, 'div', [['class', 'col-md-4']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 15, 'div', [['class',
-                'input-group']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n            '])), (_l()(),
-            i1.ɵeld(0, null, null, 4, 'pre', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['              '])), (_l()(), i1.ɵeld(0, null, null, 1, 'span', [], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['', ''])), (_l()(), i1.ɵted(null, ['\n            '])),
-        (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 6, 'span', [['class', 'input-group-btn']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n            '])), (_l()(), i1.ɵeld(0, null, null, 3, 'button', [['class', 'btn btn-default'], ['ngxClipboard', ''], ['type', 'button']], [[2,
-                'btn-success', null]], [[null, 'cbOnSuccess'], [null,
-                'click']], function (_v, en, $event) {
-            var ad = true;
-            var _co = _v.component;
-            if (('click' === en)) {
-                var pd_0 = (i1.ɵnov(_v, 115).onClick($event.target) !== false);
-                ad = (pd_0 && ad);
-            }
-            if (('cbOnSuccess' === en)) {
-                var pd_1 = ((_co.isCopied3 = true) !== false);
-                ad = (pd_1 && ad);
-            }
-            return ad;
-        }, null, null)), i1.ɵdid(212992, null, 0, i9.ClipboardDirective, [i10.ClipboardService, i1.Renderer], { targetElm: [0, 'targetElm'], cbContent: [1,
-                'cbContent'] }, { cbOnSuccess: 'cbOnSuccess' }), i1.ɵpad(1), (_l()(), i1.ɵted(null, ['copy'])), (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵted(null, ['\n\n  '])), (_l()(), i1.ɵeld(0, null, null, 37, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['class',
-                'col-md-6']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 11, 'div', [['class', 'button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 1, 'h5', [], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['Circle Button'])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 5, 'div', [['class',
-                'crestron_button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n          '])),
-        (_l()(), i1.ɵeld(0, null, null, 2, 'btn', [['customClass', 'common_btn_style'],
-            ['label', 'Button'], ['name', 'buttonCircle'], ['shape', 'circle']], null, null, null, i2.View_ButtonComponent_0, i2.RenderType_ButtonComponent)),
-        i1.ɵdid(114688, null, 0, i3.ButtonComponent, [], { name: [0, 'name'],
-            customClass: [1, 'customClass'], label: [2, 'label'], shape: [3, 'shape'] }, null),
-        (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 18, 'div', [['class', 'col-md-4']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 15, 'div', [['class',
-                'input-group']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n            '])), (_l()(),
-            i1.ɵeld(0, null, null, 4, 'pre', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['              '])), (_l()(), i1.ɵeld(0, null, null, 1, 'span', [], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['', ''])), (_l()(), i1.ɵted(null, ['\n            '])),
-        (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 6, 'span', [['class', 'input-group-btn']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n            '])), (_l()(), i1.ɵeld(0, null, null, 3, 'button', [['class', 'btn btn-default'], ['ngxClipboard', ''], ['type', 'button']], [[2,
-                'btn-success', null]], [[null, 'cbOnSuccess'], [null,
-                'click']], function (_v, en, $event) {
-            var ad = true;
-            var _co = _v.component;
-            if (('click' === en)) {
-                var pd_0 = (i1.ɵnov(_v, 154).onClick($event.target) !== false);
-                ad = (pd_0 && ad);
-            }
-            if (('cbOnSuccess' === en)) {
-                var pd_1 = ((_co.isCopied4 = true) !== false);
-                ad = (pd_1 && ad);
-            }
-            return ad;
-        }, null, null)), i1.ɵdid(212992, null, 0, i9.ClipboardDirective, [i10.ClipboardService, i1.Renderer], { targetElm: [0, 'targetElm'], cbContent: [1,
-                'cbContent'] }, { cbOnSuccess: 'cbOnSuccess' }), i1.ɵpad(1), (_l()(), i1.ɵted(null, ['copy'])), (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵted(null, ['\n\n  '])), (_l()(), i1.ɵeld(0, null, null, 37, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['class',
-                'col-md-6']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 11, 'div', [['class', 'button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 1, 'h5', [], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['Oval Button'])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 5, 'div', [['class',
-                'crestron_button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n          '])),
-        (_l()(), i1.ɵeld(0, null, null, 2, 'btn', [['customClass', 'common_btn_style'],
-            ['label', 'Button'], ['name', 'buttonOval'], ['shape', 'oval']], null, null, null, i2.View_ButtonComponent_0, i2.RenderType_ButtonComponent)),
-        i1.ɵdid(114688, null, 0, i3.ButtonComponent, [], { name: [0, 'name'],
-            customClass: [1, 'customClass'], label: [2, 'label'], shape: [3, 'shape'] }, null),
-        (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 18, 'div', [['class', 'col-md-4']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 15, 'div', [['class',
-                'input-group']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n            '])), (_l()(),
-            i1.ɵeld(0, null, null, 4, 'pre', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['              '])), (_l()(), i1.ɵeld(0, null, null, 1, 'span', [], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['', ''])), (_l()(), i1.ɵted(null, ['\n            '])),
-        (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 6, 'span', [['class', 'input-group-btn']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n            '])), (_l()(), i1.ɵeld(0, null, null, 3, 'button', [['class', 'btn btn-default'], ['ngxClipboard', ''], ['type', 'button']], [[2,
-                'btn-success', null]], [[null, 'cbOnSuccess'], [null,
-                'click']], function (_v, en, $event) {
-            var ad = true;
-            var _co = _v.component;
-            if (('click' === en)) {
-                var pd_0 = (i1.ɵnov(_v, 193).onClick($event.target) !== false);
-                ad = (pd_0 && ad);
-            }
-            if (('cbOnSuccess' === en)) {
-                var pd_1 = ((_co.isCopied5 = true) !== false);
-                ad = (pd_1 && ad);
-            }
-            return ad;
-        }, null, null)), i1.ɵdid(212992, null, 0, i9.ClipboardDirective, [i10.ClipboardService, i1.Renderer], { targetElm: [0, 'targetElm'], cbContent: [1,
-                'cbContent'] }, { cbOnSuccess: 'cbOnSuccess' }), i1.ɵpad(1), (_l()(), i1.ɵted(null, ['copy'])), (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵted(null, ['\n\n  '])), (_l()(), i1.ɵeld(0, null, null, 37, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['class',
-                'col-md-6']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 11, 'div', [['class', 'button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 1, 'h5', [], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['Button with Icon'])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 5, 'div', [['class',
-                'crestron_button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n          '])),
-        (_l()(), i1.ɵeld(0, null, null, 2, 'btn', [['customClass', 'common_btn_style'],
-            ['icon', 'fa fa-plus'], ['icon_align', 'right'], ['label', 'Button'], ['name',
-                'buttonIconRight']], null, null, null, i2.View_ButtonComponent_0, i2.RenderType_ButtonComponent)), i1.ɵdid(114688, null, 0, i3.ButtonComponent, [], { name: [0, 'name'], customClass: [1, 'customClass'], label: [2, 'label'],
-            icon: [3, 'icon'], icon_align: [4, 'icon_align'] }, null), (_l()(),
+        (_l()(), i1.ɵted(null, ['\n\n    '])), (_l()(), i1.ɵeld(0, null, null, 5, 'div', [['class', 'col-md-4']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 2, 'snippet-component', [['code', '<btn name="buttonRectangle"\n               label="Button"\n               customClass="common_btn_style"\n               shape="rectangular">\n          </btn>']], null, null, null, i8.View_SnippetComponent_0, i8.RenderType_SnippetComponent)),
+        i1.ɵdid(114688, null, 0, i9.SnippetComponent, [], { code: [0, 'code'] }, null), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵted(null, ['\n\n  '])), (_l()(), i1.ɵeld(0, null, null, 20, 'div', [['class',
+                'row']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['class', 'col-md-6']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])),
+        (_l()(), i1.ɵeld(0, null, null, 11, 'div', [['class', 'button_container']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 1, 'h5', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Rounded Rectangle Button'])),
+        (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 5, 'div', [['class', 'crestron_button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵeld(0, null, null, 2, 'btn', [['customClass', 'common_btn_style'], ['label', 'Button'], ['name', 'buttonRoundedRectangle'],
+            ['shape', 'rounded-rectangle']], null, null, null, i2.View_ButtonComponent_0, i2.RenderType_ButtonComponent)), i1.ɵdid(114688, null, 0, i3.ButtonComponent, [], { name: [0, 'name'], customClass: [1,
+                'customClass'], label: [2, 'label'], shape: [3, 'shape'] }, null), (_l()(),
             i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵted(null, ['\n        '])),
         (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])),
-        (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 18, 'div', [['class', 'col-md-4']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])),
-        (_l()(), i1.ɵeld(0, null, null, 15, 'div', [['class', 'input-group']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n            '])), (_l()(), i1.ɵeld(0, null, null, 4, 'pre', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['              '])),
-        (_l()(), i1.ɵeld(0, null, null, 1, 'span', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['', ''])), (_l()(), i1.ɵted(null, ['\n            '])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 6, 'span', [['class', 'input-group-btn']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n            '])),
-        (_l()(), i1.ɵeld(0, null, null, 3, 'button', [['class', 'btn btn-default'],
-            ['ngxClipboard', ''], ['type', 'button']], [[2, 'btn-success', null]], [[null, 'cbOnSuccess'], [null, 'click']], function (_v, en, $event) {
-            var ad = true;
-            var _co = _v.component;
-            if (('click' === en)) {
-                var pd_0 = (i1.ɵnov(_v, 232).onClick($event.target) !== false);
-                ad = (pd_0 && ad);
-            }
-            if (('cbOnSuccess' === en)) {
-                var pd_1 = ((_co.isCopied6 = true) !== false);
-                ad = (pd_1 && ad);
-            }
-            return ad;
-        }, null, null)), i1.ɵdid(212992, null, 0, i9.ClipboardDirective, [i10.ClipboardService, i1.Renderer], { targetElm: [0, 'targetElm'], cbContent: [1,
-                'cbContent'] }, { cbOnSuccess: 'cbOnSuccess' }), i1.ɵpad(1), (_l()(), i1.ɵted(null, ['copy'])), (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵted(null, ['\n\n  '])), (_l()(), i1.ɵeld(0, null, null, 37, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['class',
-                'col-md-6']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 11, 'div', [['class', 'button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 1, 'h5', [], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['Button with Icon'])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 5, 'div', [['class',
-                'crestron_button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n          '])),
-        (_l()(), i1.ɵeld(0, null, null, 2, 'btn', [['customClass', 'common_btn_style'],
-            ['icon', 'fa fa-plus'], ['icon_align', 'left'], ['label', 'Button'], ['name', 'buttonIconLeft']], null, null, null, i2.View_ButtonComponent_0, i2.RenderType_ButtonComponent)),
+        (_l()(), i1.ɵted(null, ['\n\n    '])), (_l()(), i1.ɵeld(0, null, null, 1, 'div', [['class', 'col-md-4']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n\n    '])), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵted(null, ['\n\n  '])), (_l()(), i1.ɵeld(0, null, null, 20, 'div', [['class',
+                'row']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['class', 'col-md-6']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])),
+        (_l()(), i1.ɵeld(0, null, null, 11, 'div', [['class', 'button_container']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 1, 'h5', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Tab Button'])),
+        (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 5, 'div', [['class', 'crestron_button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵeld(0, null, null, 2, 'btn', [['customClass', 'common_btn_style'], ['label', 'Button'], ['name', 'buttonTab'],
+            ['shape', 'tab']], null, null, null, i2.View_ButtonComponent_0, i2.RenderType_ButtonComponent)), i1.ɵdid(114688, null, 0, i3.ButtonComponent, [], { name: [0, 'name'], customClass: [1, 'customClass'], label: [2, 'label'],
+            shape: [3, 'shape'] }, null), (_l()(), i1.ɵted(null, ['\n          '])),
+        (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n\n    '])), (_l()(), i1.ɵeld(0, null, null, 1, 'div', [['class',
+                'col-md-4']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n\n    '])), (_l()(), i1.ɵted(null, ['\n  '])),
+        (_l()(), i1.ɵted(null, ['\n\n  '])), (_l()(), i1.ɵeld(0, null, null, 20, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['class', 'col-md-6']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 11, 'div', [['class',
+                'button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 1, 'h5', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Circle Button'])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(),
+            i1.ɵeld(0, null, null, 5, 'div', [['class', 'crestron_button_container']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵeld(0, null, null, 2, 'btn', [['customClass', 'common_btn_style'], ['label', 'Button'],
+            ['name', 'buttonCircle'], ['shape', 'circle']], null, null, null, i2.View_ButtonComponent_0, i2.RenderType_ButtonComponent)),
+        i1.ɵdid(114688, null, 0, i3.ButtonComponent, [], { name: [0, 'name'],
+            customClass: [1, 'customClass'], label: [2, 'label'], shape: [3, 'shape'] }, null),
+        (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 1, 'div', [['class', 'col-md-4']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n\n    '])), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵted(null, ['\n\n  '])), (_l()(), i1.ɵeld(0, null, null, 20, 'div', [['class',
+                'row']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['class', 'col-md-6']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])),
+        (_l()(), i1.ɵeld(0, null, null, 11, 'div', [['class', 'button_container']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 1, 'h5', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Oval Button'])),
+        (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 5, 'div', [['class', 'crestron_button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵeld(0, null, null, 2, 'btn', [['customClass', 'common_btn_style'], ['label', 'Button'], ['name', 'buttonOval'],
+            ['shape', 'oval']], null, null, null, i2.View_ButtonComponent_0, i2.RenderType_ButtonComponent)), i1.ɵdid(114688, null, 0, i3.ButtonComponent, [], { name: [0, 'name'], customClass: [1, 'customClass'], label: [2, 'label'],
+            shape: [3, 'shape'] }, null), (_l()(), i1.ɵted(null, ['\n          '])),
+        (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 1, 'div', [['class',
+                'col-md-4']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n\n    '])), (_l()(), i1.ɵted(null, ['\n  '])),
+        (_l()(), i1.ɵted(null, ['\n\n  '])), (_l()(), i1.ɵeld(0, null, null, 20, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['class', 'col-md-6']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 11, 'div', [['class',
+                'button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 1, 'h5', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Button with Icon'])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(),
+            i1.ɵeld(0, null, null, 5, 'div', [['class', 'crestron_button_container']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵeld(0, null, null, 2, 'btn', [['customClass', 'common_btn_style'], ['icon', 'fa fa-plus'],
+            ['icon_align', 'right'], ['label', 'Button'], ['name', 'buttonIconRight']], null, null, null, i2.View_ButtonComponent_0, i2.RenderType_ButtonComponent)),
         i1.ɵdid(114688, null, 0, i3.ButtonComponent, [], { name: [0, 'name'],
             customClass: [1, 'customClass'], label: [2, 'label'], icon: [3, 'icon'], icon_align: [4,
                 'icon_align'] }, null), (_l()(), i1.ɵted(null, ['\n          '])),
-        (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 18, 'div', [['class',
+        (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 1, 'div', [['class',
                 'col-md-4']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 15, 'div', [['class', 'input-group']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n            '])), (_l()(), i1.ɵeld(0, null, null, 4, 'pre', [], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['              '])), (_l()(), i1.ɵeld(0, null, null, 1, 'span', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['', ''])), (_l()(),
-            i1.ɵted(null, ['\n            '])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 6, 'span', [['class', 'input-group-btn']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n            '])),
-        (_l()(), i1.ɵeld(0, null, null, 3, 'button', [['class', 'btn btn-default'],
-            ['ngxClipboard', ''], ['type', 'button']], [[2, 'btn-success', null]], [[null, 'cbOnSuccess'], [null, 'click']], function (_v, en, $event) {
-            var ad = true;
-            var _co = _v.component;
-            if (('click' === en)) {
-                var pd_0 = (i1.ɵnov(_v, 271).onClick($event.target) !== false);
-                ad = (pd_0 && ad);
-            }
-            if (('cbOnSuccess' === en)) {
-                var pd_1 = ((_co.isCopied7 = true) !== false);
-                ad = (pd_1 && ad);
-            }
-            return ad;
-        }, null, null)), i1.ɵdid(212992, null, 0, i9.ClipboardDirective, [i10.ClipboardService, i1.Renderer], { targetElm: [0, 'targetElm'], cbContent: [1,
-                'cbContent'] }, { cbOnSuccess: 'cbOnSuccess' }), i1.ɵpad(1), (_l()(), i1.ɵted(null, ['copy'])), (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵted(null, ['\n\n  '])), (_l()(), i1.ɵeld(0, null, null, 37, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['class',
-                'col-md-6']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 11, 'div', [['class', 'button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 1, 'h5', [], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['Primary Button Type'])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 5, 'div', [['class',
-                'crestron_button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n          '])),
-        (_l()(), i1.ɵeld(0, null, null, 2, 'btn', [['customClass', 'common_btn_style'],
-            ['label', 'Button'], ['name', 'buttonPrimary'], ['shape', 'rounded-rectangle'],
-            ['type', 'primary']], null, null, null, i2.View_ButtonComponent_0, i2.RenderType_ButtonComponent)), i1.ɵdid(114688, null, 0, i3.ButtonComponent, [], { name: [0, 'name'], customClass: [1, 'customClass'], label: [2, 'label'],
-            shape: [3, 'shape'], type: [4, 'type'] }, null), (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(),
-            i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])),
-        (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 18, 'div', [['class', 'col-md-4']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])),
-        (_l()(), i1.ɵeld(0, null, null, 15, 'div', [['class', 'input-group']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n            '])), (_l()(), i1.ɵeld(0, null, null, 4, 'pre', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['              '])),
-        (_l()(), i1.ɵeld(0, null, null, 1, 'span', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['', ''])), (_l()(), i1.ɵted(null, ['\n            '])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 6, 'span', [['class', 'input-group-btn']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n            '])),
-        (_l()(), i1.ɵeld(0, null, null, 3, 'button', [['class', 'btn btn-default'],
-            ['ngxClipboard', ''], ['type', 'button']], [[2, 'btn-success', null]], [[null, 'cbOnSuccess'], [null, 'click']], function (_v, en, $event) {
-            var ad = true;
-            var _co = _v.component;
-            if (('click' === en)) {
-                var pd_0 = (i1.ɵnov(_v, 310).onClick($event.target) !== false);
-                ad = (pd_0 && ad);
-            }
-            if (('cbOnSuccess' === en)) {
-                var pd_1 = ((_co.isCopied8 = true) !== false);
-                ad = (pd_1 && ad);
-            }
-            return ad;
-        }, null, null)), i1.ɵdid(212992, null, 0, i9.ClipboardDirective, [i10.ClipboardService, i1.Renderer], { targetElm: [0, 'targetElm'], cbContent: [1,
-                'cbContent'] }, { cbOnSuccess: 'cbOnSuccess' }), i1.ɵpad(1), (_l()(), i1.ɵted(null, ['copy'])), (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵted(null, ['\n\n  '])), (_l()(), i1.ɵeld(0, null, null, 37, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['class',
-                'col-md-6']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 11, 'div', [['class', 'button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 1, 'h5', [], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['Secondary Button Type'])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 5, 'div', [['class',
-                'crestron_button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n          '])),
-        (_l()(), i1.ɵeld(0, null, null, 2, 'btn', [['customClass', 'common_btn_style'],
-            ['label', 'Button'], ['name', 'buttonSecondary'], ['shape', 'rounded-rectangle'],
-            ['type', 'secondary']], null, null, null, i2.View_ButtonComponent_0, i2.RenderType_ButtonComponent)), i1.ɵdid(114688, null, 0, i3.ButtonComponent, [], { name: [0, 'name'], customClass: [1, 'customClass'], label: [2, 'label'],
-            shape: [3, 'shape'], type: [4, 'type'] }, null), (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(),
-            i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])),
-        (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 18, 'div', [['class', 'col-md-4']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])),
-        (_l()(), i1.ɵeld(0, null, null, 15, 'div', [['class', 'input-group']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n            '])), (_l()(), i1.ɵeld(0, null, null, 4, 'pre', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['              '])),
-        (_l()(), i1.ɵeld(0, null, null, 1, 'span', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['', ''])), (_l()(), i1.ɵted(null, ['\n            '])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 6, 'span', [['class', 'input-group-btn']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n            '])),
-        (_l()(), i1.ɵeld(0, null, null, 3, 'button', [['class', 'btn btn-default'],
-            ['ngxClipboard', ''], ['type', 'button']], [[2, 'btn-success', null]], [[null, 'cbOnSuccess'], [null, 'click']], function (_v, en, $event) {
-            var ad = true;
-            var _co = _v.component;
-            if (('click' === en)) {
-                var pd_0 = (i1.ɵnov(_v, 349).onClick($event.target) !== false);
-                ad = (pd_0 && ad);
-            }
-            if (('cbOnSuccess' === en)) {
-                var pd_1 = ((_co.isCopied9 = true) !== false);
-                ad = (pd_1 && ad);
-            }
-            return ad;
-        }, null, null)), i1.ɵdid(212992, null, 0, i9.ClipboardDirective, [i10.ClipboardService, i1.Renderer], { targetElm: [0, 'targetElm'], cbContent: [1,
-                'cbContent'] }, { cbOnSuccess: 'cbOnSuccess' }), i1.ɵpad(1), (_l()(), i1.ɵted(null, ['copy'])), (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵted(null, ['\n\n  '])), (_l()(), i1.ɵeld(0, null, null, 37, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['class',
-                'col-md-6']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 11, 'div', [['class', 'button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 1, 'h5', [], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['Info Button Type'])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 5, 'div', [['class',
-                'crestron_button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n          '])),
-        (_l()(), i1.ɵeld(0, null, null, 2, 'btn', [['customClass', 'common_btn_style'],
-            ['label', 'Button'], ['name', 'buttonInfo'], ['shape', 'rounded-rectangle'], ['type',
-                'info']], null, null, null, i2.View_ButtonComponent_0, i2.RenderType_ButtonComponent)), i1.ɵdid(114688, null, 0, i3.ButtonComponent, [], { name: [0, 'name'], customClass: [1, 'customClass'], label: [2, 'label'],
-            shape: [3, 'shape'], type: [4, 'type'] }, null), (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(),
-            i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])),
-        (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 18, 'div', [['class', 'col-md-4']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])),
-        (_l()(), i1.ɵeld(0, null, null, 15, 'div', [['class', 'input-group']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n            '])), (_l()(), i1.ɵeld(0, null, null, 4, 'pre', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['              '])),
-        (_l()(), i1.ɵeld(0, null, null, 1, 'span', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['', ''])), (_l()(), i1.ɵted(null, ['\n            '])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 6, 'span', [['class', 'input-group-btn']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n            '])),
-        (_l()(), i1.ɵeld(0, null, null, 3, 'button', [['class', 'btn btn-default'],
-            ['ngxClipboard', ''], ['type', 'button']], [[2, 'btn-success', null]], [[null, 'cbOnSuccess'], [null, 'click']], function (_v, en, $event) {
-            var ad = true;
-            var _co = _v.component;
-            if (('click' === en)) {
-                var pd_0 = (i1.ɵnov(_v, 388).onClick($event.target) !== false);
-                ad = (pd_0 && ad);
-            }
-            if (('cbOnSuccess' === en)) {
-                var pd_1 = ((_co.isCopied10 = true) !== false);
-                ad = (pd_1 && ad);
-            }
-            return ad;
-        }, null, null)), i1.ɵdid(212992, null, 0, i9.ClipboardDirective, [i10.ClipboardService, i1.Renderer], { targetElm: [0, 'targetElm'], cbContent: [1,
-                'cbContent'] }, { cbOnSuccess: 'cbOnSuccess' }), i1.ɵpad(1), (_l()(), i1.ɵted(null, ['copy'])), (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵted(null, ['\n\n  '])), (_l()(), i1.ɵeld(0, null, null, 37, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['class',
-                'col-md-6']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 11, 'div', [['class', 'button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 1, 'h5', [], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['Warning Button Type'])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 5, 'div', [['class',
-                'crestron_button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n          '])),
-        (_l()(), i1.ɵeld(0, null, null, 2, 'btn', [['customClass', 'common_btn_style'],
-            ['label', 'Button'], ['name', 'buttonWarning'], ['shape', 'rounded-rectangle'],
-            ['type', 'warning']], null, null, null, i2.View_ButtonComponent_0, i2.RenderType_ButtonComponent)), i1.ɵdid(114688, null, 0, i3.ButtonComponent, [], { name: [0, 'name'], customClass: [1, 'customClass'], label: [2, 'label'],
-            shape: [3, 'shape'], type: [4, 'type'] }, null), (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(),
-            i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])),
-        (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 18, 'div', [['class', 'col-md-4']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])),
-        (_l()(), i1.ɵeld(0, null, null, 15, 'div', [['class', 'input-group']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n            '])), (_l()(), i1.ɵeld(0, null, null, 4, 'pre', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['              '])),
-        (_l()(), i1.ɵeld(0, null, null, 1, 'span', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['', ''])), (_l()(), i1.ɵted(null, ['\n            '])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 6, 'span', [['class', 'input-group-btn']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n            '])),
-        (_l()(), i1.ɵeld(0, null, null, 3, 'button', [['class', 'btn btn-default'],
-            ['ngxClipboard', ''], ['type', 'button']], [[2, 'btn-success', null]], [[null, 'cbOnSuccess'], [null, 'click']], function (_v, en, $event) {
-            var ad = true;
-            var _co = _v.component;
-            if (('click' === en)) {
-                var pd_0 = (i1.ɵnov(_v, 427).onClick($event.target) !== false);
-                ad = (pd_0 && ad);
-            }
-            if (('cbOnSuccess' === en)) {
-                var pd_1 = ((_co.isCopied11 = true) !== false);
-                ad = (pd_1 && ad);
-            }
-            return ad;
-        }, null, null)), i1.ɵdid(212992, null, 0, i9.ClipboardDirective, [i10.ClipboardService, i1.Renderer], { targetElm: [0, 'targetElm'], cbContent: [1,
-                'cbContent'] }, { cbOnSuccess: 'cbOnSuccess' }), i1.ɵpad(1), (_l()(), i1.ɵted(null, ['copy'])), (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵted(null, ['\n\n  '])), (_l()(), i1.ɵeld(0, null, null, 37, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['class',
-                'col-md-6']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 11, 'div', [['class', 'button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 1, 'h5', [], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['Danger Button Type'])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 5, 'div', [['class',
-                'crestron_button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n          '])),
-        (_l()(), i1.ɵeld(0, null, null, 2, 'btn', [['customClass', 'common_btn_style'],
-            ['label', 'Button'], ['name', 'buttonDanger'], ['shape', 'rounded-rectangle'],
-            ['type', 'danger']], null, null, null, i2.View_ButtonComponent_0, i2.RenderType_ButtonComponent)), i1.ɵdid(114688, null, 0, i3.ButtonComponent, [], { name: [0, 'name'], customClass: [1, 'customClass'], label: [2, 'label'],
-            shape: [3, 'shape'], type: [4, 'type'] }, null), (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(),
-            i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])),
-        (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 18, 'div', [['class', 'col-md-4']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])),
-        (_l()(), i1.ɵeld(0, null, null, 15, 'div', [['class', 'input-group']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n            '])), (_l()(), i1.ɵeld(0, null, null, 4, 'pre', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['              '])),
-        (_l()(), i1.ɵeld(0, null, null, 1, 'span', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['', ''])), (_l()(), i1.ɵted(null, ['\n            '])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 6, 'span', [['class', 'input-group-btn']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n            '])),
-        (_l()(), i1.ɵeld(0, null, null, 3, 'button', [['class', 'btn btn-default'],
-            ['ngxClipboard', ''], ['type', 'button']], [[2, 'btn-success', null]], [[null, 'cbOnSuccess'], [null, 'click']], function (_v, en, $event) {
-            var ad = true;
-            var _co = _v.component;
-            if (('click' === en)) {
-                var pd_0 = (i1.ɵnov(_v, 466).onClick($event.target) !== false);
-                ad = (pd_0 && ad);
-            }
-            if (('cbOnSuccess' === en)) {
-                var pd_1 = ((_co.isCopied12 = true) !== false);
-                ad = (pd_1 && ad);
-            }
-            return ad;
-        }, null, null)), i1.ɵdid(212992, null, 0, i9.ClipboardDirective, [i10.ClipboardService, i1.Renderer], { targetElm: [0, 'targetElm'], cbContent: [1,
-                'cbContent'] }, { cbOnSuccess: 'cbOnSuccess' }), i1.ɵpad(1), (_l()(), i1.ɵted(null, ['copy'])), (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵted(null, ['\n\n  '])), (_l()(), i1.ɵeld(0, null, null, 37, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['class',
-                'col-md-6']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 11, 'div', [['class', 'button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 1, 'h5', [], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['Success Button Type'])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 5, 'div', [['class',
-                'crestron_button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n          '])),
-        (_l()(), i1.ɵeld(0, null, null, 2, 'btn', [['customClass', 'common_btn_style'],
-            ['label', 'Button'], ['name', 'buttonSuccess'], ['shape', 'rounded-rectangle'],
-            ['type', 'success']], null, null, null, i2.View_ButtonComponent_0, i2.RenderType_ButtonComponent)), i1.ɵdid(114688, null, 0, i3.ButtonComponent, [], { name: [0, 'name'], customClass: [1, 'customClass'], label: [2, 'label'],
-            shape: [3, 'shape'], type: [4, 'type'] }, null), (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(),
-            i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])),
-        (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 18, 'div', [['class', 'col-md-4']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])),
-        (_l()(), i1.ɵeld(0, null, null, 15, 'div', [['class', 'input-group']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n            '])), (_l()(), i1.ɵeld(0, null, null, 4, 'pre', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['              '])),
-        (_l()(), i1.ɵeld(0, null, null, 1, 'span', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['', ''])), (_l()(), i1.ɵted(null, ['\n            '])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 6, 'span', [['class', 'input-group-btn']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n            '])),
-        (_l()(), i1.ɵeld(0, null, null, 3, 'button', [['class', 'btn btn-default'],
-            ['ngxClipboard', ''], ['type', 'button']], [[2, 'btn-success', null]], [[null, 'cbOnSuccess'], [null, 'click']], function (_v, en, $event) {
-            var ad = true;
-            var _co = _v.component;
-            if (('click' === en)) {
-                var pd_0 = (i1.ɵnov(_v, 505).onClick($event.target) !== false);
-                ad = (pd_0 && ad);
-            }
-            if (('cbOnSuccess' === en)) {
-                var pd_1 = ((_co.isCopied13 = true) !== false);
-                ad = (pd_1 && ad);
-            }
-            return ad;
-        }, null, null)), i1.ɵdid(212992, null, 0, i9.ClipboardDirective, [i10.ClipboardService, i1.Renderer], { targetElm: [0, 'targetElm'], cbContent: [1,
-                'cbContent'] }, { cbOnSuccess: 'cbOnSuccess' }), i1.ɵpad(1), (_l()(), i1.ɵted(null, ['copy'])), (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵted(null, ['\n\n  '])), (_l()(), i1.ɵeld(0, null, null, 37, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['class',
-                'col-md-6']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 11, 'div', [['class', 'button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 1, 'h5', [], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['Text Button Type'])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 5, 'div', [['class',
-                'crestron_button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n          '])),
-        (_l()(), i1.ɵeld(0, null, null, 2, 'btn', [['customClass', 'common_btn_style'],
-            ['label', 'Button'], ['name', 'buttonText'], ['shape', 'rounded-rectangle'], ['type',
-                'text']], null, null, null, i2.View_ButtonComponent_0, i2.RenderType_ButtonComponent)), i1.ɵdid(114688, null, 0, i3.ButtonComponent, [], { name: [0, 'name'], customClass: [1, 'customClass'], label: [2, 'label'],
-            shape: [3, 'shape'], type: [4, 'type'] }, null), (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(),
-            i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])),
-        (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 18, 'div', [['class', 'col-md-4']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])),
-        (_l()(), i1.ɵeld(0, null, null, 15, 'div', [['class', 'input-group']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n            '])), (_l()(), i1.ɵeld(0, null, null, 4, 'pre', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['              '])),
-        (_l()(), i1.ɵeld(0, null, null, 1, 'span', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['', ''])), (_l()(), i1.ɵted(null, ['\n            '])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 6, 'span', [['class', 'input-group-btn']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n            '])),
-        (_l()(), i1.ɵeld(0, null, null, 3, 'button', [['class', 'btn btn-default'],
-            ['ngxClipboard', ''], ['type', 'button']], [[2, 'btn-success', null]], [[null, 'cbOnSuccess'], [null, 'click']], function (_v, en, $event) {
-            var ad = true;
-            var _co = _v.component;
-            if (('click' === en)) {
-                var pd_0 = (i1.ɵnov(_v, 544).onClick($event.target) !== false);
-                ad = (pd_0 && ad);
-            }
-            if (('cbOnSuccess' === en)) {
-                var pd_1 = ((_co.isCopied14 = true) !== false);
-                ad = (pd_1 && ad);
-            }
-            return ad;
-        }, null, null)), i1.ɵdid(212992, null, 0, i9.ClipboardDirective, [i10.ClipboardService, i1.Renderer], { targetElm: [0, 'targetElm'], cbContent: [1,
-                'cbContent'] }, { cbOnSuccess: 'cbOnSuccess' }), i1.ɵpad(1), (_l()(), i1.ɵted(null, ['copy'])), (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵted(null, ['\n\n  '])), (_l()(), i1.ɵeld(0, null, null, 37, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['class',
-                'col-md-6']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 11, 'div', [['class', 'button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 1, 'h5', [], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['Vertical Button'])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 5, 'div', [['class',
-                'crestron_button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n          '])),
-        (_l()(), i1.ɵeld(0, null, null, 2, 'btn', [['customClass', 'common_btn_style'],
-            ['icon', 'fa fa-minus'], ['label', 'Button'], ['name', 'buttonVertical'], ['orientation',
-                'vertical']], null, null, null, i2.View_ButtonComponent_0, i2.RenderType_ButtonComponent)), i1.ɵdid(114688, null, 0, i3.ButtonComponent, [], { name: [0, 'name'], customClass: [1, 'customClass'], label: [2, 'label'],
-            icon: [3, 'icon'], orientation: [4, 'orientation'] }, null), (_l()(),
-            i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵted(null, ['\n        '])),
-        (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])),
-        (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 18, 'div', [['class', 'col-md-4']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])),
-        (_l()(), i1.ɵeld(0, null, null, 15, 'div', [['class', 'input-group']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n            '])), (_l()(), i1.ɵeld(0, null, null, 4, 'pre', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['              '])),
-        (_l()(), i1.ɵeld(0, null, null, 1, 'span', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['', ''])), (_l()(), i1.ɵted(null, ['\n            '])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 6, 'span', [['class', 'input-group-btn']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n            '])),
-        (_l()(), i1.ɵeld(0, null, null, 3, 'button', [['class', 'btn btn-default'],
-            ['ngxClipboard', ''], ['type', 'button']], [[2, 'btn-success', null]], [[null, 'cbOnSuccess'], [null, 'click']], function (_v, en, $event) {
-            var ad = true;
-            var _co = _v.component;
-            if (('click' === en)) {
-                var pd_0 = (i1.ɵnov(_v, 583).onClick($event.target) !== false);
-                ad = (pd_0 && ad);
-            }
-            if (('cbOnSuccess' === en)) {
-                var pd_1 = ((_co.isCopied15 = true) !== false);
-                ad = (pd_1 && ad);
-            }
-            return ad;
-        }, null, null)), i1.ɵdid(212992, null, 0, i9.ClipboardDirective, [i10.ClipboardService, i1.Renderer], { targetElm: [0, 'targetElm'], cbContent: [1,
-                'cbContent'] }, { cbOnSuccess: 'cbOnSuccess' }), i1.ɵpad(1), (_l()(), i1.ɵted(null, ['copy'])), (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵted(null, ['\n\n  '])), (_l()(), i1.ɵeld(0, null, null, 37, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['class',
-                'col-md-6']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 11, 'div', [['class', 'button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 1, 'h5', [], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['X-Small Button'])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 5, 'div', [['class',
-                'crestron_button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n          '])),
-        (_l()(), i1.ɵeld(0, null, null, 2, 'btn', [['customClass', 'common_btn_style'],
-            ['icon', 'fa fa-plus'], ['label', 'Button'], ['name', 'buttonXSmall'], ['size',
-                'x-small']], null, null, null, i2.View_ButtonComponent_0, i2.RenderType_ButtonComponent)), i1.ɵdid(114688, null, 0, i3.ButtonComponent, [], { name: [0, 'name'], customClass: [1, 'customClass'], label: [2, 'label'],
-            icon: [3, 'icon'], size: [4, 'size'] }, null), (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(),
-            i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])),
-        (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 18, 'div', [['class', 'col-md-4']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])),
-        (_l()(), i1.ɵeld(0, null, null, 15, 'div', [['class', 'input-group']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n            '])), (_l()(), i1.ɵeld(0, null, null, 4, 'pre', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['              '])),
-        (_l()(), i1.ɵeld(0, null, null, 1, 'span', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['', ''])), (_l()(), i1.ɵted(null, ['\n            '])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 6, 'span', [['class', 'input-group-btn']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n            '])),
-        (_l()(), i1.ɵeld(0, null, null, 3, 'button', [['class', 'btn btn-default'],
-            ['ngxClipboard', ''], ['type', 'button']], [[2, 'btn-success', null]], [[null, 'cbOnSuccess'], [null, 'click']], function (_v, en, $event) {
-            var ad = true;
-            var _co = _v.component;
-            if (('click' === en)) {
-                var pd_0 = (i1.ɵnov(_v, 622).onClick($event.target) !== false);
-                ad = (pd_0 && ad);
-            }
-            if (('cbOnSuccess' === en)) {
-                var pd_1 = ((_co.isCopied16 = true) !== false);
-                ad = (pd_1 && ad);
-            }
-            return ad;
-        }, null, null)), i1.ɵdid(212992, null, 0, i9.ClipboardDirective, [i10.ClipboardService, i1.Renderer], { targetElm: [0, 'targetElm'], cbContent: [1,
-                'cbContent'] }, { cbOnSuccess: 'cbOnSuccess' }), i1.ɵpad(1), (_l()(), i1.ɵted(null, ['copy'])), (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵted(null, ['\n\n  '])), (_l()(), i1.ɵeld(0, null, null, 37, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['class',
-                'col-md-6']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 11, 'div', [['class', 'button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 1, 'h5', [], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['Small Button'])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 5, 'div', [['class',
-                'crestron_button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n          '])),
-        (_l()(), i1.ɵeld(0, null, null, 2, 'btn', [['customClass', 'common_btn_style'],
-            ['icon', 'fa fa-plus'], ['label', 'Button'], ['name', 'buttonSmall'], ['size',
-                'small']], null, null, null, i2.View_ButtonComponent_0, i2.RenderType_ButtonComponent)), i1.ɵdid(114688, null, 0, i3.ButtonComponent, [], { name: [0, 'name'], customClass: [1, 'customClass'], label: [2, 'label'],
-            icon: [3, 'icon'], size: [4, 'size'] }, null), (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(),
-            i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])),
-        (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 18, 'div', [['class', 'col-md-4']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])),
-        (_l()(), i1.ɵeld(0, null, null, 15, 'div', [['class', 'input-group']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n            '])), (_l()(), i1.ɵeld(0, null, null, 4, 'pre', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['              '])),
-        (_l()(), i1.ɵeld(0, null, null, 1, 'span', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['', ''])), (_l()(), i1.ɵted(null, ['\n            '])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 6, 'span', [['class', 'input-group-btn']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n            '])),
-        (_l()(), i1.ɵeld(0, null, null, 3, 'button', [['class', 'btn btn-default'],
-            ['ngxClipboard', ''], ['type', 'button']], [[2, 'btn-success', null]], [[null, 'cbOnSuccess'], [null, 'click']], function (_v, en, $event) {
-            var ad = true;
-            var _co = _v.component;
-            if (('click' === en)) {
-                var pd_0 = (i1.ɵnov(_v, 661).onClick($event.target) !== false);
-                ad = (pd_0 && ad);
-            }
-            if (('cbOnSuccess' === en)) {
-                var pd_1 = ((_co.isCopied17 = true) !== false);
-                ad = (pd_1 && ad);
-            }
-            return ad;
-        }, null, null)), i1.ɵdid(212992, null, 0, i9.ClipboardDirective, [i10.ClipboardService, i1.Renderer], { targetElm: [0, 'targetElm'], cbContent: [1,
-                'cbContent'] }, { cbOnSuccess: 'cbOnSuccess' }), i1.ɵpad(1), (_l()(), i1.ɵted(null, ['copy'])), (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵted(null, ['\n\n  '])), (_l()(), i1.ɵeld(0, null, null, 37, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['class',
-                'col-md-6']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 11, 'div', [['class', 'button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 1, 'h5', [], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['Large Button'])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 5, 'div', [['class',
-                'crestron_button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n          '])),
-        (_l()(), i1.ɵeld(0, null, null, 2, 'btn', [['customClass', 'common_btn_style'],
-            ['icon', 'fa fa-plus'], ['label', 'Button'], ['name', 'buttonLarge'], ['size',
-                'large']], null, null, null, i2.View_ButtonComponent_0, i2.RenderType_ButtonComponent)), i1.ɵdid(114688, null, 0, i3.ButtonComponent, [], { name: [0, 'name'], customClass: [1, 'customClass'], label: [2, 'label'],
-            icon: [3, 'icon'], size: [4, 'size'] }, null), (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(),
-            i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])),
-        (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 18, 'div', [['class', 'col-md-4']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])),
-        (_l()(), i1.ɵeld(0, null, null, 15, 'div', [['class', 'input-group']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n            '])), (_l()(), i1.ɵeld(0, null, null, 4, 'pre', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['              '])),
-        (_l()(), i1.ɵeld(0, null, null, 1, 'span', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['', ''])), (_l()(), i1.ɵted(null, ['\n            '])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 6, 'span', [['class', 'input-group-btn']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n            '])),
-        (_l()(), i1.ɵeld(0, null, null, 3, 'button', [['class', 'btn btn-default'],
-            ['ngxClipboard', ''], ['type', 'button']], [[2, 'btn-success', null]], [[null, 'cbOnSuccess'], [null, 'click']], function (_v, en, $event) {
-            var ad = true;
-            var _co = _v.component;
-            if (('click' === en)) {
-                var pd_0 = (i1.ɵnov(_v, 700).onClick($event.target) !== false);
-                ad = (pd_0 && ad);
-            }
-            if (('cbOnSuccess' === en)) {
-                var pd_1 = ((_co.isCopied18 = true) !== false);
-                ad = (pd_1 && ad);
-            }
-            return ad;
-        }, null, null)), i1.ɵdid(212992, null, 0, i9.ClipboardDirective, [i10.ClipboardService, i1.Renderer], { targetElm: [0, 'targetElm'], cbContent: [1,
-                'cbContent'] }, { cbOnSuccess: 'cbOnSuccess' }), i1.ɵpad(1), (_l()(), i1.ɵted(null, ['copy'])), (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵted(null, ['\n\n  '])), (_l()(), i1.ɵeld(0, null, null, 37, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['class',
-                'col-md-6']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 11, 'div', [['class', 'button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 1, 'h5', [], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['Stretch Button Width'])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 5, 'div', [['class',
-                'crestron_button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n          '])),
-        (_l()(), i1.ɵeld(0, null, null, 2, 'btn', [['customClass', 'common_btn_style'],
-            ['icon', 'fa fa-plus'], ['label', 'Button'], ['name', 'buttonStretchWidth'], ['stretch',
-                'width']], null, null, null, i2.View_ButtonComponent_0, i2.RenderType_ButtonComponent)), i1.ɵdid(114688, null, 0, i3.ButtonComponent, [], { name: [0, 'name'], customClass: [1, 'customClass'], label: [2, 'label'],
-            icon: [3, 'icon'], stretch: [4, 'stretch'] }, null), (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(),
-            i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])),
-        (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 18, 'div', [['class', 'col-md-4']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])),
-        (_l()(), i1.ɵeld(0, null, null, 15, 'div', [['class', 'input-group']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n            '])), (_l()(), i1.ɵeld(0, null, null, 4, 'pre', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['              '])),
-        (_l()(), i1.ɵeld(0, null, null, 1, 'span', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['', ''])), (_l()(), i1.ɵted(null, ['\n            '])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 6, 'span', [['class', 'input-group-btn']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n            '])),
-        (_l()(), i1.ɵeld(0, null, null, 3, 'button', [['class', 'btn btn-default'],
-            ['ngxClipboard', ''], ['type', 'button']], [[2, 'btn-success', null]], [[null, 'cbOnSuccess'], [null, 'click']], function (_v, en, $event) {
-            var ad = true;
-            var _co = _v.component;
-            if (('click' === en)) {
-                var pd_0 = (i1.ɵnov(_v, 739).onClick($event.target) !== false);
-                ad = (pd_0 && ad);
-            }
-            if (('cbOnSuccess' === en)) {
-                var pd_1 = ((_co.isCopied19 = true) !== false);
-                ad = (pd_1 && ad);
-            }
-            return ad;
-        }, null, null)), i1.ɵdid(212992, null, 0, i9.ClipboardDirective, [i10.ClipboardService, i1.Renderer], { targetElm: [0, 'targetElm'], cbContent: [1,
-                'cbContent'] }, { cbOnSuccess: 'cbOnSuccess' }), i1.ɵpad(1), (_l()(), i1.ɵted(null, ['copy'])), (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵted(null, ['\n\n  '])), (_l()(), i1.ɵeld(0, null, null, 37, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['class',
-                'col-md-6']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 11, 'div', [['class', 'button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 1, 'h5', [], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['Stretch Button Height'])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 5, 'div', [['class',
-                'crestron_button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n          '])),
-        (_l()(), i1.ɵeld(0, null, null, 2, 'btn', [['customClass', 'common_btn_style'],
-            ['icon', 'fa fa-plus'], ['label', 'Button'], ['name', 'buttonStretchHeight'],
-            ['stretch', 'height']], null, null, null, i2.View_ButtonComponent_0, i2.RenderType_ButtonComponent)), i1.ɵdid(114688, null, 0, i3.ButtonComponent, [], { name: [0, 'name'], customClass: [1, 'customClass'], label: [2, 'label'],
-            icon: [3, 'icon'], stretch: [4, 'stretch'] }, null), (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(),
-            i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])),
-        (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 18, 'div', [['class', 'col-md-4']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])),
-        (_l()(), i1.ɵeld(0, null, null, 15, 'div', [['class', 'input-group']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n            '])), (_l()(), i1.ɵeld(0, null, null, 4, 'pre', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['              '])),
-        (_l()(), i1.ɵeld(0, null, null, 1, 'span', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['', ''])), (_l()(), i1.ɵted(null, ['\n            '])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 6, 'span', [['class', 'input-group-btn']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n            '])),
-        (_l()(), i1.ɵeld(0, null, null, 3, 'button', [['class', 'btn btn-default'],
-            ['ngxClipboard', ''], ['type', 'button']], [[2, 'btn-success', null]], [[null, 'cbOnSuccess'], [null, 'click']], function (_v, en, $event) {
-            var ad = true;
-            var _co = _v.component;
-            if (('click' === en)) {
-                var pd_0 = (i1.ɵnov(_v, 778).onClick($event.target) !== false);
-                ad = (pd_0 && ad);
-            }
-            if (('cbOnSuccess' === en)) {
-                var pd_1 = ((_co.isCopied20 = true) !== false);
-                ad = (pd_1 && ad);
-            }
-            return ad;
-        }, null, null)), i1.ɵdid(212992, null, 0, i9.ClipboardDirective, [i10.ClipboardService, i1.Renderer], { targetElm: [0, 'targetElm'], cbContent: [1,
-                'cbContent'] }, { cbOnSuccess: 'cbOnSuccess' }), i1.ɵpad(1), (_l()(), i1.ɵted(null, ['copy'])), (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵted(null, ['\n\n  '])), (_l()(), i1.ɵeld(0, null, null, 37, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['class',
-                'col-md-6']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 11, 'div', [['class', 'button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 1, 'h5', [], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['Stretch Button Width and Height'])), (_l()(),
-            i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 5, 'div', [['class', 'crestron_button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵeld(0, null, null, 2, 'btn', [['customClass', 'common_btn_style'], ['icon', 'fa fa-plus'], ['label', 'Button'],
-            ['name', 'buttonStretchBoth'], ['stretch', 'both']], null, null, null, i2.View_ButtonComponent_0, i2.RenderType_ButtonComponent)),
+        (_l()(), i1.ɵted(null, ['\n\n    '])), (_l()(), i1.ɵted(null, ['\n  '])),
+        (_l()(), i1.ɵted(null, ['\n\n  '])), (_l()(), i1.ɵeld(0, null, null, 20, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['class', 'col-md-6']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 11, 'div', [['class',
+                'button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 1, 'h5', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Button with Icon'])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(),
+            i1.ɵeld(0, null, null, 5, 'div', [['class', 'crestron_button_container']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵeld(0, null, null, 2, 'btn', [['customClass', 'common_btn_style'], ['icon', 'fa fa-plus'],
+            ['icon_align', 'left'], ['label', 'Button'], ['name', 'buttonIconLeft']], null, null, null, i2.View_ButtonComponent_0, i2.RenderType_ButtonComponent)),
+        i1.ɵdid(114688, null, 0, i3.ButtonComponent, [], { name: [0, 'name'],
+            customClass: [1, 'customClass'], label: [2, 'label'], icon: [3, 'icon'], icon_align: [4,
+                'icon_align'] }, null), (_l()(), i1.ɵted(null, ['\n          '])),
+        (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 1, 'div', [['class',
+                'col-md-4']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n\n    '])), (_l()(), i1.ɵted(null, ['\n  '])),
+        (_l()(), i1.ɵted(null, ['\n\n  '])), (_l()(), i1.ɵeld(0, null, null, 20, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['class', 'col-md-6']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 11, 'div', [['class',
+                'button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 1, 'h5', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Primary Button Type'])), (_l()(), i1.ɵted(null, ['\n        '])),
+        (_l()(), i1.ɵeld(0, null, null, 5, 'div', [['class', 'crestron_button_container']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵeld(0, null, null, 2, 'btn', [['customClass', 'common_btn_style'], ['label', 'Button'],
+            ['name', 'buttonPrimary'], ['shape', 'rounded-rectangle'], ['type', 'primary']], null, null, null, i2.View_ButtonComponent_0, i2.RenderType_ButtonComponent)),
+        i1.ɵdid(114688, null, 0, i3.ButtonComponent, [], { name: [0, 'name'],
+            customClass: [1, 'customClass'], label: [2, 'label'], shape: [3, 'shape'], type: [4,
+                'type'] }, null), (_l()(), i1.ɵted(null, ['\n          '])),
+        (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 1, 'div', [['class',
+                'col-md-4']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n\n    '])), (_l()(), i1.ɵted(null, ['\n  '])),
+        (_l()(), i1.ɵted(null, ['\n\n  '])), (_l()(), i1.ɵeld(0, null, null, 20, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['class', 'col-md-6']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 11, 'div', [['class',
+                'button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 1, 'h5', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Secondary Button Type'])), (_l()(), i1.ɵted(null, ['\n        '])),
+        (_l()(), i1.ɵeld(0, null, null, 5, 'div', [['class', 'crestron_button_container']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵeld(0, null, null, 2, 'btn', [['customClass', 'common_btn_style'], ['label', 'Button'],
+            ['name', 'buttonSecondary'], ['shape', 'rounded-rectangle'], ['type', 'secondary']], null, null, null, i2.View_ButtonComponent_0, i2.RenderType_ButtonComponent)),
+        i1.ɵdid(114688, null, 0, i3.ButtonComponent, [], { name: [0, 'name'],
+            customClass: [1, 'customClass'], label: [2, 'label'], shape: [3, 'shape'], type: [4,
+                'type'] }, null), (_l()(), i1.ɵted(null, ['\n          '])),
+        (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 1, 'div', [['class',
+                'col-md-4']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n\n    '])), (_l()(), i1.ɵted(null, ['\n  '])),
+        (_l()(), i1.ɵted(null, ['\n\n  '])), (_l()(), i1.ɵeld(0, null, null, 20, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['class', 'col-md-6']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 11, 'div', [['class',
+                'button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 1, 'h5', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Info Button Type'])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(),
+            i1.ɵeld(0, null, null, 5, 'div', [['class', 'crestron_button_container']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵeld(0, null, null, 2, 'btn', [['customClass', 'common_btn_style'], ['label', 'Button'],
+            ['name', 'buttonInfo'], ['shape', 'rounded-rectangle'], ['type', 'info']], null, null, null, i2.View_ButtonComponent_0, i2.RenderType_ButtonComponent)),
+        i1.ɵdid(114688, null, 0, i3.ButtonComponent, [], { name: [0, 'name'],
+            customClass: [1, 'customClass'], label: [2, 'label'], shape: [3, 'shape'], type: [4,
+                'type'] }, null), (_l()(), i1.ɵted(null, ['\n          '])),
+        (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 1, 'div', [['class',
+                'col-md-4']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n\n    '])), (_l()(), i1.ɵted(null, ['\n  '])),
+        (_l()(), i1.ɵted(null, ['\n\n  '])), (_l()(), i1.ɵeld(0, null, null, 20, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['class', 'col-md-6']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 11, 'div', [['class',
+                'button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 1, 'h5', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Warning Button Type'])), (_l()(), i1.ɵted(null, ['\n        '])),
+        (_l()(), i1.ɵeld(0, null, null, 5, 'div', [['class', 'crestron_button_container']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵeld(0, null, null, 2, 'btn', [['customClass', 'common_btn_style'], ['label', 'Button'],
+            ['name', 'buttonWarning'], ['shape', 'rounded-rectangle'], ['type', 'warning']], null, null, null, i2.View_ButtonComponent_0, i2.RenderType_ButtonComponent)),
+        i1.ɵdid(114688, null, 0, i3.ButtonComponent, [], { name: [0, 'name'],
+            customClass: [1, 'customClass'], label: [2, 'label'], shape: [3, 'shape'], type: [4,
+                'type'] }, null), (_l()(), i1.ɵted(null, ['\n          '])),
+        (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 1, 'div', [['class',
+                'col-md-4']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n\n    '])), (_l()(), i1.ɵted(null, ['\n  '])),
+        (_l()(), i1.ɵted(null, ['\n\n  '])), (_l()(), i1.ɵeld(0, null, null, 20, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['class', 'col-md-6']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 11, 'div', [['class',
+                'button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 1, 'h5', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Danger Button Type'])), (_l()(), i1.ɵted(null, ['\n        '])),
+        (_l()(), i1.ɵeld(0, null, null, 5, 'div', [['class', 'crestron_button_container']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵeld(0, null, null, 2, 'btn', [['customClass', 'common_btn_style'], ['label', 'Button'],
+            ['name', 'buttonDanger'], ['shape', 'rounded-rectangle'], ['type', 'danger']], null, null, null, i2.View_ButtonComponent_0, i2.RenderType_ButtonComponent)),
+        i1.ɵdid(114688, null, 0, i3.ButtonComponent, [], { name: [0, 'name'],
+            customClass: [1, 'customClass'], label: [2, 'label'], shape: [3, 'shape'], type: [4,
+                'type'] }, null), (_l()(), i1.ɵted(null, ['\n          '])),
+        (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 1, 'div', [['class',
+                'col-md-4']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n\n    '])), (_l()(), i1.ɵted(null, ['\n  '])),
+        (_l()(), i1.ɵted(null, ['\n\n  '])), (_l()(), i1.ɵeld(0, null, null, 20, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['class', 'col-md-6']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 11, 'div', [['class',
+                'button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 1, 'h5', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Success Button Type'])), (_l()(), i1.ɵted(null, ['\n        '])),
+        (_l()(), i1.ɵeld(0, null, null, 5, 'div', [['class', 'crestron_button_container']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵeld(0, null, null, 2, 'btn', [['customClass', 'common_btn_style'], ['label', 'Button'],
+            ['name', 'buttonSuccess'], ['shape', 'rounded-rectangle'], ['type', 'success']], null, null, null, i2.View_ButtonComponent_0, i2.RenderType_ButtonComponent)),
+        i1.ɵdid(114688, null, 0, i3.ButtonComponent, [], { name: [0, 'name'],
+            customClass: [1, 'customClass'], label: [2, 'label'], shape: [3, 'shape'], type: [4,
+                'type'] }, null), (_l()(), i1.ɵted(null, ['\n          '])),
+        (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 1, 'div', [['class',
+                'col-md-4']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n\n    '])), (_l()(), i1.ɵted(null, ['\n  '])),
+        (_l()(), i1.ɵted(null, ['\n\n  '])), (_l()(), i1.ɵeld(0, null, null, 20, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['class', 'col-md-6']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 11, 'div', [['class',
+                'button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 1, 'h5', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Text Button Type'])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(),
+            i1.ɵeld(0, null, null, 5, 'div', [['class', 'crestron_button_container']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵeld(0, null, null, 2, 'btn', [['customClass', 'common_btn_style'], ['label', 'Button'],
+            ['name', 'buttonText'], ['shape', 'rounded-rectangle'], ['type', 'text']], null, null, null, i2.View_ButtonComponent_0, i2.RenderType_ButtonComponent)),
+        i1.ɵdid(114688, null, 0, i3.ButtonComponent, [], { name: [0, 'name'],
+            customClass: [1, 'customClass'], label: [2, 'label'], shape: [3, 'shape'], type: [4,
+                'type'] }, null), (_l()(), i1.ɵted(null, ['\n          '])),
+        (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 1, 'div', [['class',
+                'col-md-4']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n\n    '])), (_l()(), i1.ɵted(null, ['\n  '])),
+        (_l()(), i1.ɵted(null, ['\n\n  '])), (_l()(), i1.ɵeld(0, null, null, 20, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['class', 'col-md-6']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 11, 'div', [['class',
+                'button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 1, 'h5', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Vertical Button'])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(),
+            i1.ɵeld(0, null, null, 5, 'div', [['class', 'crestron_button_container']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵeld(0, null, null, 2, 'btn', [['customClass', 'common_btn_style'], ['icon', 'fa fa-minus'],
+            ['label', 'Button'], ['name', 'buttonVertical'], ['orientation', 'vertical']], null, null, null, i2.View_ButtonComponent_0, i2.RenderType_ButtonComponent)),
+        i1.ɵdid(114688, null, 0, i3.ButtonComponent, [], { name: [0, 'name'],
+            customClass: [1, 'customClass'], label: [2, 'label'], icon: [3, 'icon'], orientation: [4,
+                'orientation'] }, null), (_l()(), i1.ɵted(null, ['\n          '])),
+        (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 1, 'div', [['class',
+                'col-md-4']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n\n    '])), (_l()(), i1.ɵted(null, ['\n  '])),
+        (_l()(), i1.ɵted(null, ['\n\n  '])), (_l()(), i1.ɵeld(0, null, null, 20, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['class', 'col-md-6']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 11, 'div', [['class',
+                'button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 1, 'h5', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['X-Small Button'])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(),
+            i1.ɵeld(0, null, null, 5, 'div', [['class', 'crestron_button_container']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵeld(0, null, null, 2, 'btn', [['customClass', 'common_btn_style'], ['icon', 'fa fa-plus'],
+            ['label', 'Button'], ['name', 'buttonXSmall'], ['size', 'x-small']], null, null, null, i2.View_ButtonComponent_0, i2.RenderType_ButtonComponent)),
+        i1.ɵdid(114688, null, 0, i3.ButtonComponent, [], { name: [0, 'name'],
+            customClass: [1, 'customClass'], label: [2, 'label'], icon: [3, 'icon'], size: [4,
+                'size'] }, null), (_l()(), i1.ɵted(null, ['\n          '])),
+        (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 1, 'div', [['class',
+                'col-md-4']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n\n    '])), (_l()(), i1.ɵted(null, ['\n  '])),
+        (_l()(), i1.ɵted(null, ['\n\n  '])), (_l()(), i1.ɵeld(0, null, null, 20, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['class', 'col-md-6']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 11, 'div', [['class',
+                'button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 1, 'h5', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Small Button'])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(),
+            i1.ɵeld(0, null, null, 5, 'div', [['class', 'crestron_button_container']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵeld(0, null, null, 2, 'btn', [['customClass', 'common_btn_style'], ['icon', 'fa fa-plus'],
+            ['label', 'Button'], ['name', 'buttonSmall'], ['size', 'small']], null, null, null, i2.View_ButtonComponent_0, i2.RenderType_ButtonComponent)),
+        i1.ɵdid(114688, null, 0, i3.ButtonComponent, [], { name: [0, 'name'],
+            customClass: [1, 'customClass'], label: [2, 'label'], icon: [3, 'icon'], size: [4,
+                'size'] }, null), (_l()(), i1.ɵted(null, ['\n          '])),
+        (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 1, 'div', [['class',
+                'col-md-4']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n\n    '])), (_l()(), i1.ɵted(null, ['\n  '])),
+        (_l()(), i1.ɵted(null, ['\n\n  '])), (_l()(), i1.ɵeld(0, null, null, 20, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['class', 'col-md-6']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 11, 'div', [['class',
+                'button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 1, 'h5', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Large Button'])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(),
+            i1.ɵeld(0, null, null, 5, 'div', [['class', 'crestron_button_container']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵeld(0, null, null, 2, 'btn', [['customClass', 'common_btn_style'], ['icon', 'fa fa-plus'],
+            ['label', 'Button'], ['name', 'buttonLarge'], ['size', 'large']], null, null, null, i2.View_ButtonComponent_0, i2.RenderType_ButtonComponent)),
+        i1.ɵdid(114688, null, 0, i3.ButtonComponent, [], { name: [0, 'name'],
+            customClass: [1, 'customClass'], label: [2, 'label'], icon: [3, 'icon'], size: [4,
+                'size'] }, null), (_l()(), i1.ɵted(null, ['\n          '])),
+        (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 1, 'div', [['class',
+                'col-md-4']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n\n    '])), (_l()(), i1.ɵted(null, ['\n  '])),
+        (_l()(), i1.ɵted(null, ['\n\n  '])), (_l()(), i1.ɵeld(0, null, null, 20, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['class', 'col-md-6']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 11, 'div', [['class',
+                'button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 1, 'h5', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Stretch Button Width'])), (_l()(), i1.ɵted(null, ['\n        '])),
+        (_l()(), i1.ɵeld(0, null, null, 5, 'div', [['class', 'crestron_button_container']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵeld(0, null, null, 2, 'btn', [['customClass', 'common_btn_style'], ['icon', 'fa fa-plus'],
+            ['label', 'Button'], ['name', 'buttonStretchWidth'], ['stretch', 'width']], null, null, null, i2.View_ButtonComponent_0, i2.RenderType_ButtonComponent)),
         i1.ɵdid(114688, null, 0, i3.ButtonComponent, [], { name: [0, 'name'],
             customClass: [1, 'customClass'], label: [2, 'label'], icon: [3, 'icon'], stretch: [4,
                 'stretch'] }, null), (_l()(), i1.ɵted(null, ['\n          '])),
-        (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 18, 'div', [['class',
+        (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 1, 'div', [['class',
                 'col-md-4']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 15, 'div', [['class', 'input-group']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n            '])), (_l()(), i1.ɵeld(0, null, null, 4, 'pre', [], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['              '])), (_l()(), i1.ɵeld(0, null, null, 1, 'span', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['', ''])), (_l()(),
-            i1.ɵted(null, ['\n            '])), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 6, 'span', [['class', 'input-group-btn']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n            '])),
-        (_l()(), i1.ɵeld(0, null, null, 3, 'button', [['class', 'btn btn-default'],
-            ['ngxClipboard', ''], ['type', 'button']], [[2, 'btn-success', null]], [[null, 'cbOnSuccess'], [null, 'click']], function (_v, en, $event) {
-            var ad = true;
-            var _co = _v.component;
-            if (('click' === en)) {
-                var pd_0 = (i1.ɵnov(_v, 817).onClick($event.target) !== false);
-                ad = (pd_0 && ad);
-            }
-            if (('cbOnSuccess' === en)) {
-                var pd_1 = ((_co.isCopied21 = true) !== false);
-                ad = (pd_1 && ad);
-            }
-            return ad;
-        }, null, null)), i1.ɵdid(212992, null, 0, i9.ClipboardDirective, [i10.ClipboardService, i1.Renderer], { targetElm: [0, 'targetElm'], cbContent: [1,
-                'cbContent'] }, { cbOnSuccess: 'cbOnSuccess' }), i1.ɵpad(1), (_l()(), i1.ɵted(null, ['copy'])), (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵted(null, ['\n\n'])), (_l()(), i1.ɵted(null, ['\n']))], function (_ck, _v) {
-        var _co = _v.component;
+        (_l()(), i1.ɵted(null, ['\n\n    '])), (_l()(), i1.ɵted(null, ['\n  '])),
+        (_l()(), i1.ɵted(null, ['\n\n  '])), (_l()(), i1.ɵeld(0, null, null, 20, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['class', 'col-md-6']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 11, 'div', [['class',
+                'button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 1, 'h5', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Stretch Button Height'])), (_l()(), i1.ɵted(null, ['\n        '])),
+        (_l()(), i1.ɵeld(0, null, null, 5, 'div', [['class', 'crestron_button_container']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵeld(0, null, null, 2, 'btn', [['customClass', 'common_btn_style'], ['icon', 'fa fa-plus'],
+            ['label', 'Button'], ['name', 'buttonStretchHeight'], ['stretch', 'height']], null, null, null, i2.View_ButtonComponent_0, i2.RenderType_ButtonComponent)),
+        i1.ɵdid(114688, null, 0, i3.ButtonComponent, [], { name: [0, 'name'],
+            customClass: [1, 'customClass'], label: [2, 'label'], icon: [3, 'icon'], stretch: [4,
+                'stretch'] }, null), (_l()(), i1.ɵted(null, ['\n          '])),
+        (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 1, 'div', [['class',
+                'col-md-4']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n\n    '])), (_l()(), i1.ɵted(null, ['\n  '])),
+        (_l()(), i1.ɵted(null, ['\n\n  '])), (_l()(), i1.ɵeld(0, null, null, 20, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['class', 'col-md-6']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 11, 'div', [['class',
+                'button_container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵeld(0, null, null, 1, 'h5', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Stretch Button Width and Height'])), (_l()(), i1.ɵted(null, ['\n        '])),
+        (_l()(), i1.ɵeld(0, null, null, 5, 'div', [['class', 'crestron_button_container']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n          '])), (_l()(), i1.ɵeld(0, null, null, 2, 'btn', [['customClass', 'common_btn_style'], ['icon', 'fa fa-plus'],
+            ['label', 'Button'], ['name', 'buttonStretchBoth'], ['stretch', 'both']], null, null, null, i2.View_ButtonComponent_0, i2.RenderType_ButtonComponent)),
+        i1.ɵdid(114688, null, 0, i3.ButtonComponent, [], { name: [0, 'name'],
+            customClass: [1, 'customClass'], label: [2, 'label'], icon: [3, 'icon'], stretch: [4,
+                'stretch'] }, null), (_l()(), i1.ɵted(null, ['\n          '])),
+        (_l()(), i1.ɵted(null, ['\n        '])), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 1, 'div', [['class',
+                'col-md-4']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n\n    '])), (_l()(), i1.ɵted(null, ['\n  '])),
+        (_l()(), i1.ɵted(null, ['\n\n'])), (_l()(), i1.ɵted(null, ['\n']))], function (_ck, _v) {
         var currVal_0 = 'buttonRectangle';
         var currVal_1 = 'common_btn_style';
         var currVal_2 = 'Button';
@@ -627,277 +260,130 @@ export function View_GalleryButtonComponent_0(_l) {
         var currVal_6 = '80000';
         var currVal_7 = '181';
         _ck(_v, 18, 0, currVal_4, currVal_5, currVal_6, currVal_7);
-        var currVal_10 = '';
-        var currVal_11 = _ck(_v, 38, 0, _co.rectangleButton);
-        _ck(_v, 37, 0, currVal_10, currVal_11);
-        var currVal_12 = 'buttonRoundedRectangle';
-        var currVal_13 = 'common_btn_style';
-        var currVal_14 = 'Button';
-        var currVal_15 = 'rounded-rectangle';
-        _ck(_v, 57, 0, currVal_12, currVal_13, currVal_14, currVal_15);
-        var currVal_18 = '';
-        var currVal_19 = _ck(_v, 77, 0, _co.roundedRectangleButton);
-        _ck(_v, 76, 0, currVal_18, currVal_19);
-        var currVal_20 = 'buttonTab';
-        var currVal_21 = 'common_btn_style';
-        var currVal_22 = 'Button';
-        var currVal_23 = 'tab';
-        _ck(_v, 96, 0, currVal_20, currVal_21, currVal_22, currVal_23);
-        var currVal_26 = '';
-        var currVal_27 = _ck(_v, 116, 0, _co.tabButton);
-        _ck(_v, 115, 0, currVal_26, currVal_27);
-        var currVal_28 = 'buttonCircle';
-        var currVal_29 = 'common_btn_style';
-        var currVal_30 = 'Button';
-        var currVal_31 = 'circle';
-        _ck(_v, 135, 0, currVal_28, currVal_29, currVal_30, currVal_31);
-        var currVal_34 = '';
-        var currVal_35 = _ck(_v, 155, 0, _co.circleButton);
-        _ck(_v, 154, 0, currVal_34, currVal_35);
-        var currVal_36 = 'buttonOval';
-        var currVal_37 = 'common_btn_style';
-        var currVal_38 = 'Button';
-        var currVal_39 = 'oval';
-        _ck(_v, 174, 0, currVal_36, currVal_37, currVal_38, currVal_39);
-        var currVal_42 = '';
-        var currVal_43 = _ck(_v, 194, 0, _co.ovalButton);
-        _ck(_v, 193, 0, currVal_42, currVal_43);
-        var currVal_44 = 'buttonIconRight';
-        var currVal_45 = 'common_btn_style';
-        var currVal_46 = 'Button';
-        var currVal_47 = 'fa fa-plus';
-        var currVal_48 = 'right';
-        _ck(_v, 213, 0, currVal_44, currVal_45, currVal_46, currVal_47, currVal_48);
-        var currVal_51 = '';
-        var currVal_52 = _ck(_v, 233, 0, _co.iconRightButton);
-        _ck(_v, 232, 0, currVal_51, currVal_52);
-        var currVal_53 = 'buttonIconLeft';
-        var currVal_54 = 'common_btn_style';
-        var currVal_55 = 'Button';
-        var currVal_56 = 'fa fa-plus';
-        var currVal_57 = 'left';
-        _ck(_v, 252, 0, currVal_53, currVal_54, currVal_55, currVal_56, currVal_57);
-        var currVal_60 = '';
-        var currVal_61 = _ck(_v, 272, 0, _co.iconLeftButton);
-        _ck(_v, 271, 0, currVal_60, currVal_61);
-        var currVal_62 = 'buttonPrimary';
-        var currVal_63 = 'common_btn_style';
-        var currVal_64 = 'Button';
-        var currVal_65 = 'rounded-rectangle';
-        var currVal_66 = 'primary';
-        _ck(_v, 291, 0, currVal_62, currVal_63, currVal_64, currVal_65, currVal_66);
-        var currVal_69 = '';
-        var currVal_70 = _ck(_v, 311, 0, _co.primaryButton);
-        _ck(_v, 310, 0, currVal_69, currVal_70);
-        var currVal_71 = 'buttonSecondary';
-        var currVal_72 = 'common_btn_style';
-        var currVal_73 = 'Button';
-        var currVal_74 = 'rounded-rectangle';
-        var currVal_75 = 'secondary';
-        _ck(_v, 330, 0, currVal_71, currVal_72, currVal_73, currVal_74, currVal_75);
-        var currVal_78 = '';
-        var currVal_79 = _ck(_v, 350, 0, _co.secondaryButton);
-        _ck(_v, 349, 0, currVal_78, currVal_79);
-        var currVal_80 = 'buttonInfo';
+        var currVal_8 = '<btn name="buttonRectangle"\n               label="Button"\n               customClass="common_btn_style"\n               shape="rectangular">\n          </btn>';
+        _ck(_v, 27, 0, currVal_8);
+        var currVal_9 = 'buttonRoundedRectangle';
+        var currVal_10 = 'common_btn_style';
+        var currVal_11 = 'Button';
+        var currVal_12 = 'rounded-rectangle';
+        _ck(_v, 44, 0, currVal_9, currVal_10, currVal_11, currVal_12);
+        var currVal_13 = 'buttonTab';
+        var currVal_14 = 'common_btn_style';
+        var currVal_15 = 'Button';
+        var currVal_16 = 'tab';
+        _ck(_v, 66, 0, currVal_13, currVal_14, currVal_15, currVal_16);
+        var currVal_17 = 'buttonCircle';
+        var currVal_18 = 'common_btn_style';
+        var currVal_19 = 'Button';
+        var currVal_20 = 'circle';
+        _ck(_v, 88, 0, currVal_17, currVal_18, currVal_19, currVal_20);
+        var currVal_21 = 'buttonOval';
+        var currVal_22 = 'common_btn_style';
+        var currVal_23 = 'Button';
+        var currVal_24 = 'oval';
+        _ck(_v, 110, 0, currVal_21, currVal_22, currVal_23, currVal_24);
+        var currVal_25 = 'buttonIconRight';
+        var currVal_26 = 'common_btn_style';
+        var currVal_27 = 'Button';
+        var currVal_28 = 'fa fa-plus';
+        var currVal_29 = 'right';
+        _ck(_v, 132, 0, currVal_25, currVal_26, currVal_27, currVal_28, currVal_29);
+        var currVal_30 = 'buttonIconLeft';
+        var currVal_31 = 'common_btn_style';
+        var currVal_32 = 'Button';
+        var currVal_33 = 'fa fa-plus';
+        var currVal_34 = 'left';
+        _ck(_v, 154, 0, currVal_30, currVal_31, currVal_32, currVal_33, currVal_34);
+        var currVal_35 = 'buttonPrimary';
+        var currVal_36 = 'common_btn_style';
+        var currVal_37 = 'Button';
+        var currVal_38 = 'rounded-rectangle';
+        var currVal_39 = 'primary';
+        _ck(_v, 176, 0, currVal_35, currVal_36, currVal_37, currVal_38, currVal_39);
+        var currVal_40 = 'buttonSecondary';
+        var currVal_41 = 'common_btn_style';
+        var currVal_42 = 'Button';
+        var currVal_43 = 'rounded-rectangle';
+        var currVal_44 = 'secondary';
+        _ck(_v, 198, 0, currVal_40, currVal_41, currVal_42, currVal_43, currVal_44);
+        var currVal_45 = 'buttonInfo';
+        var currVal_46 = 'common_btn_style';
+        var currVal_47 = 'Button';
+        var currVal_48 = 'rounded-rectangle';
+        var currVal_49 = 'info';
+        _ck(_v, 220, 0, currVal_45, currVal_46, currVal_47, currVal_48, currVal_49);
+        var currVal_50 = 'buttonWarning';
+        var currVal_51 = 'common_btn_style';
+        var currVal_52 = 'Button';
+        var currVal_53 = 'rounded-rectangle';
+        var currVal_54 = 'warning';
+        _ck(_v, 242, 0, currVal_50, currVal_51, currVal_52, currVal_53, currVal_54);
+        var currVal_55 = 'buttonDanger';
+        var currVal_56 = 'common_btn_style';
+        var currVal_57 = 'Button';
+        var currVal_58 = 'rounded-rectangle';
+        var currVal_59 = 'danger';
+        _ck(_v, 264, 0, currVal_55, currVal_56, currVal_57, currVal_58, currVal_59);
+        var currVal_60 = 'buttonSuccess';
+        var currVal_61 = 'common_btn_style';
+        var currVal_62 = 'Button';
+        var currVal_63 = 'rounded-rectangle';
+        var currVal_64 = 'success';
+        _ck(_v, 286, 0, currVal_60, currVal_61, currVal_62, currVal_63, currVal_64);
+        var currVal_65 = 'buttonText';
+        var currVal_66 = 'common_btn_style';
+        var currVal_67 = 'Button';
+        var currVal_68 = 'rounded-rectangle';
+        var currVal_69 = 'text';
+        _ck(_v, 308, 0, currVal_65, currVal_66, currVal_67, currVal_68, currVal_69);
+        var currVal_70 = 'buttonVertical';
+        var currVal_71 = 'common_btn_style';
+        var currVal_72 = 'Button';
+        var currVal_73 = 'fa fa-minus';
+        var currVal_74 = 'vertical';
+        _ck(_v, 330, 0, currVal_70, currVal_71, currVal_72, currVal_73, currVal_74);
+        var currVal_75 = 'buttonXSmall';
+        var currVal_76 = 'common_btn_style';
+        var currVal_77 = 'Button';
+        var currVal_78 = 'fa fa-plus';
+        var currVal_79 = 'x-small';
+        _ck(_v, 352, 0, currVal_75, currVal_76, currVal_77, currVal_78, currVal_79);
+        var currVal_80 = 'buttonSmall';
         var currVal_81 = 'common_btn_style';
         var currVal_82 = 'Button';
-        var currVal_83 = 'rounded-rectangle';
-        var currVal_84 = 'info';
-        _ck(_v, 369, 0, currVal_80, currVal_81, currVal_82, currVal_83, currVal_84);
-        var currVal_87 = '';
-        var currVal_88 = _ck(_v, 389, 0, _co.infoButton);
-        _ck(_v, 388, 0, currVal_87, currVal_88);
-        var currVal_89 = 'buttonWarning';
-        var currVal_90 = 'common_btn_style';
-        var currVal_91 = 'Button';
-        var currVal_92 = 'rounded-rectangle';
-        var currVal_93 = 'warning';
-        _ck(_v, 408, 0, currVal_89, currVal_90, currVal_91, currVal_92, currVal_93);
-        var currVal_96 = '';
-        var currVal_97 = _ck(_v, 428, 0, _co.warningButton);
-        _ck(_v, 427, 0, currVal_96, currVal_97);
-        var currVal_98 = 'buttonDanger';
-        var currVal_99 = 'common_btn_style';
-        var currVal_100 = 'Button';
-        var currVal_101 = 'rounded-rectangle';
-        var currVal_102 = 'danger';
-        _ck(_v, 447, 0, currVal_98, currVal_99, currVal_100, currVal_101, currVal_102);
-        var currVal_105 = '';
-        var currVal_106 = _ck(_v, 467, 0, _co.dangerButton);
-        _ck(_v, 466, 0, currVal_105, currVal_106);
-        var currVal_107 = 'buttonSuccess';
-        var currVal_108 = 'common_btn_style';
-        var currVal_109 = 'Button';
-        var currVal_110 = 'rounded-rectangle';
-        var currVal_111 = 'success';
-        _ck(_v, 486, 0, currVal_107, currVal_108, currVal_109, currVal_110, currVal_111);
-        var currVal_114 = '';
-        var currVal_115 = _ck(_v, 506, 0, _co.successButton);
-        _ck(_v, 505, 0, currVal_114, currVal_115);
-        var currVal_116 = 'buttonText';
-        var currVal_117 = 'common_btn_style';
-        var currVal_118 = 'Button';
-        var currVal_119 = 'rounded-rectangle';
-        var currVal_120 = 'text';
-        _ck(_v, 525, 0, currVal_116, currVal_117, currVal_118, currVal_119, currVal_120);
-        var currVal_123 = '';
-        var currVal_124 = _ck(_v, 545, 0, _co.textButton);
-        _ck(_v, 544, 0, currVal_123, currVal_124);
-        var currVal_125 = 'buttonVertical';
-        var currVal_126 = 'common_btn_style';
-        var currVal_127 = 'Button';
-        var currVal_128 = 'fa fa-minus';
-        var currVal_129 = 'vertical';
-        _ck(_v, 564, 0, currVal_125, currVal_126, currVal_127, currVal_128, currVal_129);
-        var currVal_132 = '';
-        var currVal_133 = _ck(_v, 584, 0, _co.verticalButton);
-        _ck(_v, 583, 0, currVal_132, currVal_133);
-        var currVal_134 = 'buttonXSmall';
-        var currVal_135 = 'common_btn_style';
-        var currVal_136 = 'Button';
-        var currVal_137 = 'fa fa-plus';
-        var currVal_138 = 'x-small';
-        _ck(_v, 603, 0, currVal_134, currVal_135, currVal_136, currVal_137, currVal_138);
-        var currVal_141 = '';
-        var currVal_142 = _ck(_v, 623, 0, _co.xSmallButton);
-        _ck(_v, 622, 0, currVal_141, currVal_142);
-        var currVal_143 = 'buttonSmall';
-        var currVal_144 = 'common_btn_style';
-        var currVal_145 = 'Button';
-        var currVal_146 = 'fa fa-plus';
-        var currVal_147 = 'small';
-        _ck(_v, 642, 0, currVal_143, currVal_144, currVal_145, currVal_146, currVal_147);
-        var currVal_150 = '';
-        var currVal_151 = _ck(_v, 662, 0, _co.smallButton);
-        _ck(_v, 661, 0, currVal_150, currVal_151);
-        var currVal_152 = 'buttonLarge';
-        var currVal_153 = 'common_btn_style';
-        var currVal_154 = 'Button';
-        var currVal_155 = 'fa fa-plus';
-        var currVal_156 = 'large';
-        _ck(_v, 681, 0, currVal_152, currVal_153, currVal_154, currVal_155, currVal_156);
-        var currVal_159 = '';
-        var currVal_160 = _ck(_v, 701, 0, _co.largeButton);
-        _ck(_v, 700, 0, currVal_159, currVal_160);
-        var currVal_161 = 'buttonStretchWidth';
-        var currVal_162 = 'common_btn_style';
-        var currVal_163 = 'Button';
-        var currVal_164 = 'fa fa-plus';
-        var currVal_165 = 'width';
-        _ck(_v, 720, 0, currVal_161, currVal_162, currVal_163, currVal_164, currVal_165);
-        var currVal_168 = '';
-        var currVal_169 = _ck(_v, 740, 0, _co.stretchWidthButton);
-        _ck(_v, 739, 0, currVal_168, currVal_169);
-        var currVal_170 = 'buttonStretchHeight';
-        var currVal_171 = 'common_btn_style';
-        var currVal_172 = 'Button';
-        var currVal_173 = 'fa fa-plus';
-        var currVal_174 = 'height';
-        _ck(_v, 759, 0, currVal_170, currVal_171, currVal_172, currVal_173, currVal_174);
-        var currVal_177 = '';
-        var currVal_178 = _ck(_v, 779, 0, _co.stretchHeightButton);
-        _ck(_v, 778, 0, currVal_177, currVal_178);
-        var currVal_179 = 'buttonStretchBoth';
-        var currVal_180 = 'common_btn_style';
-        var currVal_181 = 'Button';
-        var currVal_182 = 'fa fa-plus';
-        var currVal_183 = 'both';
-        _ck(_v, 798, 0, currVal_179, currVal_180, currVal_181, currVal_182, currVal_183);
-        var currVal_186 = '';
-        var currVal_187 = _ck(_v, 818, 0, _co.stretchWidthHeightButton);
-        _ck(_v, 817, 0, currVal_186, currVal_187);
-    }, function (_ck, _v) {
-        var _co = _v.component;
-        var currVal_8 = _co.rectangleButton;
-        _ck(_v, 31, 0, currVal_8);
-        var currVal_9 = _co.isCopied1;
-        _ck(_v, 36, 0, currVal_9);
-        var currVal_16 = _co.roundedRectangleButton;
-        _ck(_v, 70, 0, currVal_16);
-        var currVal_17 = _co.isCopied2;
-        _ck(_v, 75, 0, currVal_17);
-        var currVal_24 = _co.tabButton;
-        _ck(_v, 109, 0, currVal_24);
-        var currVal_25 = _co.isCopied3;
-        _ck(_v, 114, 0, currVal_25);
-        var currVal_32 = _co.circleButton;
-        _ck(_v, 148, 0, currVal_32);
-        var currVal_33 = _co.isCopied4;
-        _ck(_v, 153, 0, currVal_33);
-        var currVal_40 = _co.ovalButton;
-        _ck(_v, 187, 0, currVal_40);
-        var currVal_41 = _co.isCopied5;
-        _ck(_v, 192, 0, currVal_41);
-        var currVal_49 = _co.iconRightButton;
-        _ck(_v, 226, 0, currVal_49);
-        var currVal_50 = _co.isCopied6;
-        _ck(_v, 231, 0, currVal_50);
-        var currVal_58 = _co.iconLeftButton;
-        _ck(_v, 265, 0, currVal_58);
-        var currVal_59 = _co.isCopied7;
-        _ck(_v, 270, 0, currVal_59);
-        var currVal_67 = _co.primaryButton;
-        _ck(_v, 304, 0, currVal_67);
-        var currVal_68 = _co.isCopied8;
-        _ck(_v, 309, 0, currVal_68);
-        var currVal_76 = _co.secondaryButton;
-        _ck(_v, 343, 0, currVal_76);
-        var currVal_77 = _co.isCopied9;
-        _ck(_v, 348, 0, currVal_77);
-        var currVal_85 = _co.infoButton;
-        _ck(_v, 382, 0, currVal_85);
-        var currVal_86 = _co.isCopied10;
-        _ck(_v, 387, 0, currVal_86);
-        var currVal_94 = _co.warningButton;
-        _ck(_v, 421, 0, currVal_94);
-        var currVal_95 = _co.isCopied11;
-        _ck(_v, 426, 0, currVal_95);
-        var currVal_103 = _co.dangerButton;
-        _ck(_v, 460, 0, currVal_103);
-        var currVal_104 = _co.isCopied12;
-        _ck(_v, 465, 0, currVal_104);
-        var currVal_112 = _co.successButton;
-        _ck(_v, 499, 0, currVal_112);
-        var currVal_113 = _co.isCopied13;
-        _ck(_v, 504, 0, currVal_113);
-        var currVal_121 = _co.textButton;
-        _ck(_v, 538, 0, currVal_121);
-        var currVal_122 = _co.isCopied14;
-        _ck(_v, 543, 0, currVal_122);
-        var currVal_130 = _co.verticalButton;
-        _ck(_v, 577, 0, currVal_130);
-        var currVal_131 = _co.isCopied15;
-        _ck(_v, 582, 0, currVal_131);
-        var currVal_139 = _co.xSmallButton;
-        _ck(_v, 616, 0, currVal_139);
-        var currVal_140 = _co.isCopied16;
-        _ck(_v, 621, 0, currVal_140);
-        var currVal_148 = _co.smallButton;
-        _ck(_v, 655, 0, currVal_148);
-        var currVal_149 = _co.isCopied17;
-        _ck(_v, 660, 0, currVal_149);
-        var currVal_157 = _co.largeButton;
-        _ck(_v, 694, 0, currVal_157);
-        var currVal_158 = _co.isCopied18;
-        _ck(_v, 699, 0, currVal_158);
-        var currVal_166 = _co.stretchWidthButton;
-        _ck(_v, 733, 0, currVal_166);
-        var currVal_167 = _co.isCopied19;
-        _ck(_v, 738, 0, currVal_167);
-        var currVal_175 = _co.stretchHeightButton;
-        _ck(_v, 772, 0, currVal_175);
-        var currVal_176 = _co.isCopied20;
-        _ck(_v, 777, 0, currVal_176);
-        var currVal_184 = _co.stretchWidthHeightButton;
-        _ck(_v, 811, 0, currVal_184);
-        var currVal_185 = _co.isCopied21;
-        _ck(_v, 816, 0, currVal_185);
-    });
+        var currVal_83 = 'fa fa-plus';
+        var currVal_84 = 'small';
+        _ck(_v, 374, 0, currVal_80, currVal_81, currVal_82, currVal_83, currVal_84);
+        var currVal_85 = 'buttonLarge';
+        var currVal_86 = 'common_btn_style';
+        var currVal_87 = 'Button';
+        var currVal_88 = 'fa fa-plus';
+        var currVal_89 = 'large';
+        _ck(_v, 396, 0, currVal_85, currVal_86, currVal_87, currVal_88, currVal_89);
+        var currVal_90 = 'buttonStretchWidth';
+        var currVal_91 = 'common_btn_style';
+        var currVal_92 = 'Button';
+        var currVal_93 = 'fa fa-plus';
+        var currVal_94 = 'width';
+        _ck(_v, 418, 0, currVal_90, currVal_91, currVal_92, currVal_93, currVal_94);
+        var currVal_95 = 'buttonStretchHeight';
+        var currVal_96 = 'common_btn_style';
+        var currVal_97 = 'Button';
+        var currVal_98 = 'fa fa-plus';
+        var currVal_99 = 'height';
+        _ck(_v, 440, 0, currVal_95, currVal_96, currVal_97, currVal_98, currVal_99);
+        var currVal_100 = 'buttonStretchBoth';
+        var currVal_101 = 'common_btn_style';
+        var currVal_102 = 'Button';
+        var currVal_103 = 'fa fa-plus';
+        var currVal_104 = 'both';
+        _ck(_v, 462, 0, currVal_100, currVal_101, currVal_102, currVal_103, currVal_104);
+    }, null);
 }
 export function View_GalleryButtonComponent_Host_0(_l) {
-    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 1, 'gallery-button', [], null, null, null, View_GalleryButtonComponent_0, RenderType_GalleryButtonComponent)), i1.ɵdid(114688, null, 0, i8.GalleryButtonComponent, [], null, null)], function (_ck, _v) {
+    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 1, 'gallery-button', [], null, null, null, View_GalleryButtonComponent_0, RenderType_GalleryButtonComponent)), i1.ɵdid(114688, null, 0, i10.GalleryButtonComponent, [], null, null)], function (_ck, _v) {
         _ck(_v, 1, 0);
     }, null);
 }
-export var GalleryButtonComponentNgFactory = i1.ɵccf('gallery-button', i8.GalleryButtonComponent, View_GalleryButtonComponent_Host_0, {}, {}, []);
+export var GalleryButtonComponentNgFactory = i1.ɵccf('gallery-button', i10.GalleryButtonComponent, View_GalleryButtonComponent_Host_0, {}, {}, []);
 //# sourceMappingURL=gallery-button.component.ngfactory.js.map

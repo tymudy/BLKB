@@ -1,4 +1,4 @@
-<div class="layout-wrapper" (click)="hideDebuggerDiv($event)">
+<div class="layout-wrapper">
   <div id="layout-sidebar"  [ngClass]="{'slide': !menuClosed}">
     <span class="layout-logo">
       <img [src]="menuClosed? 'assets/images/crestron_crestron_small.png' : 'assets/images/crestron-07.png'" />
@@ -17,11 +17,11 @@
   <div id="layout-content" [ngClass]="{'slide': !menuClosed}">
     <div id="header-content">
       <span>{{selectedMenuItemIndex.name}}</span>
-      <img [src]="'assets/images/crestron_debugger_no_state.png'" #logsImg/>
+      <img [src]="'assets/images/crestron_debugger_no_state.png'" (click)="toggleDebugger()"/>
     </div>
     <router-outlet></router-outlet>
   </div>
-  <div id="layout-debugger" [ngClass]="{'slide': !hideDebugger}" #debugger>
+  <div id="layout-debugger" [ngClass]="{'slide': !hideDebugger}">
     <img [src]="'assets/images/crestron_debugger_state.png'" (click)="toggleDebugger()"/>
     <span>Debugger</span>
     <ul>

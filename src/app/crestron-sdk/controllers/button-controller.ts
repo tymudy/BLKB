@@ -34,6 +34,7 @@ export class ButtonController implements OnInit, OnDestroy {
     private subscription: Subscription = new Subscription();
 
     private  lastRunClass: string = '';
+    private enabled: string = '';
 
     constructor(private joinsService: JoinsService, private communicationService: CommunicationService ){
     }
@@ -47,7 +48,6 @@ export class ButtonController implements OnInit, OnDestroy {
     }
 
     private checkEvent = false;
-    private enabled = true;
 
     private addListeners(): void {
 
@@ -106,10 +106,11 @@ export class ButtonController implements OnInit, OnDestroy {
       }
 
       if(this.runEnabled){
-        if (this.runShow === "true"){
+        if (this.runEnabled == "true"){
           console.log("enable true");
           this.subscription = this.joinsService.getSerialSubscribe(3, false).subscribe(this.onReceiveEnableDisable.bind(this));
         }else{
+           console.log("enable false");
           this.subscription = this.joinsService.getSerialSubscribe(2, true).subscribe(this.onReceiveEnableDisable.bind(this));
         }
       }
@@ -127,13 +128,13 @@ export class ButtonController implements OnInit, OnDestroy {
        this.lastRunClass = data.value;
     }
 
-     onReceiveEnableDisable(data:any): void {
+    onReceiveEnableDisable(data:any): void {
        console.log("data", data);
       if(data.value){
-        this.el[0].setAttribute("disabled", "false");
+        this.el[0].classList.remove("disabled");
       }else{
-        this.el[0].setAttribute("disabled", "true");
-      }
+        this.el[0].classList.add("disabled");
+      }   
     }
 
     sendOnPress(): void {

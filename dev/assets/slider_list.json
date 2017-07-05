@@ -11,6 +11,10 @@
         "value": "30"
     },
     {
+        "key": "customClass",
+        "value": "common_slider_style"
+    },
+    {
         "key": "min",
         "value": "20"
     },
@@ -27,6 +31,10 @@
     {
         "key": "initValue",
         "value": "20"
+    },
+    {
+        "key": "customClass",
+        "value": "common_slider_style"
     },
     {
         "key": "min",
@@ -54,6 +62,10 @@
         "key": "initValue",
         "value": "30"
     },
+     {
+        "key": "customClass",
+        "value": "common_slider_style"
+    },
     {
         "key": "min",
         "value": "20"
@@ -79,6 +91,10 @@
     {
         "key": "min",
         "value": "20"
+    },
+     {
+        "key": "customClass",
+        "value": "common_slider_style"
     },
     {
         "key": "minIcon",
@@ -110,6 +126,10 @@
         "key": "min",
         "value": "20"
     },
+     {
+        "key": "customClass",
+        "value": "common_slider_style"
+    },
     {
         "key": "minIcon",
         "value": "fa fa-minus"
@@ -135,6 +155,10 @@
     {
         "key": "min",
         "value": "20"
+    },
+    {
+        "key": "customClass",
+        "value": "common_slider_style"
     },
     {
         "key": "minIcon",
@@ -167,6 +191,10 @@
         "value": "20"
     },
     {
+        "key": "customClass",
+        "value": "common_slider_style"
+    },
+    {
         "key": "minIcon",
         "value": "fa fa-minus"
     },
@@ -195,6 +223,10 @@
     {
         "key": "min",
         "value": "20"
+    },
+    {
+        "key": "customClass",
+        "value": "common_slider_style"
     },
     {
         "key": "minIcon",
@@ -227,6 +259,10 @@
         "value": "20"
     },
     {
+        "key": "customClass",
+        "value": "common_slider_style"
+    },
+    {
         "key": "minIcon",
         "value": "fa fa-minus"
     },
@@ -255,6 +291,10 @@
     {
         "key": "min",
         "value": "20"
+    },
+    {
+        "key": "customClass",
+        "value": "common_slider_style"
     },
     {
         "key": "minIcon",
@@ -287,6 +327,10 @@
         "value": "20"
     },
     {
+        "key": "customClass",
+        "value": "common_slider_style"
+    },
+    {
         "key": "minIcon",
         "value": "fa fa-minus"
     },
@@ -315,6 +359,10 @@
     {
         "key": "min",
         "value": "20"
+    },
+    {
+        "key": "customClass",
+        "value": "common_slider_style"
     },
     {
         "key": "minIcon",
@@ -349,6 +397,10 @@
     {
         "key": "minIcon",
         "value": "fa fa-minus"
+    },
+    {
+        "key": "customClass",
+        "value": "common_slider_style"
     },
     {
         "key": "initValue",
@@ -375,6 +427,10 @@
     {
         "key": "min",
         "value": "20"
+    },
+    {
+        "key": "customClass",
+        "value": "common_slider_style"
     },
     {
         "key": "minIcon",
@@ -407,6 +463,10 @@
         "value": "20"
     },
     {
+        "key": "customClass",
+        "value": "common_slider_style"
+    },
+    {
         "key": "minIcon",
         "value": "fa fa-minus"
     },
@@ -435,6 +495,10 @@
     {
         "key": "min",
         "value": "20"
+    },
+    {
+        "key": "customClass",
+        "value": "common_slider_style"
     },
     {
         "key": "minIcon",
@@ -467,6 +531,10 @@
         "value": "20"
     },
     {
+        "key": "customClass",
+        "value": "common_slider_style"
+    },
+    {
         "key": "minIcon",
         "value": "fa fa-minus"
     },
@@ -495,6 +563,10 @@
     {
         "key": "min",
         "value": "20"
+    },
+    {
+        "key": "customClass",
+        "value": "common_slider_style"
     },
     {
         "key": "minIcon",
@@ -527,6 +599,10 @@
         "value": "20"
     },
     {
+        "key": "customClass",
+        "value": "common_slider_style"
+    },
+    {
         "key": "minIcon",
         "value": "fa fa-minus"
     },
@@ -555,6 +631,10 @@
     {
         "key": "min",
         "value": "20"
+    },
+    {
+        "key": "customClass",
+        "value": "common_slider_style"
     },
     {
         "key": "minIcon",
